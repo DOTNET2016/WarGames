@@ -62,10 +62,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::WarGames.Properties.Resources.ShallWePlay;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1669, 792);
+            this.pictureBox1.Size = new System.Drawing.Size(1685, 838);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -74,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1667, 791);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.CustomizeGameBtn);
             this.Controls.Add(this.PlayGameBtn);
             this.Controls.Add(this.pictureBox1);

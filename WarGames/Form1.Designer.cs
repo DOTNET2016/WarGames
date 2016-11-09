@@ -323,13 +323,17 @@
             // ExitButton
             // 
             this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ExitButton.BackColor = System.Drawing.Color.White;
             this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ExitButton.Location = new System.Drawing.Point(215, 798);
+            this.ExitButton.FlatAppearance.BorderSize = 0;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.Location = new System.Drawing.Point(1600, -9);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(80, 28);
+            this.ExitButton.Size = new System.Drawing.Size(91, 92);
             this.ExitButton.TabIndex = 3;
-            this.ExitButton.Text = "Exit";
-            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // PauseButton
