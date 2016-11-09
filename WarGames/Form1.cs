@@ -18,7 +18,7 @@ namespace WarGames
         public Form1()
         {
             InitializeComponent();
-            CountryListBox.DataSource = countriesAtWar;
+            EnduranceListBox.DataSource = countriesAtWar;
         }
 
         private void PauseButton_Click(object sender, EventArgs e)

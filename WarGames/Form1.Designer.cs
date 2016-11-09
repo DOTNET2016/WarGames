@@ -33,8 +33,8 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
-            this.CountryBox = new System.Windows.Forms.GroupBox();
-            this.CountryListBox = new System.Windows.Forms.ListBox();
+            this.EnduranceBox = new System.Windows.Forms.GroupBox();
+            this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
             this.StatsBox = new System.Windows.Forms.GroupBox();
             this.UsaListBox = new System.Windows.Forms.ListBox();
@@ -58,7 +58,7 @@
             this.SwedenLabel = new System.Windows.Forms.Label();
             this.NorthKoreaLabel = new System.Windows.Forms.Label();
             this.Background.SuspendLayout();
-            this.CountryBox.SuspendLayout();
+            this.EnduranceBox.SuspendLayout();
             this.StatsBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +71,7 @@
             this.Background.Controls.Add(this.ExitButton);
             this.Background.Controls.Add(this.PauseButton);
             this.Background.Controls.Add(this.StartButton);
-            this.Background.Controls.Add(this.CountryBox);
+            this.Background.Controls.Add(this.EnduranceBox);
             this.Background.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Background.Location = new System.Drawing.Point(0, 0);
             this.Background.Margin = new System.Windows.Forms.Padding(4);
@@ -118,33 +118,33 @@
             this.StartButton.UseVisualStyleBackColor = true;
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
-            // CountryBox
+            // EnduranceBox
             // 
-            this.CountryBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.CountryBox.BackColor = System.Drawing.Color.Transparent;
-            this.CountryBox.Controls.Add(this.CountryListBox);
-            this.CountryBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.CountryBox.Location = new System.Drawing.Point(0, 362);
-            this.CountryBox.Margin = new System.Windows.Forms.Padding(4);
-            this.CountryBox.Name = "CountryBox";
-            this.CountryBox.Padding = new System.Windows.Forms.Padding(4);
-            this.CountryBox.Size = new System.Drawing.Size(205, 478);
-            this.CountryBox.TabIndex = 0;
-            this.CountryBox.TabStop = false;
-            this.CountryBox.Text = "Endurance";
+            this.EnduranceBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.EnduranceBox.BackColor = System.Drawing.Color.Transparent;
+            this.EnduranceBox.Controls.Add(this.EnduranceListBox);
+            this.EnduranceBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.EnduranceBox.Location = new System.Drawing.Point(0, 362);
+            this.EnduranceBox.Margin = new System.Windows.Forms.Padding(4);
+            this.EnduranceBox.Name = "EnduranceBox";
+            this.EnduranceBox.Padding = new System.Windows.Forms.Padding(4);
+            this.EnduranceBox.Size = new System.Drawing.Size(205, 478);
+            this.EnduranceBox.TabIndex = 0;
+            this.EnduranceBox.TabStop = false;
+            this.EnduranceBox.Text = "Endurance";
             // 
-            // CountryListBox
+            // EnduranceListBox
             // 
-            this.CountryListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CountryListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CountryListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.CountryListBox.FormattingEnabled = true;
-            this.CountryListBox.ItemHeight = 16;
-            this.CountryListBox.Location = new System.Drawing.Point(2, 15);
-            this.CountryListBox.Margin = new System.Windows.Forms.Padding(4);
-            this.CountryListBox.Name = "CountryListBox";
-            this.CountryListBox.Size = new System.Drawing.Size(196, 448);
-            this.CountryListBox.TabIndex = 0;
+            this.EnduranceListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.EnduranceListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EnduranceListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.EnduranceListBox.FormattingEnabled = true;
+            this.EnduranceListBox.ItemHeight = 16;
+            this.EnduranceListBox.Location = new System.Drawing.Point(2, 15);
+            this.EnduranceListBox.Margin = new System.Windows.Forms.Padding(4);
+            this.EnduranceListBox.Name = "EnduranceListBox";
+            this.EnduranceListBox.Size = new System.Drawing.Size(196, 448);
+            this.EnduranceListBox.TabIndex = 0;
             // 
             // PressStart
             // 
@@ -418,7 +418,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Background.ResumeLayout(false);
-            this.CountryBox.ResumeLayout(false);
+            this.EnduranceBox.ResumeLayout(false);
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
             this.ResumeLayout(false);
@@ -429,8 +429,8 @@
         #endregion
 
         private System.Windows.Forms.Panel Background;
-        private System.Windows.Forms.GroupBox CountryBox;
-        private System.Windows.Forms.ListBox CountryListBox;
+        private System.Windows.Forms.GroupBox EnduranceBox;
+        private System.Windows.Forms.ListBox EnduranceListBox;
         private System.Windows.Forms.Button PauseButton;
         private System.Windows.Forms.Button StartButton;
         //private System.Windows.Forms.Panel Popup;
