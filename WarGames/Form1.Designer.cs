@@ -151,7 +151,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Background.ResumeLayout(false);
             this.CountryBox.ResumeLayout(false);
             this.ResumeLayout(false);
