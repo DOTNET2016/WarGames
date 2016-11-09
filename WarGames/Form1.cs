@@ -29,6 +29,7 @@ namespace WarGames
         private void StartButton_Click(object sender, EventArgs e)
         {
             //"Start" text turns to Stop while the game is running
+            PauseButton.Enabled = true;
         }
 
         private void ContinueButton_Click(object sender, EventArgs e)
