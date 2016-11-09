@@ -192,7 +192,6 @@
             this.StatsBox.Size = new System.Drawing.Size(1269, 172);
             this.StatsBox.TabIndex = 4;
             this.StatsBox.TabStop = false;
-            this.StatsBox.Text = "Stats";
             // 
             // UsaListBox
             // 
