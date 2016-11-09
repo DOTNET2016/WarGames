@@ -57,7 +57,6 @@
             // 
             // Popup
             // 
-            this.Popup.AutoSize = true;
             this.Popup.BackgroundImage = global::WarGames.Properties.Resources.ShallWePlay;
             this.Popup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Popup.Controls.Add(this.PressStart);
@@ -149,7 +148,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Background.ResumeLayout(false);
-            this.Background.PerformLayout();
             this.Popup.ResumeLayout(false);
             this.CountryBox.ResumeLayout(false);
             this.ResumeLayout(false);
