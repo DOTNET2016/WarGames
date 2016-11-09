@@ -9,15 +9,15 @@ namespace WarGames
     public class Countries
     {
         private string _countryName;
-        private int _durabillity;
-        public Countries(string CountryName, int Durabillity)
+        private int _durability;
+        public Countries(string CountryName, int Durability)
         {
             _countryName = CountryName;
-            _durabillity = Durabillity;
+            _durability = Durability;
         }
         public override string ToString()
         {
-            return _countryName + ": " + _durabillity;
+            return _countryName + ": " + _durability;
         }
     }
 }
