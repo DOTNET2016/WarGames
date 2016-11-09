@@ -47,7 +47,7 @@
             // PlayGameBtn
             // 
             this.PlayGameBtn.BackColor = System.Drawing.Color.Red;
-            this.PlayGameBtn.Font = new System.Drawing.Font("DS-Digital", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayGameBtn.Location = new System.Drawing.Point(361, 642);
             this.PlayGameBtn.Name = "PlayGameBtn";
             this.PlayGameBtn.Size = new System.Drawing.Size(237, 84);
@@ -59,7 +59,7 @@
             // CustomizeGameBtn
             // 
             this.CustomizeGameBtn.BackColor = System.Drawing.Color.Red;
-            this.CustomizeGameBtn.Font = new System.Drawing.Font("DS-Digital", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomizeGameBtn.Location = new System.Drawing.Point(1062, 642);
             this.CustomizeGameBtn.Name = "CustomizeGameBtn";
             this.CustomizeGameBtn.Size = new System.Drawing.Size(237, 84);
@@ -84,6 +84,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IntroMenu";
+            this.Load += new System.EventHandler(this.IntroMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

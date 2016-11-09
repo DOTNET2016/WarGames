@@ -30,36 +30,36 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Background = new System.Windows.Forms.Panel();
+            this.StatsBox = new System.Windows.Forms.GroupBox();
+            this.NorthKoreaLabel = new System.Windows.Forms.Label();
+            this.SwedenLabel = new System.Windows.Forms.Label();
+            this.JapanLabel = new System.Windows.Forms.Label();
+            this.GermanyLabel = new System.Windows.Forms.Label();
+            this.IndiaLabel = new System.Windows.Forms.Label();
+            this.FranceLabel = new System.Windows.Forms.Label();
+            this.ChinaLabel = new System.Windows.Forms.Label();
+            this.UKLabel = new System.Windows.Forms.Label();
+            this.RussiaLabel = new System.Windows.Forms.Label();
+            this.USALabel = new System.Windows.Forms.Label();
+            this.JapanListBox = new System.Windows.Forms.ListBox();
+            this.UKListBox = new System.Windows.Forms.ListBox();
+            this.IndiaListBox = new System.Windows.Forms.ListBox();
+            this.NorthKoreaListBox = new System.Windows.Forms.ListBox();
+            this.ChinaListBox = new System.Windows.Forms.ListBox();
+            this.SwedenListBox = new System.Windows.Forms.ListBox();
+            this.GermanyListBox = new System.Windows.Forms.ListBox();
+            this.FranceListBox = new System.Windows.Forms.ListBox();
+            this.RussiaListBox = new System.Windows.Forms.ListBox();
+            this.UsaListBox = new System.Windows.Forms.ListBox();
             this.ExitButton = new System.Windows.Forms.Button();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
-            this.StatsBox = new System.Windows.Forms.GroupBox();
-            this.UsaListBox = new System.Windows.Forms.ListBox();
-            this.RussiaListBox = new System.Windows.Forms.ListBox();
-            this.FranceListBox = new System.Windows.Forms.ListBox();
-            this.GermanyListBox = new System.Windows.Forms.ListBox();
-            this.SwedenListBox = new System.Windows.Forms.ListBox();
-            this.ChinaListBox = new System.Windows.Forms.ListBox();
-            this.NorthKoreaListBox = new System.Windows.Forms.ListBox();
-            this.IndiaListBox = new System.Windows.Forms.ListBox();
-            this.UKListBox = new System.Windows.Forms.ListBox();
-            this.JapanListBox = new System.Windows.Forms.ListBox();
-            this.USALabel = new System.Windows.Forms.Label();
-            this.RussiaLabel = new System.Windows.Forms.Label();
-            this.UKLabel = new System.Windows.Forms.Label();
-            this.ChinaLabel = new System.Windows.Forms.Label();
-            this.FranceLabel = new System.Windows.Forms.Label();
-            this.IndiaLabel = new System.Windows.Forms.Label();
-            this.GermanyLabel = new System.Windows.Forms.Label();
-            this.JapanLabel = new System.Windows.Forms.Label();
-            this.SwedenLabel = new System.Windows.Forms.Label();
-            this.NorthKoreaLabel = new System.Windows.Forms.Label();
             this.Background.SuspendLayout();
-            this.EnduranceBox.SuspendLayout();
             this.StatsBox.SuspendLayout();
+            this.EnduranceBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Background
@@ -78,6 +78,247 @@
             this.Background.Name = "Background";
             this.Background.Size = new System.Drawing.Size(1685, 838);
             this.Background.TabIndex = 1;
+            // 
+            // StatsBox
+            // 
+            this.StatsBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.StatsBox.Controls.Add(this.NorthKoreaLabel);
+            this.StatsBox.Controls.Add(this.SwedenLabel);
+            this.StatsBox.Controls.Add(this.JapanLabel);
+            this.StatsBox.Controls.Add(this.GermanyLabel);
+            this.StatsBox.Controls.Add(this.IndiaLabel);
+            this.StatsBox.Controls.Add(this.FranceLabel);
+            this.StatsBox.Controls.Add(this.ChinaLabel);
+            this.StatsBox.Controls.Add(this.UKLabel);
+            this.StatsBox.Controls.Add(this.RussiaLabel);
+            this.StatsBox.Controls.Add(this.USALabel);
+            this.StatsBox.Controls.Add(this.JapanListBox);
+            this.StatsBox.Controls.Add(this.UKListBox);
+            this.StatsBox.Controls.Add(this.IndiaListBox);
+            this.StatsBox.Controls.Add(this.NorthKoreaListBox);
+            this.StatsBox.Controls.Add(this.ChinaListBox);
+            this.StatsBox.Controls.Add(this.SwedenListBox);
+            this.StatsBox.Controls.Add(this.GermanyListBox);
+            this.StatsBox.Controls.Add(this.FranceListBox);
+            this.StatsBox.Controls.Add(this.RussiaListBox);
+            this.StatsBox.Controls.Add(this.UsaListBox);
+            this.StatsBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.StatsBox.Location = new System.Drawing.Point(413, 668);
+            this.StatsBox.Name = "StatsBox";
+            this.StatsBox.Size = new System.Drawing.Size(1269, 172);
+            this.StatsBox.TabIndex = 4;
+            this.StatsBox.TabStop = false;
+            // 
+            // NorthKoreaLabel
+            // 
+            this.NorthKoreaLabel.AutoSize = true;
+            this.NorthKoreaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NorthKoreaLabel.Location = new System.Drawing.Point(1151, 11);
+            this.NorthKoreaLabel.Name = "NorthKoreaLabel";
+            this.NorthKoreaLabel.Size = new System.Drawing.Size(111, 24);
+            this.NorthKoreaLabel.TabIndex = 19;
+            this.NorthKoreaLabel.Text = "North Korea";
+            // 
+            // SwedenLabel
+            // 
+            this.SwedenLabel.AutoSize = true;
+            this.SwedenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SwedenLabel.Location = new System.Drawing.Point(1037, 11);
+            this.SwedenLabel.Name = "SwedenLabel";
+            this.SwedenLabel.Size = new System.Drawing.Size(80, 24);
+            this.SwedenLabel.TabIndex = 18;
+            this.SwedenLabel.Text = "Sweden";
+            // 
+            // JapanLabel
+            // 
+            this.JapanLabel.AutoSize = true;
+            this.JapanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JapanLabel.Location = new System.Drawing.Point(919, 11);
+            this.JapanLabel.Name = "JapanLabel";
+            this.JapanLabel.Size = new System.Drawing.Size(61, 24);
+            this.JapanLabel.TabIndex = 17;
+            this.JapanLabel.Text = "Japan";
+            // 
+            // GermanyLabel
+            // 
+            this.GermanyLabel.AutoSize = true;
+            this.GermanyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GermanyLabel.Location = new System.Drawing.Point(783, 11);
+            this.GermanyLabel.Name = "GermanyLabel";
+            this.GermanyLabel.Size = new System.Drawing.Size(87, 24);
+            this.GermanyLabel.TabIndex = 16;
+            this.GermanyLabel.Text = "Germany";
+            // 
+            // IndiaLabel
+            // 
+            this.IndiaLabel.AutoSize = true;
+            this.IndiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IndiaLabel.Location = new System.Drawing.Point(673, 11);
+            this.IndiaLabel.Name = "IndiaLabel";
+            this.IndiaLabel.Size = new System.Drawing.Size(50, 24);
+            this.IndiaLabel.TabIndex = 15;
+            this.IndiaLabel.Text = "India";
+            // 
+            // FranceLabel
+            // 
+            this.FranceLabel.AutoSize = true;
+            this.FranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FranceLabel.Location = new System.Drawing.Point(539, 11);
+            this.FranceLabel.Name = "FranceLabel";
+            this.FranceLabel.Size = new System.Drawing.Size(70, 24);
+            this.FranceLabel.TabIndex = 14;
+            this.FranceLabel.Text = "France";
+            // 
+            // ChinaLabel
+            // 
+            this.ChinaLabel.AutoSize = true;
+            this.ChinaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChinaLabel.Location = new System.Drawing.Point(418, 11);
+            this.ChinaLabel.Name = "ChinaLabel";
+            this.ChinaLabel.Size = new System.Drawing.Size(59, 24);
+            this.ChinaLabel.TabIndex = 13;
+            this.ChinaLabel.Text = "China";
+            // 
+            // UKLabel
+            // 
+            this.UKLabel.AutoSize = true;
+            this.UKLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UKLabel.Location = new System.Drawing.Point(303, 11);
+            this.UKLabel.Name = "UKLabel";
+            this.UKLabel.Size = new System.Drawing.Size(35, 24);
+            this.UKLabel.TabIndex = 12;
+            this.UKLabel.Text = "UK";
+            // 
+            // RussiaLabel
+            // 
+            this.RussiaLabel.AutoSize = true;
+            this.RussiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RussiaLabel.Location = new System.Drawing.Point(162, 11);
+            this.RussiaLabel.Name = "RussiaLabel";
+            this.RussiaLabel.Size = new System.Drawing.Size(66, 24);
+            this.RussiaLabel.TabIndex = 11;
+            this.RussiaLabel.Text = "Russia";
+            // 
+            // USALabel
+            // 
+            this.USALabel.AutoSize = true;
+            this.USALabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.USALabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.USALabel.Location = new System.Drawing.Point(42, 11);
+            this.USALabel.Name = "USALabel";
+            this.USALabel.Size = new System.Drawing.Size(48, 24);
+            this.USALabel.TabIndex = 10;
+            this.USALabel.Text = "USA";
+            // 
+            // JapanListBox
+            // 
+            this.JapanListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.JapanListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.JapanListBox.FormattingEnabled = true;
+            this.JapanListBox.ItemHeight = 16;
+            this.JapanListBox.Location = new System.Drawing.Point(892, 38);
+            this.JapanListBox.Name = "JapanListBox";
+            this.JapanListBox.Size = new System.Drawing.Size(120, 132);
+            this.JapanListBox.TabIndex = 9;
+            // 
+            // UKListBox
+            // 
+            this.UKListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.UKListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.UKListBox.FormattingEnabled = true;
+            this.UKListBox.ItemHeight = 16;
+            this.UKListBox.Location = new System.Drawing.Point(262, 38);
+            this.UKListBox.Name = "UKListBox";
+            this.UKListBox.Size = new System.Drawing.Size(120, 132);
+            this.UKListBox.TabIndex = 8;
+            // 
+            // IndiaListBox
+            // 
+            this.IndiaListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.IndiaListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.IndiaListBox.FormattingEnabled = true;
+            this.IndiaListBox.ItemHeight = 16;
+            this.IndiaListBox.Location = new System.Drawing.Point(640, 38);
+            this.IndiaListBox.Name = "IndiaListBox";
+            this.IndiaListBox.Size = new System.Drawing.Size(120, 132);
+            this.IndiaListBox.TabIndex = 7;
+            // 
+            // NorthKoreaListBox
+            // 
+            this.NorthKoreaListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.NorthKoreaListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.NorthKoreaListBox.FormattingEnabled = true;
+            this.NorthKoreaListBox.ItemHeight = 16;
+            this.NorthKoreaListBox.Location = new System.Drawing.Point(1144, 38);
+            this.NorthKoreaListBox.Name = "NorthKoreaListBox";
+            this.NorthKoreaListBox.Size = new System.Drawing.Size(120, 132);
+            this.NorthKoreaListBox.TabIndex = 6;
+            // 
+            // ChinaListBox
+            // 
+            this.ChinaListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ChinaListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.ChinaListBox.FormattingEnabled = true;
+            this.ChinaListBox.ItemHeight = 16;
+            this.ChinaListBox.Location = new System.Drawing.Point(388, 38);
+            this.ChinaListBox.Name = "ChinaListBox";
+            this.ChinaListBox.Size = new System.Drawing.Size(120, 132);
+            this.ChinaListBox.TabIndex = 5;
+            // 
+            // SwedenListBox
+            // 
+            this.SwedenListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.SwedenListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.SwedenListBox.FormattingEnabled = true;
+            this.SwedenListBox.ItemHeight = 16;
+            this.SwedenListBox.Location = new System.Drawing.Point(1018, 38);
+            this.SwedenListBox.Name = "SwedenListBox";
+            this.SwedenListBox.Size = new System.Drawing.Size(120, 132);
+            this.SwedenListBox.TabIndex = 4;
+            // 
+            // GermanyListBox
+            // 
+            this.GermanyListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.GermanyListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.GermanyListBox.FormattingEnabled = true;
+            this.GermanyListBox.ItemHeight = 16;
+            this.GermanyListBox.Location = new System.Drawing.Point(766, 38);
+            this.GermanyListBox.Name = "GermanyListBox";
+            this.GermanyListBox.Size = new System.Drawing.Size(120, 132);
+            this.GermanyListBox.TabIndex = 3;
+            // 
+            // FranceListBox
+            // 
+            this.FranceListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.FranceListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.FranceListBox.FormattingEnabled = true;
+            this.FranceListBox.ItemHeight = 16;
+            this.FranceListBox.Location = new System.Drawing.Point(514, 38);
+            this.FranceListBox.Name = "FranceListBox";
+            this.FranceListBox.Size = new System.Drawing.Size(120, 132);
+            this.FranceListBox.TabIndex = 2;
+            // 
+            // RussiaListBox
+            // 
+            this.RussiaListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.RussiaListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.RussiaListBox.FormattingEnabled = true;
+            this.RussiaListBox.ItemHeight = 16;
+            this.RussiaListBox.Location = new System.Drawing.Point(136, 38);
+            this.RussiaListBox.Name = "RussiaListBox";
+            this.RussiaListBox.Size = new System.Drawing.Size(120, 132);
+            this.RussiaListBox.TabIndex = 1;
+            // 
+            // UsaListBox
+            // 
+            this.UsaListBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.UsaListBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.UsaListBox.FormattingEnabled = true;
+            this.UsaListBox.ItemHeight = 16;
+            this.UsaListBox.Location = new System.Drawing.Point(6, 38);
+            this.UsaListBox.Name = "UsaListBox";
+            this.UsaListBox.Size = new System.Drawing.Size(124, 132);
+            this.UsaListBox.TabIndex = 0;
             // 
             // ExitButton
             // 
@@ -163,247 +404,6 @@
             this.PressStart.UseVisualStyleBackColor = false;
             this.PressStart.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
-            // StatsBox
-            // 
-            this.StatsBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.StatsBox.Controls.Add(this.NorthKoreaLabel);
-            this.StatsBox.Controls.Add(this.SwedenLabel);
-            this.StatsBox.Controls.Add(this.JapanLabel);
-            this.StatsBox.Controls.Add(this.GermanyLabel);
-            this.StatsBox.Controls.Add(this.IndiaLabel);
-            this.StatsBox.Controls.Add(this.FranceLabel);
-            this.StatsBox.Controls.Add(this.ChinaLabel);
-            this.StatsBox.Controls.Add(this.UKLabel);
-            this.StatsBox.Controls.Add(this.RussiaLabel);
-            this.StatsBox.Controls.Add(this.USALabel);
-            this.StatsBox.Controls.Add(this.JapanListBox);
-            this.StatsBox.Controls.Add(this.UKListBox);
-            this.StatsBox.Controls.Add(this.IndiaListBox);
-            this.StatsBox.Controls.Add(this.NorthKoreaListBox);
-            this.StatsBox.Controls.Add(this.ChinaListBox);
-            this.StatsBox.Controls.Add(this.SwedenListBox);
-            this.StatsBox.Controls.Add(this.GermanyListBox);
-            this.StatsBox.Controls.Add(this.FranceListBox);
-            this.StatsBox.Controls.Add(this.RussiaListBox);
-            this.StatsBox.Controls.Add(this.UsaListBox);
-            this.StatsBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.StatsBox.Location = new System.Drawing.Point(413, 668);
-            this.StatsBox.Name = "StatsBox";
-            this.StatsBox.Size = new System.Drawing.Size(1269, 172);
-            this.StatsBox.TabIndex = 4;
-            this.StatsBox.TabStop = false;
-            // 
-            // UsaListBox
-            // 
-            this.UsaListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.UsaListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.UsaListBox.FormattingEnabled = true;
-            this.UsaListBox.ItemHeight = 16;
-            this.UsaListBox.Location = new System.Drawing.Point(6, 38);
-            this.UsaListBox.Name = "UsaListBox";
-            this.UsaListBox.Size = new System.Drawing.Size(124, 132);
-            this.UsaListBox.TabIndex = 0;
-            // 
-            // RussiaListBox
-            // 
-            this.RussiaListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.RussiaListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.RussiaListBox.FormattingEnabled = true;
-            this.RussiaListBox.ItemHeight = 16;
-            this.RussiaListBox.Location = new System.Drawing.Point(136, 38);
-            this.RussiaListBox.Name = "RussiaListBox";
-            this.RussiaListBox.Size = new System.Drawing.Size(120, 132);
-            this.RussiaListBox.TabIndex = 1;
-            // 
-            // FranceListBox
-            // 
-            this.FranceListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.FranceListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.FranceListBox.FormattingEnabled = true;
-            this.FranceListBox.ItemHeight = 16;
-            this.FranceListBox.Location = new System.Drawing.Point(514, 38);
-            this.FranceListBox.Name = "FranceListBox";
-            this.FranceListBox.Size = new System.Drawing.Size(120, 132);
-            this.FranceListBox.TabIndex = 2;
-            // 
-            // GermanyListBox
-            // 
-            this.GermanyListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.GermanyListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.GermanyListBox.FormattingEnabled = true;
-            this.GermanyListBox.ItemHeight = 16;
-            this.GermanyListBox.Location = new System.Drawing.Point(766, 38);
-            this.GermanyListBox.Name = "GermanyListBox";
-            this.GermanyListBox.Size = new System.Drawing.Size(120, 132);
-            this.GermanyListBox.TabIndex = 3;
-            // 
-            // SwedenListBox
-            // 
-            this.SwedenListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.SwedenListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.SwedenListBox.FormattingEnabled = true;
-            this.SwedenListBox.ItemHeight = 16;
-            this.SwedenListBox.Location = new System.Drawing.Point(1018, 38);
-            this.SwedenListBox.Name = "SwedenListBox";
-            this.SwedenListBox.Size = new System.Drawing.Size(120, 132);
-            this.SwedenListBox.TabIndex = 4;
-            // 
-            // ChinaListBox
-            // 
-            this.ChinaListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ChinaListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.ChinaListBox.FormattingEnabled = true;
-            this.ChinaListBox.ItemHeight = 16;
-            this.ChinaListBox.Location = new System.Drawing.Point(388, 38);
-            this.ChinaListBox.Name = "ChinaListBox";
-            this.ChinaListBox.Size = new System.Drawing.Size(120, 132);
-            this.ChinaListBox.TabIndex = 5;
-            // 
-            // NorthKoreaListBox
-            // 
-            this.NorthKoreaListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.NorthKoreaListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.NorthKoreaListBox.FormattingEnabled = true;
-            this.NorthKoreaListBox.ItemHeight = 16;
-            this.NorthKoreaListBox.Location = new System.Drawing.Point(1144, 38);
-            this.NorthKoreaListBox.Name = "NorthKoreaListBox";
-            this.NorthKoreaListBox.Size = new System.Drawing.Size(120, 132);
-            this.NorthKoreaListBox.TabIndex = 6;
-            // 
-            // IndiaListBox
-            // 
-            this.IndiaListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.IndiaListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.IndiaListBox.FormattingEnabled = true;
-            this.IndiaListBox.ItemHeight = 16;
-            this.IndiaListBox.Location = new System.Drawing.Point(640, 38);
-            this.IndiaListBox.Name = "IndiaListBox";
-            this.IndiaListBox.Size = new System.Drawing.Size(120, 132);
-            this.IndiaListBox.TabIndex = 7;
-            // 
-            // UKListBox
-            // 
-            this.UKListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.UKListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.UKListBox.FormattingEnabled = true;
-            this.UKListBox.ItemHeight = 16;
-            this.UKListBox.Location = new System.Drawing.Point(262, 38);
-            this.UKListBox.Name = "UKListBox";
-            this.UKListBox.Size = new System.Drawing.Size(120, 132);
-            this.UKListBox.TabIndex = 8;
-            // 
-            // JapanListBox
-            // 
-            this.JapanListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.JapanListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.JapanListBox.FormattingEnabled = true;
-            this.JapanListBox.ItemHeight = 16;
-            this.JapanListBox.Location = new System.Drawing.Point(892, 38);
-            this.JapanListBox.Name = "JapanListBox";
-            this.JapanListBox.Size = new System.Drawing.Size(120, 132);
-            this.JapanListBox.TabIndex = 9;
-            // 
-            // USALabel
-            // 
-            this.USALabel.AutoSize = true;
-            this.USALabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.USALabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.USALabel.Location = new System.Drawing.Point(42, 11);
-            this.USALabel.Name = "USALabel";
-            this.USALabel.Size = new System.Drawing.Size(48, 24);
-            this.USALabel.TabIndex = 10;
-            this.USALabel.Text = "USA";
-            // 
-            // RussiaLabel
-            // 
-            this.RussiaLabel.AutoSize = true;
-            this.RussiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RussiaLabel.Location = new System.Drawing.Point(162, 11);
-            this.RussiaLabel.Name = "RussiaLabel";
-            this.RussiaLabel.Size = new System.Drawing.Size(66, 24);
-            this.RussiaLabel.TabIndex = 11;
-            this.RussiaLabel.Text = "Russia";
-            // 
-            // UKLabel
-            // 
-            this.UKLabel.AutoSize = true;
-            this.UKLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UKLabel.Location = new System.Drawing.Point(303, 11);
-            this.UKLabel.Name = "UKLabel";
-            this.UKLabel.Size = new System.Drawing.Size(35, 24);
-            this.UKLabel.TabIndex = 12;
-            this.UKLabel.Text = "UK";
-            // 
-            // ChinaLabel
-            // 
-            this.ChinaLabel.AutoSize = true;
-            this.ChinaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChinaLabel.Location = new System.Drawing.Point(418, 11);
-            this.ChinaLabel.Name = "ChinaLabel";
-            this.ChinaLabel.Size = new System.Drawing.Size(59, 24);
-            this.ChinaLabel.TabIndex = 13;
-            this.ChinaLabel.Text = "China";
-            // 
-            // FranceLabel
-            // 
-            this.FranceLabel.AutoSize = true;
-            this.FranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FranceLabel.Location = new System.Drawing.Point(539, 11);
-            this.FranceLabel.Name = "FranceLabel";
-            this.FranceLabel.Size = new System.Drawing.Size(70, 24);
-            this.FranceLabel.TabIndex = 14;
-            this.FranceLabel.Text = "France";
-            // 
-            // IndiaLabel
-            // 
-            this.IndiaLabel.AutoSize = true;
-            this.IndiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IndiaLabel.Location = new System.Drawing.Point(673, 11);
-            this.IndiaLabel.Name = "IndiaLabel";
-            this.IndiaLabel.Size = new System.Drawing.Size(50, 24);
-            this.IndiaLabel.TabIndex = 15;
-            this.IndiaLabel.Text = "India";
-            // 
-            // GermanyLabel
-            // 
-            this.GermanyLabel.AutoSize = true;
-            this.GermanyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GermanyLabel.Location = new System.Drawing.Point(783, 11);
-            this.GermanyLabel.Name = "GermanyLabel";
-            this.GermanyLabel.Size = new System.Drawing.Size(87, 24);
-            this.GermanyLabel.TabIndex = 16;
-            this.GermanyLabel.Text = "Germany";
-            // 
-            // JapanLabel
-            // 
-            this.JapanLabel.AutoSize = true;
-            this.JapanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JapanLabel.Location = new System.Drawing.Point(919, 11);
-            this.JapanLabel.Name = "JapanLabel";
-            this.JapanLabel.Size = new System.Drawing.Size(61, 24);
-            this.JapanLabel.TabIndex = 17;
-            this.JapanLabel.Text = "Japan";
-            // 
-            // SwedenLabel
-            // 
-            this.SwedenLabel.AutoSize = true;
-            this.SwedenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwedenLabel.Location = new System.Drawing.Point(1037, 11);
-            this.SwedenLabel.Name = "SwedenLabel";
-            this.SwedenLabel.Size = new System.Drawing.Size(80, 24);
-            this.SwedenLabel.TabIndex = 18;
-            this.SwedenLabel.Text = "Sweden";
-            // 
-            // NorthKoreaLabel
-            // 
-            this.NorthKoreaLabel.AutoSize = true;
-            this.NorthKoreaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NorthKoreaLabel.Location = new System.Drawing.Point(1151, 11);
-            this.NorthKoreaLabel.Name = "NorthKoreaLabel";
-            this.NorthKoreaLabel.Size = new System.Drawing.Size(111, 24);
-            this.NorthKoreaLabel.TabIndex = 19;
-            this.NorthKoreaLabel.Text = "North Korea";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -417,9 +417,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Background.ResumeLayout(false);
-            this.EnduranceBox.ResumeLayout(false);
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
+            this.EnduranceBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

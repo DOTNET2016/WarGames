@@ -16,7 +16,7 @@ namespace WarGames
     {
         WOPR wop = new WOPR();
         List<Countries> countriesAtWar = new List<Countries>();
-        Thread splash = new Thread(new ThreadStart(SplashScreen));
+        //Thread splash = new Thread(new ThreadStart(SplashScreen));
 
         public Form1()
         {
