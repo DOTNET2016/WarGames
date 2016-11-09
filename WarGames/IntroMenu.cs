@@ -33,7 +33,7 @@ namespace WarGames
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
-            myFont = new Font(fonts.Families[0], 20.0F);
+            myFont = new Font(fonts.Families[0], 23.0F);
         }
 
         private void IntroMenu_Load(object sender, EventArgs e)
