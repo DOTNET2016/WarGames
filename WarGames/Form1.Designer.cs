@@ -50,8 +50,9 @@
             this.Background.Controls.Add(this.CountryBox);
             this.Background.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Background.Location = new System.Drawing.Point(0, 0);
+            this.Background.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Background.Name = "Background";
-            this.Background.Size = new System.Drawing.Size(1264, 681);
+            this.Background.Size = new System.Drawing.Size(1685, 838);
             this.Background.TabIndex = 1;
             // 
             // Popup
@@ -63,8 +64,9 @@
             this.Popup.Controls.Add(this.PressStart);
             this.Popup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Popup.Location = new System.Drawing.Point(0, 0);
+            this.Popup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Popup.Name = "Popup";
-            this.Popup.Size = new System.Drawing.Size(1264, 681);
+            this.Popup.Size = new System.Drawing.Size(1685, 838);
             this.Popup.TabIndex = 3;
             // 
             // PressStart
@@ -75,9 +77,10 @@
             this.PressStart.FlatAppearance.BorderSize = 0;
             this.PressStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PressStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PressStart.Location = new System.Drawing.Point(503, 436);
+            this.PressStart.Location = new System.Drawing.Point(671, 537);
+            this.PressStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PressStart.Name = "PressStart";
-            this.PressStart.Size = new System.Drawing.Size(221, 111);
+            this.PressStart.Size = new System.Drawing.Size(295, 137);
             this.PressStart.TabIndex = 0;
             this.PressStart.Text = "Press to Continue";
             this.PressStart.UseVisualStyleBackColor = false;
@@ -88,9 +91,10 @@
             this.PauseButton.BackColor = System.Drawing.SystemColors.Control;
             this.PauseButton.Enabled = false;
             this.PauseButton.ForeColor = System.Drawing.Color.Black;
-            this.PauseButton.Location = new System.Drawing.Point(161, 619);
+            this.PauseButton.Location = new System.Drawing.Point(215, 762);
+            this.PauseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PauseButton.Name = "PauseButton";
-            this.PauseButton.Size = new System.Drawing.Size(59, 23);
+            this.PauseButton.Size = new System.Drawing.Size(79, 28);
             this.PauseButton.TabIndex = 2;
             this.PauseButton.Text = "Pause";
             this.PauseButton.UseVisualStyleBackColor = false;
@@ -98,9 +102,10 @@
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(161, 648);
+            this.StartButton.Location = new System.Drawing.Point(215, 798);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(60, 23);
+            this.StartButton.Size = new System.Drawing.Size(80, 28);
             this.StartButton.TabIndex = 1;
             this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = true;
@@ -111,9 +116,11 @@
             this.CountryBox.BackColor = System.Drawing.Color.Transparent;
             this.CountryBox.Controls.Add(this.CountryListBox);
             this.CountryBox.ForeColor = System.Drawing.Color.White;
-            this.CountryBox.Location = new System.Drawing.Point(-1, 294);
+            this.CountryBox.Location = new System.Drawing.Point(-1, 362);
+            this.CountryBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CountryBox.Name = "CountryBox";
-            this.CountryBox.Size = new System.Drawing.Size(154, 388);
+            this.CountryBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CountryBox.Size = new System.Drawing.Size(205, 478);
             this.CountryBox.TabIndex = 0;
             this.CountryBox.TabStop = false;
             this.CountryBox.Text = "Countries";
@@ -123,17 +130,21 @@
             this.CountryListBox.BackColor = System.Drawing.Color.Black;
             this.CountryListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CountryListBox.FormattingEnabled = true;
-            this.CountryListBox.Location = new System.Drawing.Point(1, 13);
+            this.CountryListBox.ItemHeight = 16;
+            this.CountryListBox.Location = new System.Drawing.Point(1, 16);
+            this.CountryListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CountryListBox.Name = "CountryListBox";
-            this.CountryListBox.Size = new System.Drawing.Size(147, 364);
+            this.CountryListBox.Size = new System.Drawing.Size(196, 448);
             this.CountryListBox.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.Background);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Background.ResumeLayout(false);
