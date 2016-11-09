@@ -31,9 +31,14 @@ namespace WarGames
             //"Start" text turns to Stop while the game is running
         }
 
-        private void PressStart_Click(object sender, EventArgs e)
+        private void ContinueButton_Click(object sender, EventArgs e)
         {
-            Popup.Hide();
+            //Popup.Hide();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
