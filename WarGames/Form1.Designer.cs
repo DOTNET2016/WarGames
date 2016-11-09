@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Background = new System.Windows.Forms.Panel();
-            this.Popup = new System.Windows.Forms.Panel();
+            //this.Popup = new System.Windows.Forms.Panel();
             this.PressStart = new System.Windows.Forms.Button();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.CountryBox = new System.Windows.Forms.GroupBox();
             this.CountryListBox = new System.Windows.Forms.ListBox();
             this.Background.SuspendLayout();
-            this.Popup.SuspendLayout();
+            //this.Popup.SuspendLayout();
             this.CountryBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Background
             // 
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map;
-            this.Background.Controls.Add(this.Popup);
+            //this.Background.Controls.Add(this.Popup);
             this.Background.Controls.Add(this.PauseButton);
             this.Background.Controls.Add(this.StartButton);
             this.Background.Controls.Add(this.CountryBox);
@@ -57,15 +57,15 @@
             // 
             // Popup
             // 
-            this.Popup.BackgroundImage = global::WarGames.Properties.Resources.ShallWePlay;
-            this.Popup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Popup.Controls.Add(this.PressStart);
-            this.Popup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Popup.Location = new System.Drawing.Point(0, 0);
-            this.Popup.Margin = new System.Windows.Forms.Padding(4);
-            this.Popup.Name = "Popup";
-            this.Popup.Size = new System.Drawing.Size(1685, 838);
-            this.Popup.TabIndex = 3;
+            //this.Popup.BackgroundImage = global::WarGames.Properties.Resources.ShallWePlay;
+            //this.Popup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            //this.Popup.Controls.Add(this.PressStart);
+            //this.Popup.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.Popup.Location = new System.Drawing.Point(0, 0);
+            //this.Popup.Margin = new System.Windows.Forms.Padding(4);
+            //this.Popup.Name = "Popup";
+            //this.Popup.Size = new System.Drawing.Size(1685, 838);
+            //this.Popup.TabIndex = 3;
             // 
             // PressStart
             // 
@@ -148,7 +148,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Background.ResumeLayout(false);
-            this.Popup.ResumeLayout(false);
+            //this.Popup.ResumeLayout(false);
             this.CountryBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -161,7 +161,7 @@
         private System.Windows.Forms.ListBox CountryListBox;
         private System.Windows.Forms.Button PauseButton;
         private System.Windows.Forms.Button StartButton;
-        private System.Windows.Forms.Panel Popup;
+        //private System.Windows.Forms.Panel Popup;
         private System.Windows.Forms.Button PressStart;
     }
 }
