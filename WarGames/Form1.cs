@@ -16,17 +16,23 @@ namespace WarGames
     {
         WOPR wop = new WOPR();
         List<Countries> countriesAtWar = new List<Countries>();
-        Thread splash = new Thread(new ThreadStart(SplashScreen));
 
         public Form1()
         {
+            Application.Run(new IntroMenu());
+
             InitializeComponent();
             EnduranceListBox.DataSource = countriesAtWar;
         }
 
-        public void SplashScreen()
+        public bool SplashScreen()
         {
-            Application.Run(new IntroMenu());
+            IntroMenu splash = new IntroMenu();
+            if (splash.ShowDialog() == DialogResult.OK)
+            {
+                return true;
+            }
+            return false;
         }
 
         private void PauseButton_Click(object sender, EventArgs e)

@@ -19,12 +19,12 @@ namespace WarGames
 
         private void PlayGameBtn_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
