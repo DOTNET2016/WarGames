@@ -20,7 +20,7 @@ namespace WarGames
         public Form1()
         {
             Application.Run(new IntroMenu());
-
+          
             InitializeComponent();
             EnduranceListBox.DataSource = countriesAtWar;
         }

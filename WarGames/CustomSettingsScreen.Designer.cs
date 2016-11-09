@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomSettingsScreen));
             this.CountriesGroupBox = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -39,46 +40,63 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
+            this.label40 = new System.Windows.Forms.Label();
             this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown29 = new System.Windows.Forms.NumericUpDown();
+            this.label39 = new System.Windows.Forms.Label();
             this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
             this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
+            this.label38 = new System.Windows.Forms.Label();
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
+            this.label37 = new System.Windows.Forms.Label();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.label27 = new System.Windows.Forms.Label();
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
+            this.label36 = new System.Windows.Forms.Label();
             this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
+            this.label35 = new System.Windows.Forms.Label();
             this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
+            this.label34 = new System.Windows.Forms.Label();
             this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
+            this.label33 = new System.Windows.Forms.Label();
             this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
@@ -86,70 +104,56 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.USAgroupBox = new System.Windows.Forms.GroupBox();
+            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown29 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
+            this.label41 = new System.Windows.Forms.Label();
+            this.BigRedButton = new System.Windows.Forms.Button();
+            this.CountdownClock = new System.Windows.Forms.Label();
             this.CountriesGroupBox.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.USAgroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
             this.SuspendLayout();
             // 
             // CountriesGroupBox
@@ -293,6 +297,24 @@
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
             // 
+            // numericUpDown30
+            // 
+            this.numericUpDown30.Location = new System.Drawing.Point(98, 154);
+            this.numericUpDown30.Name = "numericUpDown30";
+            this.numericUpDown30.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown30.TabIndex = 9;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(6, 154);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(50, 24);
+            this.label40.TabIndex = 8;
+            this.label40.Text = "Rep:";
+            // 
             // numericUpDown20
             // 
             this.numericUpDown20.Location = new System.Drawing.Point(98, 98);
@@ -357,6 +379,24 @@
             this.groupBox8.Size = new System.Drawing.Size(165, 267);
             this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
+            // 
+            // numericUpDown29
+            // 
+            this.numericUpDown29.Location = new System.Drawing.Point(98, 154);
+            this.numericUpDown29.Name = "numericUpDown29";
+            this.numericUpDown29.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown29.TabIndex = 9;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(6, 154);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(50, 24);
+            this.label39.TabIndex = 8;
+            this.label39.Text = "Rep:";
             // 
             // numericUpDown19
             // 
@@ -423,6 +463,24 @@
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
+            // numericUpDown28
+            // 
+            this.numericUpDown28.Location = new System.Drawing.Point(97, 154);
+            this.numericUpDown28.Name = "numericUpDown28";
+            this.numericUpDown28.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown28.TabIndex = 9;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(6, 154);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(50, 24);
+            this.label38.TabIndex = 8;
+            this.label38.Text = "Rep:";
+            // 
             // numericUpDown18
             // 
             this.numericUpDown18.Location = new System.Drawing.Point(97, 98);
@@ -487,6 +545,24 @@
             this.groupBox6.Size = new System.Drawing.Size(157, 267);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
+            // 
+            // numericUpDown27
+            // 
+            this.numericUpDown27.Location = new System.Drawing.Point(98, 154);
+            this.numericUpDown27.Name = "numericUpDown27";
+            this.numericUpDown27.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown27.TabIndex = 9;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(6, 154);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(50, 24);
+            this.label37.TabIndex = 8;
+            this.label37.Text = "Rep:";
             // 
             // numericUpDown17
             // 
@@ -553,6 +629,24 @@
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             // 
+            // numericUpDown26
+            // 
+            this.numericUpDown26.Location = new System.Drawing.Point(94, 154);
+            this.numericUpDown26.Name = "numericUpDown26";
+            this.numericUpDown26.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown26.TabIndex = 9;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(6, 154);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(50, 24);
+            this.label36.TabIndex = 8;
+            this.label36.Text = "Rep:";
+            // 
             // numericUpDown16
             // 
             this.numericUpDown16.Location = new System.Drawing.Point(94, 96);
@@ -617,6 +711,24 @@
             this.groupBox4.Size = new System.Drawing.Size(158, 267);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
+            // 
+            // numericUpDown25
+            // 
+            this.numericUpDown25.Location = new System.Drawing.Point(97, 154);
+            this.numericUpDown25.Name = "numericUpDown25";
+            this.numericUpDown25.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown25.TabIndex = 9;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(6, 154);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(50, 24);
+            this.label35.TabIndex = 8;
+            this.label35.Text = "Rep:";
             // 
             // numericUpDown15
             // 
@@ -683,6 +795,24 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
+            // numericUpDown24
+            // 
+            this.numericUpDown24.Location = new System.Drawing.Point(97, 154);
+            this.numericUpDown24.Name = "numericUpDown24";
+            this.numericUpDown24.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown24.TabIndex = 8;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(6, 154);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(50, 24);
+            this.label34.TabIndex = 7;
+            this.label34.Text = "Rep:";
+            // 
             // numericUpDown14
             // 
             this.numericUpDown14.Location = new System.Drawing.Point(97, 94);
@@ -748,6 +878,24 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
+            // numericUpDown23
+            // 
+            this.numericUpDown23.Location = new System.Drawing.Point(97, 154);
+            this.numericUpDown23.Name = "numericUpDown23";
+            this.numericUpDown23.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown23.TabIndex = 7;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(6, 154);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(50, 24);
+            this.label33.TabIndex = 6;
+            this.label33.Text = "Rep:";
+            // 
             // numericUpDown13
             // 
             this.numericUpDown13.Location = new System.Drawing.Point(97, 94);
@@ -812,6 +960,13 @@
             this.groupBox1.Size = new System.Drawing.Size(157, 267);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            // 
+            // numericUpDown22
+            // 
+            this.numericUpDown22.Location = new System.Drawing.Point(97, 154);
+            this.numericUpDown22.Name = "numericUpDown22";
+            this.numericUpDown22.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown22.TabIndex = 6;
             // 
             // label32
             // 
@@ -900,6 +1055,13 @@
             this.USAgroupBox.TabIndex = 1;
             this.USAgroupBox.TabStop = false;
             // 
+            // numericUpDown21
+            // 
+            this.numericUpDown21.Location = new System.Drawing.Point(98, 154);
+            this.numericUpDown21.Name = "numericUpDown21";
+            this.numericUpDown21.Size = new System.Drawing.Size(53, 22);
+            this.numericUpDown21.TabIndex = 4;
+            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -962,163 +1124,41 @@
             0,
             0});
             // 
-            // label33
+            // label41
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(6, 154);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(50, 24);
-            this.label33.TabIndex = 6;
-            this.label33.Text = "Rep:";
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(350, 353);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(989, 125);
+            this.label41.TabIndex = 1;
+            this.label41.Text = resources.GetString("label41.Text");
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label34
+            // BigRedButton
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(6, 154);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(50, 24);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "Rep:";
+            this.BigRedButton.BackColor = System.Drawing.Color.Red;
+            this.BigRedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BigRedButton.ForeColor = System.Drawing.Color.Black;
+            this.BigRedButton.Location = new System.Drawing.Point(705, 491);
+            this.BigRedButton.Name = "BigRedButton";
+            this.BigRedButton.Size = new System.Drawing.Size(263, 49);
+            this.BigRedButton.TabIndex = 2;
+            this.BigRedButton.Text = "BIG RED BUTTON";
+            this.BigRedButton.UseVisualStyleBackColor = false;
+            this.BigRedButton.Click += new System.EventHandler(this.BigRedButton_Click);
             // 
-            // label35
+            // CountdownClock
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(6, 154);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(50, 24);
-            this.label35.TabIndex = 8;
-            this.label35.Text = "Rep:";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(6, 154);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(50, 24);
-            this.label36.TabIndex = 8;
-            this.label36.Text = "Rep:";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(6, 154);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(50, 24);
-            this.label37.TabIndex = 8;
-            this.label37.Text = "Rep:";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(6, 154);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(50, 24);
-            this.label38.TabIndex = 8;
-            this.label38.Text = "Rep:";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(6, 154);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(50, 24);
-            this.label39.TabIndex = 8;
-            this.label39.Text = "Rep:";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(6, 154);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(50, 24);
-            this.label40.TabIndex = 8;
-            this.label40.Text = "Rep:";
-            // 
-            // numericUpDown21
-            // 
-            this.numericUpDown21.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown21.Name = "numericUpDown21";
-            this.numericUpDown21.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown21.TabIndex = 4;
-            // 
-            // numericUpDown22
-            // 
-            this.numericUpDown22.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown22.Name = "numericUpDown22";
-            this.numericUpDown22.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown22.TabIndex = 6;
-            // 
-            // numericUpDown23
-            // 
-            this.numericUpDown23.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown23.Name = "numericUpDown23";
-            this.numericUpDown23.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown23.TabIndex = 7;
-            // 
-            // numericUpDown24
-            // 
-            this.numericUpDown24.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown24.Name = "numericUpDown24";
-            this.numericUpDown24.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown24.TabIndex = 8;
-            // 
-            // numericUpDown25
-            // 
-            this.numericUpDown25.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown25.Name = "numericUpDown25";
-            this.numericUpDown25.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown25.TabIndex = 9;
-            // 
-            // numericUpDown26
-            // 
-            this.numericUpDown26.Location = new System.Drawing.Point(94, 154);
-            this.numericUpDown26.Name = "numericUpDown26";
-            this.numericUpDown26.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown26.TabIndex = 9;
-            // 
-            // numericUpDown27
-            // 
-            this.numericUpDown27.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown27.Name = "numericUpDown27";
-            this.numericUpDown27.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown27.TabIndex = 9;
-            // 
-            // numericUpDown28
-            // 
-            this.numericUpDown28.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown28.Name = "numericUpDown28";
-            this.numericUpDown28.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown28.TabIndex = 9;
-            // 
-            // numericUpDown29
-            // 
-            this.numericUpDown29.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown29.Name = "numericUpDown29";
-            this.numericUpDown29.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown29.TabIndex = 9;
-            // 
-            // numericUpDown30
-            // 
-            this.numericUpDown30.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown30.Name = "numericUpDown30";
-            this.numericUpDown30.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown30.TabIndex = 9;
+            this.CountdownClock.AutoSize = true;
+            this.CountdownClock.Font = new System.Drawing.Font("DS-Digital", 124.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CountdownClock.ForeColor = System.Drawing.Color.White;
+            this.CountdownClock.Location = new System.Drawing.Point(559, 585);
+            this.CountdownClock.Name = "CountdownClock";
+            this.CountdownClock.Size = new System.Drawing.Size(557, 207);
+            this.CountdownClock.TabIndex = 3;
+            this.CountdownClock.Text = "00:00";
             // 
             // CustomSettingsScreen
             // 
@@ -1126,6 +1166,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.Controls.Add(this.CountdownClock);
+            this.Controls.Add(this.BigRedButton);
+            this.Controls.Add(this.label41);
             this.Controls.Add(this.CountriesGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CustomSettingsScreen";
@@ -1135,55 +1178,56 @@
             this.CountriesGroupBox.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.USAgroupBox.ResumeLayout(false);
             this.USAgroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1270,5 +1314,8 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.NumericUpDown numericUpDown22;
         private System.Windows.Forms.NumericUpDown numericUpDown21;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Button BigRedButton;
+        private System.Windows.Forms.Label CountdownClock;
     }
 }

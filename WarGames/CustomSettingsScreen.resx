@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label41.Text" xml:space="preserve">
+    <value>“In our new age of terrifying, lethal gadgets, which supplanted so swiftly the old one, the first great aggressive war,
+ if it should come, will be launched by suicidal little madmen pressing an electronic button.
+ Such a war will not last long and none will ever follow it. 
+
+ There will be no conquerors and no conquests, but only the charred bones of the dead on an uninhabited planet.”
+</value>
+  </data>
 </root>
