@@ -12,9 +12,28 @@ namespace WarGames
 {
     public partial class Form1 : Form
     {
+        WOPR wop = new WOPR();
+        List<Countries> countriesAtWar = new List<Countries>();
+
         public Form1()
         {
             InitializeComponent();
+            CountryListBox.DataSource = countriesAtWar;
+        }
+
+        private void PauseButton_Click(object sender, EventArgs e)
+        {
+            //only visible while the game is running, does not effect the start/stop button
+        }
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            //"Start" text turns to Stop while the game is running
+        }
+
+        private void PressStart_Click(object sender, EventArgs e)
+        {
+            Popup.Hide();
         }
     }
 }
