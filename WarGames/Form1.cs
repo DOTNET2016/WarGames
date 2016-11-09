@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Drawing.Text;
 
 namespace WarGames
 {
@@ -14,11 +16,17 @@ namespace WarGames
     {
         WOPR wop = new WOPR();
         List<Countries> countriesAtWar = new List<Countries>();
+        Thread splash = new Thread(new ThreadStart(SplashScreen));
 
         public Form1()
         {
             InitializeComponent();
             EnduranceListBox.DataSource = countriesAtWar;
+        }
+
+        public void SplashScreen()
+        {
+            Application.Run(new IntroMenu());
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
