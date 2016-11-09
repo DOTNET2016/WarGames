@@ -110,6 +110,36 @@
   <ItemGroup>
     <None Include="Resources\button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usa flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\russia flag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uk flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\China flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france flag.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\india-flag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\germany flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\japan flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweden-flag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\north korea flag.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
