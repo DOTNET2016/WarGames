@@ -14,7 +14,29 @@ namespace WarGames
     {
         WOPR warRoom = new WOPR();
 
-        public int USADurability { get; set; }
+
+        Countries USA = new Countries("USA", 20, 5, 4);
+        Countries Russia = new Countries("Russia", 20, 5, 4);
+        Countries UK = new Countries("UK", 10, 3, 7);
+        Countries China = new Countries("China", 20, 5, 5);
+        Countries France = new Countries("France", 15, 3, 7);
+        Countries India = new Countries("India", 17, 4, 7);
+        Countries Germany = new Countries("Germany", 15, 4, 8);
+        Countries Japan = new Countries("Japan", 10, 3, 7);
+        Countries Sweden = new Countries("Sweden", 13, 2, 10);
+        Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
+
+        public int USADurability
+        {
+            get
+            {
+                return USA.Durability;
+            }
+            set
+            {
+
+            }
+        }
         public int USAStrength { get; set; }
         public int USAREP { get; set; }
 

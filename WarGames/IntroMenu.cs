@@ -52,14 +52,14 @@ namespace WarGames
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
             CustomSettingsScreen.ShowCustomMenu();
-            CustomSettingsScreen screen1 = new CustomSettingsScreen();
-            var result = screen1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
+            //CustomSettingsScreen screen1 = new CustomSettingsScreen();
+            //var result = screen1.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
 
               
 
-            }
+            //}
             Close();     
         }
         

@@ -51,7 +51,7 @@ namespace WarGames
         {
             //"Start" text turns to Stop while the game is running
             PauseButton.Enabled = true;
-            //UpdateUSAGroupBox();
+            UpdateUSAGroupBox();
         }
 
         private void ContinueButton_Click(object sender, EventArgs e)
@@ -67,7 +67,7 @@ namespace WarGames
         private void UpdateUSAGroupBox()
         {
             //USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString("");           
-            USALabel.Text = css.USAStrength.ToString();
+            USADurLabel.Text = ("Durability: ") + css.USADurability.ToString();
             USADurLabel.Refresh();
 
         }
