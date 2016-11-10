@@ -349,6 +349,7 @@
             0,
             0,
             0});
+            this.NorthKorea_Rep.ValueChanged += new System.EventHandler(this.NorthKorea_Rep_ValueChanged);
             // 
             // label40
             // 
@@ -382,6 +383,7 @@
             0,
             0,
             0});
+            this.NorthKorea_Strength.ValueChanged += new System.EventHandler(this.NorthKorea_Strength_ValueChanged);
             // 
             // label30
             // 
@@ -415,6 +417,7 @@
             0,
             0,
             0});
+            this.NorthKorea_Durability.ValueChanged += new System.EventHandler(this.NorthKorea_Durability_ValueChanged);
             // 
             // label11
             // 
@@ -473,6 +476,7 @@
             0,
             0,
             0});
+            this.Sweden_Rep.ValueChanged += new System.EventHandler(this.Sweden_Rep_ValueChanged);
             // 
             // label39
             // 
@@ -506,6 +510,7 @@
             0,
             0,
             0});
+            this.Sweden_Strength.ValueChanged += new System.EventHandler(this.Sweden_Strength_ValueChanged);
             // 
             // label29
             // 
@@ -539,6 +544,7 @@
             0,
             0,
             0});
+            this.Sweden_Durability.ValueChanged += new System.EventHandler(this.Sweden_Durability_ValueChanged);
             // 
             // label10
             // 
@@ -597,6 +603,7 @@
             0,
             0,
             0});
+            this.Japan_Rep.ValueChanged += new System.EventHandler(this.Japan_Rep_ValueChanged);
             // 
             // label38
             // 
@@ -630,6 +637,7 @@
             0,
             0,
             0});
+            this.Japan_Strength.ValueChanged += new System.EventHandler(this.Japan_Strength_ValueChanged);
             // 
             // label28
             // 
@@ -663,6 +671,7 @@
             0,
             0,
             0});
+            this.Japan_Durability.ValueChanged += new System.EventHandler(this.Japan_Durability_ValueChanged);
             // 
             // label9
             // 
@@ -721,6 +730,7 @@
             0,
             0,
             0});
+            this.Germany_Rep.ValueChanged += new System.EventHandler(this.Germany_Rep_ValueChanged);
             // 
             // label37
             // 
@@ -754,6 +764,7 @@
             0,
             0,
             0});
+            this.Germany_Strength.ValueChanged += new System.EventHandler(this.Germany_Strength_ValueChanged);
             // 
             // label27
             // 
@@ -787,6 +798,7 @@
             0,
             0,
             0});
+            this.Germany_Durability.ValueChanged += new System.EventHandler(this.Germany_Durability_ValueChanged);
             // 
             // label8
             // 
@@ -845,6 +857,7 @@
             0,
             0,
             0});
+            this.India_Rep.ValueChanged += new System.EventHandler(this.India_Rep_ValueChanged);
             // 
             // label36
             // 
@@ -878,6 +891,7 @@
             0,
             0,
             0});
+            this.India_Strength.ValueChanged += new System.EventHandler(this.India_Strength_ValueChanged);
             // 
             // label26
             // 
@@ -911,6 +925,7 @@
             0,
             0,
             0});
+            this.India_Durability.ValueChanged += new System.EventHandler(this.India_Durability_ValueChanged);
             // 
             // label7
             // 
@@ -969,6 +984,7 @@
             0,
             0,
             0});
+            this.France_Rep.ValueChanged += new System.EventHandler(this.France_Rep_ValueChanged);
             // 
             // label35
             // 
@@ -1002,6 +1018,7 @@
             0,
             0,
             0});
+            this.France_Strength.ValueChanged += new System.EventHandler(this.France_Strength_ValueChanged);
             // 
             // label25
             // 
@@ -1035,6 +1052,7 @@
             0,
             0,
             0});
+            this.France_Durablity.ValueChanged += new System.EventHandler(this.France_Durablity_ValueChanged);
             // 
             // label6
             // 
@@ -1093,6 +1111,7 @@
             0,
             0,
             0});
+            this.China_Rep.ValueChanged += new System.EventHandler(this.China_Rep_ValueChanged);
             // 
             // label34
             // 
@@ -1126,6 +1145,7 @@
             0,
             0,
             0});
+            this.China_Strength.ValueChanged += new System.EventHandler(this.China_Strength_ValueChanged);
             // 
             // label24
             // 
@@ -1159,6 +1179,7 @@
             0,
             0,
             0});
+            this.China_Durability.ValueChanged += new System.EventHandler(this.China_Durability_ValueChanged);
             // 
             // label5
             // 
@@ -1217,6 +1238,7 @@
             0,
             0,
             0});
+            this.UK_Rep.ValueChanged += new System.EventHandler(this.UK_Rep_ValueChanged);
             // 
             // label33
             // 
@@ -1250,6 +1272,7 @@
             0,
             0,
             0});
+            this.UK_Strength.ValueChanged += new System.EventHandler(this.UK_Strength_ValueChanged);
             // 
             // label23
             // 
@@ -1283,6 +1306,7 @@
             0,
             0,
             0});
+            this.UK_Durability.ValueChanged += new System.EventHandler(this.UK_Durability_ValueChanged);
             // 
             // label4
             // 
@@ -1341,6 +1365,7 @@
             0,
             0,
             0});
+            this.Russia_Rep.ValueChanged += new System.EventHandler(this.Russia_Rep_ValueChanged);
             // 
             // label32
             // 
@@ -1374,6 +1399,7 @@
             0,
             0,
             0});
+            this.Russia_Strength.ValueChanged += new System.EventHandler(this.Russia_Strength_ValueChanged);
             // 
             // label22
             // 
@@ -1407,6 +1433,7 @@
             0,
             0,
             0});
+            this.Russia_Durability.ValueChanged += new System.EventHandler(this.Russia_Durability_ValueChanged);
             // 
             // label3
             // 
@@ -1476,6 +1503,7 @@
             0,
             0,
             0});
+            this.USA_Rep.ValueChanged += new System.EventHandler(this.USA_Rep_ValueChanged);
             // 
             // label31
             // 
@@ -1509,6 +1537,7 @@
             0,
             0,
             0});
+            this.USA_Strength.ValueChanged += new System.EventHandler(this.USA_Strength_ValueChanged);
             // 
             // label21
             // 
@@ -1553,6 +1582,7 @@
             0,
             0,
             0});
+            this.USA_Durability.ValueChanged += new System.EventHandler(this.USA_Durability_ValueChanged);
             // 
             // label41
             // 

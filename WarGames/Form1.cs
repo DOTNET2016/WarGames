@@ -17,6 +17,7 @@ namespace WarGames
         WOPR wop = new WOPR();
         List<Countries> countriesAtWar = new List<Countries>();
 
+
         public Form1()
         {
             Application.Run(new IntroMenu());       
