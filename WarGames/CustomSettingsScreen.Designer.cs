@@ -331,9 +331,24 @@
             // NorthKorea_Rep
             // 
             this.NorthKorea_Rep.Location = new System.Drawing.Point(98, 154);
+            this.NorthKorea_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.NorthKorea_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NorthKorea_Rep.Name = "NorthKorea_Rep";
             this.NorthKorea_Rep.Size = new System.Drawing.Size(53, 22);
             this.NorthKorea_Rep.TabIndex = 9;
+            this.NorthKorea_Rep.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label40
             // 
@@ -349,9 +364,24 @@
             // NorthKorea_Strength
             // 
             this.NorthKorea_Strength.Location = new System.Drawing.Point(98, 98);
+            this.NorthKorea_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.NorthKorea_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NorthKorea_Strength.Name = "NorthKorea_Strength";
             this.NorthKorea_Strength.Size = new System.Drawing.Size(53, 22);
             this.NorthKorea_Strength.TabIndex = 7;
+            this.NorthKorea_Strength.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             // 
             // label30
             // 
@@ -368,7 +398,7 @@
             // 
             this.NorthKorea_Durability.Location = new System.Drawing.Point(98, 38);
             this.NorthKorea_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -381,7 +411,7 @@
             this.NorthKorea_Durability.Size = new System.Drawing.Size(53, 22);
             this.NorthKorea_Durability.TabIndex = 5;
             this.NorthKorea_Durability.Value = new decimal(new int[] {
-            1,
+            3,
             0,
             0,
             0});
@@ -425,9 +455,24 @@
             // Sweden_Rep
             // 
             this.Sweden_Rep.Location = new System.Drawing.Point(98, 154);
+            this.Sweden_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.Sweden_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Sweden_Rep.Name = "Sweden_Rep";
             this.Sweden_Rep.Size = new System.Drawing.Size(53, 22);
             this.Sweden_Rep.TabIndex = 9;
+            this.Sweden_Rep.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // label39
             // 
@@ -443,9 +488,24 @@
             // Sweden_Strength
             // 
             this.Sweden_Strength.Location = new System.Drawing.Point(97, 96);
+            this.Sweden_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.Sweden_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Sweden_Strength.Name = "Sweden_Strength";
             this.Sweden_Strength.Size = new System.Drawing.Size(53, 22);
             this.Sweden_Strength.TabIndex = 7;
+            this.Sweden_Strength.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             // 
             // label29
             // 
@@ -462,7 +522,7 @@
             // 
             this.Sweden_Durability.Location = new System.Drawing.Point(98, 38);
             this.Sweden_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -475,7 +535,7 @@
             this.Sweden_Durability.Size = new System.Drawing.Size(53, 22);
             this.Sweden_Durability.TabIndex = 5;
             this.Sweden_Durability.Value = new decimal(new int[] {
-            1,
+            13,
             0,
             0,
             0});
@@ -519,9 +579,24 @@
             // Japan_Rep
             // 
             this.Japan_Rep.Location = new System.Drawing.Point(97, 154);
+            this.Japan_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.Japan_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Japan_Rep.Name = "Japan_Rep";
             this.Japan_Rep.Size = new System.Drawing.Size(53, 22);
             this.Japan_Rep.TabIndex = 9;
+            this.Japan_Rep.Value = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
             // 
             // label38
             // 
@@ -537,9 +612,24 @@
             // Japan_Strength
             // 
             this.Japan_Strength.Location = new System.Drawing.Point(97, 98);
+            this.Japan_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.Japan_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Japan_Strength.Name = "Japan_Strength";
             this.Japan_Strength.Size = new System.Drawing.Size(53, 22);
             this.Japan_Strength.TabIndex = 7;
+            this.Japan_Strength.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // label28
             // 
@@ -556,7 +646,7 @@
             // 
             this.Japan_Durability.Location = new System.Drawing.Point(98, 39);
             this.Japan_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -569,7 +659,7 @@
             this.Japan_Durability.Size = new System.Drawing.Size(53, 22);
             this.Japan_Durability.TabIndex = 5;
             this.Japan_Durability.Value = new decimal(new int[] {
-            1,
+            10,
             0,
             0,
             0});
@@ -613,9 +703,24 @@
             // Germany_Rep
             // 
             this.Germany_Rep.Location = new System.Drawing.Point(98, 154);
+            this.Germany_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.Germany_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Germany_Rep.Name = "Germany_Rep";
             this.Germany_Rep.Size = new System.Drawing.Size(53, 22);
             this.Germany_Rep.TabIndex = 9;
+            this.Germany_Rep.Value = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
             // 
             // label37
             // 
@@ -631,9 +736,24 @@
             // Germany_Strength
             // 
             this.Germany_Strength.Location = new System.Drawing.Point(97, 97);
+            this.Germany_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.Germany_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Germany_Strength.Name = "Germany_Strength";
             this.Germany_Strength.Size = new System.Drawing.Size(53, 22);
             this.Germany_Strength.TabIndex = 7;
+            this.Germany_Strength.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
             // 
             // label27
             // 
@@ -650,7 +770,7 @@
             // 
             this.Germany_Durability.Location = new System.Drawing.Point(98, 38);
             this.Germany_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -663,7 +783,7 @@
             this.Germany_Durability.Size = new System.Drawing.Size(53, 22);
             this.Germany_Durability.TabIndex = 5;
             this.Germany_Durability.Value = new decimal(new int[] {
-            1,
+            15,
             0,
             0,
             0});
@@ -707,9 +827,24 @@
             // India_Rep
             // 
             this.India_Rep.Location = new System.Drawing.Point(94, 154);
+            this.India_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.India_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.India_Rep.Name = "India_Rep";
             this.India_Rep.Size = new System.Drawing.Size(53, 22);
             this.India_Rep.TabIndex = 9;
+            this.India_Rep.Value = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
             // 
             // label36
             // 
@@ -725,9 +860,24 @@
             // India_Strength
             // 
             this.India_Strength.Location = new System.Drawing.Point(94, 96);
+            this.India_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.India_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.India_Strength.Name = "India_Strength";
             this.India_Strength.Size = new System.Drawing.Size(53, 22);
             this.India_Strength.TabIndex = 7;
+            this.India_Strength.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
             // 
             // label26
             // 
@@ -744,7 +894,7 @@
             // 
             this.India_Durability.Location = new System.Drawing.Point(94, 39);
             this.India_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -757,7 +907,7 @@
             this.India_Durability.Size = new System.Drawing.Size(53, 22);
             this.India_Durability.TabIndex = 5;
             this.India_Durability.Value = new decimal(new int[] {
-            1,
+            17,
             0,
             0,
             0});
@@ -801,9 +951,24 @@
             // France_Rep
             // 
             this.France_Rep.Location = new System.Drawing.Point(97, 154);
+            this.France_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.France_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.France_Rep.Name = "France_Rep";
             this.France_Rep.Size = new System.Drawing.Size(53, 22);
             this.France_Rep.TabIndex = 9;
+            this.France_Rep.Value = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
             // 
             // label35
             // 
@@ -819,9 +984,24 @@
             // France_Strength
             // 
             this.France_Strength.Location = new System.Drawing.Point(97, 95);
+            this.France_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.France_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.France_Strength.Name = "France_Strength";
             this.France_Strength.Size = new System.Drawing.Size(53, 22);
             this.France_Strength.TabIndex = 7;
+            this.France_Strength.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // label25
             // 
@@ -838,7 +1018,7 @@
             // 
             this.France_Durablity.Location = new System.Drawing.Point(98, 37);
             this.France_Durablity.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -851,7 +1031,7 @@
             this.France_Durablity.Size = new System.Drawing.Size(53, 22);
             this.France_Durablity.TabIndex = 5;
             this.France_Durablity.Value = new decimal(new int[] {
-            1,
+            15,
             0,
             0,
             0});
@@ -895,9 +1075,24 @@
             // China_Rep
             // 
             this.China_Rep.Location = new System.Drawing.Point(97, 154);
+            this.China_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.China_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.China_Rep.Name = "China_Rep";
             this.China_Rep.Size = new System.Drawing.Size(53, 22);
             this.China_Rep.TabIndex = 8;
+            this.China_Rep.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
             // label34
             // 
@@ -913,9 +1108,24 @@
             // China_Strength
             // 
             this.China_Strength.Location = new System.Drawing.Point(97, 94);
+            this.China_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.China_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.China_Strength.Name = "China_Strength";
             this.China_Strength.Size = new System.Drawing.Size(53, 22);
             this.China_Strength.TabIndex = 6;
+            this.China_Strength.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
             // label24
             // 
@@ -932,7 +1142,7 @@
             // 
             this.China_Durability.Location = new System.Drawing.Point(98, 38);
             this.China_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -945,7 +1155,7 @@
             this.China_Durability.Size = new System.Drawing.Size(53, 22);
             this.China_Durability.TabIndex = 4;
             this.China_Durability.Value = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
@@ -989,9 +1199,24 @@
             // UK_Rep
             // 
             this.UK_Rep.Location = new System.Drawing.Point(97, 154);
+            this.UK_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.UK_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.UK_Rep.Name = "UK_Rep";
             this.UK_Rep.Size = new System.Drawing.Size(53, 22);
             this.UK_Rep.TabIndex = 7;
+            this.UK_Rep.Value = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
             // 
             // label33
             // 
@@ -1007,9 +1232,24 @@
             // UK_Strength
             // 
             this.UK_Strength.Location = new System.Drawing.Point(97, 94);
+            this.UK_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.UK_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.UK_Strength.Name = "UK_Strength";
             this.UK_Strength.Size = new System.Drawing.Size(53, 22);
             this.UK_Strength.TabIndex = 5;
+            this.UK_Strength.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // label23
             // 
@@ -1026,7 +1266,7 @@
             // 
             this.UK_Durability.Location = new System.Drawing.Point(98, 37);
             this.UK_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -1039,7 +1279,7 @@
             this.UK_Durability.Size = new System.Drawing.Size(53, 22);
             this.UK_Durability.TabIndex = 3;
             this.UK_Durability.Value = new decimal(new int[] {
-            1,
+            10,
             0,
             0,
             0});
@@ -1083,9 +1323,24 @@
             // Russia_Rep
             // 
             this.Russia_Rep.Location = new System.Drawing.Point(97, 154);
+            this.Russia_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.Russia_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Russia_Rep.Name = "Russia_Rep";
             this.Russia_Rep.Size = new System.Drawing.Size(53, 22);
             this.Russia_Rep.TabIndex = 6;
+            this.Russia_Rep.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
             // 
             // label32
             // 
@@ -1101,9 +1356,24 @@
             // Russia_Strength
             // 
             this.Russia_Strength.Location = new System.Drawing.Point(97, 96);
+            this.Russia_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.Russia_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Russia_Strength.Name = "Russia_Strength";
             this.Russia_Strength.Size = new System.Drawing.Size(53, 22);
             this.Russia_Strength.TabIndex = 4;
+            this.Russia_Strength.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
             // label22
             // 
@@ -1120,7 +1390,7 @@
             // 
             this.Russia_Durability.Location = new System.Drawing.Point(98, 38);
             this.Russia_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -1133,7 +1403,7 @@
             this.Russia_Durability.Size = new System.Drawing.Size(53, 22);
             this.Russia_Durability.TabIndex = 2;
             this.Russia_Durability.Value = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
@@ -1188,9 +1458,24 @@
             // USA_Rep
             // 
             this.USA_Rep.Location = new System.Drawing.Point(98, 154);
+            this.USA_Rep.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.USA_Rep.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.USA_Rep.Name = "USA_Rep";
             this.USA_Rep.Size = new System.Drawing.Size(53, 22);
             this.USA_Rep.TabIndex = 4;
+            this.USA_Rep.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
             // 
             // label31
             // 
@@ -1206,9 +1491,24 @@
             // USA_Strength
             // 
             this.USA_Strength.Location = new System.Drawing.Point(98, 96);
+            this.USA_Strength.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.USA_Strength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.USA_Strength.Name = "USA_Strength";
             this.USA_Strength.Size = new System.Drawing.Size(53, 22);
             this.USA_Strength.TabIndex = 2;
+            this.USA_Strength.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
             // label21
             // 
@@ -1236,7 +1536,7 @@
             // 
             this.USA_Durability.Location = new System.Drawing.Point(98, 37);
             this.USA_Durability.Maximum = new decimal(new int[] {
-            10,
+            20,
             0,
             0,
             0});
@@ -1249,7 +1549,7 @@
             this.USA_Durability.Size = new System.Drawing.Size(53, 22);
             this.USA_Durability.TabIndex = 0;
             this.USA_Durability.Value = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
