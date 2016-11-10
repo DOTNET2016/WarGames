@@ -37,6 +37,9 @@ namespace WarGames
             _CountDownTimer.Interval = 1000;
             _CountDownTimer.Start();
             CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
+
+            BigRedButton.BackColor = Color.DarkRed;
+            CountdownClock.ForeColor = Color.Red;
         }
 
         private void _CountDownTimer_Tick(object sender, EventArgs e)
