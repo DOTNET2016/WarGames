@@ -19,21 +19,6 @@ namespace WarGames
         List<Countries> countriesAtWar = new List<Countries>();
         private List<Point> Points = new List<Point>();
 
-        Countries USA = new Countries("USA", 20, 5, 4);
-        Countries Russia = new Countries("Russia", 20, 5, 4);
-        Countries UK = new Countries("UK", 10, 3, 7);
-        Countries China = new Countries("China", 20, 5, 5);
-        Countries France = new Countries("France", 15, 3, 7);
-        Countries India = new Countries("India", 17, 4, 7);
-        Countries Germany = new Countries("Germany", 15, 4, 8);
-        Countries Japan = new Countries("Japan", 10, 3, 7);
-        Countries Sweden = new Countries("Sweden", 13, 2, 10);
-        Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
-
-        string Dur;
-        string Str;
-        string rep;
-
         public Form1()
         {
             Application.Run(new IntroMenu());       
@@ -43,6 +28,7 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SetDefaultStats();
             Paint += new PaintEventHandler(Background_Paint);
         }
 
@@ -95,12 +81,37 @@ namespace WarGames
 
         //}
 
+        public void SetDefaultStats()
+        {
+            Countries USA = new Countries("USA", 20, 5, 4);
+            Countries Russia = new Countries("Russia", 20, 5, 4);
+            Countries UK = new Countries("UK", 10, 3, 7);
+            Countries China = new Countries("China", 20, 5, 5);
+            Countries France = new Countries("France", 15, 3, 7);
+            Countries India = new Countries("India", 17, 4, 7);
+            Countries Germany = new Countries("Germany", 15, 4, 8);
+            Countries Japan = new Countries("Japan", 10, 3, 7);
+            Countries Sweden = new Countries("Sweden", 13, 2, 10);
+            Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
+
+            USADurLabel.Text = ("Durability: ") + USA.Durability;
+            USAStrengthLabel.Text = ("Strength: ") + USA.Strength;
+            USARepLabel.Text = ("Reputation: ") + USA.Rep;
+
+            RussiaDurLabel.Text = ("Durability: ") + Russia.Durability;
+            RussiaStrengthLabel.Text = ("Strength: ") + Russia.Strength;
+            RussiaRepLabel.Text = ("Reputation: ") + Russia.Rep;
+
+        }
+
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
             CustomSettingsScreen css = new CustomSettingsScreen();
             if (css.ShowDialog(this) == DialogResult.OK)
             {
                 USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString();
+                USAStrengthLabel.Text = ("Strength: ") + css.getUSAStrength().ToString();
+                USARepLabel.Text = ("Reputation: ") + css.getUSARep().ToString();
             }
             css.Close();
             css.Dispose();
@@ -108,7 +119,7 @@ namespace WarGames
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
