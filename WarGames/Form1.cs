@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Drawing.Text;
 using System.Drawing.Drawing2D;
+using System.Runtime.InteropServices;
 
 namespace WarGames
 {
@@ -22,9 +23,9 @@ namespace WarGames
         private bool _IsOn;
         private bool _IsPause;
 
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
-        IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
+        IntPtr pdv, [In] ref uint pcFonts);
 
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
@@ -37,12 +38,12 @@ namespace WarGames
             EnduranceListBox.DataSource = countriesAtWar;
 
             byte[] fontData = Properties.Resources.WarGames;
-            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
-            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
+            Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
             uint dummy = 0;
             fonts.AddMemoryFont(fontPtr, Properties.Resources.WarGames.Length);
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
-            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
+            Marshal.FreeCoTaskMem(fontPtr);
 
             myFont = new Font(fonts.Families[0], 20.0F);
         }
@@ -82,15 +83,23 @@ namespace WarGames
         private void PauseButton_Click(object sender, EventArgs e)
         {
             IsPause = !IsPause;
-            //"Start" text turns to Stop while the game is running
-            ((CurrencyManager)EnduranceListBox.BindingContext[countriesAtWar]).Refresh();
+            if (IsPause)
+            {
+                //pause the war
+            }
+            if (!IsPause)
+            {
+                //unpause the war
+            }
         }
 
         private void StartButton_Click(object sender, EventArgs e)
         {
+            //"Start" text turns to Stop while the game is running
             IsOn = !IsOn;
             if (IsOn)
             {
+                //if the user havent visited the "customize" section the when pressed it will create a list of countries with default stats
                 if (countriesAtWar.Count == 0)
                 {
                     countriesAtWar.Add(new Countries("USA", 20, 5, 4));
@@ -106,6 +115,7 @@ namespace WarGames
                     PauseButton.Enabled = true;
                     CustomizeGameBtn.Enabled = false;
                 }
+                //start the program using the list with stats from the "customize" section
                 else
                 {
                     PauseButton.Enabled = true;
@@ -114,12 +124,20 @@ namespace WarGames
             }
             if (!IsOn)
             {
+                //stops the war and reset the list 
+                //yes Stop also works as a reset button
                 countriesAtWar.Clear();
                 PauseButton.Enabled = false;
                 CustomizeGameBtn.Enabled = true;
+                if (IsPause)
+                {
+                    IsPause = !IsPause;
+                }
+                IsPause = IsPause;
             }
         }
 
+        //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
             CustomSettingsScreen css = new CustomSettingsScreen();
@@ -189,6 +207,7 @@ namespace WarGames
             css.Dispose();
         }
 
+        //Exits the program
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Close();

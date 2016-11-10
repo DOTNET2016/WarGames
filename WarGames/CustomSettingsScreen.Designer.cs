@@ -1807,7 +1807,6 @@
             this.GoBack.TabIndex = 6;
             this.GoBack.Text = "Go Back";
             this.GoBack.UseVisualStyleBackColor = false;
-            this.GoBack.Click += new System.EventHandler(this.GoBack_Click);
             // 
             // CustomSettingsScreen
             // 

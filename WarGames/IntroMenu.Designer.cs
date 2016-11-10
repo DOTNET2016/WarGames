@@ -36,7 +36,7 @@
             // 
             // PlayGameBtn
             // 
-            this.PlayGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.PlayGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.PlayGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PlayGameBtn.FlatAppearance.BorderSize = 2;
             this.PlayGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -45,7 +45,7 @@
             this.PlayGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.PlayGameBtn.Location = new System.Drawing.Point(544, 498);
-            this.PlayGameBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PlayGameBtn.Margin = new System.Windows.Forms.Padding(2);
             this.PlayGameBtn.Name = "PlayGameBtn";
             this.PlayGameBtn.Size = new System.Drawing.Size(178, 68);
             this.PlayGameBtn.TabIndex = 1;
@@ -58,7 +58,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::WarGames.Properties.Resources.ShallWePlay;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1280, 720);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +74,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "IntroMenu";

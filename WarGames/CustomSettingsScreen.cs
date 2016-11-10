@@ -8,12 +8,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace WarGames
 {
     public partial class CustomSettingsScreen : Form
     {
         WOPR warRoom = new WOPR();
+
+        [DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
+        IntPtr pdv, [In] ref uint pcFonts);
+
+        private PrivateFontCollection fonts = new PrivateFontCollection();
+
+        Font myFont;
+
+        private Timer _CountDownTimer;
+
+        private int _counter = 5;
+        private int _hours = 00;
 
         #region CountriesProperties&Fields
         private int _usaDurability;
@@ -528,30 +542,17 @@ namespace WarGames
         }
         #endregion//All 
 
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
-        IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
-
-        private PrivateFontCollection fonts = new PrivateFontCollection();
-
-        Font myFont;
-
-        private Timer _CountDownTimer;
-
-        private int _counter = 5;
-        private int _hours = 00;
-
         public CustomSettingsScreen()
         {
             InitializeComponent();
 
             byte[] fontData = Properties.Resources.WarGames;
-            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
-            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
+            Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
             uint dummy = 0;
             fonts.AddMemoryFont(fontPtr, Properties.Resources.WarGames.Length);
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
-            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
+            Marshal.FreeCoTaskMem(fontPtr);
 
             myFont = new Font(fonts.Families[0], 20.0F);
         }
@@ -586,11 +587,6 @@ namespace WarGames
                 CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
                 DialogResult = DialogResult.OK;
             }
-        }
-
-        private void GoBack_Click(object sender, EventArgs e)
-        {
-
         }
 
         #region CountiresSettingsChanged
