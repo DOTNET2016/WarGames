@@ -105,6 +105,10 @@ namespace WarGames
             css.Close();
             css.Dispose();
         }
-        
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -57,8 +57,8 @@ namespace WarGames
         public CustomSettingsScreen()
         {
             InitializeComponent();
-            BigRedButton.DialogResult = DialogResult.OK;
-            //BigRedButton.DialogResult = DialogResult.Cancel;
+
+            GoBack.DialogResult = DialogResult.Cancel;
         }
 
         public static void ShowCustomMenu()
@@ -89,7 +89,8 @@ namespace WarGames
             {
                 _CountDownTimer.Stop();
                 CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
-                newScreen.Dispose();
+                //newScreen.Dispose();
+                DialogResult = DialogResult.OK;
                 IntroMenu.CloseIntroScreen();
             }
         }
@@ -252,8 +253,12 @@ namespace WarGames
         {
 
         }
-        #endregion
-       
 
+        #endregion
+
+        private void GoBack_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

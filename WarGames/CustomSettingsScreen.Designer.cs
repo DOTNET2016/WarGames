@@ -123,6 +123,7 @@
             this.label41 = new System.Windows.Forms.Label();
             this.BigRedButton = new System.Windows.Forms.Button();
             this.CountdownClock = new System.Windows.Forms.Label();
+            this.GoBack = new System.Windows.Forms.Button();
             this.CountriesGroupBox.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -1636,12 +1637,23 @@
             this.CountdownClock.TabIndex = 3;
             this.CountdownClock.Text = "00:05";
             // 
+            // GoBack
+            // 
+            this.GoBack.Location = new System.Drawing.Point(12, 803);
+            this.GoBack.Name = "GoBack";
+            this.GoBack.Size = new System.Drawing.Size(75, 23);
+            this.GoBack.TabIndex = 4;
+            this.GoBack.Text = "Go Back";
+            this.GoBack.UseVisualStyleBackColor = true;
+            this.GoBack.Click += new System.EventHandler(this.GoBack_Click);
+            // 
             // CustomSettingsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.Controls.Add(this.GoBack);
             this.Controls.Add(this.CountdownClock);
             this.Controls.Add(this.BigRedButton);
             this.Controls.Add(this.label41);
@@ -1813,5 +1825,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Button GoBack;
     }
 }

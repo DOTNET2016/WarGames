@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Background = new System.Windows.Forms.Panel();
+            this.CustomizeGameBtn = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -68,7 +69,6 @@
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
-            this.CustomizeGameBtn = new System.Windows.Forms.Button();
             this.Background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -114,6 +114,24 @@
             this.Background.TabIndex = 1;
             this.Background.Paint += new System.Windows.Forms.PaintEventHandler(this.Background_Paint);
             this.Background.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Background_MouseClick);
+            // 
+            // CustomizeGameBtn
+            // 
+            this.CustomizeGameBtn.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CustomizeGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CustomizeGameBtn.FlatAppearance.BorderSize = 2;
+            this.CustomizeGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.CustomizeGameBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.CustomizeGameBtn.Location = new System.Drawing.Point(215, 785);
+            this.CustomizeGameBtn.Name = "CustomizeGameBtn";
+            this.CustomizeGameBtn.Size = new System.Drawing.Size(115, 40);
+            this.CustomizeGameBtn.TabIndex = 3;
+            this.CustomizeGameBtn.Text = "Customize Game";
+            this.CustomizeGameBtn.UseVisualStyleBackColor = false;
+            this.CustomizeGameBtn.Click += new System.EventHandler(this.CustomizeGameBtn_Click);
             // 
             // pictureBox10
             // 
@@ -556,24 +574,6 @@
             this.PressStart.Text = "Press to Continue";
             this.PressStart.UseVisualStyleBackColor = false;
             this.PressStart.Click += new System.EventHandler(this.ContinueButton_Click);
-            // 
-            // CustomizeGameBtn
-            // 
-            this.CustomizeGameBtn.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CustomizeGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CustomizeGameBtn.FlatAppearance.BorderSize = 2;
-            this.CustomizeGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.CustomizeGameBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.CustomizeGameBtn.Location = new System.Drawing.Point(215, 785);
-            this.CustomizeGameBtn.Name = "CustomizeGameBtn";
-            this.CustomizeGameBtn.Size = new System.Drawing.Size(115, 40);
-            this.CustomizeGameBtn.TabIndex = 3;
-            this.CustomizeGameBtn.Text = "Customize Game";
-            this.CustomizeGameBtn.UseVisualStyleBackColor = false;
-            this.CustomizeGameBtn.Click += new System.EventHandler(this.CustomizeGameBtn_Click);
             // 
             // Form1
             // 
