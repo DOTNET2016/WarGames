@@ -14,18 +14,6 @@ namespace WarGames
     {
         WOPR warRoom = new WOPR();
 
-
-        //Countries USA = new Countries("USA", 20, 5, 4);
-        //Countries Russia = new Countries("Russia", 20, 5, 4);
-        //Countries UK = new Countries("UK", 10, 3, 7);
-        //Countries China = new Countries("China", 20, 5, 5);
-        //Countries France = new Countries("France", 15, 3, 7);
-        //Countries India = new Countries("India", 17, 4, 7);
-        //Countries Germany = new Countries("Germany", 15, 4, 8);
-        //Countries Japan = new Countries("Japan", 10, 3, 7);
-        //Countries Sweden = new Countries("Sweden", 13, 2, 10);
-        //Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
-
         #region CountriesProperties&Fields
         private int _usaDurability;
         private int _usaStrength;
@@ -212,6 +200,10 @@ namespace WarGames
         {
             get
             {
+                if (_chinaDurability == 0)
+                {
+                    return (int)China_Rep.Value;
+                }
                 return _chinaDurability;
             }
 
@@ -224,6 +216,10 @@ namespace WarGames
         {
             get
             {
+                if (_chinaStrength == 0)
+                {
+                    return (int)China_Strength.Value;
+                }
                 return _chinaStrength;
             }
 
@@ -236,6 +232,10 @@ namespace WarGames
         {
             get
             {
+                if (_chinaRep == 0)
+                {
+                    return (int)China_Rep.Value;
+                }
                 return _chinaRep;
             }
 
@@ -249,6 +249,10 @@ namespace WarGames
         {
             get
             {
+                if (_franceDurability == 0)
+                {
+                    return (int)France_Durability.Value;
+                }
                 return _franceDurability;
             }
 
@@ -261,6 +265,10 @@ namespace WarGames
         {
             get
             {
+                if (_franceStrength == 0)
+                {
+                    return (int)France_Strength.Value;
+                }
                 return _franceStrength;
             }
 
@@ -273,9 +281,12 @@ namespace WarGames
         {
             get
             {
+                if (_franceRep == 0)
+                {
+                    return (int)France_Rep.Value;
+                }
                 return _franceRep;
             }
-
             set
             {
                 _franceRep = value;
@@ -286,9 +297,12 @@ namespace WarGames
         {
             get
             {
+                if (_indiaDurability == 0)
+                {
+                    return (int)India_Durability.Value;
+                }
                 return _indiaDurability;
             }
-
             set
             {
                 _indiaDurability = value;
@@ -298,9 +312,12 @@ namespace WarGames
         {
             get
             {
+                if (_indiaStrength == 0)
+                {
+                    return (int)India_Strength.Value;
+                }
                 return _indiaStrength;
             }
-
             set
             {
                 _indiaStrength = value;
@@ -310,6 +327,10 @@ namespace WarGames
         {
             get
             {
+                if (_indiaRep == 0)
+                {
+                    return (int)India_Rep.Value;
+                }
                 return _indiaRep;
             }
 
@@ -323,9 +344,12 @@ namespace WarGames
         {
             get
             {
+                if (_germanyDurability == 0)
+                {
+                    return (int)Germany_Durability.Value;
+                }
                 return _germanyDurability;
             }
-
             set
             {
                 _germanyDurability = value;
@@ -335,9 +359,12 @@ namespace WarGames
         {
             get
             {
+                if (_germanyStrength == 0)
+                {
+                    return (int)Germany_Strength.Value;
+                }
                 return _germanyStrength;
             }
-
             set
             {
                 _germanyStrength = value;
@@ -347,46 +374,58 @@ namespace WarGames
         {
             get
             {
+                if (_germanyRep == 0)
+                {
+                    return (int)Germany_Rep.Value;
+                }
                 return _germanyRep;
             }
-
             set
             {
                 _germanyRep = value;
             }
         }
 
-        public int JapanDurability
+        public int JPDurability
         {
             get
             {
+                if (_japanDurability == 0)
+                {
+                    return (int)Japan_Durability.Value;
+                }
                 return _japanDurability;
             }
-
             set
             {
                 _japanDurability = value;
             }
         }
-        public int JapanStrength
+        public int JPStrength
         {
             get
             {
+                if (_japanStrength == 0)
+                {
+                    return (int)Japan_Strength.Value;
+                }
                 return _japanStrength;
             }
-
             set
             {
                 _japanStrength = value;
             }
         }
-        public int JapanRep
+        public int JPRep
         {
             get
             {
+                if (_japanRep == 0)
+                {
+                    return (int)Japan_Rep.Value;
+                }
                 return _japanRep;
             }
-
             set
             {
                 _japanRep = value;
@@ -397,9 +436,12 @@ namespace WarGames
         {
             get
             {
+                if (_swedenDurability == 0)
+                {
+                    return (int)Sweden_Durability.Value;
+                }
                 return _swedenDurability;
             }
-
             set
             {
                 _swedenDurability = value;
@@ -409,6 +451,10 @@ namespace WarGames
         {
             get
             {
+                if (_swedenStrength == 0)
+                {
+                    return (int)Sweden_Strength.Value;
+                }
                 return _swedenStrength;
             }
 
@@ -421,9 +467,12 @@ namespace WarGames
         {
             get
             {
+                if (_swedenRep == 0)
+                {
+                    return (int)Sweden_Rep.Value;
+                }
                 return _swedenRep;
             }
-
             set
             {
                 _swedenRep = value;
@@ -434,9 +483,12 @@ namespace WarGames
         {
             get
             {
+                if (_northKoreaDurability == 0)
+                {
+                    return (int)Sweden_Rep.Value;
+                }
                 return _northKoreaDurability;
             }
-
             set
             {
                 _northKoreaDurability = value;
@@ -446,9 +498,12 @@ namespace WarGames
         {
             get
             {
+                if (_northKoreaStrength == 0)
+                {
+                    return (int)NorthKorea_Strength.Value;
+                }
                 return _northKoreaStrength;
             }
-
             set
             {
                 _northKoreaStrength = value;
@@ -459,16 +514,18 @@ namespace WarGames
         {
             get
             {
+                if (_northKoreaRep == 0)
+                {
+                    return (int)NorthKorea_Rep.Value;
+                }
                 return _northKoreaRep;
             }
-
             set
             {
                 _northKoreaRep = value;
             }
         }
         #endregion//All 
-
 
         static CustomSettingsScreen newScreen;
         private Timer _CountDownTimer;
@@ -579,9 +636,10 @@ namespace WarGames
             _chinaRep = (int)China_Rep.Value;
         }
         //France
+        //TYPO
         private void France_Durablity_ValueChanged(object sender, EventArgs e)
         {
-            _franceDurability = (int)France_Durablity.Value;
+            _franceDurability = (int)France_Durability.Value;
         }
 
         private void France_Strength_ValueChanged(object sender, EventArgs e)

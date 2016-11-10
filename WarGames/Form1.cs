@@ -28,7 +28,6 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SetDefaultStats();
             Paint += new PaintEventHandler(Background_Paint);
         }
 
@@ -121,10 +120,10 @@ namespace WarGames
                 countriesAtWar.Add(new Countries("Germany", css.GermanyDurability, css.GermanyStrength, css.GermanyRep));
 
                 //Japan
-                JapanDurLabel.Text = "Durability: " + css.JapanDurability.ToString();
-                JapanStrengthLabel.Text = "Strength: " + css.JapanStrength.ToString();
-                JapanRepLabel.Text = "Reputation: " + css.JapanRep.ToString();
-                countriesAtWar.Add(new Countries("Japan", css.JapanDurability, css.JapanStrength, css.JapanRep));
+                JapanDurLabel.Text = "Durability: " + css.JPDurability.ToString();
+                JapanStrengthLabel.Text = "Strength: " + css.JPStrength.ToString();
+                JapanRepLabel.Text = "Reputation: " + css.JPRep.ToString();
+                countriesAtWar.Add(new Countries("Japan", css.JPDurability, css.JPStrength, css.JPRep));
 
                 //Sweden
                 SwedenDurLabel.Text = "Durability: " + css.SwedenDurability.ToString();

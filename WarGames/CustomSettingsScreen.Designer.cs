@@ -85,7 +85,7 @@
             this.label35 = new System.Windows.Forms.Label();
             this.France_Strength = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
-            this.France_Durablity = new System.Windows.Forms.NumericUpDown();
+            this.France_Durability = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -154,7 +154,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Strength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.France_Durablity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Durability)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.China_Rep)).BeginInit();
@@ -200,9 +200,9 @@
             this.CountriesGroupBox.Controls.Add(this.label2);
             this.CountriesGroupBox.Controls.Add(this.USAgroupBox);
             this.CountriesGroupBox.Location = new System.Drawing.Point(10, 11);
-            this.CountriesGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CountriesGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.CountriesGroupBox.Name = "CountriesGroupBox";
-            this.CountriesGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CountriesGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.CountriesGroupBox.Size = new System.Drawing.Size(1245, 265);
             this.CountriesGroupBox.TabIndex = 0;
             this.CountriesGroupBox.TabStop = false;
@@ -325,9 +325,9 @@
             this.groupBox9.Controls.Add(this.NorthKorea_Durability);
             this.groupBox9.Controls.Add(this.label11);
             this.groupBox9.Location = new System.Drawing.Point(1115, 43);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox9.Size = new System.Drawing.Size(124, 217);
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
@@ -337,7 +337,7 @@
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
             this.pictureBox10.Location = new System.Drawing.Point(25, 161);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(76, 41);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,7 +347,7 @@
             // NorthKorea_Rep
             // 
             this.NorthKorea_Rep.Location = new System.Drawing.Point(74, 125);
-            this.NorthKorea_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NorthKorea_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.NorthKorea_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -383,7 +383,7 @@
             // NorthKorea_Strength
             // 
             this.NorthKorea_Strength.Location = new System.Drawing.Point(74, 80);
-            this.NorthKorea_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NorthKorea_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.NorthKorea_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -419,7 +419,7 @@
             // NorthKorea_Durability
             // 
             this.NorthKorea_Durability.Location = new System.Drawing.Point(74, 31);
-            this.NorthKorea_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NorthKorea_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.NorthKorea_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -462,9 +462,9 @@
             this.groupBox8.Controls.Add(this.Sweden_Durability);
             this.groupBox8.Controls.Add(this.label10);
             this.groupBox8.Location = new System.Drawing.Point(987, 43);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox8.Size = new System.Drawing.Size(124, 217);
             this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
@@ -474,7 +474,7 @@
             this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
             this.pictureBox9.Location = new System.Drawing.Point(19, 161);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(76, 41);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -484,7 +484,7 @@
             // Sweden_Rep
             // 
             this.Sweden_Rep.Location = new System.Drawing.Point(74, 125);
-            this.Sweden_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sweden_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.Sweden_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -520,7 +520,7 @@
             // Sweden_Strength
             // 
             this.Sweden_Strength.Location = new System.Drawing.Point(73, 78);
-            this.Sweden_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sweden_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.Sweden_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -556,7 +556,7 @@
             // Sweden_Durability
             // 
             this.Sweden_Durability.Location = new System.Drawing.Point(74, 31);
-            this.Sweden_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sweden_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.Sweden_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -599,9 +599,9 @@
             this.groupBox7.Controls.Add(this.Japan_Durability);
             this.groupBox7.Controls.Add(this.label9);
             this.groupBox7.Location = new System.Drawing.Point(859, 43);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox7.Size = new System.Drawing.Size(124, 217);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
@@ -611,7 +611,7 @@
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
             this.pictureBox8.Location = new System.Drawing.Point(20, 161);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(76, 41);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -621,7 +621,7 @@
             // Japan_Rep
             // 
             this.Japan_Rep.Location = new System.Drawing.Point(73, 125);
-            this.Japan_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Japan_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.Japan_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -657,7 +657,7 @@
             // Japan_Strength
             // 
             this.Japan_Strength.Location = new System.Drawing.Point(73, 80);
-            this.Japan_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Japan_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.Japan_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -693,7 +693,7 @@
             // Japan_Durability
             // 
             this.Japan_Durability.Location = new System.Drawing.Point(74, 32);
-            this.Japan_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Japan_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.Japan_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -736,9 +736,9 @@
             this.groupBox6.Controls.Add(this.Germany_Durability);
             this.groupBox6.Controls.Add(this.label8);
             this.groupBox6.Location = new System.Drawing.Point(736, 43);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox6.Size = new System.Drawing.Size(118, 217);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
@@ -748,7 +748,7 @@
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.Image = global::WarGames.Properties.Resources.germany_flag;
             this.pictureBox7.Location = new System.Drawing.Point(25, 161);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(76, 41);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -758,7 +758,7 @@
             // Germany_Rep
             // 
             this.Germany_Rep.Location = new System.Drawing.Point(74, 125);
-            this.Germany_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Germany_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.Germany_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -794,7 +794,7 @@
             // Germany_Strength
             // 
             this.Germany_Strength.Location = new System.Drawing.Point(73, 79);
-            this.Germany_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Germany_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.Germany_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -830,7 +830,7 @@
             // Germany_Durability
             // 
             this.Germany_Durability.Location = new System.Drawing.Point(74, 31);
-            this.Germany_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Germany_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.Germany_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -873,9 +873,9 @@
             this.groupBox5.Controls.Add(this.India_Durability);
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Location = new System.Drawing.Point(617, 43);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(115, 217);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
@@ -885,7 +885,7 @@
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
             this.pictureBox6.Location = new System.Drawing.Point(20, 161);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(76, 41);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -895,7 +895,7 @@
             // India_Rep
             // 
             this.India_Rep.Location = new System.Drawing.Point(70, 125);
-            this.India_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.India_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.India_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -931,7 +931,7 @@
             // India_Strength
             // 
             this.India_Strength.Location = new System.Drawing.Point(70, 78);
-            this.India_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.India_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.India_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -967,7 +967,7 @@
             // India_Durability
             // 
             this.India_Durability.Location = new System.Drawing.Point(70, 32);
-            this.India_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.India_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.India_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -1007,12 +1007,12 @@
             this.groupBox4.Controls.Add(this.label35);
             this.groupBox4.Controls.Add(this.France_Strength);
             this.groupBox4.Controls.Add(this.label25);
-            this.groupBox4.Controls.Add(this.France_Durablity);
+            this.groupBox4.Controls.Add(this.France_Durability);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Location = new System.Drawing.Point(494, 43);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(118, 217);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
@@ -1022,7 +1022,7 @@
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flagv2;
             this.pictureBox5.Location = new System.Drawing.Point(17, 161);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(76, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1032,7 +1032,7 @@
             // France_Rep
             // 
             this.France_Rep.Location = new System.Drawing.Point(73, 125);
-            this.France_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.France_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.France_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -1068,7 +1068,7 @@
             // France_Strength
             // 
             this.France_Strength.Location = new System.Drawing.Point(73, 77);
-            this.France_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.France_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.France_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1101,29 +1101,29 @@
             this.label25.TabIndex = 6;
             this.label25.Text = "Strength:";
             // 
-            // France_Durablity
+            // France_Durability
             // 
-            this.France_Durablity.Location = new System.Drawing.Point(74, 30);
-            this.France_Durablity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.France_Durablity.Maximum = new decimal(new int[] {
+            this.France_Durability.Location = new System.Drawing.Point(74, 30);
+            this.France_Durability.Margin = new System.Windows.Forms.Padding(2);
+            this.France_Durability.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.France_Durablity.Minimum = new decimal(new int[] {
+            this.France_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.France_Durablity.Name = "France_Durablity";
-            this.France_Durablity.Size = new System.Drawing.Size(40, 20);
-            this.France_Durablity.TabIndex = 5;
-            this.France_Durablity.Value = new decimal(new int[] {
+            this.France_Durability.Name = "France_Durability";
+            this.France_Durability.Size = new System.Drawing.Size(40, 20);
+            this.France_Durability.TabIndex = 5;
+            this.France_Durability.Value = new decimal(new int[] {
             15,
             0,
             0,
             0});
-            this.France_Durablity.ValueChanged += new System.EventHandler(this.France_Durablity_ValueChanged);
+            this.France_Durability.ValueChanged += new System.EventHandler(this.France_Durablity_ValueChanged);
             // 
             // label6
             // 
@@ -1147,9 +1147,9 @@
             this.groupBox3.Controls.Add(this.China_Durability);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Location = new System.Drawing.Point(372, 43);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(118, 217);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
@@ -1159,7 +1159,7 @@
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
             this.pictureBox4.Location = new System.Drawing.Point(18, 161);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(76, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1169,7 +1169,7 @@
             // China_Rep
             // 
             this.China_Rep.Location = new System.Drawing.Point(73, 125);
-            this.China_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.China_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.China_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -1205,7 +1205,7 @@
             // China_Strength
             // 
             this.China_Strength.Location = new System.Drawing.Point(73, 76);
-            this.China_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.China_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.China_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1241,7 +1241,7 @@
             // China_Durability
             // 
             this.China_Durability.Location = new System.Drawing.Point(74, 31);
-            this.China_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.China_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.China_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -1284,9 +1284,9 @@
             this.groupBox2.Controls.Add(this.UK_Durability);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(249, 43);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(118, 217);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
@@ -1296,7 +1296,7 @@
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::WarGames.Properties.Resources.uk_flag;
             this.pictureBox3.Location = new System.Drawing.Point(22, 161);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(76, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1306,7 +1306,7 @@
             // UK_Rep
             // 
             this.UK_Rep.Location = new System.Drawing.Point(73, 125);
-            this.UK_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UK_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.UK_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -1342,7 +1342,7 @@
             // UK_Strength
             // 
             this.UK_Strength.Location = new System.Drawing.Point(73, 76);
-            this.UK_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UK_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.UK_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1378,7 +1378,7 @@
             // UK_Durability
             // 
             this.UK_Durability.Location = new System.Drawing.Point(74, 30);
-            this.UK_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UK_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.UK_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -1421,9 +1421,9 @@
             this.groupBox1.Controls.Add(this.Russia_Durability);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(127, 43);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(118, 217);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
@@ -1433,7 +1433,7 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::WarGames.Properties.Resources.russia_flag;
             this.pictureBox2.Location = new System.Drawing.Point(21, 161);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(76, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1443,7 +1443,7 @@
             // Russia_Rep
             // 
             this.Russia_Rep.Location = new System.Drawing.Point(73, 125);
-            this.Russia_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Russia_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.Russia_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -1479,7 +1479,7 @@
             // Russia_Strength
             // 
             this.Russia_Strength.Location = new System.Drawing.Point(73, 78);
-            this.Russia_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Russia_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.Russia_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1515,7 +1515,7 @@
             // Russia_Durability
             // 
             this.Russia_Durability.Location = new System.Drawing.Point(74, 31);
-            this.Russia_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Russia_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.Russia_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -1570,9 +1570,9 @@
             this.USAgroupBox.Controls.Add(this.label1);
             this.USAgroupBox.Controls.Add(this.USA_Durability);
             this.USAgroupBox.Location = new System.Drawing.Point(4, 43);
-            this.USAgroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.USAgroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.USAgroupBox.Name = "USAgroupBox";
-            this.USAgroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.USAgroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.USAgroupBox.Size = new System.Drawing.Size(118, 217);
             this.USAgroupBox.TabIndex = 1;
             this.USAgroupBox.TabStop = false;
@@ -1582,7 +1582,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::WarGames.Properties.Resources.usa_flag;
             this.pictureBox1.Location = new System.Drawing.Point(21, 161);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1592,7 +1592,7 @@
             // USA_Rep
             // 
             this.USA_Rep.Location = new System.Drawing.Point(74, 125);
-            this.USA_Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.USA_Rep.Margin = new System.Windows.Forms.Padding(2);
             this.USA_Rep.Maximum = new decimal(new int[] {
             10,
             0,
@@ -1628,7 +1628,7 @@
             // USA_Strength
             // 
             this.USA_Strength.Location = new System.Drawing.Point(74, 78);
-            this.USA_Strength.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.USA_Strength.Margin = new System.Windows.Forms.Padding(2);
             this.USA_Strength.Maximum = new decimal(new int[] {
             5,
             0,
@@ -1676,7 +1676,7 @@
             // USA_Durability
             // 
             this.USA_Durability.Location = new System.Drawing.Point(74, 30);
-            this.USA_Durability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.USA_Durability.Margin = new System.Windows.Forms.Padding(2);
             this.USA_Durability.Maximum = new decimal(new int[] {
             20,
             0,
@@ -1722,7 +1722,7 @@
             this.BigRedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BigRedButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.BigRedButton.Location = new System.Drawing.Point(529, 399);
-            this.BigRedButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BigRedButton.Margin = new System.Windows.Forms.Padding(2);
             this.BigRedButton.Name = "BigRedButton";
             this.BigRedButton.Size = new System.Drawing.Size(197, 40);
             this.BigRedButton.TabIndex = 2;
@@ -1745,7 +1745,7 @@
             // GoBack
             // 
             this.GoBack.Location = new System.Drawing.Point(9, 652);
-            this.GoBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GoBack.Margin = new System.Windows.Forms.Padding(2);
             this.GoBack.Name = "GoBack";
             this.GoBack.Size = new System.Drawing.Size(76, 19);
             this.GoBack.TabIndex = 4;
@@ -1765,7 +1765,7 @@
             this.Controls.Add(this.label41);
             this.Controls.Add(this.CountriesGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CustomSettingsScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomSettingsScreen";
@@ -1806,7 +1806,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Strength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.France_Durablity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Durability)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1853,7 +1853,7 @@
         private System.Windows.Forms.NumericUpDown India_Durability;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.NumericUpDown France_Durablity;
+        private System.Windows.Forms.NumericUpDown France_Durability;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.NumericUpDown China_Durability;
