@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Background = new System.Windows.Forms.Panel();
+            this.PauseButton = new System.Windows.Forms.Button();
+            this.StartButton = new System.Windows.Forms.Button();
             this.CustomizeGameBtn = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -93,8 +95,6 @@
             this.RussiaLabel = new System.Windows.Forms.Label();
             this.USALabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.PauseButton = new System.Windows.Forms.Button();
-            this.StartButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
@@ -128,6 +128,8 @@
             this.Background.AutoSize = true;
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Background.Controls.Add(this.PauseButton);
+            this.Background.Controls.Add(this.StartButton);
             this.Background.Controls.Add(this.CustomizeGameBtn);
             this.Background.Controls.Add(this.pictureBox10);
             this.Background.Controls.Add(this.pictureBox9);
@@ -141,20 +143,57 @@
             this.Background.Controls.Add(this.pictureBox1);
             this.Background.Controls.Add(this.StatsBox);
             this.Background.Controls.Add(this.ExitButton);
-            this.Background.Controls.Add(this.PauseButton);
-            this.Background.Controls.Add(this.StartButton);
             this.Background.Controls.Add(this.EnduranceBox);
             this.Background.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Background.Location = new System.Drawing.Point(0, 0);
             this.Background.Name = "Background";
-            this.Background.Size = new System.Drawing.Size(1348, 670);
+            this.Background.Size = new System.Drawing.Size(1280, 720);
             this.Background.TabIndex = 1;
             this.Background.Paint += new System.Windows.Forms.PaintEventHandler(this.Background_Paint);
             this.Background.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Background_MouseClick);
             // 
+            // PauseButton
+            // 
+            this.PauseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.PauseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PauseButton.Enabled = false;
+            this.PauseButton.FlatAppearance.BorderSize = 2;
+            this.PauseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.PauseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PauseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PauseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PauseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.PauseButton.Location = new System.Drawing.Point(169, 631);
+            this.PauseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PauseButton.Name = "PauseButton";
+            this.PauseButton.Size = new System.Drawing.Size(92, 32);
+            this.PauseButton.TabIndex = 40;
+            this.PauseButton.Text = "Pause";
+            this.PauseButton.UseVisualStyleBackColor = false;
+            this.PauseButton.Click += new System.EventHandler(this.PauseButton_Click);
+            // 
+            // StartButton
+            // 
+            this.StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StartButton.FlatAppearance.BorderSize = 2;
+            this.StartButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.StartButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.StartButton.Location = new System.Drawing.Point(169, 595);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(2);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(92, 32);
+            this.StartButton.TabIndex = 39;
+            this.StartButton.Text = "Start";
+            this.StartButton.UseVisualStyleBackColor = false;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
             // CustomizeGameBtn
             // 
-            this.CustomizeGameBtn.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CustomizeGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.CustomizeGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CustomizeGameBtn.FlatAppearance.BorderSize = 2;
             this.CustomizeGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -162,19 +201,19 @@
             this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.CustomizeGameBtn.Location = new System.Drawing.Point(172, 628);
+            this.CustomizeGameBtn.Location = new System.Drawing.Point(169, 667);
             this.CustomizeGameBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CustomizeGameBtn.Name = "CustomizeGameBtn";
             this.CustomizeGameBtn.Size = new System.Drawing.Size(92, 32);
             this.CustomizeGameBtn.TabIndex = 3;
-            this.CustomizeGameBtn.Text = "Customize Game";
+            this.CustomizeGameBtn.Text = "Custom";
             this.CustomizeGameBtn.UseVisualStyleBackColor = false;
             this.CustomizeGameBtn.Click += new System.EventHandler(this.CustomizeGameBtn_Click);
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
-            this.pictureBox10.Location = new System.Drawing.Point(1260, 524);
+            this.pictureBox10.Location = new System.Drawing.Point(1197, 577);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(67, 39);
@@ -185,7 +224,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
-            this.pictureBox9.Location = new System.Drawing.Point(1158, 524);
+            this.pictureBox9.Location = new System.Drawing.Point(1095, 577);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(67, 39);
@@ -196,7 +235,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
-            this.pictureBox8.Location = new System.Drawing.Point(1057, 524);
+            this.pictureBox8.Location = new System.Drawing.Point(994, 577);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(67, 39);
@@ -208,7 +247,7 @@
             // 
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.Image = global::WarGames.Properties.Resources.germany_flag;
-            this.pictureBox7.Location = new System.Drawing.Point(960, 524);
+            this.pictureBox7.Location = new System.Drawing.Point(897, 577);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(67, 39);
@@ -219,7 +258,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
-            this.pictureBox6.Location = new System.Drawing.Point(859, 524);
+            this.pictureBox6.Location = new System.Drawing.Point(796, 577);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(67, 39);
@@ -230,7 +269,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flagv2;
-            this.pictureBox5.Location = new System.Drawing.Point(759, 524);
+            this.pictureBox5.Location = new System.Drawing.Point(696, 577);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(67, 39);
@@ -241,7 +280,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
-            this.pictureBox4.Location = new System.Drawing.Point(658, 524);
+            this.pictureBox4.Location = new System.Drawing.Point(595, 577);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(67, 39);
@@ -253,7 +292,7 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::WarGames.Properties.Resources.russia_flag;
-            this.pictureBox3.Location = new System.Drawing.Point(457, 524);
+            this.pictureBox3.Location = new System.Drawing.Point(394, 577);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(67, 39);
@@ -265,7 +304,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.pictureBox2.Location = new System.Drawing.Point(356, 524);
+            this.pictureBox2.Location = new System.Drawing.Point(293, 577);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(67, 39);
@@ -278,7 +317,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::WarGames.Properties.Resources.uk_flag;
-            this.pictureBox1.Location = new System.Drawing.Point(556, 524);
+            this.pictureBox1.Location = new System.Drawing.Point(493, 577);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 39);
@@ -310,7 +349,7 @@
             this.StatsBox.Controls.Add(this.RussiaLabel);
             this.StatsBox.Controls.Add(this.USALabel);
             this.StatsBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.StatsBox.Location = new System.Drawing.Point(335, 560);
+            this.StatsBox.Location = new System.Drawing.Point(272, 613);
             this.StatsBox.Margin = new System.Windows.Forms.Padding(2);
             this.StatsBox.Name = "StatsBox";
             this.StatsBox.Padding = new System.Windows.Forms.Padding(2);
@@ -337,9 +376,9 @@
             this.NKRepLabel.Location = new System.Drawing.Point(6, 59);
             this.NKRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NKRepLabel.Name = "NKRepLabel";
-            this.NKRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.NKRepLabel.Size = new System.Drawing.Size(71, 13);
             this.NKRepLabel.TabIndex = 28;
-            this.NKRepLabel.Text = "Reputation:";
+            this.NKRepLabel.Text = "Reputation: 1";
             // 
             // NKStrengthLabel
             // 
@@ -347,9 +386,9 @@
             this.NKStrengthLabel.Location = new System.Drawing.Point(6, 38);
             this.NKStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NKStrengthLabel.Name = "NKStrengthLabel";
-            this.NKStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.NKStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.NKStrengthLabel.TabIndex = 27;
-            this.NKStrengthLabel.Text = "Strength:";
+            this.NKStrengthLabel.Text = "Strength: 6";
             // 
             // NKDurLabel
             // 
@@ -357,9 +396,9 @@
             this.NKDurLabel.Location = new System.Drawing.Point(6, 15);
             this.NKDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NKDurLabel.Name = "NKDurLabel";
-            this.NKDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.NKDurLabel.Size = new System.Drawing.Size(71, 13);
             this.NKDurLabel.TabIndex = 26;
-            this.NKDurLabel.Text = "Durability:  ";
+            this.NKDurLabel.Text = "Durability:  14";
             // 
             // SwedenGroupBox
             // 
@@ -380,9 +419,9 @@
             this.SwedenRepLabel.Location = new System.Drawing.Point(5, 58);
             this.SwedenRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SwedenRepLabel.Name = "SwedenRepLabel";
-            this.SwedenRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.SwedenRepLabel.Size = new System.Drawing.Size(77, 13);
             this.SwedenRepLabel.TabIndex = 28;
-            this.SwedenRepLabel.Text = "Reputation:";
+            this.SwedenRepLabel.Text = "Reputation: 10";
             // 
             // SwedenStrengthLabel
             // 
@@ -390,9 +429,9 @@
             this.SwedenStrengthLabel.Location = new System.Drawing.Point(5, 37);
             this.SwedenStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SwedenStrengthLabel.Name = "SwedenStrengthLabel";
-            this.SwedenStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.SwedenStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.SwedenStrengthLabel.TabIndex = 27;
-            this.SwedenStrengthLabel.Text = "Strength:";
+            this.SwedenStrengthLabel.Text = "Strength: 2";
             // 
             // SwedenDurLabel
             // 
@@ -400,9 +439,9 @@
             this.SwedenDurLabel.Location = new System.Drawing.Point(5, 14);
             this.SwedenDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SwedenDurLabel.Name = "SwedenDurLabel";
-            this.SwedenDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.SwedenDurLabel.Size = new System.Drawing.Size(71, 13);
             this.SwedenDurLabel.TabIndex = 26;
-            this.SwedenDurLabel.Text = "Durability:  ";
+            this.SwedenDurLabel.Text = "Durability:  13";
             // 
             // JapanGroupBox
             // 
@@ -423,9 +462,9 @@
             this.JapanRepLabel.Location = new System.Drawing.Point(5, 58);
             this.JapanRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.JapanRepLabel.Name = "JapanRepLabel";
-            this.JapanRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.JapanRepLabel.Size = new System.Drawing.Size(71, 13);
             this.JapanRepLabel.TabIndex = 28;
-            this.JapanRepLabel.Text = "Reputation:";
+            this.JapanRepLabel.Text = "Reputation: 7";
             // 
             // JapanStrengthLabel
             // 
@@ -433,9 +472,9 @@
             this.JapanStrengthLabel.Location = new System.Drawing.Point(5, 37);
             this.JapanStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.JapanStrengthLabel.Name = "JapanStrengthLabel";
-            this.JapanStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.JapanStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.JapanStrengthLabel.TabIndex = 27;
-            this.JapanStrengthLabel.Text = "Strength:";
+            this.JapanStrengthLabel.Text = "Strength: 3";
             // 
             // JapanDurLabel
             // 
@@ -443,9 +482,9 @@
             this.JapanDurLabel.Location = new System.Drawing.Point(5, 14);
             this.JapanDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.JapanDurLabel.Name = "JapanDurLabel";
-            this.JapanDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.JapanDurLabel.Size = new System.Drawing.Size(71, 13);
             this.JapanDurLabel.TabIndex = 26;
-            this.JapanDurLabel.Text = "Durability:  ";
+            this.JapanDurLabel.Text = "Durability:  10";
             // 
             // UKgroupBox
             // 
@@ -466,9 +505,9 @@
             this.UkRepLabel.Location = new System.Drawing.Point(5, 58);
             this.UkRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UkRepLabel.Name = "UkRepLabel";
-            this.UkRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.UkRepLabel.Size = new System.Drawing.Size(71, 13);
             this.UkRepLabel.TabIndex = 28;
-            this.UkRepLabel.Text = "Reputation:";
+            this.UkRepLabel.Text = "Reputation: 7";
             // 
             // UkStrengthLabel
             // 
@@ -476,9 +515,9 @@
             this.UkStrengthLabel.Location = new System.Drawing.Point(5, 37);
             this.UkStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UkStrengthLabel.Name = "UkStrengthLabel";
-            this.UkStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.UkStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.UkStrengthLabel.TabIndex = 27;
-            this.UkStrengthLabel.Text = "Strength:";
+            this.UkStrengthLabel.Text = "Strength: 3";
             // 
             // UkDurLabel
             // 
@@ -486,9 +525,9 @@
             this.UkDurLabel.Location = new System.Drawing.Point(5, 14);
             this.UkDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UkDurLabel.Name = "UkDurLabel";
-            this.UkDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.UkDurLabel.Size = new System.Drawing.Size(71, 13);
             this.UkDurLabel.TabIndex = 26;
-            this.UkDurLabel.Text = "Durability:  ";
+            this.UkDurLabel.Text = "Durability: 10 ";
             // 
             // GermanyGroupBox
             // 
@@ -509,9 +548,9 @@
             this.GermanyRepLabel.Location = new System.Drawing.Point(5, 58);
             this.GermanyRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GermanyRepLabel.Name = "GermanyRepLabel";
-            this.GermanyRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.GermanyRepLabel.Size = new System.Drawing.Size(71, 13);
             this.GermanyRepLabel.TabIndex = 28;
-            this.GermanyRepLabel.Text = "Reputation:";
+            this.GermanyRepLabel.Text = "Reputation: 8";
             // 
             // GermanyStrengthLabel
             // 
@@ -519,9 +558,9 @@
             this.GermanyStrengthLabel.Location = new System.Drawing.Point(5, 37);
             this.GermanyStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GermanyStrengthLabel.Name = "GermanyStrengthLabel";
-            this.GermanyStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.GermanyStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.GermanyStrengthLabel.TabIndex = 27;
-            this.GermanyStrengthLabel.Text = "Strength:";
+            this.GermanyStrengthLabel.Text = "Strength: 4";
             // 
             // GermanyDurLabel
             // 
@@ -529,9 +568,9 @@
             this.GermanyDurLabel.Location = new System.Drawing.Point(5, 14);
             this.GermanyDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GermanyDurLabel.Name = "GermanyDurLabel";
-            this.GermanyDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.GermanyDurLabel.Size = new System.Drawing.Size(71, 13);
             this.GermanyDurLabel.TabIndex = 26;
-            this.GermanyDurLabel.Text = "Durability:  ";
+            this.GermanyDurLabel.Text = "Durability:  15";
             // 
             // IndiaGroupBox
             // 
@@ -552,9 +591,9 @@
             this.IndiaRepLabel.Location = new System.Drawing.Point(5, 58);
             this.IndiaRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IndiaRepLabel.Name = "IndiaRepLabel";
-            this.IndiaRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.IndiaRepLabel.Size = new System.Drawing.Size(71, 13);
             this.IndiaRepLabel.TabIndex = 28;
-            this.IndiaRepLabel.Text = "Reputation:";
+            this.IndiaRepLabel.Text = "Reputation: 7";
             // 
             // IndiaStrengthLabel
             // 
@@ -562,9 +601,9 @@
             this.IndiaStrengthLabel.Location = new System.Drawing.Point(5, 37);
             this.IndiaStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IndiaStrengthLabel.Name = "IndiaStrengthLabel";
-            this.IndiaStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.IndiaStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.IndiaStrengthLabel.TabIndex = 27;
-            this.IndiaStrengthLabel.Text = "Strength:";
+            this.IndiaStrengthLabel.Text = "Strength: 4";
             // 
             // IndiaDurLabel
             // 
@@ -572,9 +611,9 @@
             this.IndiaDurLabel.Location = new System.Drawing.Point(5, 14);
             this.IndiaDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IndiaDurLabel.Name = "IndiaDurLabel";
-            this.IndiaDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.IndiaDurLabel.Size = new System.Drawing.Size(68, 13);
             this.IndiaDurLabel.TabIndex = 26;
-            this.IndiaDurLabel.Text = "Durability:  ";
+            this.IndiaDurLabel.Text = "Durability: 17";
             // 
             // FranceGroupBox
             // 
@@ -595,9 +634,9 @@
             this.FranceRepLabel.Location = new System.Drawing.Point(5, 58);
             this.FranceRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FranceRepLabel.Name = "FranceRepLabel";
-            this.FranceRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.FranceRepLabel.Size = new System.Drawing.Size(71, 13);
             this.FranceRepLabel.TabIndex = 28;
-            this.FranceRepLabel.Text = "Reputation:";
+            this.FranceRepLabel.Text = "Reputation: 7";
             // 
             // FranceStrengthLabel
             // 
@@ -605,9 +644,9 @@
             this.FranceStrengthLabel.Location = new System.Drawing.Point(5, 37);
             this.FranceStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FranceStrengthLabel.Name = "FranceStrengthLabel";
-            this.FranceStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.FranceStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.FranceStrengthLabel.TabIndex = 27;
-            this.FranceStrengthLabel.Text = "Strength:";
+            this.FranceStrengthLabel.Text = "Strength: 3";
             // 
             // FranceDurLabel
             // 
@@ -615,9 +654,9 @@
             this.FranceDurLabel.Location = new System.Drawing.Point(5, 14);
             this.FranceDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FranceDurLabel.Name = "FranceDurLabel";
-            this.FranceDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.FranceDurLabel.Size = new System.Drawing.Size(74, 13);
             this.FranceDurLabel.TabIndex = 26;
-            this.FranceDurLabel.Text = "Durability:  ";
+            this.FranceDurLabel.Text = "Durability: 15  ";
             // 
             // ChinaGroupBox
             // 
@@ -638,9 +677,9 @@
             this.ChinaRepLabel.Location = new System.Drawing.Point(8, 58);
             this.ChinaRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChinaRepLabel.Name = "ChinaRepLabel";
-            this.ChinaRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.ChinaRepLabel.Size = new System.Drawing.Size(71, 13);
             this.ChinaRepLabel.TabIndex = 28;
-            this.ChinaRepLabel.Text = "Reputation:";
+            this.ChinaRepLabel.Text = "Reputation: 5";
             // 
             // ChinaStrengthLabel
             // 
@@ -648,9 +687,9 @@
             this.ChinaStrengthLabel.Location = new System.Drawing.Point(8, 37);
             this.ChinaStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChinaStrengthLabel.Name = "ChinaStrengthLabel";
-            this.ChinaStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.ChinaStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.ChinaStrengthLabel.TabIndex = 27;
-            this.ChinaStrengthLabel.Text = "Strength:";
+            this.ChinaStrengthLabel.Text = "Strength: 5";
             // 
             // ChinaDurLabel
             // 
@@ -658,9 +697,9 @@
             this.ChinaDurLabel.Location = new System.Drawing.Point(8, 14);
             this.ChinaDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChinaDurLabel.Name = "ChinaDurLabel";
-            this.ChinaDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.ChinaDurLabel.Size = new System.Drawing.Size(71, 13);
             this.ChinaDurLabel.TabIndex = 26;
-            this.ChinaDurLabel.Text = "Durability:  ";
+            this.ChinaDurLabel.Text = "Durability:  20";
             // 
             // RussiaGroupBox
             // 
@@ -681,9 +720,9 @@
             this.RussiaRepLabel.Location = new System.Drawing.Point(5, 58);
             this.RussiaRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RussiaRepLabel.Name = "RussiaRepLabel";
-            this.RussiaRepLabel.Size = new System.Drawing.Size(62, 13);
+            this.RussiaRepLabel.Size = new System.Drawing.Size(71, 13);
             this.RussiaRepLabel.TabIndex = 25;
-            this.RussiaRepLabel.Text = "Reputation:";
+            this.RussiaRepLabel.Text = "Reputation: 4";
             // 
             // RussiaStrengthLabel
             // 
@@ -691,9 +730,9 @@
             this.RussiaStrengthLabel.Location = new System.Drawing.Point(5, 37);
             this.RussiaStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RussiaStrengthLabel.Name = "RussiaStrengthLabel";
-            this.RussiaStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.RussiaStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.RussiaStrengthLabel.TabIndex = 24;
-            this.RussiaStrengthLabel.Text = "Strength:";
+            this.RussiaStrengthLabel.Text = "Strength: 5";
             // 
             // RussiaDurLabel
             // 
@@ -701,9 +740,9 @@
             this.RussiaDurLabel.Location = new System.Drawing.Point(5, 14);
             this.RussiaDurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RussiaDurLabel.Name = "RussiaDurLabel";
-            this.RussiaDurLabel.Size = new System.Drawing.Size(59, 13);
+            this.RussiaDurLabel.Size = new System.Drawing.Size(71, 13);
             this.RussiaDurLabel.TabIndex = 23;
-            this.RussiaDurLabel.Text = "Durability:  ";
+            this.RussiaDurLabel.Text = "Durability:  20";
             // 
             // NorthKoreaLabel
             // 
@@ -735,9 +774,9 @@
             this.USARepLabel.Location = new System.Drawing.Point(6, 58);
             this.USARepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.USARepLabel.Name = "USARepLabel";
-            this.USARepLabel.Size = new System.Drawing.Size(62, 13);
+            this.USARepLabel.Size = new System.Drawing.Size(71, 13);
             this.USARepLabel.TabIndex = 22;
-            this.USARepLabel.Text = "Reputation:";
+            this.USARepLabel.Text = "Reputation: 4";
             // 
             // USAStrengthLabel
             // 
@@ -745,9 +784,9 @@
             this.USAStrengthLabel.Location = new System.Drawing.Point(6, 37);
             this.USAStrengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.USAStrengthLabel.Name = "USAStrengthLabel";
-            this.USAStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.USAStrengthLabel.Size = new System.Drawing.Size(59, 13);
             this.USAStrengthLabel.TabIndex = 21;
-            this.USAStrengthLabel.Text = "Strength:";
+            this.USAStrengthLabel.Text = "Strength: 5";
             // 
             // USADurLabel
             // 
@@ -755,9 +794,9 @@
             this.USADurLabel.Location = new System.Drawing.Point(6, 14);
             this.USADurLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.USADurLabel.Name = "USADurLabel";
-            this.USADurLabel.Size = new System.Drawing.Size(59, 13);
+            this.USADurLabel.Size = new System.Drawing.Size(71, 13);
             this.USADurLabel.TabIndex = 20;
-            this.USADurLabel.Text = "Durability:  ";
+            this.USADurLabel.Text = "Durability:  20";
             // 
             // SwedenLabel
             // 
@@ -862,12 +901,15 @@
             // ExitButton
             // 
             this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ExitButton.BackColor = System.Drawing.Color.White;
+            this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ExitButton.FlatAppearance.BorderSize = 0;
+            this.ExitButton.FlatAppearance.BorderSize = 2;
+            this.ExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.ExitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(1288, -7);
+            this.ExitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.ExitButton.Location = new System.Drawing.Point(1224, -13);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(64, 64);
@@ -876,39 +918,13 @@
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // PauseButton
-            // 
-            this.PauseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PauseButton.BackColor = System.Drawing.SystemColors.Control;
-            this.PauseButton.Enabled = false;
-            this.PauseButton.ForeColor = System.Drawing.Color.Black;
-            this.PauseButton.Location = new System.Drawing.Point(172, 589);
-            this.PauseButton.Name = "PauseButton";
-            this.PauseButton.Size = new System.Drawing.Size(64, 22);
-            this.PauseButton.TabIndex = 2;
-            this.PauseButton.Text = "Pause";
-            this.PauseButton.UseVisualStyleBackColor = false;
-            this.PauseButton.Click += new System.EventHandler(this.PauseButton_Click);
-            // 
-            // StartButton
-            // 
-            this.StartButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StartButton.Location = new System.Drawing.Point(172, 560);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(64, 22);
-            this.StartButton.TabIndex = 1;
-            this.StartButton.Text = "Start";
-            this.StartButton.UseVisualStyleBackColor = true;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
-            // 
             // EnduranceBox
             // 
             this.EnduranceBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.EnduranceBox.BackColor = System.Drawing.Color.Transparent;
             this.EnduranceBox.Controls.Add(this.EnduranceListBox);
             this.EnduranceBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.EnduranceBox.Location = new System.Drawing.Point(0, 505);
+            this.EnduranceBox.Location = new System.Drawing.Point(0, 553);
             this.EnduranceBox.Name = "EnduranceBox";
             this.EnduranceBox.Size = new System.Drawing.Size(164, 167);
             this.EnduranceBox.TabIndex = 0;
@@ -923,31 +939,22 @@
             this.EnduranceListBox.FormattingEnabled = true;
             this.EnduranceListBox.Location = new System.Drawing.Point(2, 12);
             this.EnduranceListBox.Name = "EnduranceListBox";
+            this.EnduranceListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.EnduranceListBox.Size = new System.Drawing.Size(157, 351);
             this.EnduranceListBox.TabIndex = 0;
             // 
             // PressStart
             // 
-            this.PressStart.BackColor = System.Drawing.Color.Black;
-            this.PressStart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PressStart.BackgroundImage")));
-            this.PressStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PressStart.FlatAppearance.BorderSize = 0;
-            this.PressStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PressStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PressStart.Location = new System.Drawing.Point(671, 537);
-            this.PressStart.Margin = new System.Windows.Forms.Padding(4);
+            this.PressStart.Location = new System.Drawing.Point(0, 0);
             this.PressStart.Name = "PressStart";
-            this.PressStart.Size = new System.Drawing.Size(295, 137);
+            this.PressStart.Size = new System.Drawing.Size(75, 23);
             this.PressStart.TabIndex = 0;
-            this.PressStart.Text = "Press to Continue";
-            this.PressStart.UseVisualStyleBackColor = false;
-            this.PressStart.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1348, 670);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.Background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -999,8 +1006,6 @@
         private System.Windows.Forms.Panel Background;
         private System.Windows.Forms.GroupBox EnduranceBox;
         private System.Windows.Forms.ListBox EnduranceListBox;
-        private System.Windows.Forms.Button PauseButton;
-        private System.Windows.Forms.Button StartButton;
         //private System.Windows.Forms.Panel Popup;
         private System.Windows.Forms.Button PressStart;
         private System.Windows.Forms.Button ExitButton;
@@ -1066,6 +1071,8 @@
         private System.Windows.Forms.Label RussiaRepLabel;
         private System.Windows.Forms.Label RussiaStrengthLabel;
         private System.Windows.Forms.Label RussiaDurLabel;
+        private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.Button PauseButton;
     }
 }
 

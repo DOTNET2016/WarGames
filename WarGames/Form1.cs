@@ -19,16 +19,40 @@ namespace WarGames
         List<Countries> countriesAtWar = new List<Countries>();
         private List<Point> Points = new List<Point>();
 
+        private bool _IsOn;
+        private bool _IsPause;
+
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
+        IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
+
+        private PrivateFontCollection fonts = new PrivateFontCollection();
+
+        Font myFont;
+
         public Form1()
         {
             Application.Run(new IntroMenu());       
             InitializeComponent();
             EnduranceListBox.DataSource = countriesAtWar;
+
+            byte[] fontData = Properties.Resources.WarGames;
+            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
+            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            uint dummy = 0;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.WarGames.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
+
+            myFont = new Font(fonts.Families[0], 20.0F);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             Paint += new PaintEventHandler(Background_Paint);
+            StartButton.Font = myFont;
+            PauseButton.Font = myFont;
+            CustomizeGameBtn.Font = myFont;
         }
 
         private void Background_Paint(object sender, PaintEventArgs e)
@@ -57,19 +81,43 @@ namespace WarGames
 
         private void PauseButton_Click(object sender, EventArgs e)
         {
+            IsPause = !IsPause;
             //"Start" text turns to Stop while the game is running
             ((CurrencyManager)EnduranceListBox.BindingContext[countriesAtWar]).Refresh();
-            //UpdateUSAGroupBox();
         }
 
-        private void ContinueButton_Click(object sender, EventArgs e)
+        private void StartButton_Click(object sender, EventArgs e)
         {
-            //Popup.Hide();
-        }
-
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-            Close();
+            IsOn = !IsOn;
+            if (IsOn)
+            {
+                if (countriesAtWar.Count == 0)
+                {
+                    countriesAtWar.Add(new Countries("USA", 20, 5, 4));
+                    countriesAtWar.Add(new Countries("Russia", 20, 5, 4));
+                    countriesAtWar.Add(new Countries("UK", 10, 3, 7));
+                    countriesAtWar.Add(new Countries("China", 20, 5, 5));
+                    countriesAtWar.Add(new Countries("France", 15, 3, 7));
+                    countriesAtWar.Add(new Countries("India", 17, 4, 7));
+                    countriesAtWar.Add(new Countries("Germany", 15, 4, 8));
+                    countriesAtWar.Add(new Countries("Japan", 10, 3, 7));
+                    countriesAtWar.Add(new Countries("Sweden", 13, 2, 10));
+                    countriesAtWar.Add(new Countries("North Korea", 14, 6, 1));
+                    PauseButton.Enabled = true;
+                    CustomizeGameBtn.Enabled = false;
+                }
+                else
+                {
+                    PauseButton.Enabled = true;
+                    CustomizeGameBtn.Enabled = false;
+                }
+            }
+            if (!IsOn)
+            {
+                countriesAtWar.Clear();
+                PauseButton.Enabled = false;
+                CustomizeGameBtn.Enabled = true;
+            }
         }
 
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
@@ -141,28 +189,37 @@ namespace WarGames
             css.Dispose();
         }
 
-        private void StartButton_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
-            if (countriesAtWar.Count == 0)
+            Close();
+        }
+
+        #region ButtonTextChanger
+        //Dont really need to touch these two bools
+        public bool IsOn
+        {
+            get
             {
-                countriesAtWar.Add(new Countries("USA", 20, 5, 4));
-                countriesAtWar.Add(new Countries("Russia", 20, 5, 4));
-                countriesAtWar.Add(new Countries("UK", 10, 3, 7));
-                countriesAtWar.Add(new Countries("China", 20, 5, 5));
-                countriesAtWar.Add(new Countries("France", 15, 3, 7));
-                countriesAtWar.Add(new Countries("India", 17, 4, 7));
-                countriesAtWar.Add(new Countries("Germany", 15, 4, 8));
-                countriesAtWar.Add(new Countries("Japan", 10, 3, 7));
-                countriesAtWar.Add(new Countries("Sweden", 13, 2, 10));
-                countriesAtWar.Add(new Countries("North Korea", 14, 6, 1));
-                PauseButton.Enabled = true;
-                CustomizeGameBtn.Enabled = false;
+                return _IsOn;
             }
-            else
+            set
             {
-                PauseButton.Enabled = true;
-                CustomizeGameBtn.Enabled = false;
+                _IsOn = value;
+                StartButton.Text = _IsOn ? "Stop" : "Start";
             }
         }
+        public bool IsPause
+        {
+            get
+            {
+                return _IsPause;
+            }
+            set
+            {
+                _IsPause = value;
+                PauseButton.Text = _IsPause ? "Unpause" : "Pause";
+            }
+        }
+        #endregion
     }
 }

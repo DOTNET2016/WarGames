@@ -123,11 +123,11 @@
             this.label41 = new System.Windows.Forms.Label();
             this.BigRedButton = new System.Windows.Forms.Button();
             this.CountdownClock = new System.Windows.Forms.Label();
-            this.GoBack = new System.Windows.Forms.Button();
             this.KeyGroupBox = new System.Windows.Forms.GroupBox();
-            this.DurabilityKEYlabel = new System.Windows.Forms.Label();
-            this.StrengthKEYlabel = new System.Windows.Forms.Label();
             this.RepKEYlabel = new System.Windows.Forms.Label();
+            this.StrengthKEYlabel = new System.Windows.Forms.Label();
+            this.DurabilityKEYlabel = new System.Windows.Forms.Label();
+            this.GoBack = new System.Windows.Forms.Button();
             this.CountriesGroupBox.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -1717,7 +1717,7 @@
             // 
             // BigRedButton
             // 
-            this.BigRedButton.BackColor = System.Drawing.Color.Black;
+            this.BigRedButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.BigRedButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BigRedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.BigRedButton.FlatAppearance.BorderSize = 2;
@@ -1747,17 +1747,6 @@
             this.CountdownClock.TabIndex = 3;
             this.CountdownClock.Text = "00:05";
             // 
-            // GoBack
-            // 
-            this.GoBack.Location = new System.Drawing.Point(9, 652);
-            this.GoBack.Margin = new System.Windows.Forms.Padding(2);
-            this.GoBack.Name = "GoBack";
-            this.GoBack.Size = new System.Drawing.Size(76, 19);
-            this.GoBack.TabIndex = 4;
-            this.GoBack.Text = "Go Back";
-            this.GoBack.UseVisualStyleBackColor = true;
-            this.GoBack.Click += new System.EventHandler(this.GoBack_Click);
-            // 
             // KeyGroupBox
             // 
             this.KeyGroupBox.Controls.Add(this.RepKEYlabel);
@@ -1772,41 +1761,62 @@
             this.KeyGroupBox.TabStop = false;
             this.KeyGroupBox.Text = "Key";
             // 
-            // DurabilityKEYlabel
+            // RepKEYlabel
             // 
-            this.DurabilityKEYlabel.AutoSize = true;
-            this.DurabilityKEYlabel.Location = new System.Drawing.Point(11, 39);
-            this.DurabilityKEYlabel.Name = "DurabilityKEYlabel";
-            this.DurabilityKEYlabel.Size = new System.Drawing.Size(229, 24);
-            this.DurabilityKEYlabel.TabIndex = 0;
-            this.DurabilityKEYlabel.Text = "Durability = Min: 1 Max: 20";
+            this.RepKEYlabel.AutoSize = true;
+            this.RepKEYlabel.Location = new System.Drawing.Point(11, 111);
+            this.RepKEYlabel.Name = "RepKEYlabel";
+            this.RepKEYlabel.Size = new System.Drawing.Size(148, 18);
+            this.RepKEYlabel.TabIndex = 2;
+            this.RepKEYlabel.Text = "Rep = Min: 1 Max: 10";
             // 
             // StrengthKEYlabel
             // 
             this.StrengthKEYlabel.AutoSize = true;
             this.StrengthKEYlabel.Location = new System.Drawing.Point(11, 75);
             this.StrengthKEYlabel.Name = "StrengthKEYlabel";
-            this.StrengthKEYlabel.Size = new System.Drawing.Size(213, 24);
+            this.StrengthKEYlabel.Size = new System.Drawing.Size(168, 18);
             this.StrengthKEYlabel.TabIndex = 1;
             this.StrengthKEYlabel.Text = "Strength = Min: 1 Max: 5";
             // 
-            // RepKEYlabel
+            // DurabilityKEYlabel
             // 
-            this.RepKEYlabel.AutoSize = true;
-            this.RepKEYlabel.Location = new System.Drawing.Point(11, 111);
-            this.RepKEYlabel.Name = "RepKEYlabel";
-            this.RepKEYlabel.Size = new System.Drawing.Size(188, 24);
-            this.RepKEYlabel.TabIndex = 2;
-            this.RepKEYlabel.Text = "Rep = Min: 1 Max: 10";
+            this.DurabilityKEYlabel.AutoSize = true;
+            this.DurabilityKEYlabel.Location = new System.Drawing.Point(11, 39);
+            this.DurabilityKEYlabel.Name = "DurabilityKEYlabel";
+            this.DurabilityKEYlabel.Size = new System.Drawing.Size(181, 18);
+            this.DurabilityKEYlabel.TabIndex = 0;
+            this.DurabilityKEYlabel.Text = "Durability = Min: 1 Max: 20";
+            // 
+            // GoBack
+            // 
+            this.GoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.GoBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GoBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.GoBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.GoBack.FlatAppearance.BorderSize = 2;
+            this.GoBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.GoBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.GoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GoBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.GoBack.Location = new System.Drawing.Point(10, 671);
+            this.GoBack.Margin = new System.Windows.Forms.Padding(2);
+            this.GoBack.Name = "GoBack";
+            this.GoBack.Size = new System.Drawing.Size(118, 38);
+            this.GoBack.TabIndex = 6;
+            this.GoBack.Text = "Go Back";
+            this.GoBack.UseVisualStyleBackColor = false;
+            this.GoBack.Click += new System.EventHandler(this.GoBack_Click);
             // 
             // CustomSettingsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1685, 838);
-            this.Controls.Add(this.KeyGroupBox);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.GoBack);
+            this.Controls.Add(this.KeyGroupBox);
             this.Controls.Add(this.CountdownClock);
             this.Controls.Add(this.BigRedButton);
             this.Controls.Add(this.label41);
@@ -1816,6 +1826,7 @@
             this.Name = "CustomSettingsScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomSettingsScreen";
+            this.Load += new System.EventHandler(this.CustomSettingsScreen_Load);
             this.CountriesGroupBox.ResumeLayout(false);
             this.CountriesGroupBox.PerformLayout();
             this.groupBox9.ResumeLayout(false);
@@ -1981,10 +1992,10 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button GoBack;
         private System.Windows.Forms.GroupBox KeyGroupBox;
         private System.Windows.Forms.Label RepKEYlabel;
         private System.Windows.Forms.Label StrengthKEYlabel;
         private System.Windows.Forms.Label DurabilityKEYlabel;
+        private System.Windows.Forms.Button GoBack;
     }
 }

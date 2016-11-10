@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -527,7 +528,14 @@ namespace WarGames
         }
         #endregion//All 
 
-        static CustomSettingsScreen newScreen;
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
+        IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
+
+        private PrivateFontCollection fonts = new PrivateFontCollection();
+
+        Font myFont;
+
         private Timer _CountDownTimer;
 
         private int _counter = 5;
@@ -537,13 +545,21 @@ namespace WarGames
         {
             InitializeComponent();
 
-            GoBack.DialogResult = DialogResult.Cancel;
+            byte[] fontData = Properties.Resources.WarGames;
+            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
+            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            uint dummy = 0;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.WarGames.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
+
+            myFont = new Font(fonts.Families[0], 20.0F);
         }
 
-        public static void ShowCustomMenu()
+        private void CustomSettingsScreen_Load(object sender, EventArgs e)
         {
-            newScreen = new CustomSettingsScreen();
-            newScreen.ShowDialog();
+            BigRedButton.Font = myFont;
+            GoBack.Font = myFont;
         }
 
         private void BigRedButton_Click(object sender, EventArgs e)
@@ -569,7 +585,6 @@ namespace WarGames
                 _CountDownTimer.Stop();
                 CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
                 DialogResult = DialogResult.OK;
-                IntroMenu.CloseIntroScreen();
             }
         }
 

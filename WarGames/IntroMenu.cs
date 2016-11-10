@@ -35,7 +35,7 @@ namespace WarGames
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
-            myFont = new Font(fonts.Families[0], 23.0F);
+            myFont = new Font(fonts.Families[0], 30.0F);
         }
 
         private void IntroMenu_Load(object sender, EventArgs e)
@@ -47,25 +47,11 @@ namespace WarGames
         {
             Close();
         }
-
-        private void CustomizeGameBtn_Click(object sender, EventArgs e)
-        {
-            CustomSettingsScreen.ShowCustomMenu();
-            //CustomSettingsScreen screen1 = new CustomSettingsScreen();
-            //var result = screen1.ShowDialog();
-            //if (result == DialogResult.OK)
-            //{
-
-              
-
-            //}
-            Close();     
-        }
         
-        public static void CloseIntroScreen()
-        {           
-            mainIntroScreen = new IntroMenu();
-            mainIntroScreen.Dispose();
-        }
+        //public static void CloseIntroScreen()
+        //{           
+        //    mainIntroScreen = new IntroMenu();
+        //    mainIntroScreen.Dispose();
+        //}
     }
 }
