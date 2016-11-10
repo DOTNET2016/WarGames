@@ -41,7 +41,6 @@ namespace WarGames
         private void IntroMenu_Load(object sender, EventArgs e)
         {
             PlayGameBtn.Font = myFont;
-            CustomizeGameBtn.Font = myFont;
         }
 
         private void PlayGameBtn_Click(object sender, EventArgs e)

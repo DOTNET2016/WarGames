@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IntroMenu));
             this.PlayGameBtn = new System.Windows.Forms.Button();
-            this.CustomizeGameBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,24 +52,6 @@
             this.PlayGameBtn.UseVisualStyleBackColor = false;
             this.PlayGameBtn.Click += new System.EventHandler(this.PlayGameBtn_Click);
             // 
-            // CustomizeGameBtn
-            // 
-            this.CustomizeGameBtn.BackColor = System.Drawing.SystemColors.WindowText;
-            this.CustomizeGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CustomizeGameBtn.FlatAppearance.BorderSize = 2;
-            this.CustomizeGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.CustomizeGameBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.CustomizeGameBtn.Location = new System.Drawing.Point(1062, 642);
-            this.CustomizeGameBtn.Name = "CustomizeGameBtn";
-            this.CustomizeGameBtn.Size = new System.Drawing.Size(237, 84);
-            this.CustomizeGameBtn.TabIndex = 2;
-            this.CustomizeGameBtn.Text = "Customize Game";
-            this.CustomizeGameBtn.UseVisualStyleBackColor = false;
-            this.CustomizeGameBtn.Click += new System.EventHandler(this.CustomizeGameBtn_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -87,7 +68,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1685, 838);
-            this.Controls.Add(this.CustomizeGameBtn);
             this.Controls.Add(this.PlayGameBtn);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -107,6 +87,5 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button PlayGameBtn;
-        private System.Windows.Forms.Button CustomizeGameBtn;
     }
 }

@@ -26,17 +26,19 @@ namespace WarGames
         Countries Sweden = new Countries("Sweden", 13, 2, 10);
         Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
 
+        private int _usaDurability;
         public int USADurability
         {
             get
             {
-                return USA.Durability;
+                return _usaDurability;
             }
             set
             {
-
+                _usaDurability = value;
             }
         }
+
         public int USAStrength { get; set; }
         public int USAREP { get; set; }
 
@@ -55,6 +57,8 @@ namespace WarGames
         public CustomSettingsScreen()
         {
             InitializeComponent();
+            BigRedButton.DialogResult = DialogResult.OK;
+            //BigRedButton.DialogResult = DialogResult.Cancel;
         }
 
         public static void ShowCustomMenu()
@@ -66,31 +70,31 @@ namespace WarGames
         private void BigRedButton_Click(object sender, EventArgs e)
         {
             CountdownClock.Enabled = true;
-            _CountDownTimer = new Timer();
-            _CountDownTimer.Tick += _CountDownTimer_Tick;
-            _CountDownTimer.Interval = 1000;
-            _CountDownTimer.Start();
-            CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
+            //_CountDownTimer = new Timer();
+            //_CountDownTimer.Tick += _CountDownTimer_Tick;
+            //_CountDownTimer.Interval = 1000;
+            //_CountDownTimer.Start();
+            //CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
 
         }
 
-        private void _CountDownTimer_Tick(object sender, EventArgs e)
-        {
-            _counter--;
-            CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
-            CountdownClock.Refresh();
-            if (_counter == 0)
-            {
-                _CountDownTimer.Stop();
-                CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
-                newScreen.Dispose();
-                IntroMenu.CloseIntroScreen();
-            }
-        }
+        //private void _CountDownTimer_Tick(object sender, EventArgs e)
+        //{
+        //    _counter--;
+        //    CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
+        //    CountdownClock.Refresh();
+        //    if (_counter == 0)
+        //    {
+        //        _CountDownTimer.Stop();
+        //        CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
+        //        //newScreen.Dispose();
+        //        IntroMenu.CloseIntroScreen();
+        //    }
+        //}
 
         public int getUSADurability()
         {
-            int dura = (int)USA_Durability.Value;
+            int dura = USADurability;
             return dura;
         }
 
@@ -98,7 +102,7 @@ namespace WarGames
         //USA
         private void USA_Durability_ValueChanged(object sender, EventArgs e)
         {
-            USADurability = (int)USA_Durability.Value;
+            _usaDurability = (int)USA_Durability.Value;
         }
 
         private void USA_Strength_ValueChanged(object sender, EventArgs e)

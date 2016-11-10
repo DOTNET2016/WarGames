@@ -17,8 +17,6 @@ namespace WarGames
         WOPR wop = new WOPR();
         List<Countries> countriesAtWar = new List<Countries>();
 
-        CustomSettingsScreen css = new CustomSettingsScreen();
-
         Countries USA = new Countries("USA", 20, 5, 4);
         Countries Russia = new Countries("Russia", 20, 5, 4);
         Countries UK = new Countries("UK", 10, 3, 7);
@@ -44,14 +42,14 @@ namespace WarGames
         private void PauseButton_Click(object sender, EventArgs e)
         {
             //only visible while the game is running, does not effect the start/stop button
-
+            USADurLabel.Refresh();
         }
 
         private void StartButton_Click(object sender, EventArgs e)
         {
             //"Start" text turns to Stop while the game is running
             PauseButton.Enabled = true;
-            UpdateUSAGroupBox();
+            //UpdateUSAGroupBox();
         }
 
         private void ContinueButton_Click(object sender, EventArgs e)
@@ -64,12 +62,24 @@ namespace WarGames
             Close();
         }
 
-        private void UpdateUSAGroupBox()
-        {
-            //USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString("");           
-            USADurLabel.Text = ("Durability: ") + css.USADurability.ToString();
-            USADurLabel.Refresh();
+        //private void UpdateUSAGroupBox()
+        //{
+        //    //USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString("");           
+        //    USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString();
+        //    USADurLabel.Refresh();
 
+        //}
+
+        private void CustomizeGameBtn_Click(object sender, EventArgs e)
+        {
+            CustomSettingsScreen css = new CustomSettingsScreen();
+            if (css.ShowDialog(this) == DialogResult.OK)
+            {
+                USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString();
+            }
+            css.Close();
+            css.Dispose();
         }
+        
     }
 }

@@ -42,6 +42,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.StatsBox = new System.Windows.Forms.GroupBox();
             this.NorthKoreaLabel = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.USADurLabel = new System.Windows.Forms.Label();
             this.SwedenLabel = new System.Windows.Forms.Label();
             this.JapanLabel = new System.Windows.Forms.Label();
             this.GermanyLabel = new System.Windows.Forms.Label();
@@ -66,8 +68,7 @@
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
-            this.USADurLabel = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CustomizeGameBtn = new System.Windows.Forms.Button();
             this.Background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -80,8 +81,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.StatsBox.SuspendLayout();
-            this.EnduranceBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.EnduranceBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Background
@@ -89,6 +90,7 @@
             this.Background.AutoSize = true;
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Background.Controls.Add(this.CustomizeGameBtn);
             this.Background.Controls.Add(this.pictureBox10);
             this.Background.Controls.Add(this.pictureBox9);
             this.Background.Controls.Add(this.pictureBox8);
@@ -262,6 +264,24 @@
             this.NorthKoreaLabel.Size = new System.Drawing.Size(111, 24);
             this.NorthKoreaLabel.TabIndex = 19;
             this.NorthKoreaLabel.Text = "North Korea";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.USADurLabel);
+            this.groupBox1.Location = new System.Drawing.Point(7, 33);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(123, 134);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            // 
+            // USADurLabel
+            // 
+            this.USADurLabel.AutoSize = true;
+            this.USADurLabel.Location = new System.Drawing.Point(14, 18);
+            this.USADurLabel.Name = "USADurLabel";
+            this.USADurLabel.Size = new System.Drawing.Size(79, 17);
+            this.USADurLabel.TabIndex = 20;
+            this.USADurLabel.Text = "Durability:  ";
             // 
             // SwedenLabel
             // 
@@ -544,23 +564,23 @@
             this.PressStart.UseVisualStyleBackColor = false;
             this.PressStart.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
-            // USADurLabel
+            // CustomizeGameBtn
             // 
-            this.USADurLabel.AutoSize = true;
-            this.USADurLabel.Location = new System.Drawing.Point(14, 18);
-            this.USADurLabel.Name = "USADurLabel";
-            this.USADurLabel.Size = new System.Drawing.Size(79, 17);
-            this.USADurLabel.TabIndex = 20;
-            this.USADurLabel.Text = "Durability:  ";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.USADurLabel);
-            this.groupBox1.Location = new System.Drawing.Point(7, 33);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(123, 134);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
+            this.CustomizeGameBtn.BackColor = System.Drawing.SystemColors.WindowText;
+            this.CustomizeGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CustomizeGameBtn.FlatAppearance.BorderSize = 2;
+            this.CustomizeGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.CustomizeGameBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.CustomizeGameBtn.Location = new System.Drawing.Point(215, 785);
+            this.CustomizeGameBtn.Name = "CustomizeGameBtn";
+            this.CustomizeGameBtn.Size = new System.Drawing.Size(115, 40);
+            this.CustomizeGameBtn.TabIndex = 3;
+            this.CustomizeGameBtn.Text = "Customize Game";
+            this.CustomizeGameBtn.UseVisualStyleBackColor = false;
+            this.CustomizeGameBtn.Click += new System.EventHandler(this.CustomizeGameBtn_Click);
             // 
             // Form1
             // 
@@ -587,9 +607,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
-            this.EnduranceBox.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.EnduranceBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -637,6 +657,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label USADurLabel;
+        private System.Windows.Forms.Button CustomizeGameBtn;
     }
 }
 
