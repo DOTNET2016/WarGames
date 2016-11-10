@@ -497,6 +497,150 @@ namespace WarGames
             return usaRep;
         }
 
+        public int getUKDurability()
+        {
+            int ukDura = UkDurability;
+            return ukDura;
+        }
+        public int getUKStrength()
+        {
+            int ukStre = UkStrength;
+            return ukStre;
+        }
+        public int getUKRep()
+        {
+            int ukRep = UkRep;
+            return ukRep;
+        }
+
+        public int getRussiaDurability()
+        {
+            int rusDura = RussiaDurability;
+            return rusDura;
+        }
+        public int getRussiaStrength()
+        {
+            int rusStre = RussiaStrength;
+            return rusStre;
+        }
+        public int getRussiaRep()
+        {
+            int rusRep = RussiaRep;
+            return rusRep;
+        }
+
+        public int getChinaDurability()
+        {
+            int chinaDura = ChinaDurability;
+            return chinaDura;
+        }
+        public int getChinaStrength()
+        {
+            int chinaStre = ChinaStrength;
+            return chinaStre;
+        }
+        public int getChinaRep()
+        {
+            int chinaRep = ChinaRep;
+            return chinaRep;
+        }
+
+        public int getFranceDurability()
+        {
+            int franDura = FranceDurability;
+            return franDura;
+        }
+        public int getFranceStrength()
+        {
+            int franStre = FranceStrength;
+            return franStre;
+        }
+        public int getFranceRep()
+        {
+            int franRep = FranceRep;
+            return franRep;
+        }
+
+        public int getIndiaDurability()
+        {
+            int indiaDura = IndiaDurability;
+            return indiaDura;
+        }
+        public int getIndiaStrength()
+        {
+            int indiaStre = IndiaStrength;
+            return indiaStre;
+        }
+        public int getIndiaRep()
+        {
+            int indiaRep = IndiaRep;
+            return indiaRep;
+        }
+
+        public int getGermanyDurability()
+        {
+            int germDura = GermanyDurability;
+            return germDura;
+        }
+        public int getGermanyStrength()
+        {
+            int germStre = GermanyStrength;
+            return germStre;
+        }
+        public int getGermanyRep()
+        {
+            int germRep = GermanyRep;
+            return germRep;
+        }
+
+        public int getJapanDurability()
+        {
+            int japDura = JapanDurability;
+            return japDura;
+        }
+        public int getJapanStrength()
+        {
+            int japStre = JapanStrength;
+            return japStre;
+        }
+        public int getJapanRep()
+        {
+            int japRep = JapanRep;
+            return japRep;
+        }
+
+        public int getSwedenDurability()
+        {
+            int sweDura = SwedenDurability;
+            return sweDura;
+        }
+        public int getSwedenStrength()
+        {
+            int sweStre = SwedenStrength;
+            return sweStre;
+        }
+        public int getSwedenRep()
+        {
+            int sweRep = SwedenRep;
+            return sweRep;
+        }
+
+        public int getNorthKoreaDurability()
+        {
+            int northKDura = NorthKoreaDurability;
+            return northKDura;
+        }
+        public int getNorthKoreaStrength()
+        {
+            int northKStre = NorthKoreaStrength;
+            return northKStre;
+        }
+        public int getNorthKoreaRep()
+        {
+            int northKRep = NorthKoreaRep;
+            return northKRep;
+        }
+
         #region CountiresSettingsChanged
         //USA
         private void USA_Durability_ValueChanged(object sender, EventArgs e)

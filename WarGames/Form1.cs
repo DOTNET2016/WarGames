@@ -102,6 +102,38 @@ namespace WarGames
             RussiaStrengthLabel.Text = ("Strength: ") + Russia.Strength;
             RussiaRepLabel.Text = ("Reputation: ") + Russia.Rep;
 
+            UKDurLabel.Text = ("Durability: ") + UK.Durability;
+            UKStrengthLabel.Text = ("Strength: ") + UK.Strength;
+            UKRepLabel.Text = ("Reputation: ") + UK.Rep;
+
+            ChinaDurLabel.Text = ("Durability: ") + China.Durability;
+            ChinaStrengthLabel.Text = ("Strength: ") + China.Strength;
+            ChinaRepLabel.Text = ("Reputation: ") + China.Rep;
+
+            FranceDurLabel1.Text = ("Durability: ") + France.Durability;
+            FranceStrengthLabel.Text = ("Strength: ") + France.Strength;
+            FranceRepLabel.Text = ("Reputation: ") + France.Rep;
+
+            IndiaDurLabel.Text = ("Durability: ") + India.Durability;
+            IndiaStrengthLabel.Text = ("Strength: ") + India.Strength;
+            IndiaRepLabel.Text = ("Reputation: ") + India.Rep;
+
+            GermanyDurLabel.Text = ("Durability: ") + Germany.Durability;
+            GermanyStrengthLabel.Text = ("Strength: ") + Germany.Strength;
+            GermanyRepLabel.Text = ("Reputation: ") + Germany.Rep;
+
+            JapanDurLabel.Text = ("Durability: ") + Japan.Durability;
+            JapanStrengthLabel.Text = ("Strength: ") + Japan.Strength;
+            JapanRepLabel.Text = ("Reputation: ") + Japan.Rep;
+
+            SwedenDurLabel.Text = ("Durability: ") + Sweden.Durability;
+            SwedenStrengthLabel.Text = ("Strength: ") + Sweden.Strength;
+            SwedenRepLabel.Text = ("Reputation: ") + Sweden.Rep;
+
+            NKDurLabel.Text = ("Durability: ") + NorthKorea.Durability;
+            NKStrengthLabel.Text = ("Strength: ") + NorthKorea.Strength;
+            NKRepLabel.Text = ("Reputation: ") + NorthKorea.Rep;
+
         }
 
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
@@ -112,6 +144,42 @@ namespace WarGames
                 USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString();
                 USAStrengthLabel.Text = ("Strength: ") + css.getUSAStrength().ToString();
                 USARepLabel.Text = ("Reputation: ") + css.getUSARep().ToString();
+
+                UKDurLabel.Text = ("Durability: ") + css.getUKDurability().ToString();
+                UKStrengthLabel.Text = ("Strength: ") + css.getUKStrength().ToString();
+                UKRepLabel.Text = ("Reputation: ") + css.getUKRep().ToString();
+
+                ChinaDurLabel.Text = ("Durability: ") + css.getChinaDurability().ToString();
+                ChinaStrengthLabel.Text = ("Strength: ") + css.getChinaStrength().ToString();
+                ChinaRepLabel.Text = ("Reputation: ") + css.getChinaRep().ToString();
+
+                RussiaDurLabel.Text = ("Durability: ") + css.getRussiaDurability().ToString();
+                RussiaStrengthLabel.Text = ("Strength: ") + css.getRussiaStrength().ToString();
+                RussiaRepLabel.Text = ("Reputation: ") + css.getRussiaRep().ToString();
+
+                FranceDurLabel1.Text = ("Durability: ") + css.getFranceDurability().ToString();
+                FranceStrengthLabel.Text = ("Strength: ") + css.getFranceStrength().ToString();
+                FranceRepLabel.Text = ("Reputation: ") + css.getFranceRep().ToString();
+
+                GermanyDurLabel.Text = ("Durability: ") + css.getGermanyDurability().ToString();
+                GermanyStrengthLabel.Text = ("Strength: ") + css.getGermanyStrength().ToString();
+                GermanyRepLabel.Text = ("Reputation: ") + css.getGermanyRep().ToString();
+
+                IndiaDurLabel.Text = ("Durability: ") + css.getIndiaDurability().ToString();
+                IndiaStrengthLabel.Text = ("Strength: ") + css.getIndiaStrength().ToString();
+                IndiaRepLabel.Text = ("Reputation: ") + css.getIndiaRep().ToString();
+
+                JapanDurLabel.Text = ("Durability: ") + css.getJapanDurability().ToString();
+                JapanStrengthLabel.Text = ("Strength: ") + css.getJapanStrength().ToString();
+                JapanRepLabel.Text = ("Reputation: ") + css.getJapanRep().ToString();
+
+                SwedenDurLabel.Text = ("Durability: ") + css.getSwedenDurability().ToString();
+                SwedenStrengthLabel.Text = ("Strength: ") + css.getSwedenStrength().ToString();
+                SwedenRepLabel.Text = ("Reputation: ") + css.getSwedenRep().ToString();
+
+                NKDurLabel.Text = ("Durability: ") + css.getNorthKoreaDurability().ToString();
+                NKStrengthLabel.Text = ("Strength: ") + css.getNorthKoreaStrength().ToString();
+                NKRepLabel.Text = ("Reputation: ") + css.getNorthKoreaRep().ToString();
             }
             css.Close();
             css.Dispose();
