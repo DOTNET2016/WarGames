@@ -124,6 +124,18 @@ namespace WarGames
                 JapanStrengthLabel.Text = "Strength: " + css.JPStrength.ToString();
                 JapanRepLabel.Text = "Reputation: " + css.JPRep.ToString();
                 countriesAtWar.Add(new Countries("Japan", css.JPDurability, css.JPStrength, css.JPRep));
+
+                //Sweden
+                SwedenDurLabel.Text = "Durability: " + css.SwedenDurability.ToString();
+                SwedenStrengthLabel.Text = "Strength: " + css.SwedenStrength.ToString();
+                SwedenRepLabel.Text = "Reputation: " + css.SwedenRep.ToString();
+                countriesAtWar.Add(new Countries("Sweden", css.SwedenDurability, css.SwedenStrength, css.SwedenRep));
+
+                //North Korea
+                NKDurLabel.Text = "Durability: " + css.NorthKoreaDurability.ToString();
+                NKStrengthLabel.Text = "Strength: " + css.NorthKoreaStrength.ToString();
+                NKRepLabel.Text = "Reputation: " + css.NorthKoreaRep.ToString();
+                countriesAtWar.Add(new Countries("North Korea", css.NorthKoreaDurability, css.NorthKoreaStrength, css.NorthKoreaRep));
             }
             css.Close();
             css.Dispose();
