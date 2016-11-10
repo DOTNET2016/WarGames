@@ -1485,11 +1485,11 @@
             this.CountdownClock.AutoSize = true;
             this.CountdownClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 124.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CountdownClock.ForeColor = System.Drawing.Color.White;
-            this.CountdownClock.Location = new System.Drawing.Point(559, 585);
+            this.CountdownClock.Location = new System.Drawing.Point(525, 580);
             this.CountdownClock.Name = "CountdownClock";
             this.CountdownClock.Size = new System.Drawing.Size(627, 238);
             this.CountdownClock.TabIndex = 3;
-            this.CountdownClock.Text = "00:00";
+            this.CountdownClock.Text = "00:05";
             // 
             // pictureBox10
             // 
