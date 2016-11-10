@@ -163,6 +163,10 @@ namespace WarGames
         {
             get
             {
+                if (_ukDurability == 0)
+                {
+                    return (int)UK_Durability.Value;
+                }
                 return _ukDurability;
             }
 
@@ -175,6 +179,10 @@ namespace WarGames
         {
             get
             {
+                if (_ukStrength == 0)
+                {
+                    return (int)UK_Strength.Value;
+                }
                 return _ukStrength;
             }
 
@@ -187,6 +195,10 @@ namespace WarGames
         {
             get
             {
+                if (_ukRep == 0)
+                {
+                    return (int)UK_Rep.Value;
+                }
                 return _ukRep;
             }
 
