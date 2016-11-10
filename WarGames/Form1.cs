@@ -28,6 +28,7 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SetDefaultStats();
             Paint += new PaintEventHandler(Background_Paint);
         }
 

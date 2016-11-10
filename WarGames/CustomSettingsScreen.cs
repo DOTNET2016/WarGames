@@ -513,148 +513,148 @@ namespace WarGames
 
         private void USA_Strength_ValueChanged(object sender, EventArgs e)
         {
-            USAStrength = (int)USA_Strength.Value;
+            _usaStrength = (int)USA_Strength.Value;
 
         }
 
         private void USA_Rep_ValueChanged(object sender, EventArgs e)
         {
-            USARep = (int)USA_Rep.Value;
+            _usaRep = (int)USA_Rep.Value;
         }
         //Russia
         private void Russia_Durability_ValueChanged(object sender, EventArgs e)
         {
-            RussiaDurability = (int)Russia_Durability.Value;
+            _russiaDurability = (int)Russia_Durability.Value;
         }
 
         private void Russia_Strength_ValueChanged(object sender, EventArgs e)
         {
-            RussiaStrength = (int)Russia_Strength.Value;
+            _russiaStrength = (int)Russia_Strength.Value;
         }
 
         private void Russia_Rep_ValueChanged(object sender, EventArgs e)
         {
-            RussiaRep = (int)Russia_Rep.Value;
+            _russiaRep = (int)Russia_Rep.Value;
         }
         //UK
         private void UK_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            _ukDurability = (int)UK_Durability.Value;
         }
 
         private void UK_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _ukStrength = (int)UK_Strength.Value;
         }
 
         private void UK_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _ukRep = (int)UK_Rep.Value;
         }
         //China
         private void China_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            _chinaDurability = (int)China_Durability.Value;
         }
 
         private void China_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _chinaStrength = (int)China_Strength.Value;
         }
 
         private void China_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _chinaRep = (int)China_Rep.Value;
         }
         //France
         private void France_Durablity_ValueChanged(object sender, EventArgs e)
         {
-
+            _franceDurability = (int)France_Durablity.Value;
         }
 
         private void France_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _franceStrength = (int)France_Strength.Value;
         }
 
         private void France_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _franceRep = (int)France_Rep.Value;
         }
         //India
         private void India_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            _indiaDurability = (int)India_Durability.Value;
         }
 
         private void India_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _indiaStrength = (int)India_Strength.Value;
         }
 
         private void India_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _indiaRep = (int)India_Rep.Value;
         }
         //Germany
         private void Germany_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            _germanyDurability = (int)Germany_Durability.Value;
         }
 
         private void Germany_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _germanyStrength = (int)Germany_Strength.Value;
         }
 
         private void Germany_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _germanyRep = (int)Germany_Rep.Value;
         }
         //Japan
         private void Japan_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            _japanDurability = (int)Japan_Durability.Value;
         }
         
         private void Japan_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _japanStrength = (int)Japan_Strength.Value;
         }
 
         private void Japan_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _japanRep = (int)Japan_Rep.Value;
         }
         //Sweden
         private void Sweden_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            _swedenDurability = (int)Sweden_Durability.Value;
         }
 
         private void Sweden_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _swedenStrength = (int)Sweden_Strength.Value;
         }
 
         private void Sweden_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _swedenRep = (int)Sweden_Rep.Value;
         }
         //North Korea
         private void NorthKorea_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            _northKoreaDurability = (int)NorthKorea_Durability.Value;
         }
 
         private void NorthKorea_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            _northKoreaStrength = (int)NorthKorea_Strength.Value;
         }
 
         private void NorthKorea_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            _northKoreaRep = (int)NorthKorea_Rep.Value;
         }
 
         #endregion
