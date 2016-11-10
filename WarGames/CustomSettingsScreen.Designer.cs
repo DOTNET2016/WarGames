@@ -40,6 +40,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.NorthKorea_Rep = new System.Windows.Forms.NumericUpDown();
             this.label40 = new System.Windows.Forms.Label();
             this.NorthKorea_Strength = new System.Windows.Forms.NumericUpDown();
@@ -47,6 +48,7 @@
             this.NorthKorea_Durability = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.Sweden_Rep = new System.Windows.Forms.NumericUpDown();
             this.label39 = new System.Windows.Forms.Label();
             this.Sweden_Strength = new System.Windows.Forms.NumericUpDown();
@@ -54,6 +56,7 @@
             this.Sweden_Durability = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.Japan_Rep = new System.Windows.Forms.NumericUpDown();
             this.label38 = new System.Windows.Forms.Label();
             this.Japan_Strength = new System.Windows.Forms.NumericUpDown();
@@ -61,6 +64,7 @@
             this.Japan_Durability = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.Germany_Rep = new System.Windows.Forms.NumericUpDown();
             this.label37 = new System.Windows.Forms.Label();
             this.Germany_Strength = new System.Windows.Forms.NumericUpDown();
@@ -68,6 +72,7 @@
             this.Germany_Durability = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.India_Rep = new System.Windows.Forms.NumericUpDown();
             this.label36 = new System.Windows.Forms.Label();
             this.India_Strength = new System.Windows.Forms.NumericUpDown();
@@ -75,6 +80,7 @@
             this.India_Durability = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.France_Rep = new System.Windows.Forms.NumericUpDown();
             this.label35 = new System.Windows.Forms.Label();
             this.France_Strength = new System.Windows.Forms.NumericUpDown();
@@ -82,6 +88,7 @@
             this.France_Durablity = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.China_Rep = new System.Windows.Forms.NumericUpDown();
             this.label34 = new System.Windows.Forms.Label();
             this.China_Strength = new System.Windows.Forms.NumericUpDown();
@@ -89,6 +96,7 @@
             this.China_Durability = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.UK_Rep = new System.Windows.Forms.NumericUpDown();
             this.label33 = new System.Windows.Forms.Label();
             this.UK_Strength = new System.Windows.Forms.NumericUpDown();
@@ -96,6 +104,7 @@
             this.UK_Durability = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Russia_Rep = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
             this.Russia_Strength = new System.Windows.Forms.NumericUpDown();
@@ -104,6 +113,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.USAgroupBox = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.USA_Rep = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
             this.USA_Strength = new System.Windows.Forms.NumericUpDown();
@@ -113,67 +123,57 @@
             this.label41 = new System.Windows.Forms.Label();
             this.BigRedButton = new System.Windows.Forms.Button();
             this.CountdownClock = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CountriesGroupBox.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Durability)).BeginInit();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sweden_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sweden_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sweden_Durability)).BeginInit();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Japan_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Japan_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Japan_Durability)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Germany_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Germany_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Germany_Durability)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.India_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.India_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.India_Durability)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Durablity)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.China_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.China_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.China_Durability)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UK_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UK_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UK_Durability)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Russia_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Russia_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Russia_Durability)).BeginInit();
             this.USAgroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.USA_Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.USA_Strength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.USA_Durability)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CountriesGroupBox
@@ -318,6 +318,17 @@
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
+            this.pictureBox10.Location = new System.Drawing.Point(33, 198);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 10;
+            this.pictureBox10.TabStop = false;
+            // 
             // NorthKorea_Rep
             // 
             this.NorthKorea_Rep.Location = new System.Drawing.Point(98, 154);
@@ -434,6 +445,17 @@
             this.groupBox8.Size = new System.Drawing.Size(165, 267);
             this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
+            this.pictureBox9.Location = new System.Drawing.Point(25, 198);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 10;
+            this.pictureBox9.TabStop = false;
             // 
             // Sweden_Rep
             // 
@@ -552,6 +574,17 @@
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
+            this.pictureBox8.Location = new System.Drawing.Point(26, 198);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 10;
+            this.pictureBox8.TabStop = false;
+            // 
             // Japan_Rep
             // 
             this.Japan_Rep.Location = new System.Drawing.Point(97, 154);
@@ -668,6 +701,17 @@
             this.groupBox6.Size = new System.Drawing.Size(157, 267);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Image = global::WarGames.Properties.Resources.germany_flag;
+            this.pictureBox7.Location = new System.Drawing.Point(33, 198);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
             // 
             // Germany_Rep
             // 
@@ -786,6 +830,17 @@
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
+            this.pictureBox6.Location = new System.Drawing.Point(26, 198);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
             // India_Rep
             // 
             this.India_Rep.Location = new System.Drawing.Point(94, 154);
@@ -902,6 +957,17 @@
             this.groupBox4.Size = new System.Drawing.Size(158, 267);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flagv2;
+            this.pictureBox5.Location = new System.Drawing.Point(23, 198);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
             // 
             // France_Rep
             // 
@@ -1020,6 +1086,17 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
+            this.pictureBox4.Location = new System.Drawing.Point(24, 198);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
             // China_Rep
             // 
             this.China_Rep.Location = new System.Drawing.Point(97, 154);
@@ -1137,6 +1214,17 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = global::WarGames.Properties.Resources.uk_flag;
+            this.pictureBox3.Location = new System.Drawing.Point(30, 198);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // UK_Rep
             // 
             this.UK_Rep.Location = new System.Drawing.Point(97, 154);
@@ -1253,6 +1341,17 @@
             this.groupBox1.Size = new System.Drawing.Size(157, 267);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::WarGames.Properties.Resources.russia_flag;
+            this.pictureBox2.Location = new System.Drawing.Point(28, 198);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // Russia_Rep
             // 
@@ -1381,6 +1480,17 @@
             this.USAgroupBox.Size = new System.Drawing.Size(157, 267);
             this.USAgroupBox.TabIndex = 1;
             this.USAgroupBox.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::WarGames.Properties.Resources.usa_flag;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 198);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // USA_Rep
             // 
@@ -1521,116 +1631,6 @@
             this.CountdownClock.TabIndex = 3;
             this.CountdownClock.Text = "00:05";
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
-            this.pictureBox10.Location = new System.Drawing.Point(33, 198);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 10;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
-            this.pictureBox9.Location = new System.Drawing.Point(25, 198);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
-            this.pictureBox8.Location = new System.Drawing.Point(26, 198);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 10;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Image = global::WarGames.Properties.Resources.germany_flag;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 198);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 198);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flagv2;
-            this.pictureBox5.Location = new System.Drawing.Point(23, 198);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 198);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = global::WarGames.Properties.Resources.uk_flag;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 198);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::WarGames.Properties.Resources.russia_flag;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 198);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 198);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // CustomSettingsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1649,64 +1649,64 @@
             this.CountriesGroupBox.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Durability)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sweden_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sweden_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sweden_Durability)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Japan_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Japan_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Japan_Durability)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Germany_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Germany_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Germany_Durability)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.India_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.India_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.India_Durability)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.France_Durablity)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.China_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.China_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.China_Durability)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UK_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UK_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UK_Durability)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Russia_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Russia_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Russia_Durability)).EndInit();
             this.USAgroupBox.ResumeLayout(false);
             this.USAgroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.USA_Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.USA_Strength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.USA_Durability)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

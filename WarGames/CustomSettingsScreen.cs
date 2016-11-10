@@ -12,6 +12,18 @@ namespace WarGames
 {
     public partial class CustomSettingsScreen : Form
     {
+        WOPR warRoom = new WOPR();
+
+        public int USADurability { get; set; }
+        public int USAStrength { get; set; }
+        public int USAREP { get; set; }
+
+        public int RussiaDurability { get; set; }
+        public int RussiaStrength { get; set; }
+        public int RussiaRep { get; set; }
+
+
+
         static CustomSettingsScreen newScreen;
         private Timer _CountDownTimer;
 
@@ -37,6 +49,7 @@ namespace WarGames
             _CountDownTimer.Interval = 1000;
             _CountDownTimer.Start();
             CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
+
         }
 
         private void _CountDownTimer_Tick(object sender, EventArgs e)
@@ -52,36 +65,44 @@ namespace WarGames
                 IntroMenu.CloseIntroScreen();
             }
         }
+
+        public int getUSADurability()
+        {
+            int dura = (int)USA_Durability.Value;
+            return dura;
+        }
+
         #region CountiresSettingsChanged
         //USA
         private void USA_Durability_ValueChanged(object sender, EventArgs e)
         {
-            
+            USADurability = (int)USA_Durability.Value;
         }
 
         private void USA_Strength_ValueChanged(object sender, EventArgs e)
         {
+            USAStrength = (int)USA_Strength.Value;
 
         }
 
         private void USA_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            USAREP = (int)USA_Rep.Value;
         }
         //Russia
         private void Russia_Durability_ValueChanged(object sender, EventArgs e)
         {
-
+            RussiaDurability = (int)Russia_Durability.Value;
         }
 
         private void Russia_Strength_ValueChanged(object sender, EventArgs e)
         {
-
+            RussiaStrength = (int)Russia_Strength.Value;
         }
 
         private void Russia_Rep_ValueChanged(object sender, EventArgs e)
         {
-
+            RussiaRep = (int)Russia_Rep.Value;
         }
         //UK
         private void UK_Durability_ValueChanged(object sender, EventArgs e)

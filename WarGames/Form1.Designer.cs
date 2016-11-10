@@ -60,13 +60,14 @@
             this.GermanyListBox = new System.Windows.Forms.ListBox();
             this.FranceListBox = new System.Windows.Forms.ListBox();
             this.RussiaListBox = new System.Windows.Forms.ListBox();
-            this.UsaListBox = new System.Windows.Forms.ListBox();
             this.ExitButton = new System.Windows.Forms.Button();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
+            this.USADurLabel = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -80,6 +81,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.StatsBox.SuspendLayout();
             this.EnduranceBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Background
@@ -225,6 +227,7 @@
             // 
             this.StatsBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.StatsBox.Controls.Add(this.NorthKoreaLabel);
+            this.StatsBox.Controls.Add(this.groupBox1);
             this.StatsBox.Controls.Add(this.SwedenLabel);
             this.StatsBox.Controls.Add(this.JapanLabel);
             this.StatsBox.Controls.Add(this.GermanyLabel);
@@ -243,7 +246,6 @@
             this.StatsBox.Controls.Add(this.GermanyListBox);
             this.StatsBox.Controls.Add(this.FranceListBox);
             this.StatsBox.Controls.Add(this.RussiaListBox);
-            this.StatsBox.Controls.Add(this.UsaListBox);
             this.StatsBox.ForeColor = System.Drawing.SystemColors.Window;
             this.StatsBox.Location = new System.Drawing.Point(413, 668);
             this.StatsBox.Name = "StatsBox";
@@ -451,17 +453,6 @@
             this.RussiaListBox.Size = new System.Drawing.Size(120, 132);
             this.RussiaListBox.TabIndex = 1;
             // 
-            // UsaListBox
-            // 
-            this.UsaListBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.UsaListBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.UsaListBox.FormattingEnabled = true;
-            this.UsaListBox.ItemHeight = 16;
-            this.UsaListBox.Location = new System.Drawing.Point(6, 38);
-            this.UsaListBox.Name = "UsaListBox";
-            this.UsaListBox.Size = new System.Drawing.Size(124, 132);
-            this.UsaListBox.TabIndex = 0;
-            // 
             // ExitButton
             // 
             this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -553,6 +544,24 @@
             this.PressStart.UseVisualStyleBackColor = false;
             this.PressStart.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
+            // USADurLabel
+            // 
+            this.USADurLabel.AutoSize = true;
+            this.USADurLabel.Location = new System.Drawing.Point(14, 18);
+            this.USADurLabel.Name = "USADurLabel";
+            this.USADurLabel.Size = new System.Drawing.Size(79, 17);
+            this.USADurLabel.TabIndex = 20;
+            this.USADurLabel.Text = "Durability:  ";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.USADurLabel);
+            this.groupBox1.Location = new System.Drawing.Point(7, 33);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(123, 134);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -579,6 +588,8 @@
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
             this.EnduranceBox.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -604,7 +615,6 @@
         private System.Windows.Forms.ListBox GermanyListBox;
         private System.Windows.Forms.ListBox FranceListBox;
         private System.Windows.Forms.ListBox RussiaListBox;
-        private System.Windows.Forms.ListBox UsaListBox;
         private System.Windows.Forms.Label USALabel;
         private System.Windows.Forms.Label NorthKoreaLabel;
         private System.Windows.Forms.Label SwedenLabel;
@@ -625,6 +635,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label USADurLabel;
     }
 }
 
