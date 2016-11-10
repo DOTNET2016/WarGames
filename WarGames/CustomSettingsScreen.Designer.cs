@@ -40,140 +40,140 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.NorthKorea_Rep = new System.Windows.Forms.NumericUpDown();
             this.label40 = new System.Windows.Forms.Label();
-            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
+            this.NorthKorea_Strength = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.NorthKorea_Durability = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown29 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.Sweden_Rep = new System.Windows.Forms.NumericUpDown();
             this.label39 = new System.Windows.Forms.Label();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.Sweden_Strength = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.Sweden_Durability = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.Japan_Rep = new System.Windows.Forms.NumericUpDown();
             this.label38 = new System.Windows.Forms.Label();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
+            this.Japan_Strength = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.Japan_Durability = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.Germany_Rep = new System.Windows.Forms.NumericUpDown();
             this.label37 = new System.Windows.Forms.Label();
-            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
+            this.Germany_Strength = new System.Windows.Forms.NumericUpDown();
             this.label27 = new System.Windows.Forms.Label();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.Germany_Durability = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.India_Rep = new System.Windows.Forms.NumericUpDown();
             this.label36 = new System.Windows.Forms.Label();
-            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
+            this.India_Strength = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.India_Durability = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.France_Rep = new System.Windows.Forms.NumericUpDown();
             this.label35 = new System.Windows.Forms.Label();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
+            this.France_Strength = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.France_Durablity = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.China_Rep = new System.Windows.Forms.NumericUpDown();
             this.label34 = new System.Windows.Forms.Label();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
+            this.China_Strength = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.China_Durability = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.UK_Rep = new System.Windows.Forms.NumericUpDown();
             this.label33 = new System.Windows.Forms.Label();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
+            this.UK_Strength = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.UK_Durability = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Russia_Rep = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
+            this.Russia_Strength = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.Russia_Durability = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.USAgroupBox = new System.Windows.Forms.GroupBox();
-            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.USA_Rep = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
+            this.USA_Strength = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.USA_Durability = new System.Windows.Forms.NumericUpDown();
             this.label41 = new System.Windows.Forms.Label();
             this.BigRedButton = new System.Windows.Forms.Button();
             this.CountdownClock = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CountriesGroupBox.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            this.USAgroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Durability)).BeginInit();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sweden_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sweden_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sweden_Durability)).BeginInit();
+            this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Japan_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Japan_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Japan_Durability)).BeginInit();
+            this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Germany_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Germany_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Germany_Durability)).BeginInit();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.India_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.India_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.India_Durability)).BeginInit();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Durablity)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.China_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.China_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.China_Durability)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UK_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UK_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UK_Durability)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Russia_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Russia_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Russia_Durability)).BeginInit();
+            this.USAgroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USA_Rep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USA_Strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USA_Durability)).BeginInit();
             this.SuspendLayout();
             // 
             // CountriesGroupBox
@@ -306,11 +306,11 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.pictureBox10);
-            this.groupBox9.Controls.Add(this.numericUpDown30);
+            this.groupBox9.Controls.Add(this.NorthKorea_Rep);
             this.groupBox9.Controls.Add(this.label40);
-            this.groupBox9.Controls.Add(this.numericUpDown20);
+            this.groupBox9.Controls.Add(this.NorthKorea_Strength);
             this.groupBox9.Controls.Add(this.label30);
-            this.groupBox9.Controls.Add(this.numericUpDown10);
+            this.groupBox9.Controls.Add(this.NorthKorea_Durability);
             this.groupBox9.Controls.Add(this.label11);
             this.groupBox9.Location = new System.Drawing.Point(1487, 53);
             this.groupBox9.Name = "groupBox9";
@@ -318,12 +318,22 @@
             this.groupBox9.TabIndex = 11;
             this.groupBox9.TabStop = false;
             // 
-            // numericUpDown30
+            // pictureBox10
             // 
-            this.numericUpDown30.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown30.Name = "numericUpDown30";
-            this.numericUpDown30.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown30.TabIndex = 9;
+            this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
+            this.pictureBox10.Location = new System.Drawing.Point(33, 198);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 10;
+            this.pictureBox10.TabStop = false;
+            // 
+            // NorthKorea_Rep
+            // 
+            this.NorthKorea_Rep.Location = new System.Drawing.Point(98, 154);
+            this.NorthKorea_Rep.Name = "NorthKorea_Rep";
+            this.NorthKorea_Rep.Size = new System.Drawing.Size(53, 22);
+            this.NorthKorea_Rep.TabIndex = 9;
             // 
             // label40
             // 
@@ -336,12 +346,12 @@
             this.label40.TabIndex = 8;
             this.label40.Text = "Rep:";
             // 
-            // numericUpDown20
+            // NorthKorea_Strength
             // 
-            this.numericUpDown20.Location = new System.Drawing.Point(98, 98);
-            this.numericUpDown20.Name = "numericUpDown20";
-            this.numericUpDown20.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown20.TabIndex = 7;
+            this.NorthKorea_Strength.Location = new System.Drawing.Point(98, 98);
+            this.NorthKorea_Strength.Name = "NorthKorea_Strength";
+            this.NorthKorea_Strength.Size = new System.Drawing.Size(53, 22);
+            this.NorthKorea_Strength.TabIndex = 7;
             // 
             // label30
             // 
@@ -354,23 +364,23 @@
             this.label30.TabIndex = 6;
             this.label30.Text = "Strength:";
             // 
-            // numericUpDown10
+            // NorthKorea_Durability
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(98, 38);
-            this.numericUpDown10.Maximum = new decimal(new int[] {
+            this.NorthKorea_Durability.Location = new System.Drawing.Point(98, 38);
+            this.NorthKorea_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown10.Minimum = new decimal(new int[] {
+            this.NorthKorea_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown10.TabIndex = 5;
-            this.numericUpDown10.Value = new decimal(new int[] {
+            this.NorthKorea_Durability.Name = "NorthKorea_Durability";
+            this.NorthKorea_Durability.Size = new System.Drawing.Size(53, 22);
+            this.NorthKorea_Durability.TabIndex = 5;
+            this.NorthKorea_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -390,11 +400,11 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.pictureBox9);
-            this.groupBox8.Controls.Add(this.numericUpDown29);
+            this.groupBox8.Controls.Add(this.Sweden_Rep);
             this.groupBox8.Controls.Add(this.label39);
-            this.groupBox8.Controls.Add(this.numericUpDown19);
+            this.groupBox8.Controls.Add(this.Sweden_Strength);
             this.groupBox8.Controls.Add(this.label29);
-            this.groupBox8.Controls.Add(this.numericUpDown9);
+            this.groupBox8.Controls.Add(this.Sweden_Durability);
             this.groupBox8.Controls.Add(this.label10);
             this.groupBox8.Location = new System.Drawing.Point(1316, 53);
             this.groupBox8.Name = "groupBox8";
@@ -402,12 +412,22 @@
             this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
             // 
-            // numericUpDown29
+            // pictureBox9
             // 
-            this.numericUpDown29.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown29.Name = "numericUpDown29";
-            this.numericUpDown29.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown29.TabIndex = 9;
+            this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
+            this.pictureBox9.Location = new System.Drawing.Point(25, 198);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 10;
+            this.pictureBox9.TabStop = false;
+            // 
+            // Sweden_Rep
+            // 
+            this.Sweden_Rep.Location = new System.Drawing.Point(98, 154);
+            this.Sweden_Rep.Name = "Sweden_Rep";
+            this.Sweden_Rep.Size = new System.Drawing.Size(53, 22);
+            this.Sweden_Rep.TabIndex = 9;
             // 
             // label39
             // 
@@ -420,12 +440,12 @@
             this.label39.TabIndex = 8;
             this.label39.Text = "Rep:";
             // 
-            // numericUpDown19
+            // Sweden_Strength
             // 
-            this.numericUpDown19.Location = new System.Drawing.Point(97, 96);
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown19.TabIndex = 7;
+            this.Sweden_Strength.Location = new System.Drawing.Point(97, 96);
+            this.Sweden_Strength.Name = "Sweden_Strength";
+            this.Sweden_Strength.Size = new System.Drawing.Size(53, 22);
+            this.Sweden_Strength.TabIndex = 7;
             // 
             // label29
             // 
@@ -438,23 +458,23 @@
             this.label29.TabIndex = 6;
             this.label29.Text = "Strength:";
             // 
-            // numericUpDown9
+            // Sweden_Durability
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(98, 38);
-            this.numericUpDown9.Maximum = new decimal(new int[] {
+            this.Sweden_Durability.Location = new System.Drawing.Point(98, 38);
+            this.Sweden_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown9.Minimum = new decimal(new int[] {
+            this.Sweden_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown9.TabIndex = 5;
-            this.numericUpDown9.Value = new decimal(new int[] {
+            this.Sweden_Durability.Name = "Sweden_Durability";
+            this.Sweden_Durability.Size = new System.Drawing.Size(53, 22);
+            this.Sweden_Durability.TabIndex = 5;
+            this.Sweden_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -474,11 +494,11 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.pictureBox8);
-            this.groupBox7.Controls.Add(this.numericUpDown28);
+            this.groupBox7.Controls.Add(this.Japan_Rep);
             this.groupBox7.Controls.Add(this.label38);
-            this.groupBox7.Controls.Add(this.numericUpDown18);
+            this.groupBox7.Controls.Add(this.Japan_Strength);
             this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.numericUpDown8);
+            this.groupBox7.Controls.Add(this.Japan_Durability);
             this.groupBox7.Controls.Add(this.label9);
             this.groupBox7.Location = new System.Drawing.Point(1145, 53);
             this.groupBox7.Name = "groupBox7";
@@ -486,12 +506,22 @@
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             // 
-            // numericUpDown28
+            // pictureBox8
             // 
-            this.numericUpDown28.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown28.Name = "numericUpDown28";
-            this.numericUpDown28.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown28.TabIndex = 9;
+            this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
+            this.pictureBox8.Location = new System.Drawing.Point(26, 198);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 10;
+            this.pictureBox8.TabStop = false;
+            // 
+            // Japan_Rep
+            // 
+            this.Japan_Rep.Location = new System.Drawing.Point(97, 154);
+            this.Japan_Rep.Name = "Japan_Rep";
+            this.Japan_Rep.Size = new System.Drawing.Size(53, 22);
+            this.Japan_Rep.TabIndex = 9;
             // 
             // label38
             // 
@@ -504,12 +534,12 @@
             this.label38.TabIndex = 8;
             this.label38.Text = "Rep:";
             // 
-            // numericUpDown18
+            // Japan_Strength
             // 
-            this.numericUpDown18.Location = new System.Drawing.Point(97, 98);
-            this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown18.TabIndex = 7;
+            this.Japan_Strength.Location = new System.Drawing.Point(97, 98);
+            this.Japan_Strength.Name = "Japan_Strength";
+            this.Japan_Strength.Size = new System.Drawing.Size(53, 22);
+            this.Japan_Strength.TabIndex = 7;
             // 
             // label28
             // 
@@ -522,23 +552,23 @@
             this.label28.TabIndex = 6;
             this.label28.Text = "Strength:";
             // 
-            // numericUpDown8
+            // Japan_Durability
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(98, 39);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
+            this.Japan_Durability.Location = new System.Drawing.Point(98, 39);
+            this.Japan_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown8.Minimum = new decimal(new int[] {
+            this.Japan_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown8.TabIndex = 5;
-            this.numericUpDown8.Value = new decimal(new int[] {
+            this.Japan_Durability.Name = "Japan_Durability";
+            this.Japan_Durability.Size = new System.Drawing.Size(53, 22);
+            this.Japan_Durability.TabIndex = 5;
+            this.Japan_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -558,11 +588,11 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.pictureBox7);
-            this.groupBox6.Controls.Add(this.numericUpDown27);
+            this.groupBox6.Controls.Add(this.Germany_Rep);
             this.groupBox6.Controls.Add(this.label37);
-            this.groupBox6.Controls.Add(this.numericUpDown17);
+            this.groupBox6.Controls.Add(this.Germany_Strength);
             this.groupBox6.Controls.Add(this.label27);
-            this.groupBox6.Controls.Add(this.numericUpDown7);
+            this.groupBox6.Controls.Add(this.Germany_Durability);
             this.groupBox6.Controls.Add(this.label8);
             this.groupBox6.Location = new System.Drawing.Point(982, 53);
             this.groupBox6.Name = "groupBox6";
@@ -570,12 +600,22 @@
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             // 
-            // numericUpDown27
+            // pictureBox7
             // 
-            this.numericUpDown27.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown27.Name = "numericUpDown27";
-            this.numericUpDown27.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown27.TabIndex = 9;
+            this.pictureBox7.Image = global::WarGames.Properties.Resources.germany_flag;
+            this.pictureBox7.Location = new System.Drawing.Point(33, 198);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            // 
+            // Germany_Rep
+            // 
+            this.Germany_Rep.Location = new System.Drawing.Point(98, 154);
+            this.Germany_Rep.Name = "Germany_Rep";
+            this.Germany_Rep.Size = new System.Drawing.Size(53, 22);
+            this.Germany_Rep.TabIndex = 9;
             // 
             // label37
             // 
@@ -588,12 +628,12 @@
             this.label37.TabIndex = 8;
             this.label37.Text = "Rep:";
             // 
-            // numericUpDown17
+            // Germany_Strength
             // 
-            this.numericUpDown17.Location = new System.Drawing.Point(97, 97);
-            this.numericUpDown17.Name = "numericUpDown17";
-            this.numericUpDown17.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown17.TabIndex = 7;
+            this.Germany_Strength.Location = new System.Drawing.Point(97, 97);
+            this.Germany_Strength.Name = "Germany_Strength";
+            this.Germany_Strength.Size = new System.Drawing.Size(53, 22);
+            this.Germany_Strength.TabIndex = 7;
             // 
             // label27
             // 
@@ -606,23 +646,23 @@
             this.label27.TabIndex = 6;
             this.label27.Text = "Strength:";
             // 
-            // numericUpDown7
+            // Germany_Durability
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(98, 38);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
+            this.Germany_Durability.Location = new System.Drawing.Point(98, 38);
+            this.Germany_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown7.Minimum = new decimal(new int[] {
+            this.Germany_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown7.TabIndex = 5;
-            this.numericUpDown7.Value = new decimal(new int[] {
+            this.Germany_Durability.Name = "Germany_Durability";
+            this.Germany_Durability.Size = new System.Drawing.Size(53, 22);
+            this.Germany_Durability.TabIndex = 5;
+            this.Germany_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -642,11 +682,11 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.pictureBox6);
-            this.groupBox5.Controls.Add(this.numericUpDown26);
+            this.groupBox5.Controls.Add(this.India_Rep);
             this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.numericUpDown16);
+            this.groupBox5.Controls.Add(this.India_Strength);
             this.groupBox5.Controls.Add(this.label26);
-            this.groupBox5.Controls.Add(this.numericUpDown6);
+            this.groupBox5.Controls.Add(this.India_Durability);
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Location = new System.Drawing.Point(823, 53);
             this.groupBox5.Name = "groupBox5";
@@ -654,12 +694,22 @@
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             // 
-            // numericUpDown26
+            // pictureBox6
             // 
-            this.numericUpDown26.Location = new System.Drawing.Point(94, 154);
-            this.numericUpDown26.Name = "numericUpDown26";
-            this.numericUpDown26.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown26.TabIndex = 9;
+            this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
+            this.pictureBox6.Location = new System.Drawing.Point(26, 198);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
+            // 
+            // India_Rep
+            // 
+            this.India_Rep.Location = new System.Drawing.Point(94, 154);
+            this.India_Rep.Name = "India_Rep";
+            this.India_Rep.Size = new System.Drawing.Size(53, 22);
+            this.India_Rep.TabIndex = 9;
             // 
             // label36
             // 
@@ -672,12 +722,12 @@
             this.label36.TabIndex = 8;
             this.label36.Text = "Rep:";
             // 
-            // numericUpDown16
+            // India_Strength
             // 
-            this.numericUpDown16.Location = new System.Drawing.Point(94, 96);
-            this.numericUpDown16.Name = "numericUpDown16";
-            this.numericUpDown16.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown16.TabIndex = 7;
+            this.India_Strength.Location = new System.Drawing.Point(94, 96);
+            this.India_Strength.Name = "India_Strength";
+            this.India_Strength.Size = new System.Drawing.Size(53, 22);
+            this.India_Strength.TabIndex = 7;
             // 
             // label26
             // 
@@ -690,23 +740,23 @@
             this.label26.TabIndex = 6;
             this.label26.Text = "Strength:";
             // 
-            // numericUpDown6
+            // India_Durability
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(94, 39);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
+            this.India_Durability.Location = new System.Drawing.Point(94, 39);
+            this.India_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown6.Minimum = new decimal(new int[] {
+            this.India_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown6.TabIndex = 5;
-            this.numericUpDown6.Value = new decimal(new int[] {
+            this.India_Durability.Name = "India_Durability";
+            this.India_Durability.Size = new System.Drawing.Size(53, 22);
+            this.India_Durability.TabIndex = 5;
+            this.India_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -726,11 +776,11 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.pictureBox5);
-            this.groupBox4.Controls.Add(this.numericUpDown25);
+            this.groupBox4.Controls.Add(this.France_Rep);
             this.groupBox4.Controls.Add(this.label35);
-            this.groupBox4.Controls.Add(this.numericUpDown15);
+            this.groupBox4.Controls.Add(this.France_Strength);
             this.groupBox4.Controls.Add(this.label25);
-            this.groupBox4.Controls.Add(this.numericUpDown5);
+            this.groupBox4.Controls.Add(this.France_Durablity);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Location = new System.Drawing.Point(659, 53);
             this.groupBox4.Name = "groupBox4";
@@ -738,12 +788,22 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             // 
-            // numericUpDown25
+            // pictureBox5
             // 
-            this.numericUpDown25.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown25.Name = "numericUpDown25";
-            this.numericUpDown25.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown25.TabIndex = 9;
+            this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flag;
+            this.pictureBox5.Location = new System.Drawing.Point(23, 198);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // France_Rep
+            // 
+            this.France_Rep.Location = new System.Drawing.Point(97, 154);
+            this.France_Rep.Name = "France_Rep";
+            this.France_Rep.Size = new System.Drawing.Size(53, 22);
+            this.France_Rep.TabIndex = 9;
             // 
             // label35
             // 
@@ -756,12 +816,12 @@
             this.label35.TabIndex = 8;
             this.label35.Text = "Rep:";
             // 
-            // numericUpDown15
+            // France_Strength
             // 
-            this.numericUpDown15.Location = new System.Drawing.Point(97, 95);
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown15.TabIndex = 7;
+            this.France_Strength.Location = new System.Drawing.Point(97, 95);
+            this.France_Strength.Name = "France_Strength";
+            this.France_Strength.Size = new System.Drawing.Size(53, 22);
+            this.France_Strength.TabIndex = 7;
             // 
             // label25
             // 
@@ -774,23 +834,23 @@
             this.label25.TabIndex = 6;
             this.label25.Text = "Strength:";
             // 
-            // numericUpDown5
+            // France_Durablity
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(98, 37);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
+            this.France_Durablity.Location = new System.Drawing.Point(98, 37);
+            this.France_Durablity.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown5.Minimum = new decimal(new int[] {
+            this.France_Durablity.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown5.TabIndex = 5;
-            this.numericUpDown5.Value = new decimal(new int[] {
+            this.France_Durablity.Name = "France_Durablity";
+            this.France_Durablity.Size = new System.Drawing.Size(53, 22);
+            this.France_Durablity.TabIndex = 5;
+            this.France_Durablity.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -810,11 +870,11 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.pictureBox4);
-            this.groupBox3.Controls.Add(this.numericUpDown24);
+            this.groupBox3.Controls.Add(this.China_Rep);
             this.groupBox3.Controls.Add(this.label34);
-            this.groupBox3.Controls.Add(this.numericUpDown14);
+            this.groupBox3.Controls.Add(this.China_Strength);
             this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Controls.Add(this.numericUpDown4);
+            this.groupBox3.Controls.Add(this.China_Durability);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Location = new System.Drawing.Point(496, 53);
             this.groupBox3.Name = "groupBox3";
@@ -822,12 +882,22 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
-            // numericUpDown24
+            // pictureBox4
             // 
-            this.numericUpDown24.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown24.Name = "numericUpDown24";
-            this.numericUpDown24.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown24.TabIndex = 8;
+            this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
+            this.pictureBox4.Location = new System.Drawing.Point(24, 198);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // China_Rep
+            // 
+            this.China_Rep.Location = new System.Drawing.Point(97, 154);
+            this.China_Rep.Name = "China_Rep";
+            this.China_Rep.Size = new System.Drawing.Size(53, 22);
+            this.China_Rep.TabIndex = 8;
             // 
             // label34
             // 
@@ -840,12 +910,12 @@
             this.label34.TabIndex = 7;
             this.label34.Text = "Rep:";
             // 
-            // numericUpDown14
+            // China_Strength
             // 
-            this.numericUpDown14.Location = new System.Drawing.Point(97, 94);
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown14.TabIndex = 6;
+            this.China_Strength.Location = new System.Drawing.Point(97, 94);
+            this.China_Strength.Name = "China_Strength";
+            this.China_Strength.Size = new System.Drawing.Size(53, 22);
+            this.China_Strength.TabIndex = 6;
             // 
             // label24
             // 
@@ -858,23 +928,23 @@
             this.label24.TabIndex = 5;
             this.label24.Text = "Strength:";
             // 
-            // numericUpDown4
+            // China_Durability
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(98, 38);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.China_Durability.Location = new System.Drawing.Point(98, 38);
+            this.China_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
+            this.China_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown4.TabIndex = 4;
-            this.numericUpDown4.Value = new decimal(new int[] {
+            this.China_Durability.Name = "China_Durability";
+            this.China_Durability.Size = new System.Drawing.Size(53, 22);
+            this.China_Durability.TabIndex = 4;
+            this.China_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -894,11 +964,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.pictureBox3);
-            this.groupBox2.Controls.Add(this.numericUpDown23);
+            this.groupBox2.Controls.Add(this.UK_Rep);
             this.groupBox2.Controls.Add(this.label33);
-            this.groupBox2.Controls.Add(this.numericUpDown13);
+            this.groupBox2.Controls.Add(this.UK_Strength);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.numericUpDown3);
+            this.groupBox2.Controls.Add(this.UK_Durability);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(332, 53);
             this.groupBox2.Name = "groupBox2";
@@ -906,12 +976,22 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
-            // numericUpDown23
+            // pictureBox3
             // 
-            this.numericUpDown23.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown23.Name = "numericUpDown23";
-            this.numericUpDown23.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown23.TabIndex = 7;
+            this.pictureBox3.Image = global::WarGames.Properties.Resources.uk_flag;
+            this.pictureBox3.Location = new System.Drawing.Point(30, 198);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // UK_Rep
+            // 
+            this.UK_Rep.Location = new System.Drawing.Point(97, 154);
+            this.UK_Rep.Name = "UK_Rep";
+            this.UK_Rep.Size = new System.Drawing.Size(53, 22);
+            this.UK_Rep.TabIndex = 7;
             // 
             // label33
             // 
@@ -924,12 +1004,12 @@
             this.label33.TabIndex = 6;
             this.label33.Text = "Rep:";
             // 
-            // numericUpDown13
+            // UK_Strength
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(97, 94);
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown13.TabIndex = 5;
+            this.UK_Strength.Location = new System.Drawing.Point(97, 94);
+            this.UK_Strength.Name = "UK_Strength";
+            this.UK_Strength.Size = new System.Drawing.Size(53, 22);
+            this.UK_Strength.TabIndex = 5;
             // 
             // label23
             // 
@@ -942,23 +1022,23 @@
             this.label23.TabIndex = 4;
             this.label23.Text = "Strength:";
             // 
-            // numericUpDown3
+            // UK_Durability
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(98, 37);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.UK_Durability.Location = new System.Drawing.Point(98, 37);
+            this.UK_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.UK_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown3.TabIndex = 3;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.UK_Durability.Name = "UK_Durability";
+            this.UK_Durability.Size = new System.Drawing.Size(53, 22);
+            this.UK_Durability.TabIndex = 3;
+            this.UK_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -978,11 +1058,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.numericUpDown22);
+            this.groupBox1.Controls.Add(this.Russia_Rep);
             this.groupBox1.Controls.Add(this.label32);
-            this.groupBox1.Controls.Add(this.numericUpDown12);
+            this.groupBox1.Controls.Add(this.Russia_Strength);
             this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
+            this.groupBox1.Controls.Add(this.Russia_Durability);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(169, 53);
             this.groupBox1.Name = "groupBox1";
@@ -990,12 +1070,22 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
-            // numericUpDown22
+            // pictureBox2
             // 
-            this.numericUpDown22.Location = new System.Drawing.Point(97, 154);
-            this.numericUpDown22.Name = "numericUpDown22";
-            this.numericUpDown22.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown22.TabIndex = 6;
+            this.pictureBox2.Image = global::WarGames.Properties.Resources.russia_flag;
+            this.pictureBox2.Location = new System.Drawing.Point(28, 198);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // Russia_Rep
+            // 
+            this.Russia_Rep.Location = new System.Drawing.Point(97, 154);
+            this.Russia_Rep.Name = "Russia_Rep";
+            this.Russia_Rep.Size = new System.Drawing.Size(53, 22);
+            this.Russia_Rep.TabIndex = 6;
             // 
             // label32
             // 
@@ -1008,12 +1098,12 @@
             this.label32.TabIndex = 5;
             this.label32.Text = "Rep:";
             // 
-            // numericUpDown12
+            // Russia_Strength
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(97, 96);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown12.TabIndex = 4;
+            this.Russia_Strength.Location = new System.Drawing.Point(97, 96);
+            this.Russia_Strength.Name = "Russia_Strength";
+            this.Russia_Strength.Size = new System.Drawing.Size(53, 22);
+            this.Russia_Strength.TabIndex = 4;
             // 
             // label22
             // 
@@ -1026,23 +1116,23 @@
             this.label22.TabIndex = 3;
             this.label22.Text = "Strength:";
             // 
-            // numericUpDown2
+            // Russia_Durability
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(98, 38);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.Russia_Durability.Location = new System.Drawing.Point(98, 38);
+            this.Russia_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.Russia_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown2.TabIndex = 2;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.Russia_Durability.Name = "Russia_Durability";
+            this.Russia_Durability.Size = new System.Drawing.Size(53, 22);
+            this.Russia_Durability.TabIndex = 2;
+            this.Russia_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -1073,24 +1163,34 @@
             // USAgroupBox
             // 
             this.USAgroupBox.Controls.Add(this.pictureBox1);
-            this.USAgroupBox.Controls.Add(this.numericUpDown21);
+            this.USAgroupBox.Controls.Add(this.USA_Rep);
             this.USAgroupBox.Controls.Add(this.label31);
-            this.USAgroupBox.Controls.Add(this.numericUpDown11);
+            this.USAgroupBox.Controls.Add(this.USA_Strength);
             this.USAgroupBox.Controls.Add(this.label21);
             this.USAgroupBox.Controls.Add(this.label1);
-            this.USAgroupBox.Controls.Add(this.numericUpDown1);
+            this.USAgroupBox.Controls.Add(this.USA_Durability);
             this.USAgroupBox.Location = new System.Drawing.Point(6, 53);
             this.USAgroupBox.Name = "USAgroupBox";
             this.USAgroupBox.Size = new System.Drawing.Size(157, 267);
             this.USAgroupBox.TabIndex = 1;
             this.USAgroupBox.TabStop = false;
             // 
-            // numericUpDown21
+            // pictureBox1
             // 
-            this.numericUpDown21.Location = new System.Drawing.Point(98, 154);
-            this.numericUpDown21.Name = "numericUpDown21";
-            this.numericUpDown21.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown21.TabIndex = 4;
+            this.pictureBox1.Image = global::WarGames.Properties.Resources.usa_flag;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 198);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // USA_Rep
+            // 
+            this.USA_Rep.Location = new System.Drawing.Point(98, 154);
+            this.USA_Rep.Name = "USA_Rep";
+            this.USA_Rep.Size = new System.Drawing.Size(53, 22);
+            this.USA_Rep.TabIndex = 4;
             // 
             // label31
             // 
@@ -1103,12 +1203,12 @@
             this.label31.TabIndex = 3;
             this.label31.Text = "Rep:";
             // 
-            // numericUpDown11
+            // USA_Strength
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(98, 96);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown11.TabIndex = 2;
+            this.USA_Strength.Location = new System.Drawing.Point(98, 96);
+            this.USA_Strength.Name = "USA_Strength";
+            this.USA_Strength.Size = new System.Drawing.Size(53, 22);
+            this.USA_Strength.TabIndex = 2;
             // 
             // label21
             // 
@@ -1132,23 +1232,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Durability:";
             // 
-            // numericUpDown1
+            // USA_Durability
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(98, 37);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.USA_Durability.Location = new System.Drawing.Point(98, 37);
+            this.USA_Durability.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.USA_Durability.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(53, 22);
-            this.numericUpDown1.TabIndex = 0;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.USA_Durability.Name = "USA_Durability";
+            this.USA_Durability.Size = new System.Drawing.Size(53, 22);
+            this.USA_Durability.TabIndex = 0;
+            this.USA_Durability.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -1190,106 +1290,6 @@
             this.CountdownClock.TabIndex = 3;
             this.CountdownClock.Text = "00:00";
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
-            this.pictureBox10.Location = new System.Drawing.Point(33, 198);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 10;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
-            this.pictureBox9.Location = new System.Drawing.Point(25, 198);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
-            this.pictureBox8.Location = new System.Drawing.Point(26, 198);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 10;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::WarGames.Properties.Resources.germany_flag;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 198);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
-            this.pictureBox6.Location = new System.Drawing.Point(26, 198);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flag;
-            this.pictureBox5.Location = new System.Drawing.Point(23, 198);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 198);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::WarGames.Properties.Resources.uk_flag;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 198);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WarGames.Properties.Resources.russia_flag;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 198);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 198);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // CustomSettingsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1308,64 +1308,64 @@
             this.CountriesGroupBox.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NorthKorea_Durability)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sweden_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sweden_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sweden_Durability)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Japan_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Japan_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Japan_Durability)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Germany_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Germany_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Germany_Durability)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.India_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.India_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.India_Durability)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.France_Durablity)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.China_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.China_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.China_Durability)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UK_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UK_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UK_Durability)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Russia_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Russia_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Russia_Durability)).EndInit();
             this.USAgroupBox.ResumeLayout(false);
             this.USAgroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USA_Rep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USA_Strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.USA_Durability)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1377,34 +1377,34 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox USAgroupBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown USA_Durability;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.NumericUpDown Japan_Durability;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown Germany_Durability;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown India_Durability;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown France_Durablity;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown China_Durability;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown UK_Durability;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown Russia_Durability;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private System.Windows.Forms.NumericUpDown NorthKorea_Durability;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.NumericUpDown Sweden_Durability;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
@@ -1415,45 +1415,45 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.NumericUpDown numericUpDown20;
+        private System.Windows.Forms.NumericUpDown NorthKorea_Strength;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.NumericUpDown numericUpDown19;
+        private System.Windows.Forms.NumericUpDown Sweden_Strength;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.NumericUpDown numericUpDown18;
+        private System.Windows.Forms.NumericUpDown Japan_Strength;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.NumericUpDown numericUpDown17;
+        private System.Windows.Forms.NumericUpDown Germany_Strength;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.NumericUpDown numericUpDown16;
+        private System.Windows.Forms.NumericUpDown India_Strength;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.NumericUpDown numericUpDown15;
+        private System.Windows.Forms.NumericUpDown France_Strength;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.NumericUpDown numericUpDown14;
+        private System.Windows.Forms.NumericUpDown China_Strength;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
+        private System.Windows.Forms.NumericUpDown UK_Strength;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
+        private System.Windows.Forms.NumericUpDown Russia_Strength;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown30;
+        private System.Windows.Forms.NumericUpDown USA_Strength;
+        private System.Windows.Forms.NumericUpDown NorthKorea_Rep;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.NumericUpDown numericUpDown29;
+        private System.Windows.Forms.NumericUpDown Sweden_Rep;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.NumericUpDown numericUpDown28;
+        private System.Windows.Forms.NumericUpDown Japan_Rep;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.NumericUpDown numericUpDown27;
+        private System.Windows.Forms.NumericUpDown Germany_Rep;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.NumericUpDown numericUpDown26;
+        private System.Windows.Forms.NumericUpDown India_Rep;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.NumericUpDown numericUpDown25;
+        private System.Windows.Forms.NumericUpDown France_Rep;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.NumericUpDown numericUpDown24;
+        private System.Windows.Forms.NumericUpDown China_Rep;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.NumericUpDown numericUpDown23;
+        private System.Windows.Forms.NumericUpDown UK_Rep;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.NumericUpDown numericUpDown22;
-        private System.Windows.Forms.NumericUpDown numericUpDown21;
+        private System.Windows.Forms.NumericUpDown Russia_Rep;
+        private System.Windows.Forms.NumericUpDown USA_Rep;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button BigRedButton;
         private System.Windows.Forms.Label CountdownClock;
