@@ -242,7 +242,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(984, 18);
+            this.label17.Location = new System.Drawing.Point(994, 18);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(131, 32);
             this.label17.TabIndex = 17;
@@ -1608,15 +1608,20 @@
             // 
             // BigRedButton
             // 
-            this.BigRedButton.BackColor = System.Drawing.Color.Red;
+            this.BigRedButton.BackColor = System.Drawing.Color.Black;
             this.BigRedButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BigRedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.BigRedButton.FlatAppearance.BorderSize = 2;
+            this.BigRedButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.BigRedButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.BigRedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BigRedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BigRedButton.ForeColor = System.Drawing.Color.Black;
+            this.BigRedButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.BigRedButton.Location = new System.Drawing.Point(705, 491);
             this.BigRedButton.Name = "BigRedButton";
             this.BigRedButton.Size = new System.Drawing.Size(263, 49);
             this.BigRedButton.TabIndex = 2;
-            this.BigRedButton.Text = "BIG RED BUTTON";
+            this.BigRedButton.Text = "DO NOT PRESS";
             this.BigRedButton.UseVisualStyleBackColor = false;
             this.BigRedButton.Click += new System.EventHandler(this.BigRedButton_Click);
             // 

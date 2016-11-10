@@ -112,10 +112,11 @@
             this.Background.Name = "Background";
             this.Background.Size = new System.Drawing.Size(1685, 838);
             this.Background.TabIndex = 1;
+            this.Background.Paint += new System.Windows.Forms.PaintEventHandler(this.Background_Paint);
+            this.Background.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Background_MouseClick);
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
             this.pictureBox10.Location = new System.Drawing.Point(1568, 623);
             this.pictureBox10.Name = "pictureBox10";
@@ -126,7 +127,6 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
             this.pictureBox9.Location = new System.Drawing.Point(1440, 623);
             this.pictureBox9.Name = "pictureBox9";
@@ -137,7 +137,6 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
             this.pictureBox8.Location = new System.Drawing.Point(1314, 623);
             this.pictureBox8.Name = "pictureBox8";
@@ -159,7 +158,6 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
             this.pictureBox6.Location = new System.Drawing.Point(1066, 623);
             this.pictureBox6.Name = "pictureBox6";
@@ -170,7 +168,6 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flagv2;
             this.pictureBox5.Location = new System.Drawing.Point(941, 623);
             this.pictureBox5.Name = "pictureBox5";
@@ -181,7 +178,6 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
             this.pictureBox4.Location = new System.Drawing.Point(815, 623);
             this.pictureBox4.Name = "pictureBox4";
@@ -216,7 +212,6 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::WarGames.Properties.Resources.uk_flag;
             this.pictureBox1.Location = new System.Drawing.Point(687, 623);
             this.pictureBox1.Name = "pictureBox1";
@@ -477,7 +472,6 @@
             // 
             this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ExitButton.BackColor = System.Drawing.Color.White;
-            this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitButton.FlatAppearance.BorderSize = 0;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -494,7 +488,6 @@
             // 
             this.PauseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PauseButton.BackColor = System.Drawing.SystemColors.Control;
-            this.PauseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PauseButton.Enabled = false;
             this.PauseButton.ForeColor = System.Drawing.Color.Black;
             this.PauseButton.Location = new System.Drawing.Point(215, 736);
@@ -594,6 +587,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
