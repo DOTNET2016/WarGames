@@ -44,7 +44,7 @@
             this.PlayGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.PlayGameBtn.Location = new System.Drawing.Point(361, 642);
+            this.PlayGameBtn.Location = new System.Drawing.Point(726, 613);
             this.PlayGameBtn.Name = "PlayGameBtn";
             this.PlayGameBtn.Size = new System.Drawing.Size(237, 84);
             this.PlayGameBtn.TabIndex = 1;

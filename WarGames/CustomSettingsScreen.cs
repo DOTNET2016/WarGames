@@ -26,7 +26,47 @@ namespace WarGames
         Countries Sweden = new Countries("Sweden", 13, 2, 10);
         Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
 
+        #region CountriesProperties&Fields
         private int _usaDurability;
+        private int _usaStrength;
+        private int _usaRep;
+
+        private int _russiaDurability;
+        private int _russiaStrength;
+        private int _russiaRep;
+
+        private int _ukDurability;
+        private int _ukStrength;
+        private int _ukRep;
+
+        private int _chinaDurability;
+        private int _chinaStrength;
+        private int _chinaRep;
+
+        private int _franceDurability;
+        private int _franceStrength;
+        private int _franceRep;
+
+        private int _indiaDurability;
+        private int _indiaStrength;
+        private int _indiaRep;
+
+        private int _germanyDurability;
+        private int _germanyStrength;
+        private int _germanyRep;
+
+        private int _japanDurability;
+        private int _japanStrength;
+        private int _japanRep;
+
+        private int _swedenDurability;
+        private int _swedenStrength;
+        private int _swedenRep;
+
+        private int _northKoreaDurability;
+        private int _northKoreaStrength;
+        private int _northKoreaRep;
+
         public int USADurability
         {
             get
@@ -38,14 +78,359 @@ namespace WarGames
                 _usaDurability = value;
             }
         }
+        public int USAStrength
+        {
+            get
+            {
+                return _usaStrength;
+            }
+            set
+            {
+                _usaStrength = value;
+            }
+        }
+        public int USARep
+        {
+            get
+            {
+                return _usaRep;
+            }
+            set
+            {
+                _usaRep = value;
+            }
+        }
 
-        public int USAStrength { get; set; }
-        public int USAREP { get; set; }
+        public int RussiaDurability
+        {
+            get
+            {
+                return _russiaDurability;
+            }
+            set
+            {
+                _russiaDurability = value;
+            }
+        }
+        public int RussiaStrength
+        {
+            get
+            {
+                return _russiaStrength;
+            }
+            set
+            {
+                _russiaStrength = value;
+            }
+        }
+        public int RussiaRep
+        {
+            get
+            {
+                return _russiaRep;
+            }
+            set
+            {
+                _russiaRep = value;
+            }
+        }
 
-        public int RussiaDurability { get; set; }
-        public int RussiaStrength { get; set; }
-        public int RussiaRep { get; set; }
+        public int UkDurability
+        {
+            get
+            {
+                return _ukDurability;
+            }
 
+            set
+            {
+                _ukDurability = value;
+            }
+        }
+        public int UkStrength
+        {
+            get
+            {
+                return _ukStrength;
+            }
+
+            set
+            {
+                _ukStrength = value;
+            }
+        }
+        public int UkRep
+        {
+            get
+            {
+                return _ukRep;
+            }
+
+            set
+            {
+                _ukRep = value;
+            }
+        }
+
+        public int ChinaDurability
+        {
+            get
+            {
+                return _chinaDurability;
+            }
+
+            set
+            {
+                _chinaDurability = value;
+            }
+        }
+        public int ChinaStrength
+        {
+            get
+            {
+                return _chinaStrength;
+            }
+
+            set
+            {
+                _chinaStrength = value;
+            }
+        }
+        public int ChinaRep
+        {
+            get
+            {
+                return _chinaRep;
+            }
+
+            set
+            {
+                _chinaRep = value;
+            }
+        }
+
+        public int FranceDurability
+        {
+            get
+            {
+                return _franceDurability;
+            }
+
+            set
+            {
+                _franceDurability = value;
+            }
+        }
+        public int FranceStrength
+        {
+            get
+            {
+                return _franceStrength;
+            }
+
+            set
+            {
+                _franceStrength = value;
+            }
+        }
+        public int FranceRep
+        {
+            get
+            {
+                return _franceRep;
+            }
+
+            set
+            {
+                _franceRep = value;
+            }
+        }
+
+        public int IndiaDurability
+        {
+            get
+            {
+                return _indiaDurability;
+            }
+
+            set
+            {
+                _indiaDurability = value;
+            }
+        }
+        public int IndiaStrength
+        {
+            get
+            {
+                return _indiaStrength;
+            }
+
+            set
+            {
+                _indiaStrength = value;
+            }
+        }
+        public int IndiaRep
+        {
+            get
+            {
+                return _indiaRep;
+            }
+
+            set
+            {
+                _indiaRep = value;
+            }
+        }
+
+        public int GermanyDurability
+        {
+            get
+            {
+                return _germanyDurability;
+            }
+
+            set
+            {
+                _germanyDurability = value;
+            }
+        }
+        public int GermanyStrength
+        {
+            get
+            {
+                return _germanyStrength;
+            }
+
+            set
+            {
+                _germanyStrength = value;
+            }
+        }
+        public int GermanyRep
+        {
+            get
+            {
+                return _germanyRep;
+            }
+
+            set
+            {
+                _germanyRep = value;
+            }
+        }
+
+        public int JapanDurability
+        {
+            get
+            {
+                return _japanDurability;
+            }
+
+            set
+            {
+                _japanDurability = value;
+            }
+        }
+        public int JapanStrength
+        {
+            get
+            {
+                return _japanStrength;
+            }
+
+            set
+            {
+                _japanStrength = value;
+            }
+        }
+        public int JapanRep
+        {
+            get
+            {
+                return _japanRep;
+            }
+
+            set
+            {
+                _japanRep = value;
+            }
+        }
+
+        public int SwedenDurability
+        {
+            get
+            {
+                return _swedenDurability;
+            }
+
+            set
+            {
+                _swedenDurability = value;
+            }
+        }
+        public int SwedenStrength
+        {
+            get
+            {
+                return _swedenStrength;
+            }
+
+            set
+            {
+                _swedenStrength = value;
+            }
+        }
+        public int SwedenRep
+        {
+            get
+            {
+                return _swedenRep;
+            }
+
+            set
+            {
+                _swedenRep = value;
+            }
+        }
+
+        public int NorthKoreaDurability
+        {
+            get
+            {
+                return _northKoreaDurability;
+            }
+
+            set
+            {
+                _northKoreaDurability = value;
+            }
+        }
+        public int NorthKoreaStrength
+        {
+            get
+            {
+                return _northKoreaStrength;
+            }
+
+            set
+            {
+                _northKoreaStrength = value;
+            }
+        }
+        public int NorthKoreaRep
+        {
+            get
+            {
+                return _northKoreaRep;
+            }
+
+            set
+            {
+                _northKoreaRep = value;
+            }
+        }
+        #endregion//All 
 
 
         static CustomSettingsScreen newScreen;
@@ -89,7 +474,6 @@ namespace WarGames
             {
                 _CountDownTimer.Stop();
                 CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
-                //newScreen.Dispose();
                 DialogResult = DialogResult.OK;
                 IntroMenu.CloseIntroScreen();
             }
