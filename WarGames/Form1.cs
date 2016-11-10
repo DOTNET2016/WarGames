@@ -19,6 +19,23 @@ namespace WarGames
         List<Countries> countriesAtWar = new List<Countries>();
         private List<Point> Points = new List<Point>();
 
+        CustomSettingsScreen css = new CustomSettingsScreen();
+
+        Countries USA = new Countries("USA", 20, 5, 4);
+        Countries Russia = new Countries("Russia", 20, 5, 4);
+        Countries UK = new Countries("UK", 10, 3, 7);
+        Countries China = new Countries("China", 20, 5, 5);
+        Countries France = new Countries("France", 15, 3, 7);
+        Countries India = new Countries("India", 17, 4, 7);
+        Countries Germany = new Countries("Germany", 15, 4, 8);
+        Countries Japan = new Countries("Japan", 10, 3, 7);
+        Countries Sweden = new Countries("Sweden", 13, 2, 10);
+        Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
+
+        string Dur;
+        string Str;
+        string rep;
+
         public Form1()
         {
             //Application.Run(new IntroMenu());       
@@ -57,7 +74,9 @@ namespace WarGames
 
         private void PauseButton_Click(object sender, EventArgs e)
         {
-            //only visible while the game is running, does not effect the start/stop button
+            //"Start" text turns to Stop while the game is running
+            PauseButton.Enabled = true;
+            UpdateUSAGroupBox();
         }
 
         private void ContinueButton_Click(object sender, EventArgs e)
@@ -70,10 +89,12 @@ namespace WarGames
             Close();
         }
 
-        private void StartButton_Click(object sender, EventArgs e)
+        private void UpdateUSAGroupBox()
         {
-            //"Start" text turns to Stop while the game is running
-            PauseButton.Enabled = true;
+            //USADurLabel.Text = ("Durability: ") + css.getUSADurability().ToString("");           
+            USADurLabel.Text = ("Durability: ") + css.USADurability.ToString();
+            USADurLabel.Refresh();
+
         }
     }
 }
