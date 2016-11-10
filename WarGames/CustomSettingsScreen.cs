@@ -15,16 +15,16 @@ namespace WarGames
         WOPR warRoom = new WOPR();
 
 
-        Countries USA = new Countries("USA", 20, 5, 4);
-        Countries Russia = new Countries("Russia", 20, 5, 4);
-        Countries UK = new Countries("UK", 10, 3, 7);
-        Countries China = new Countries("China", 20, 5, 5);
-        Countries France = new Countries("France", 15, 3, 7);
-        Countries India = new Countries("India", 17, 4, 7);
-        Countries Germany = new Countries("Germany", 15, 4, 8);
-        Countries Japan = new Countries("Japan", 10, 3, 7);
-        Countries Sweden = new Countries("Sweden", 13, 2, 10);
-        Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
+        //Countries USA = new Countries("USA", 20, 5, 4);
+        //Countries Russia = new Countries("Russia", 20, 5, 4);
+        //Countries UK = new Countries("UK", 10, 3, 7);
+        //Countries China = new Countries("China", 20, 5, 5);
+        //Countries France = new Countries("France", 15, 3, 7);
+        //Countries India = new Countries("India", 17, 4, 7);
+        //Countries Germany = new Countries("Germany", 15, 4, 8);
+        //Countries Japan = new Countries("Japan", 10, 3, 7);
+        //Countries Sweden = new Countries("Sweden", 13, 2, 10);
+        //Countries NorthKorea = new Countries("North Korea", 3, 2, 1);
 
         #region CountriesProperties&Fields
         private int _usaDurability;
@@ -71,6 +71,10 @@ namespace WarGames
         {
             get
             {
+                if (_usaDurability == 0)
+                {
+                    return (int)USA_Durability.Value;
+                }
                 return _usaDurability;
             }
             set
@@ -82,6 +86,10 @@ namespace WarGames
         {
             get
             {
+                if (_usaStrength == 0)
+                {
+                    return (int)USA_Strength.Value;
+                }
                 return _usaStrength;
             }
             set
@@ -93,6 +101,10 @@ namespace WarGames
         {
             get
             {
+                if (_usaRep == 0)
+                {
+                    return (int)USA_Rep.Value;
+                }
                 return _usaRep;
             }
             set
@@ -105,6 +117,10 @@ namespace WarGames
         {
             get
             {
+                if (_russiaDurability == 0)
+                {
+                    return (int)Russia_Durability.Value;
+                }
                 return _russiaDurability;
             }
             set
@@ -116,6 +132,10 @@ namespace WarGames
         {
             get
             {
+                if (_russiaStrength == 0)
+                {
+                    return (int)Russia_Strength.Value;
+                }
                 return _russiaStrength;
             }
             set
@@ -127,6 +147,10 @@ namespace WarGames
         {
             get
             {
+                if (_russiaRep == 0)
+                {
+                    return (int)Russia_Rep.Value;
+                }
                 return _russiaRep;
             }
             set
@@ -416,6 +440,7 @@ namespace WarGames
             set
             {
                 _northKoreaStrength = value;
+
             }
         }
         public int NorthKoreaRep
@@ -479,12 +504,6 @@ namespace WarGames
             }
         }
 
-        public int getUSADurability()
-        {
-            int dura = USADurability;
-            return dura;
-        }
-
         #region CountiresSettingsChanged
         //USA
         private void USA_Durability_ValueChanged(object sender, EventArgs e)
@@ -500,7 +519,7 @@ namespace WarGames
 
         private void USA_Rep_ValueChanged(object sender, EventArgs e)
         {
-            USAREP = (int)USA_Rep.Value;
+            USARep = (int)USA_Rep.Value;
         }
         //Russia
         private void Russia_Durability_ValueChanged(object sender, EventArgs e)
