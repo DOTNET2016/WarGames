@@ -15,7 +15,7 @@ namespace WarGames
         static CustomSettingsScreen newScreen;
         private Timer _CountDownTimer;
 
-        private int _counter = 10;
+        private int _counter = 5;
         private int _hours = 00;
 
         public CustomSettingsScreen()
@@ -49,6 +49,7 @@ namespace WarGames
                 _CountDownTimer.Stop();
                 CountdownClock.Text = _hours.ToString("00") + ":" + _counter.ToString("00");
                 newScreen.Dispose();
+                IntroMenu.CloseIntroScreen();
             }
         }
     }

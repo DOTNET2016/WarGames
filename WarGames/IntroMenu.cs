@@ -52,10 +52,11 @@ namespace WarGames
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
             CustomSettingsScreen.ShowCustomMenu();
+            Close();
         }
         
         public static void CloseIntroScreen()
-        {
+        {           
             mainIntroScreen = new IntroMenu();
             mainIntroScreen.Dispose();
         }

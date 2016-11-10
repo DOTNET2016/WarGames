@@ -24,16 +24,6 @@ namespace WarGames
             EnduranceListBox.DataSource = countriesAtWar;
         }
 
-        public bool SplashScreen()
-        {
-            IntroMenu splash = new IntroMenu();
-            if (splash.ShowDialog() == DialogResult.OK)
-            {
-                return true;
-            }
-            return false;
-        }
-
         private void PauseButton_Click(object sender, EventArgs e)
         {
             //only visible while the game is running, does not effect the start/stop button
