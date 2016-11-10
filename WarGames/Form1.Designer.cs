@@ -748,7 +748,7 @@
             // 
             this.NorthKoreaLabel.AutoSize = true;
             this.NorthKoreaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NorthKoreaLabel.Location = new System.Drawing.Point(915, 9);
+            this.NorthKoreaLabel.Location = new System.Drawing.Point(915, 11);
             this.NorthKoreaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NorthKoreaLabel.Name = "NorthKoreaLabel";
             this.NorthKoreaLabel.Size = new System.Drawing.Size(89, 18);
@@ -802,7 +802,7 @@
             // 
             this.SwedenLabel.AutoSize = true;
             this.SwedenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwedenLabel.Location = new System.Drawing.Point(830, 9);
+            this.SwedenLabel.Location = new System.Drawing.Point(830, 11);
             this.SwedenLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SwedenLabel.Name = "SwedenLabel";
             this.SwedenLabel.Size = new System.Drawing.Size(61, 18);
@@ -813,7 +813,7 @@
             // 
             this.JapanLabel.AutoSize = true;
             this.JapanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JapanLabel.Location = new System.Drawing.Point(730, 9);
+            this.JapanLabel.Location = new System.Drawing.Point(730, 11);
             this.JapanLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.JapanLabel.Name = "JapanLabel";
             this.JapanLabel.Size = new System.Drawing.Size(48, 18);
@@ -824,7 +824,7 @@
             // 
             this.GermanyLabel.AutoSize = true;
             this.GermanyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GermanyLabel.Location = new System.Drawing.Point(621, 9);
+            this.GermanyLabel.Location = new System.Drawing.Point(622, 11);
             this.GermanyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GermanyLabel.Name = "GermanyLabel";
             this.GermanyLabel.Size = new System.Drawing.Size(69, 18);
@@ -835,7 +835,7 @@
             // 
             this.IndiaLabel.AutoSize = true;
             this.IndiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IndiaLabel.Location = new System.Drawing.Point(534, 9);
+            this.IndiaLabel.Location = new System.Drawing.Point(534, 11);
             this.IndiaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IndiaLabel.Name = "IndiaLabel";
             this.IndiaLabel.Size = new System.Drawing.Size(38, 18);
@@ -846,7 +846,7 @@
             // 
             this.FranceLabel.AutoSize = true;
             this.FranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FranceLabel.Location = new System.Drawing.Point(427, 9);
+            this.FranceLabel.Location = new System.Drawing.Point(427, 11);
             this.FranceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FranceLabel.Name = "FranceLabel";
             this.FranceLabel.Size = new System.Drawing.Size(54, 18);
@@ -857,7 +857,7 @@
             // 
             this.ChinaLabel.AutoSize = true;
             this.ChinaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChinaLabel.Location = new System.Drawing.Point(330, 9);
+            this.ChinaLabel.Location = new System.Drawing.Point(331, 11);
             this.ChinaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChinaLabel.Name = "ChinaLabel";
             this.ChinaLabel.Size = new System.Drawing.Size(46, 18);
@@ -868,7 +868,7 @@
             // 
             this.UKLabel.AutoSize = true;
             this.UKLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UKLabel.Location = new System.Drawing.Point(238, 9);
+            this.UKLabel.Location = new System.Drawing.Point(238, 11);
             this.UKLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UKLabel.Name = "UKLabel";
             this.UKLabel.Size = new System.Drawing.Size(29, 18);
@@ -879,7 +879,7 @@
             // 
             this.RussiaLabel.AutoSize = true;
             this.RussiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RussiaLabel.Location = new System.Drawing.Point(130, 9);
+            this.RussiaLabel.Location = new System.Drawing.Point(130, 11);
             this.RussiaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RussiaLabel.Name = "RussiaLabel";
             this.RussiaLabel.Size = new System.Drawing.Size(54, 18);
@@ -891,7 +891,7 @@
             this.USALabel.AutoSize = true;
             this.USALabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.USALabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.USALabel.Location = new System.Drawing.Point(34, 9);
+            this.USALabel.Location = new System.Drawing.Point(34, 11);
             this.USALabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.USALabel.Name = "USALabel";
             this.USALabel.Size = new System.Drawing.Size(38, 18);
@@ -924,9 +924,9 @@
             this.EnduranceBox.BackColor = System.Drawing.Color.Transparent;
             this.EnduranceBox.Controls.Add(this.EnduranceListBox);
             this.EnduranceBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.EnduranceBox.Location = new System.Drawing.Point(0, 553);
+            this.EnduranceBox.Location = new System.Drawing.Point(-1, 557);
             this.EnduranceBox.Name = "EnduranceBox";
-            this.EnduranceBox.Size = new System.Drawing.Size(164, 167);
+            this.EnduranceBox.Size = new System.Drawing.Size(164, 164);
             this.EnduranceBox.TabIndex = 0;
             this.EnduranceBox.TabStop = false;
             this.EnduranceBox.Text = "Endurance";
@@ -937,10 +937,10 @@
             this.EnduranceListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EnduranceListBox.ForeColor = System.Drawing.SystemColors.Window;
             this.EnduranceListBox.FormattingEnabled = true;
-            this.EnduranceListBox.Location = new System.Drawing.Point(2, 12);
+            this.EnduranceListBox.Location = new System.Drawing.Point(5, 21);
             this.EnduranceListBox.Name = "EnduranceListBox";
             this.EnduranceListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.EnduranceListBox.Size = new System.Drawing.Size(157, 351);
+            this.EnduranceListBox.Size = new System.Drawing.Size(157, 130);
             this.EnduranceListBox.TabIndex = 0;
             // 
             // PressStart
