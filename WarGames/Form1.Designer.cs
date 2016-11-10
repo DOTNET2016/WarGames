@@ -42,6 +42,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.StatsBox = new System.Windows.Forms.GroupBox();
             this.NorthKoreaLabel = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.USADurLabel = new System.Windows.Forms.Label();
             this.SwedenLabel = new System.Windows.Forms.Label();
             this.JapanLabel = new System.Windows.Forms.Label();
             this.GermanyLabel = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
-            this.USADurLabel = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -80,8 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.StatsBox.SuspendLayout();
-            this.EnduranceBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.EnduranceBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Background
@@ -257,6 +257,24 @@
             this.NorthKoreaLabel.Size = new System.Drawing.Size(111, 24);
             this.NorthKoreaLabel.TabIndex = 19;
             this.NorthKoreaLabel.Text = "North Korea";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.USADurLabel);
+            this.groupBox1.Location = new System.Drawing.Point(7, 33);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(123, 134);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            // 
+            // USADurLabel
+            // 
+            this.USADurLabel.AutoSize = true;
+            this.USADurLabel.Location = new System.Drawing.Point(14, 18);
+            this.USADurLabel.Name = "USADurLabel";
+            this.USADurLabel.Size = new System.Drawing.Size(79, 17);
+            this.USADurLabel.TabIndex = 20;
+            this.USADurLabel.Text = "Durability:  ";
             // 
             // SwedenLabel
             // 
@@ -537,24 +555,6 @@
             this.PressStart.UseVisualStyleBackColor = false;
             this.PressStart.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
-            // USADurLabel
-            // 
-            this.USADurLabel.AutoSize = true;
-            this.USADurLabel.Location = new System.Drawing.Point(14, 18);
-            this.USADurLabel.Name = "USADurLabel";
-            this.USADurLabel.Size = new System.Drawing.Size(79, 17);
-            this.USADurLabel.TabIndex = 20;
-            this.USADurLabel.Text = "Durability:  ";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.USADurLabel);
-            this.groupBox1.Location = new System.Drawing.Point(7, 33);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(123, 134);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -581,9 +581,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
-            this.EnduranceBox.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.EnduranceBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

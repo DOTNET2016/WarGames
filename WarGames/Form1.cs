@@ -38,7 +38,7 @@ namespace WarGames
 
         public Form1()
         {
-            //Application.Run(new IntroMenu());       
+            Application.Run(new IntroMenu());       
             InitializeComponent();
             EnduranceListBox.DataSource = countriesAtWar;
         }
@@ -95,6 +95,11 @@ namespace WarGames
             USADurLabel.Text = ("Durability: ") + css.USADurability.ToString();
             USADurLabel.Refresh();
 
+        }
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            PauseButton.Enabled = true;
         }
     }
 }
