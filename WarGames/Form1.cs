@@ -11,6 +11,8 @@ using System.Threading;
 using System.Drawing.Text;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
+using System.Reflection;
+using System.Windows.Input;
 
 namespace WarGames
 {
@@ -50,35 +52,41 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Paint += new PaintEventHandler(Background_Paint);
+            //Paint += new PaintEventHandler(Background_Paint);
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
         }
 
-        private void Background_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+        //private void Background_Paint(object sender, PaintEventArgs e)
+        //{
 
-            foreach (Point point in Points)
-                e.Graphics.FillEllipse(Brushes.Black,
-                    point.X - 3, point.Y - 3, 5, 5);
-            if (Points.Count < 3) return;
+        //    //Pen pen = new Pen(Color.FromArgb(255, 0, 0, 255), 8);
+        //    //pen.StartCap = LineCap.ArrowAnchor;
+        //    //pen.EndCap = LineCap.RoundAnchor;
+        //    //e.Graphics.DrawLine(pen, 20, 175, 300, 175);
 
-            e.Graphics.DrawCurve(Pens.Red, Points.ToArray());
-        }
+        //    //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
-        private void Background_MouseClick(object sender, MouseEventArgs e)
-        {
-            Points.Add(e.Location);
-            Refresh();
-        }
+        //    //foreach (Point point in Points)
+        //    //    e.Graphics.FillEllipse(Brushes.Black,
+        //    //        point.X - 3, point.Y - 3, 5, 5);
+        //    //if (Points.Count < 3) return;
+
+        //    //e.Graphics.DrawCurve(Pens.Red, Points.ToArray());
+        //}
+
+        //private void Background_MouseClick(object sender, MouseEventArgs e)
+        //{
+        //    Points.Add(e.Location);
+        //    Refresh();
+        //}
         
-        private void mnuCurveNew_Click(object sender, EventArgs e)
-        {
-            Points = new List<Point>();
-            Refresh();
-        }
+        //private void mnuCurveNew_Click(object sender, EventArgs e)
+        //{
+        //    Points = new List<Point>();
+        //    Refresh();
+        //}
 
         private void PauseButton_Click(object sender, EventArgs e)
         {
@@ -240,5 +248,16 @@ namespace WarGames
             }
         }
         #endregion
+       
+        //Find the coordinates of each country through a textbox on the main form.
+        private void Background_MouseClick(object sender, MouseEventArgs e)
+        {
+            MouseClick += new MouseEventHandler(Background_MouseClick);
+            int myX = e.X;
+            int myY = e.Y;
+
+            textBox1.Text = "X: " + e.X + "" + "\n" + "Y: " + e.Y;
+
+        }
     }
 }
