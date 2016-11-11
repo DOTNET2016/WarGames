@@ -118,6 +118,7 @@ namespace WarGames
             }
         }
 
+        //when pressed the EnduranceList will be filled
         private void StartButton_Click(object sender, EventArgs e)
         {
             //"Start" text turns to Stop while the game is running
@@ -160,6 +161,7 @@ namespace WarGames
                 }
                 IsPause = IsPause;
             }
+            ((CurrencyManager)EnduranceListBox.BindingContext[countriesAtWar]).Refresh();
         }
 
         //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list
