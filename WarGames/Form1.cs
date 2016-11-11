@@ -33,6 +33,19 @@ namespace WarGames
 
         Font myFont;
 
+        /// <Countries_Coordinates>
+        /// USA = X: 223 Y:239
+        /// Russia = X:1006 Y:121
+        /// UK = X:654 Y:156
+        /// China = X:1105 Y:255
+        /// France = X:667 Y:189
+        /// India = X:1028 Y:322
+        /// Germany = X:699 Y:164
+        /// Japan = X:1291 Y:240
+        /// Sweden = X:721 Y:114
+        /// North Korea = X:1226 Y:223
+        /// </summary>
+
         public Form1()
         {
             Application.Run(new IntroMenu());       
@@ -52,36 +65,40 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Paint += new PaintEventHandler(Background_Paint);
+            Paint += new PaintEventHandler(Background_Paint);
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
         }
 
-        //private void Background_Paint(object sender, PaintEventArgs e)
-        //{
+        private void Background_Paint(object sender, PaintEventArgs e)
+        {
 
-        //    //Pen pen = new Pen(Color.FromArgb(255, 0, 0, 255), 8);
-        //    //pen.StartCap = LineCap.ArrowAnchor;
-        //    //pen.EndCap = LineCap.RoundAnchor;
-        //    //e.Graphics.DrawLine(pen, 20, 175, 300, 175);
+            Pen pen = new Pen(Color.Red, 2);
 
-        //    //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.DrawLine(pen, 223, 239, 1006, 121); //USA attacking Russia.....For example...
+            e.Graphics.DrawLine(pen, 223, 239, 1226, 223); // USA attacking NorthKorea etc......
 
-        //    //foreach (Point point in Points)
-        //    //    e.Graphics.FillEllipse(Brushes.Black,
-        //    //        point.X - 3, point.Y - 3, 5, 5);
-        //    //if (Points.Count < 3) return;
+            //pen.StartCap = LineCap.ArrowAnchor;
+            //pen.EndCap = LineCap.RoundAnchor;
+            //e.Graphics.DrawLine(pen, 20, 175, 300, 175);
 
-        //    //e.Graphics.DrawCurve(Pens.Red, Points.ToArray());
-        //}
+            //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+            //foreach (Point point in Points)
+            //    e.Graphics.FillEllipse(Brushes.Black,
+            //        point.X - 3, point.Y - 3, 5, 5);
+            //if (Points.Count < 3) return;
+
+            //e.Graphics.DrawCurve(Pens.Red, Points.ToArray());
+        }
 
         //private void Background_MouseClick(object sender, MouseEventArgs e)
         //{
         //    Points.Add(e.Location);
         //    Refresh();
         //}
-        
+
         //private void mnuCurveNew_Click(object sender, EventArgs e)
         //{
         //    Points = new List<Point>();
@@ -249,7 +266,7 @@ namespace WarGames
         }
         #endregion
        
-        //Find the coordinates of each country through a textbox on the main form.
+        //Find the coordinates of each country through a textbox on the main form. We can delete this method after we have the coordinates
         private void Background_MouseClick(object sender, MouseEventArgs e)
         {
             MouseClick += new MouseEventHandler(Background_MouseClick);
