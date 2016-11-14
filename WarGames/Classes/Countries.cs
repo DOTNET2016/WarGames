@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace WarGames
 {
@@ -26,7 +27,7 @@ namespace WarGames
             }
         }
 
-        public int Strength
+        public int CStrength
         {
             get
             {
@@ -39,7 +40,7 @@ namespace WarGames
             }
         }
 
-        public int Rep
+        public int CRep
         {
             get
             {
@@ -56,12 +57,13 @@ namespace WarGames
         {
             _countryName = CountryName;
             _durability = Durability;
-            _strength = Strength;
-            _rep = Rep;
+            CStrength = Strength;
+            CRep = Rep;
         }
+
         public override string ToString()
         {
-            return _countryName + ": " + _durability;
+            return _countryName + ": " + Durability;
         }
     }
 }
