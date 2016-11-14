@@ -110,15 +110,16 @@ namespace WarGames
             IsPause = !IsPause;
             if (IsPause)
             {
-                //pause the war
+                //TODO pause the war
+                ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
             }
             if (!IsPause)
             {
-                //unpause the war
+                //TODO unpause the war
+                ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
             }
         }
 
-        //when pressed the EnduranceList will be filled
         private void StartButton_Click(object sender, EventArgs e)
         {
             //"Start" text turns to Stop while the game is running
@@ -141,8 +142,7 @@ namespace WarGames
             }
             if (!IsOn)
             {
-                //stops the war and reset the list 
-                //yes Stop also works as a reset button
+                //stops the war, when it says Stop also works as and reset the list
                 warRoom.countriesAtWar.Clear();
                 PauseButton.Enabled = false;
                 CustomizeGameBtn.Enabled = true;
