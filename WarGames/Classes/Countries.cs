@@ -13,6 +13,8 @@ namespace WarGames
         private int _durability;
         private int _strength;
         private int _rep;
+        private float _xCoord;
+        private float _yCoord;
 
         public int Durability
         {
@@ -57,6 +59,8 @@ namespace WarGames
         {
             _countryName = CountryName;
             _durability = Durability;
+            _xCoord = x;
+            _yCoord = y;
             CStrength = Strength;
             CRep = Rep;
         }

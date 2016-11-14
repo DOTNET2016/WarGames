@@ -980,11 +980,11 @@
             this.EnduranceBox.BackColor = System.Drawing.Color.Transparent;
             this.EnduranceBox.Controls.Add(this.EnduranceListBox);
             this.EnduranceBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.EnduranceBox.Location = new System.Drawing.Point(-1, 696);
+            this.EnduranceBox.Location = new System.Drawing.Point(-1, 615);
             this.EnduranceBox.Margin = new System.Windows.Forms.Padding(4);
             this.EnduranceBox.Name = "EnduranceBox";
             this.EnduranceBox.Padding = new System.Windows.Forms.Padding(4);
-            this.EnduranceBox.Size = new System.Drawing.Size(205, 205);
+            this.EnduranceBox.Size = new System.Drawing.Size(205, 286);
             this.EnduranceBox.TabIndex = 0;
             this.EnduranceBox.TabStop = false;
             this.EnduranceBox.Text = "Endurance";
@@ -993,14 +993,15 @@
             // 
             this.EnduranceListBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.EnduranceListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EnduranceListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EnduranceListBox.ForeColor = System.Drawing.SystemColors.Window;
             this.EnduranceListBox.FormattingEnabled = true;
-            this.EnduranceListBox.ItemHeight = 16;
-            this.EnduranceListBox.Location = new System.Drawing.Point(6, 26);
+            this.EnduranceListBox.ItemHeight = 25;
+            this.EnduranceListBox.Location = new System.Drawing.Point(6, 20);
             this.EnduranceListBox.Margin = new System.Windows.Forms.Padding(4);
             this.EnduranceListBox.Name = "EnduranceListBox";
             this.EnduranceListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.EnduranceListBox.Size = new System.Drawing.Size(196, 160);
+            this.EnduranceListBox.Size = new System.Drawing.Size(196, 250);
             this.EnduranceListBox.TabIndex = 0;
             // 
             // PressStart
