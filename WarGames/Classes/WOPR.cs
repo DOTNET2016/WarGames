@@ -28,5 +28,9 @@ namespace WarGames
             countriesAtWar.Add(new Countries("Sweden", 13, 2, 10, 721, 114));
             countriesAtWar.Add(new Countries("North Korea", 14, 6, 1, 1226, 223));
         }
+        public void AttackCountry()
+        {
+            //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
+        }
     }
 }

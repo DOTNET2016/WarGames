@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Background = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -99,6 +100,7 @@
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.PressStart = new System.Windows.Forms.Button();
+            this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -1011,6 +1013,11 @@
             this.PressStart.Size = new System.Drawing.Size(75, 23);
             this.PressStart.TabIndex = 0;
             // 
+            // warTimer
+            // 
+            this.warTimer.Interval = 1000;
+            this.warTimer.Tick += new System.EventHandler(this.warTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1137,6 +1144,7 @@
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Button PauseButton;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Timer warTimer;
     }
 }
 
