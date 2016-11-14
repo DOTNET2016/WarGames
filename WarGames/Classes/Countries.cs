@@ -53,7 +53,7 @@ namespace WarGames
             }
         }
 
-        public Countries(string CountryName, int Durability, int Strength, int Rep)
+        public Countries(string CountryName, int Durability, int Strength, int Rep, float x, float y)
         {
             _countryName = CountryName;
             _durability = Durability;
