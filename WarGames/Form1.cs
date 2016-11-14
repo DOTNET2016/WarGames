@@ -18,8 +18,7 @@ namespace WarGames
 {
     public partial class Form1 : Form
     {
-        WOPR wop = new WOPR();
-        List<Countries> countriesAtWar = new List<Countries>();
+        WOPR warRoom = new WOPR();
         private List<Point> Points = new List<Point>();
 
         private bool _IsOn;
@@ -50,7 +49,7 @@ namespace WarGames
         {
             Application.Run(new IntroMenu());       
             InitializeComponent();
-            EnduranceListBox.DataSource = countriesAtWar;
+            EnduranceListBox.DataSource = warRoom.countriesAtWar;
 
             byte[] fontData = Properties.Resources.WarGames;
             IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
@@ -73,7 +72,6 @@ namespace WarGames
 
         private void Background_Paint(object sender, PaintEventArgs e)
         {
-
             Pen pen = new Pen(Color.Red, 2);
 
            // e.Graphics.DrawLine(pen, 223, 239, 1006, 121); //USA attacking Russia.....For example...
@@ -132,18 +130,9 @@ namespace WarGames
             if (IsOn)
             {
                 //if the user havent visited the "customize" section the when pressed it will create a list of countries with default stats
-                if (countriesAtWar.Count == 0)
+                if (warRoom.countriesAtWar.Count == 0)
                 {
-                    countriesAtWar.Add(new Countries("USA", 20, 5, 4));
-                    countriesAtWar.Add(new Countries("Russia", 20, 5, 4));
-                    countriesAtWar.Add(new Countries("UK", 10, 3, 7));
-                    countriesAtWar.Add(new Countries("China", 20, 5, 5));
-                    countriesAtWar.Add(new Countries("France", 15, 3, 7));
-                    countriesAtWar.Add(new Countries("India", 17, 4, 7));
-                    countriesAtWar.Add(new Countries("Germany", 15, 4, 8));
-                    countriesAtWar.Add(new Countries("Japan", 10, 3, 7));
-                    countriesAtWar.Add(new Countries("Sweden", 13, 2, 10));
-                    countriesAtWar.Add(new Countries("North Korea", 14, 6, 1));
+                    warRoom.CountryList();
                     PauseButton.Enabled = true;
                     CustomizeGameBtn.Enabled = false;
                 }
@@ -158,7 +147,7 @@ namespace WarGames
             {
                 //stops the war and reset the list 
                 //yes Stop also works as a reset button
-                countriesAtWar.Clear();
+                warRoom.countriesAtWar.Clear();
                 PauseButton.Enabled = false;
                 CustomizeGameBtn.Enabled = true;
                 if (IsPause)
@@ -167,7 +156,7 @@ namespace WarGames
                 }
                 IsPause = IsPause;
             }
-            ((CurrencyManager)EnduranceListBox.BindingContext[countriesAtWar]).Refresh();
+            ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
 
         //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list
@@ -180,61 +169,61 @@ namespace WarGames
                 USADurLabel.Text = "Durability: " + css.USADurability.ToString();
                 USAStrengthLabel.Text = "Strength: " + css.USAStrength.ToString();
                 USARepLabel.Text = "Reputation: " + css.USARep.ToString();
-                countriesAtWar.Add(new Countries("USA", css.USADurability, css.USAStrength, css.USARep));
+                warRoom.countriesAtWar.Add(new Countries("USA", css.USADurability, css.USAStrength, css.USARep));
                 
                 //Russia
                 RussiaDurLabel.Text = "Durability: " + css.RussiaDurability.ToString();
                 RussiaStrengthLabel.Text = "Strength: " + css.RussiaStrength.ToString();
                 RussiaRepLabel.Text = "Reputation: " + css.RussiaRep.ToString();
-                countriesAtWar.Add(new Countries("Russia", css.RussiaDurability, css.RussiaStrength, css.RussiaRep));
+                warRoom.countriesAtWar.Add(new Countries("Russia", css.RussiaDurability, css.RussiaStrength, css.RussiaRep));
                 
                 //UK
                 UkDurLabel.Text = "Durability: " + css.UkDurability.ToString();
                 UkStrengthLabel.Text = "Strength: " + css.UkStrength.ToString();
                 UkRepLabel.Text = "Reputation: " + css.UkRep.ToString();
-                countriesAtWar.Add(new Countries("UK", css.UkDurability, css.UkStrength, css.UkRep));
+                warRoom.countriesAtWar.Add(new Countries("UK", css.UkDurability, css.UkStrength, css.UkRep));
                 
                 //China
                 ChinaDurLabel.Text = "Durability: " + css.ChinaDurability.ToString();
                 ChinaStrengthLabel.Text = "Strength: " + css.ChinaStrength.ToString();
                 ChinaRepLabel.Text = "Reputation: " + css.ChinaRep.ToString();
-                countriesAtWar.Add(new Countries("China", css.ChinaDurability, css.ChinaStrength, css.ChinaRep));
+                warRoom.countriesAtWar.Add(new Countries("China", css.ChinaDurability, css.ChinaStrength, css.ChinaRep));
                 
                 //France
                 FranceDurLabel.Text = "Durability: " + css.FranceDurability.ToString();
                 FranceStrengthLabel.Text = "Strength: " + css.FranceStrength.ToString();
                 FranceRepLabel.Text = "Reputation: " + css.FranceRep.ToString();
-                countriesAtWar.Add(new Countries("France", css.FranceDurability, css.FranceStrength, css.FranceRep));
+                warRoom.countriesAtWar.Add(new Countries("France", css.FranceDurability, css.FranceStrength, css.FranceRep));
                 
                 //India
                 IndiaDurLabel.Text = "Durability: " + css.IndiaDurability.ToString();
                 IndiaStrengthLabel.Text = "Strength: " + css.IndiaStrength.ToString();
                 IndiaRepLabel.Text = "Reputation: " + css.IndiaRep.ToString();
-                countriesAtWar.Add(new Countries("India", css.IndiaDurability, css.IndiaStrength, css.IndiaRep));
+                warRoom.countriesAtWar.Add(new Countries("India", css.IndiaDurability, css.IndiaStrength, css.IndiaRep));
 
                 //Germany
                 GermanyDurLabel.Text = "Durability: " + css.GermanyDurability.ToString();
                 GermanyStrengthLabel.Text = "Strength: " + css.GermanyStrength.ToString();
                 GermanyRepLabel.Text = "Reputation: " + css.GermanyRep.ToString();
-                countriesAtWar.Add(new Countries("Germany", css.GermanyDurability, css.GermanyStrength, css.GermanyRep));
+                warRoom.countriesAtWar.Add(new Countries("Germany", css.GermanyDurability, css.GermanyStrength, css.GermanyRep));
 
                 //Japan
                 JapanDurLabel.Text = "Durability: " + css.JPDurability.ToString();
                 JapanStrengthLabel.Text = "Strength: " + css.JPStrength.ToString();
                 JapanRepLabel.Text = "Reputation: " + css.JPRep.ToString();
-                countriesAtWar.Add(new Countries("Japan", css.JPDurability, css.JPStrength, css.JPRep));
+                warRoom.countriesAtWar.Add(new Countries("Japan", css.JPDurability, css.JPStrength, css.JPRep));
 
                 //Sweden
                 SwedenDurLabel.Text = "Durability: " + css.SwedenDurability.ToString();
                 SwedenStrengthLabel.Text = "Strength: " + css.SwedenStrength.ToString();
                 SwedenRepLabel.Text = "Reputation: " + css.SwedenRep.ToString();
-                countriesAtWar.Add(new Countries("Sweden", css.SwedenDurability, css.SwedenStrength, css.SwedenRep));
+                warRoom.countriesAtWar.Add(new Countries("Sweden", css.SwedenDurability, css.SwedenStrength, css.SwedenRep));
 
                 //North Korea
                 NKDurLabel.Text = "Durability: " + css.NorthKoreaDurability.ToString();
                 NKStrengthLabel.Text = "Strength: " + css.NorthKoreaStrength.ToString();
                 NKRepLabel.Text = "Reputation: " + css.NorthKoreaRep.ToString();
-                countriesAtWar.Add(new Countries("North Korea", css.NorthKoreaDurability, css.NorthKoreaStrength, css.NorthKoreaRep));
+                warRoom.countriesAtWar.Add(new Countries("North Korea", css.NorthKoreaDurability, css.NorthKoreaStrength, css.NorthKoreaRep));
             }
             css.Close();
             css.Dispose();
