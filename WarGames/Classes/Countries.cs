@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace WarGames
 {
-    public class Countries
+    public class Countries : IComparable
     {
         private string _countryName;
         private int _durability;
@@ -63,7 +63,12 @@ namespace WarGames
 
         public override string ToString()
         {
-            return _countryName + ": " + Durability;
+            return _countryName + ": " + _durability;
+        }
+
+        public int CompareTo(object obj)
+        {
+            return _durability.CompareTo(_durability);
         }
     }
 }

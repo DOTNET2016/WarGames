@@ -15,6 +15,7 @@ namespace WarGames
         {
             
         }
+
         public void CountryList()
         {
             countriesAtWar.Add(new Countries("USA", 20, 5, 4, 223, 239));
@@ -27,6 +28,10 @@ namespace WarGames
             countriesAtWar.Add(new Countries("Japan", 10, 3, 7, 1291, 240));
             countriesAtWar.Add(new Countries("Sweden", 13, 2, 10, 721, 114));
             countriesAtWar.Add(new Countries("North Korea", 14, 6, 1, 1226, 223));
+        }
+        public void SortDurability()
+        {
+            countriesAtWar.Sort();
         }
     }
 }
