@@ -32,9 +32,9 @@ namespace WarGames
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font myFont;
-        private List<PointF> bezierPoints;
-        private PointF ctrl1;
-        private PointF ctrl2;
+        private List<PointF> curvePointList;
+        private PointF curveStart;
+        private PointF curveEnd;
         PointF usaPoint = new PointF(223, 239);
         PointF russiaPoint = new PointF(1006, 121);
         PointF ukPoint = new PointF(654, 156);
@@ -85,22 +85,22 @@ namespace WarGames
             CustomizeGameBtn.Font = myFont;
         }
 
-        public void CreateCurve(PointF ctrl1, PointF ctrl2)
+        public void CreateCurve(PointF curveStart, PointF curveEnd)
         {
-            bezierPoints = new List<PointF>();
-            bezierPoints.Clear();
-            bezierPoints.Add(ctrl1);
-            PointF midPoint1 = MidPoint(ctrl1, ctrl2);
-            bezierPoints.Add(midPoint1);
-            bezierPoints.Add(ctrl2);
+            curvePointList = new List<PointF>();
+            curvePointList.Clear();
+            curvePointList.Add(curveStart);
+            PointF midPoint = CreateMidPoint(curveStart, curveEnd);
+            curvePointList.Add(midPoint);
+            curvePointList.Add(curveEnd);
     }
 
-        private PointF MidPoint(PointF controlPoint1, PointF controlPoint2)
+        private PointF CreateMidPoint(PointF controlPoint1, PointF controlPoint2)
         {
-            if (ctrl1.Y - ctrl2.Y >= 200 || ctrl2.Y - ctrl1.Y >= 200)
+            if (curveStart.Y - curveEnd.Y >= 200 || curveEnd.Y - curveStart.Y >= 200)
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) * 0.97f,
+                ((controlPoint1.X + controlPoint2.X) / 2) * 1.04f,
                 ((controlPoint1.Y + controlPoint2.Y) / 2)
                 );
             }
@@ -108,7 +108,7 @@ namespace WarGames
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) ,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.9f
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.8f
                 );
             }
         }
@@ -120,14 +120,14 @@ namespace WarGames
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
             var attackingCountry = warRoom.RandomCountry();
-            var defendingCoutnry = warRoom.RandomCountry();
+            var defendingCountry = warRoom.RandomCountry();
             PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
-            PointF defendingPoint = new PointF(defendingCoutnry.x, defendingCoutnry.y);
+            PointF defendPoint = new PointF(defendingCountry.x, defendingCountry.y);
 
-            ctrl1 = attackPoint;
-            ctrl2 = defendingPoint;
-            CreateCurve(ctrl1, ctrl2);
-            e.Graphics.DrawCurve(pen, bezierPoints.ToArray());
+            curveStart = attackPoint;
+            curveEnd = defendPoint;
+            CreateCurve(curveStart, curveEnd);
+            e.Graphics.DrawCurve(pen, curvePointList.ToArray());
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
