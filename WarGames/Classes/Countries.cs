@@ -28,30 +28,29 @@ namespace WarGames
                 _durability = value;
             }
         }
-
-        public int CStrength
+        public float XCoord
         {
             get
             {
-                return _strength;
+                return _xCoord;
             }
 
             set
             {
-                _strength = value;
+                _xCoord = value;
             }
         }
 
-        public int CRep
+        public float YCoord
         {
             get
             {
-                return _rep;
+                return _yCoord;
             }
 
             set
             {
-                _rep = value;
+                _yCoord = value;
             }
         }
 
@@ -61,8 +60,8 @@ namespace WarGames
             _durability = Durability;
             _xCoord = x;
             _yCoord = y;
-            CStrength = Strength;
-            CRep = Rep;
+            _strength = Strength;
+            _rep = Rep;
         }
 
         public override string ToString()
@@ -72,7 +71,7 @@ namespace WarGames
 
         public int CompareTo(Countries other)
         {
-            return other.Durability.CompareTo(this.Durability);
+            return this.Durability.CompareTo(other.Durability);
         }
     }
 }

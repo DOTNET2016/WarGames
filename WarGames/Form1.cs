@@ -65,7 +65,7 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Paint += new PaintEventHandler(Background_Paint);
+            warRoom.CountryList();
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
@@ -76,8 +76,12 @@ namespace WarGames
             Pen pen = new Pen(Color.Red, 2);
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
-            e.Graphics.DrawBezier(pen, 223, 239, 431, 128, 664, 67, 1006, 121);//use - Russia
-            e.Graphics.DrawBezier(pen, 223, 239, 431, 128, 644, 67, 1226, 223);//usa - north korea
+            var obj = warRoom.RandomCountry();
+            var obj2 = warRoom.RandomCountry();
+
+
+            e.Graphics.DrawBezier(pen, obj.x, obj.y, 431, 128, 664, 67, obj2.x, obj2.y);//use - Russia
+            //e.Graphics.DrawBezier(pen, 223, 239, 431, 128, 644, 67, 1226, 223);//usa - north korea
             //e.Graphics.DrawBezier()
 
             //pen.StartCap = LineCap.ArrowAnchor;
@@ -262,7 +266,7 @@ namespace WarGames
 
         private void warTimer_Tick(object sender, EventArgs e)
         {
-            warRoom.AttackCountry();
+            Paint += new PaintEventHandler(Background_Paint);
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
     }
