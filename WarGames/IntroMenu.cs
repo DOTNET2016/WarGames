@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Media;
 
 namespace WarGames
 {
@@ -21,6 +22,8 @@ namespace WarGames
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font myFont;
+
+        SoundPlayer introMusic = new SoundPlayer(Properties.Resources.TitleMusicMenuTheme);
 
         public IntroMenu()
         {
@@ -40,11 +43,12 @@ namespace WarGames
         private void IntroMenu_Load(object sender, EventArgs e)
         {
             PlayGameBtn.Font = myFont;
+            introMusic.PlayLooping();
         }
 
         private void PlayGameBtn_Click(object sender, EventArgs e)
         {
-            Close();
+            introMusic.Stop();
         }
     }
 }

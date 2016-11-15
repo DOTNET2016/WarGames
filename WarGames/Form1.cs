@@ -13,6 +13,7 @@ using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Windows.Input;
+using System.Media;
 
 namespace WarGames
 {
@@ -21,6 +22,7 @@ namespace WarGames
         WOPR warRoom = new WOPR();
         private List<Point> Points = new List<Point>();
 
+        SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.menusoundtrack);
 
         private bool _IsOn;
         private bool _IsPause;
@@ -34,18 +36,7 @@ namespace WarGames
         Font myFont;
         private List<PointF> curvePointList;
         private PointF curveStart;
-        private PointF curveEnd;
-        //PointF usaPoint = new PointF(223, 239);
-        //PointF russiaPoint = new PointF(1006, 121);
-        //PointF ukPoint = new PointF(654, 156);
-        //PointF chinaPoint = new PointF(1105, 255);
-        //PointF francePoint = new PointF(667, 189);
-        //PointF indiaPoint = new PointF(1028, 322);
-        //PointF germanyPoint = new PointF(699, 164);
-        //PointF japanPoint = new PointF(1291, 240);
-        //PointF swedenPoint = new PointF(721, 114);
-        //PointF northkoreaPoint = new PointF(1226, 223);
-        
+        private PointF curveEnd;   
 
         /// <Countries_Coordinates>
         /// USA = X: 223 Y:239
@@ -62,7 +53,7 @@ namespace WarGames
 
         public Form1()
         {
-            Application.Run(new IntroMenu());       
+            //Application.Run(new IntroMenu());       
             InitializeComponent();
             EnduranceListBox.DataSource = warRoom.countriesAtWar;
 
@@ -79,6 +70,14 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            IntroMenu im = new IntroMenu();
+            if (im.ShowDialog(this) == DialogResult.OK)
+            {
+                backgroundMusicPlayer.PlayLooping();
+            }
+            im.Close();
+            im.Dispose();
+
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
@@ -89,7 +88,6 @@ namespace WarGames
             curvePointList = new List<PointF>();
             curvePointList.Clear();
             curvePointList.Add(curveStart);
-
 
             PointF midPoint = CreateMidPoint(curveStart, curveEnd);
             curvePointList.Add(midPoint);
@@ -122,23 +120,13 @@ namespace WarGames
             curveStart = attackPoint;
             curveEnd = defendPoint;
             CreateCurve(curveStart, curveEnd);
-            //Paint += new PaintEventHandler(Background_Paint);
 
-            Pen pen = new Pen(Color.Red, 2);
             using (var g = Graphics.FromImage(Background.BackgroundImage))
             {
+                Pen pen = new Pen(Color.IndianRed, 2);
                 g.DrawCurve(pen, curvePointList.ToArray());
                 Background.Refresh();
             }
-        }
-
-        private void Background_Paint(object sender, PaintEventArgs e)
-        {
-            //Pen pen = new Pen(Color.Red, 2);
-            //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-
-            //e.Graphics.DrawCurve(pen, curvePointList.ToArray());
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
@@ -148,12 +136,13 @@ namespace WarGames
             {
                 //TODO pause the war
                 warTimer.Stop();
+                backgroundMusicPlayer.PlayLooping();
             }
             if (!IsPause)
             {
                 //TODO unpause the war
                 warTimer.Start();
-
+                backgroundMusicPlayer.Stop();
             }
         }
 
@@ -178,6 +167,7 @@ namespace WarGames
                     CustomizeGameBtn.Enabled = false;
                 }
                 warTimer.Start();
+                backgroundMusicPlayer.Stop();
             }
             if (!IsOn)
             {
@@ -186,6 +176,7 @@ namespace WarGames
                 PauseButton.Enabled = false;
                 CustomizeGameBtn.Enabled = true;
                 warTimer.Stop();
+                backgroundMusicPlayer.PlayLooping();
                 if (IsPause)
                 {
                     IsPause = !IsPause;

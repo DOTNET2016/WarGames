@@ -154,7 +154,6 @@
             this.Background.Name = "Background";
             this.Background.Size = new System.Drawing.Size(1600, 900);
             this.Background.TabIndex = 1;
-            this.Background.Paint += new System.Windows.Forms.PaintEventHandler(this.Background_Paint);
             this.Background.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Background_MouseClick);
             // 
             // textBox1

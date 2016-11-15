@@ -141,6 +141,15 @@ namespace WarGames.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream menusoundtrack {
+            get {
+                return ResourceManager.GetStream("menusoundtrack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap north_korea_flag {
@@ -177,6 +186,15 @@ namespace WarGames.Properties {
             get {
                 object obj = ResourceManager.GetObject("sweden-flag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream TitleMusicMenuTheme {
+            get {
+                return ResourceManager.GetStream("TitleMusicMenuTheme", resourceCulture);
             }
         }
         

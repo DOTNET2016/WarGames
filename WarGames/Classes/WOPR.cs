@@ -41,6 +41,7 @@ namespace WarGames
             return temp;
             //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
         }
+
         public void SortDurability()
         {
             countriesAtWar.Sort();
