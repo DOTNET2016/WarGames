@@ -67,12 +67,7 @@ namespace WarGames
 
         public override string ToString()
         {
-            return _countryName + ": " + _durability;
-        }
-
-        public int CompareTo(object obj)
-        {
-            return _durability.CompareTo(_durability);
+            return _countryName + ": " + Durability;
         }
 
         public int CompareTo(Countries other)
