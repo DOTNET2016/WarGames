@@ -32,12 +32,12 @@ namespace WarGames
         }
         public dynamic RandomCountryOne()
         {
-            Countries randomCountry;
+            Countries randomCountryOne;
 
-            randomCountry = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+            randomCountryOne = countriesAtWar[rnd.Next(countriesAtWar.Count)];
             dynamic temp = new System.Dynamic.ExpandoObject();
-            temp.x = randomCountry.XCoord;
-            temp.y = randomCountry.YCoord;
+            temp.x = randomCountryOne.XCoord;
+            temp.y = randomCountryOne.YCoord;
             return temp;
             //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
         }
@@ -54,24 +54,25 @@ namespace WarGames
 
         private Countries DecreaseEndur()
         {
-            Countries randomCountry;
-            randomCountry = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+            Countries randomCountryTwo;
+            var checkCoord = RandomCountryOne();
+            randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
 
             int i = 1;
             while (i == 1)
             {
-                if (randomCountry.Durability <= 0)
+                if (randomCountryTwo.Durability == 0 || randomCountryTwo.XCoord == checkCoord.x || randomCountryTwo.YCoord == checkCoord.y)
                 {
                     do
                     {
                         //dont let the endurance hit 0 on all countries, or it will be stuck in a endless loop :P
-                        randomCountry = countriesAtWar[rnd.Next(countriesAtWar.Count)];
-                    } while (randomCountry.Durability == 0);
+                        randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+                    } while (randomCountryTwo.Durability == 0 || randomCountryTwo.XCoord == checkCoord.x || randomCountryTwo.YCoord == checkCoord.y);
                 }
-                randomCountry.Durability--;
+                randomCountryTwo.Durability--;
                 i--;
             }  
-            Countries DefCountry = randomCountry;
+            Countries DefCountry = randomCountryTwo;
 
             return DefCountry;
         }

@@ -138,13 +138,9 @@ namespace WarGames
                 Pen pen = new Pen(Color.Red, 2);
                 g.DrawCurve(pen, curvePointList.ToArray());
                 ExplosionPictureBox.Show();
-                ExplosionPictureBox.Top = (int) y;
-                ExplosionPictureBox.Left = (int) x;
-                //g.Dispose();
-                //g.Clear(Color.Black);
+                ExplosionPictureBox.Location = new Point((int)x, (int)y);
                 Background.Refresh();          
             }
-         
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
@@ -313,7 +309,6 @@ namespace WarGames
             AttackMethod();
             warRoom.SortDurability();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
-            
         }
     }
 }
