@@ -250,3 +250,8 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/WarGames/Resources/two army men fighting.gif
+/WarGames/Resources/tank.gif
+/WarGames/Resources/man riding robot.gif
+/WarGames/Resources/man kills man.gif
+/WarGames/Resources/army men shooting.gif
