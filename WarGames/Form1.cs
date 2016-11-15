@@ -45,6 +45,7 @@ namespace WarGames
         PointF japanPoint = new PointF(1291, 240);
         PointF swedenPoint = new PointF(721, 114);
         PointF northkoreaPoint = new PointF(1226, 223);
+        
 
         /// <Countries_Coordinates>
         /// USA = X: 223 Y:239
@@ -112,13 +113,19 @@ namespace WarGames
             }
         }
 
+
         private void Background_Paint(object sender, PaintEventArgs e)
         {
             Pen pen = new Pen(Color.Red, 2);
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
-            ctrl1 = russiaPoint;
-            ctrl2 = indiaPoint;
+            var attackingCountry = warRoom.RandomCountry();
+            var defendingCoutnry = warRoom.RandomCountry();
+            PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
+            PointF defendingPoint = new PointF(defendingCoutnry.x, defendingCoutnry.y);
+
+            ctrl1 = attackPoint;
+            ctrl2 = defendingPoint;
             CreateCurve(ctrl1, ctrl2);
             e.Graphics.DrawCurve(pen, bezierPoints.ToArray());
         }
