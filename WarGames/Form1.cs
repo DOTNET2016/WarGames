@@ -173,7 +173,7 @@ namespace WarGames
                 }
                 IsPause = IsPause;
             }
-            ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+            warRoom.SortDurability();
         }
 
         //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list
