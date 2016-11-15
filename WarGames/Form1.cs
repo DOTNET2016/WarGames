@@ -117,8 +117,9 @@ namespace WarGames
 
         private void AttackMethod()
         {
-            var attackingCountry = warRoom.RandomCountry();
-            var defendingCountry = warRoom.RandomCountry();
+            var attackingCountry = warRoom.RandomCountryOne();
+            var defendingCountry = warRoom.RandomCountryTwo();
+
             PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
             PointF defendPoint = new PointF(defendingCountry.x, defendingCountry.y);
 
@@ -299,6 +300,7 @@ namespace WarGames
         private void warTimer_Tick(object sender, EventArgs e)
         {
             AttackMethod();
+            warRoom.SortDurability();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
     }
