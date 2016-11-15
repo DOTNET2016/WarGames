@@ -78,7 +78,7 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Paint += new PaintEventHandler(Background_Paint);
+            warRoom.CountryList();
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
@@ -281,7 +281,7 @@ namespace WarGames
 
         private void warTimer_Tick(object sender, EventArgs e)
         {
-            warRoom.AttackCountry();
+            Paint += new PaintEventHandler(Background_Paint);
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
     }

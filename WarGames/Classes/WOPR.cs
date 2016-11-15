@@ -8,6 +8,7 @@ namespace WarGames
 {
     public class WOPR
     {
+        static Random rnd = new Random();
         public List<Countries> countriesAtWar = new List<Countries>();
 
         //War Operation Plan Responce
@@ -29,8 +30,15 @@ namespace WarGames
             countriesAtWar.Add(new Land("Sweden", 13, 2, 10, 721, 114));
             countriesAtWar.Add(new Land("North Korea", 14, 6, 1, 1226, 223));
         }
-        public void AttackCountry()
+        public dynamic RandomCountry()
         {
+            Countries randomCountry;
+
+            randomCountry = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+            dynamic temp = new System.Dynamic.ExpandoObject();
+            temp.x = randomCountry.XCoord;
+            temp.y = randomCountry.YCoord;
+            return temp;
             //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
         }
         public void SortDurability()
