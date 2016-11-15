@@ -1676,7 +1676,7 @@
             // 
             // BigRedButton
             // 
-            this.BigRedButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.BigRedButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.BigRedButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BigRedButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
             this.BigRedButton.FlatAppearance.BorderSize = 2;
@@ -1713,9 +1713,9 @@
             this.KeyGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KeyGroupBox.ForeColor = System.Drawing.Color.White;
             this.KeyGroupBox.Location = new System.Drawing.Point(51, 604);
-            this.KeyGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.KeyGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.KeyGroupBox.Name = "KeyGroupBox";
-            this.KeyGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.KeyGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.KeyGroupBox.Size = new System.Drawing.Size(321, 187);
             this.KeyGroupBox.TabIndex = 5;
             this.KeyGroupBox.TabStop = false;
@@ -1753,7 +1753,7 @@
             // 
             // GoBack
             // 
-            this.GoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.GoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.GoBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GoBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.GoBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));

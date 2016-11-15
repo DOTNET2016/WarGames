@@ -76,6 +76,10 @@ namespace WarGames
             {
                 backgroundMusicPlayer.PlayLooping();
             }
+            else
+            {
+                Close();
+            }
             im.Close();
             im.Dispose();
 
@@ -122,7 +126,7 @@ namespace WarGames
             curveEnd = defendPoint;
             CreateCurve(curveStart, curveEnd);
 
-            //changed size on the map as this from image i9s calling the actuall image
+            //changed size on the map as this from image is calling the actuall image
             using (var g = Graphics.FromImage(Background.BackgroundImage))
             {
                 Pen pen = new Pen(Color.Red, 2);

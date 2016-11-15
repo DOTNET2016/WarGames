@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.PressStart = new System.Windows.Forms.Button();
+            this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.PauseButton = new System.Windows.Forms.Button();
@@ -99,8 +101,6 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
-            this.PressStart = new System.Windows.Forms.Button();
-            this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -126,10 +126,22 @@
             this.EnduranceBox.SuspendLayout();
             this.SuspendLayout();
             // 
+            // PressStart
+            // 
+            this.PressStart.Location = new System.Drawing.Point(0, 0);
+            this.PressStart.Name = "PressStart";
+            this.PressStart.Size = new System.Drawing.Size(75, 23);
+            this.PressStart.TabIndex = 0;
+            // 
+            // warTimer
+            // 
+            this.warTimer.Interval = 1000;
+            this.warTimer.Tick += new System.EventHandler(this.warTimer_Tick);
+            // 
             // Background
             // 
             this.Background.AutoSize = true;
-            this.Background.BackgroundImage = global::WarGames.Properties.Resources.map;
+            this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Background.Controls.Add(this.textBox1);
             this.Background.Controls.Add(this.PauseButton);
@@ -170,7 +182,7 @@
             this.PauseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PauseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.PauseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.PauseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PauseButton.Enabled = false;
             this.PauseButton.FlatAppearance.BorderSize = 2;
@@ -193,7 +205,7 @@
             this.StartButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.StartButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartButton.FlatAppearance.BorderSize = 2;
             this.StartButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -215,7 +227,7 @@
             this.CustomizeGameBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CustomizeGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.CustomizeGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.CustomizeGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CustomizeGameBtn.FlatAppearance.BorderSize = 2;
             this.CustomizeGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -956,7 +968,7 @@
             // ExitButton
             // 
             this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitButton.FlatAppearance.BorderSize = 2;
             this.ExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -1005,22 +1017,11 @@
             this.EnduranceListBox.Size = new System.Drawing.Size(196, 250);
             this.EnduranceListBox.TabIndex = 0;
             // 
-            // PressStart
-            // 
-            this.PressStart.Location = new System.Drawing.Point(0, 0);
-            this.PressStart.Name = "PressStart";
-            this.PressStart.Size = new System.Drawing.Size(75, 23);
-            this.PressStart.TabIndex = 0;
-            // 
-            // warTimer
-            // 
-            this.warTimer.Interval = 1000;
-            this.warTimer.Tick += new System.EventHandler(this.warTimer_Tick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.Background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
