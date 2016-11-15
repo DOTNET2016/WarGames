@@ -32,6 +32,19 @@ namespace WarGames
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font myFont;
+        private List<PointF> bezierPoints;
+        private PointF ctrl1;
+        private PointF ctrl2;
+        PointF usaPoint = new PointF(223, 239);
+        PointF russiaPoint = new PointF(1006, 121);
+        PointF ukPoint = new PointF(654, 156);
+        PointF chinaPoint = new PointF(1105, 255);
+        PointF francePoint = new PointF(667, 189);
+        PointF indiaPoint = new PointF(1028, 322);
+        PointF germanyPoint = new PointF(699, 164);
+        PointF japanPoint = new PointF(1291, 240);
+        PointF swedenPoint = new PointF(721, 114);
+        PointF northkoreaPoint = new PointF(1226, 223);
 
         /// <Countries_Coordinates>
         /// USA = X: 223 Y:239
@@ -71,44 +84,44 @@ namespace WarGames
             CustomizeGameBtn.Font = myFont;
         }
 
+        public void CreateCurve(PointF ctrl1, PointF ctrl2)
+        {
+            bezierPoints = new List<PointF>();
+            bezierPoints.Clear();
+            bezierPoints.Add(ctrl1);
+            PointF midPoint1 = MidPoint(ctrl1, ctrl2);
+            bezierPoints.Add(midPoint1);
+            bezierPoints.Add(ctrl2);
+    }
+
+        private PointF MidPoint(PointF controlPoint1, PointF controlPoint2)
+        {
+            if (ctrl1.Y - ctrl2.Y >= 200 || ctrl2.Y - ctrl1.Y >= 200)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * 0.97f,
+                ((controlPoint1.Y + controlPoint2.Y) / 2)
+                );
+            }
+            else
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) ,
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.9f
+                );
+            }
+        }
+
         private void Background_Paint(object sender, PaintEventArgs e)
         {
             Pen pen = new Pen(Color.Red, 2);
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
-            var obj = warRoom.RandomCountry();
-            var obj2 = warRoom.RandomCountry();
-
-
-            e.Graphics.DrawBezier(pen, obj.x, obj.y, 431, 128, 664, 67, obj2.x, obj2.y);//use - Russia
-            //e.Graphics.DrawBezier(pen, 223, 239, 431, 128, 644, 67, 1226, 223);//usa - north korea
-            //e.Graphics.DrawBezier()
-
-            //pen.StartCap = LineCap.ArrowAnchor;
-            //pen.EndCap = LineCap.RoundAnchor;
-            //e.Graphics.DrawLine(pen, 20, 175, 300, 175);
-
-            //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-            //foreach (Point point in Points)
-            //    e.Graphics.FillEllipse(Brushes.Black,
-            //        point.X - 3, point.Y - 3, 5, 5);
-            //if (Points.Count < 3) return;
-
-            //e.Graphics.DrawCurve(Pens.Red, Points.ToArray());
+            ctrl1 = russiaPoint;
+            ctrl2 = indiaPoint;
+            CreateCurve(ctrl1, ctrl2);
+            e.Graphics.DrawCurve(pen, bezierPoints.ToArray());
         }
-
-        //private void Background_MouseClick(object sender, MouseEventArgs e)
-        //{
-        //    Points.Add(e.Location);
-        //    Refresh();
-        //}
-
-        //private void mnuCurveNew_Click(object sender, EventArgs e)
-        //{
-        //    Points = new List<Point>();
-        //    Refresh();
-        //}
 
         private void PauseButton_Click(object sender, EventArgs e)
         {
@@ -135,6 +148,7 @@ namespace WarGames
                 if (warRoom.countriesAtWar.Count == 0)
                 {
                     warRoom.CountryList();
+                    warRoom.SortDurability();
                     PauseButton.Enabled = true;
                     CustomizeGameBtn.Enabled = false;
                 }
@@ -159,6 +173,7 @@ namespace WarGames
                 }
                 IsPause = IsPause;
             }
+            ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
 
         //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list

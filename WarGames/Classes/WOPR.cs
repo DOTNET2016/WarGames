@@ -16,6 +16,7 @@ namespace WarGames
         {
             
         }
+
         public void CountryList()
         {
             countriesAtWar.Add(new Land("USA", 20, 5, 4, 223, 239));
@@ -39,6 +40,10 @@ namespace WarGames
             temp.y = randomCountry.YCoord;
             return temp;
             //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
+        }
+        public void SortDurability()
+        {
+            countriesAtWar.Sort();
         }
     }
 }
