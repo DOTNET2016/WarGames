@@ -35,16 +35,16 @@ namespace WarGames
         private List<PointF> curvePointList;
         private PointF curveStart;
         private PointF curveEnd;
-        PointF usaPoint = new PointF(223, 239);
-        PointF russiaPoint = new PointF(1006, 121);
-        PointF ukPoint = new PointF(654, 156);
-        PointF chinaPoint = new PointF(1105, 255);
-        PointF francePoint = new PointF(667, 189);
-        PointF indiaPoint = new PointF(1028, 322);
-        PointF germanyPoint = new PointF(699, 164);
-        PointF japanPoint = new PointF(1291, 240);
-        PointF swedenPoint = new PointF(721, 114);
-        PointF northkoreaPoint = new PointF(1226, 223);
+        //PointF usaPoint = new PointF(223, 239);
+        //PointF russiaPoint = new PointF(1006, 121);
+        //PointF ukPoint = new PointF(654, 156);
+        //PointF chinaPoint = new PointF(1105, 255);
+        //PointF francePoint = new PointF(667, 189);
+        //PointF indiaPoint = new PointF(1028, 322);
+        //PointF germanyPoint = new PointF(699, 164);
+        //PointF japanPoint = new PointF(1291, 240);
+        //PointF swedenPoint = new PointF(721, 114);
+        //PointF northkoreaPoint = new PointF(1226, 223);
         
 
         /// <Countries_Coordinates>
@@ -79,7 +79,6 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            warRoom.CountryList();
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
@@ -90,10 +89,12 @@ namespace WarGames
             curvePointList = new List<PointF>();
             curvePointList.Clear();
             curvePointList.Add(curveStart);
+
+
             PointF midPoint = CreateMidPoint(curveStart, curveEnd);
             curvePointList.Add(midPoint);
             curvePointList.Add(curveEnd);
-    }
+        }
 
         private PointF CreateMidPoint(PointF controlPoint1, PointF controlPoint2)
         {
@@ -101,24 +102,18 @@ namespace WarGames
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) * 1.04f,
-                ((controlPoint1.Y + controlPoint2.Y) / 2)
-                );
+                ((controlPoint1.Y + controlPoint2.Y) / 2));
             }
             else
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) ,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.8f
-                );
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.8f);
             }
         }
 
-
-        private void Background_Paint(object sender, PaintEventArgs e)
+        private void AttackMethod()
         {
-            Pen pen = new Pen(Color.Red, 2);
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
             var attackingCountry = warRoom.RandomCountry();
             var defendingCountry = warRoom.RandomCountry();
             PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
@@ -127,7 +122,23 @@ namespace WarGames
             curveStart = attackPoint;
             curveEnd = defendPoint;
             CreateCurve(curveStart, curveEnd);
-            e.Graphics.DrawCurve(pen, curvePointList.ToArray());
+            //Paint += new PaintEventHandler(Background_Paint);
+
+            Pen pen = new Pen(Color.Red, 2);
+            using (var g = Graphics.FromImage(Background.BackgroundImage))
+            {
+                g.DrawCurve(pen, curvePointList.ToArray());
+                Background.Refresh();
+            }
+        }
+
+        private void Background_Paint(object sender, PaintEventArgs e)
+        {
+            //Pen pen = new Pen(Color.Red, 2);
+            //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+
+            //e.Graphics.DrawCurve(pen, curvePointList.ToArray());
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
@@ -136,12 +147,13 @@ namespace WarGames
             if (IsPause)
             {
                 //TODO pause the war
-                warTimer.Start();
+                warTimer.Stop();
             }
             if (!IsPause)
             {
                 //TODO unpause the war
-                warTimer.Stop();
+                warTimer.Start();
+
             }
         }
 
@@ -289,7 +301,7 @@ namespace WarGames
 
         private void warTimer_Tick(object sender, EventArgs e)
         {
-            Paint += new PaintEventHandler(Background_Paint);
+            AttackMethod();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
     }
