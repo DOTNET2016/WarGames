@@ -33,6 +33,7 @@
             this.PressStart = new System.Windows.Forms.Button();
             this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
+            this.ExplosionPictureBox = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
@@ -102,6 +103,7 @@
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.Background.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -135,7 +137,7 @@
             // 
             // warTimer
             // 
-            this.warTimer.Interval = 1000;
+            this.warTimer.Interval = 2000;
             this.warTimer.Tick += new System.EventHandler(this.warTimer_Tick);
             // 
             // Background
@@ -143,6 +145,7 @@
             this.Background.AutoSize = true;
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Background.Controls.Add(this.ExplosionPictureBox);
             this.Background.Controls.Add(this.textBox1);
             this.Background.Controls.Add(this.PauseButton);
             this.Background.Controls.Add(this.StartButton);
@@ -167,6 +170,17 @@
             this.Background.Size = new System.Drawing.Size(1600, 900);
             this.Background.TabIndex = 1;
             this.Background.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Background_MouseClick);
+            // 
+            // ExplosionPictureBox
+            // 
+            this.ExplosionPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.ExplosionPictureBox.Image = global::WarGames.Properties.Resources.explosion;
+            this.ExplosionPictureBox.Location = new System.Drawing.Point(39, 360);
+            this.ExplosionPictureBox.Name = "ExplosionPictureBox";
+            this.ExplosionPictureBox.Size = new System.Drawing.Size(49, 48);
+            this.ExplosionPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ExplosionPictureBox.TabIndex = 42;
+            this.ExplosionPictureBox.TabStop = false;
             // 
             // textBox1
             // 
@@ -1033,6 +1047,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
             this.Background.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -1145,6 +1160,7 @@
         private System.Windows.Forms.Button PauseButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer warTimer;
+        private System.Windows.Forms.PictureBox ExplosionPictureBox;
     }
 }
 

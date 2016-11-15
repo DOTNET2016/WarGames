@@ -58,6 +58,8 @@ namespace WarGames
             InitializeComponent();
             EnduranceListBox.DataSource = warRoom.countriesAtWar;
 
+            ExplosionPictureBox.Hide();
+
             byte[] fontData = Properties.Resources.WarGames;
             IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
             Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
@@ -126,13 +128,22 @@ namespace WarGames
             curveEnd = defendPoint;
             CreateCurve(curveStart, curveEnd);
 
+            float x = defendingCountry.x;
+            float y = defendingCountry.y;
+
             //changed size on the map as this from image is calling the actuall image
             using (var g = Graphics.FromImage(Background.BackgroundImage))
             {
                 Pen pen = new Pen(Color.Red, 2);
                 g.DrawCurve(pen, curvePointList.ToArray());
-                Background.Refresh();
+                ExplosionPictureBox.Show();
+                ExplosionPictureBox.Top = (int) y;
+                ExplosionPictureBox.Left = (int) x;
+                //g.Dispose();
+                //g.Clear(Color.Black);
+                Background.Refresh();          
             }
+         
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
@@ -300,6 +311,7 @@ namespace WarGames
         {
             AttackMethod();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+            
         }
     }
 }
