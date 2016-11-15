@@ -71,7 +71,7 @@ namespace WarGames
 
         public int CompareTo(Countries other)
         {
-            return this.Durability.CompareTo(other.Durability);
+            return other.Durability.CompareTo(this.Durability);
         }
     }
 }
