@@ -14,6 +14,7 @@ using System.Runtime.InteropServices;
 using System.Reflection;
 using System.Windows.Input;
 using System.Media;
+using System.Drawing.Imaging;
 
 namespace WarGames
 {
@@ -121,9 +122,10 @@ namespace WarGames
             curveEnd = defendPoint;
             CreateCurve(curveStart, curveEnd);
 
+            //changed size on the map as this from image i9s calling the actuall image
             using (var g = Graphics.FromImage(Background.BackgroundImage))
             {
-                Pen pen = new Pen(Color.IndianRed, 2);
+                Pen pen = new Pen(Color.Red, 2);
                 g.DrawCurve(pen, curvePointList.ToArray());
                 Background.Refresh();
             }
