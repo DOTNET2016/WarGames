@@ -7,12 +7,14 @@ using System.Xml.Serialization;
 
 namespace WarGames
 {
-    public class Countries : IComparable
+    public abstract class Countries : IComparable<Countries>
     {
         private string _countryName;
         private int _durability;
         private int _strength;
         private int _rep;
+        private float _xCoord;
+        private float _yCoord;
 
         public int Durability
         {
@@ -57,6 +59,8 @@ namespace WarGames
         {
             _countryName = CountryName;
             _durability = Durability;
+            _xCoord = x;
+            _yCoord = y;
             CStrength = Strength;
             CRep = Rep;
         }
@@ -69,6 +73,11 @@ namespace WarGames
         public int CompareTo(object obj)
         {
             return _durability.CompareTo(_durability);
+        }
+
+        public int CompareTo(Countries other)
+        {
+            return other.Durability.CompareTo(this.Durability);
         }
     }
 }
