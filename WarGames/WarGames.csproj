@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Countries.cs" />
+    <Compile Include="Classes\Land.cs" />
     <Compile Include="CustomSettingsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
