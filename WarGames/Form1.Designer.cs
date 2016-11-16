@@ -169,7 +169,6 @@
             this.Background.Name = "Background";
             this.Background.Size = new System.Drawing.Size(1600, 900);
             this.Background.TabIndex = 1;
-            this.Background.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Background_MouseClick);
             // 
             // ExplosionPictureBox
             // 

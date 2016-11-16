@@ -144,29 +144,41 @@ namespace WarGames
 
         private void AttackMethod()
         {
-            var attackingCountry = warRoom.RandomCountryOne();
-            var defendingCountry = warRoom.RandomCountryTwo();
-
-            PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
-            PointF defendPoint = new PointF(defendingCountry.x, defendingCountry.y);
-
-            curveStart = attackPoint;
-            curveEnd = defendPoint;
-            CreateCurve(curveStart, curveEnd);
-
-            float x = defendingCountry.x;
-            float y = defendingCountry.y;
-
-            //changed size on the map as this from image is calling the actuall image
-            using (var g = Graphics.FromImage(Background.BackgroundImage))
+            if (warRoom.countriesAtWar.Count > 1)
             {
-                g.SmoothingMode = SmoothingMode.AntiAlias;
-                Pen pen = new Pen(Color.Red, 2);
-                g.DrawCurve(pen, curvePointList.ToArray());
+                var attackingCountry = warRoom.RandomCountryOne();
+                var defendingCountry = warRoom.RandomCountryTwo();
+
+                if (attackingCountry.x == defendingCountry.x || attackingCountry.y == defendingCountry.y)
+                {
+                    attackingCountry = warRoom.RandomCountryOne();
+                }
+                PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
+                PointF defendPoint = new PointF(defendingCountry.x, defendingCountry.y);
+
+                curveStart = attackPoint;
+                curveEnd = defendPoint;
+                CreateCurve(curveStart, curveEnd);
+                
+            float x = defendingCountry.x - 20;
+            float y = defendingCountry.y - 20;
+
+                //changed size on the map as this from image is calling the actuall image
+                using (var g = Graphics.FromImage(Background.BackgroundImage))
+                {
+                    Pen pen = new Pen(Color.Red, 2);
+                    g.DrawCurve(pen, curvePointList.ToArray());
+                    ExplosionPictureBox.Show();
+                    ExplosionPictureBox.Location = new Point((int)x, (int)y);
+                    Background.Refresh();
+                }
+            }
+            else
+            {
+                warTimer.Stop();
                 ExplosionPictureBox.Hide();
-                ExplosionPictureBox.Show();
-                ExplosionPictureBox.Location = new Point((int)x, (int)y);
-                Background.Refresh();
+                backgroundMusicPlayer.PlayLooping();
+                IsOn = !IsOn;
             }
         }
 
@@ -177,6 +189,7 @@ namespace WarGames
             {
                 //TODO pause the war
                 warTimer.Stop();
+                ExplosionPictureBox.Hide();
                 backgroundMusicPlayer.PlayLooping();
             }
             if (!IsPause)
@@ -217,6 +230,7 @@ namespace WarGames
                 PauseButton.Enabled = false;
                 CustomizeGameBtn.Enabled = true;
                 warTimer.Stop();
+                ExplosionPictureBox.Hide();
                 backgroundMusicPlayer.PlayLooping();
                 if (IsPause)
                 {
@@ -321,16 +335,6 @@ namespace WarGames
         }
         #endregion
        
-        //Find the coordinates of each country through a textbox on the main form. We can delete this method after we have the coordinates
-        private void Background_MouseClick(object sender, MouseEventArgs e)
-        {
-            MouseClick += new MouseEventHandler(Background_MouseClick);
-            int myX = e.X;
-            int myY = e.Y;
-
-            textBox1.Text = "X: " + e.X + "" + "\n" + "Y: " + e.Y;
-        }
-
         private void warTimer_Tick(object sender, EventArgs e)
         {
             AttackMethod();
