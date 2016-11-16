@@ -15,8 +15,6 @@ namespace WarGames
 {
     public partial class EndCredits : Form
     {
-        static EndCredits endCreditsPage;
-
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
         IntPtr pdv, [In] ref uint pcFonts);

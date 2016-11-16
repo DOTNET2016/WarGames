@@ -28,21 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.EndCreditsPicture = new System.Windows.Forms.PictureBox();
             this.ExitGameBtn = new System.Windows.Forms.Button();
             this.PlayAgainButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.EndCreditsPicture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // EndCreditsPicture
-            // 
-            this.EndCreditsPicture.Image = global::WarGames.Properties.Resources.aftermath_1;
-            this.EndCreditsPicture.Location = new System.Drawing.Point(0, 0);
-            this.EndCreditsPicture.Name = "EndCreditsPicture";
-            this.EndCreditsPicture.Size = new System.Drawing.Size(1600, 900);
-            this.EndCreditsPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EndCreditsPicture.TabIndex = 0;
-            this.EndCreditsPicture.TabStop = false;
             // 
             // ExitGameBtn
             // 
@@ -86,23 +74,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WarGames.Properties.Resources.aftermath_1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.PlayAgainButton);
             this.Controls.Add(this.ExitGameBtn);
-            this.Controls.Add(this.EndCreditsPicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EndCredits";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EndCredits";
             this.Load += new System.EventHandler(this.EndCredits_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.EndCreditsPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox EndCreditsPicture;
         private System.Windows.Forms.Button ExitGameBtn;
         private System.Windows.Forms.Button PlayAgainButton;
     }

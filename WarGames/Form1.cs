@@ -232,13 +232,14 @@ namespace WarGames
                 if (endPage.ShowDialog(this) == DialogResult.OK)
                 {
                     backgroundMusicPlayer.PlayLooping();
+                    Graphics.FromImage(Background.BackgroundImage).Clear(Color.Transparent);
+                    Background.Refresh();
                 }
                 else
                 {
                     EnduranceListBox.DataSource = null;
                     Close();
-                }
-                //endPage.Dispose();
+                }               
             }
         }
 

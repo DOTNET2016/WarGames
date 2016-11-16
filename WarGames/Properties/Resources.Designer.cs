@@ -73,26 +73,6 @@ namespace WarGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap army_men_shooting {
-            get {
-                object obj = ResourceManager.GetObject("army men shooting", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap big_explosion {
-            get {
-                object obj = ResourceManager.GetObject("big explosion", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap button {
             get {
                 object obj = ResourceManager.GetObject("button", resourceCulture);
@@ -223,16 +203,6 @@ namespace WarGames.Properties {
         internal static System.Drawing.Bitmap north_korea_flag {
             get {
                 object obj = ResourceManager.GetObject("north korea flag", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nuclear_explosion {
-            get {
-                object obj = ResourceManager.GetObject("nuclear explosion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
