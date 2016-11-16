@@ -207,10 +207,17 @@ namespace WarGames
             }
             else
             {
+                Invalidate();
                 warTimer.Stop();
+                var winnerCountry = warRoom.countriesAtWar;
+ 
                 ExplosionPictureBox.Hide();
                 backgroundMusicPlayer.PlayLooping();
+                //winnerLabel.Show();
+                //winnerLabel.Text = "WINNER:" + winnerCountry.ToString();
                 IsOn = !IsOn;
+
+                MessageBox.Show("Winner: " + warRoom.countriesAtWar[0].CountryName);
             }
         }
 
