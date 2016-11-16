@@ -19,16 +19,16 @@ namespace WarGames
 
         public void CountryList()
         {
-            countriesAtWar.Add(new Land("USA", 2, 5, 4, 223, 239));
-            countriesAtWar.Add(new Land("Russia", 2, 5, 4, 1006, 121));
-            countriesAtWar.Add(new Land("UK", 1, 3, 7, 654, 156));
-            countriesAtWar.Add(new Land("China", 2, 5, 5, 1105, 255));
-            countriesAtWar.Add(new Land("France", 1, 3, 7, 667, 189));
-            countriesAtWar.Add(new Land("India", 1, 4, 7, 1028, 322));
-            countriesAtWar.Add(new Land("Germany", 1, 4, 8, 699, 164));
-            countriesAtWar.Add(new Land("Japan", 1, 3, 7, 1291, 240));
-            countriesAtWar.Add(new Land("Sweden", 1, 2, 10, 721, 114));
-            countriesAtWar.Add(new Land("North Korea", 1, 6, 1, 1226, 223));
+            countriesAtWar.Add(new Land("USA", 20, 5, 4, 223, 239));
+            countriesAtWar.Add(new Land("Russia", 20, 5, 4, 1006, 121));
+            countriesAtWar.Add(new Land("UK", 10, 3, 7, 654, 156));
+            countriesAtWar.Add(new Land("China", 20, 5, 5, 1105, 255));
+            countriesAtWar.Add(new Land("France", 15, 3, 7, 667, 189));
+            countriesAtWar.Add(new Land("India", 17, 4, 7, 1028, 322));
+            countriesAtWar.Add(new Land("Germany", 15, 4, 8, 699, 164));
+            countriesAtWar.Add(new Land("Japan", 10, 3, 7, 1291, 240));
+            countriesAtWar.Add(new Land("Sweden", 13, 2, 10, 721, 114));
+            countriesAtWar.Add(new Land("North Korea", 14, 6, 1, 1226, 223));
         }
         public dynamic RandomCountryOne()
         {
@@ -38,13 +38,14 @@ namespace WarGames
             dynamic temp = new System.Dynamic.ExpandoObject();
             temp.x = randomCountryOne.XCoord;
             temp.y = randomCountryOne.YCoord;
+            temp.str = randomCountryOne.Strength;
             return temp;
             //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
         }
 
         public dynamic RandomCountryTwo()
         {
-            var DefCountry = DecreaseEndur();
+            var DefCountry = decreaseDurStr();
             dynamic temp = new System.Dynamic.ExpandoObject();
             temp.x = DefCountry.XCoord;
             temp.y = DefCountry.YCoord;
@@ -52,7 +53,7 @@ namespace WarGames
             //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
         }
 
-        private Countries DecreaseEndur()
+        private Countries decreaseDurStr()
         {
             Countries randomCountryTwo;
             var checkCoord = RandomCountryOne();
@@ -61,15 +62,19 @@ namespace WarGames
             int i = 1;
             while (i == 1)
             {
-                if (randomCountryTwo.Durability == 0 || randomCountryTwo.XCoord == checkCoord.x || randomCountryTwo.YCoord == checkCoord.y)
+                if (randomCountryTwo.Durability <= 0 || randomCountryTwo.XCoord == checkCoord.x || randomCountryTwo.YCoord == checkCoord.y)
                 {
                     do
                     {
                         //dont let the endurance hit 0 on all countries, or it will be stuck in a endless loop :P
                         randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
-                    } while (randomCountryTwo.Durability == 0 || randomCountryTwo.XCoord == checkCoord.x || randomCountryTwo.YCoord == checkCoord.y);
+                    } while (randomCountryTwo.Durability <= 0 || randomCountryTwo.XCoord == checkCoord.x || randomCountryTwo.YCoord == checkCoord.y);
                 }
-                randomCountryTwo.Durability--;
+                randomCountryTwo.Durability -= (checkCoord.str);
+                if (randomCountryTwo.Durability <= 0)
+                {
+                    randomCountryTwo.Durability = 0;
+                }
                 i--;
             }  
             Countries DefCountry = randomCountryTwo;

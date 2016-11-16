@@ -139,7 +139,7 @@ namespace WarGames
                 g.DrawCurve(pen, curvePointList.ToArray());
                 ExplosionPictureBox.Show();
                 ExplosionPictureBox.Location = new Point((int)x, (int)y);
-                Background.Refresh();          
+                Background.Refresh();
             }
         }
 

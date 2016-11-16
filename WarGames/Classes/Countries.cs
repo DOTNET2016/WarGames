@@ -16,6 +16,19 @@ namespace WarGames
         private float _xCoord;
         private float _yCoord;
 
+        public int Strength
+        {
+            get
+            {
+                return _strength;
+            }
+
+            set
+            {
+                _strength = value;
+            }
+        }
+
         public int Durability
         {
             get
