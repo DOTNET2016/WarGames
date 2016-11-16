@@ -10,6 +10,7 @@ namespace WarGames
     {
         static Random rnd = new Random();
         public List<Countries> countriesAtWar = new List<Countries>();
+        public List<Countries> defeatedCountries = new List<Countries>();
 
         //War Operation Plan Responce
         public WOPR()
@@ -37,14 +38,15 @@ namespace WarGames
             randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
             do
             {
-                if (countriesAtWar.Count <= 1)
+                if (randomCountryOne == randomCountryTwo)
+                {
+                    randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+                }
+                else
                 {
                     break;
                 }
-                randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
             } while (randomCountryOne == randomCountryTwo);
-
-
             int i = 1;
             while (i == 1)
             {
@@ -52,6 +54,7 @@ namespace WarGames
                 if (randomCountryTwo.Durability <= 0)
                 {
                 countriesAtWar.Remove(randomCountryTwo);
+                defeatedCountries.Add(randomCountryTwo);
                 }
                 i--;
             }
