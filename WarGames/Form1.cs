@@ -119,27 +119,39 @@ namespace WarGames
 
         private void AttackMethod()
         {
-            var attackingCountry = warRoom.RandomCountryOne();
-            var defendingCountry = warRoom.RandomCountryTwo();
-
-            PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
-            PointF defendPoint = new PointF(defendingCountry.x, defendingCountry.y);
-
-            curveStart = attackPoint;
-            curveEnd = defendPoint;
-            CreateCurve(curveStart, curveEnd);
-
-            float x = defendingCountry.x;
-            float y = defendingCountry.y;
-
-            //changed size on the map as this from image is calling the actuall image
-            using (var g = Graphics.FromImage(Background.BackgroundImage))
+            if (warRoom.countriesAtWar.Count > 1)
             {
-                Pen pen = new Pen(Color.Red, 2);
-                g.DrawCurve(pen, curvePointList.ToArray());
-                ExplosionPictureBox.Show();
-                ExplosionPictureBox.Location = new Point((int)x, (int)y);
-                Background.Refresh();
+                var attackingCountry = warRoom.RandomCountryOne();
+                var defendingCountry = warRoom.RandomCountryTwo();
+
+                if (attackingCountry.x == defendingCountry.x || attackingCountry.y == defendingCountry.y)
+                {
+                    attackingCountry = warRoom.RandomCountryOne();
+                }
+                PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
+                PointF defendPoint = new PointF(defendingCountry.x, defendingCountry.y);
+
+                curveStart = attackPoint;
+                curveEnd = defendPoint;
+                CreateCurve(curveStart, curveEnd);
+
+                float x = defendingCountry.x;
+                float y = defendingCountry.y;
+
+                //changed size on the map as this from image is calling the actuall image
+                using (var g = Graphics.FromImage(Background.BackgroundImage))
+                {
+                    Pen pen = new Pen(Color.Red, 2);
+                    g.DrawCurve(pen, curvePointList.ToArray());
+                    ExplosionPictureBox.Show();
+                    ExplosionPictureBox.Location = new Point((int)x, (int)y);
+                    Background.Refresh();
+                }
+            }
+            else
+            {
+                warTimer.Stop();
+                IsOn = !IsOn;
             }
         }
 
@@ -309,6 +321,7 @@ namespace WarGames
             AttackMethod();
             warRoom.SortDurability();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+
         }
     }
 }
