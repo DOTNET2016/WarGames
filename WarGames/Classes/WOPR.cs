@@ -35,6 +35,13 @@ namespace WarGames
             Countries randomCountryOne;
 
             randomCountryOne = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+            if (randomCountryOne.Durability == 0)
+            {
+                do
+                {
+                    randomCountryOne = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+                } while (randomCountryOne.Durability == 0);
+            }
             dynamic temp = new System.Dynamic.ExpandoObject();
             temp.x = randomCountryOne.XCoord;
             temp.y = randomCountryOne.YCoord;
