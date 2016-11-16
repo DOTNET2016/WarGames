@@ -136,14 +136,16 @@
             // 
             // warTimer
             // 
-            this.warTimer.Interval = 2000;
+            this.warTimer.Interval = 1450;
             this.warTimer.Tick += new System.EventHandler(this.warTimer_Tick);
             // 
             // Background
             // 
             this.Background.AutoSize = true;
+            this.Background.BackColor = System.Drawing.Color.Transparent;
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Background.Controls.Add(this.pictureBox2);
             this.Background.Controls.Add(this.ExplosionPictureBox);
             this.Background.Controls.Add(this.PauseButton);
             this.Background.Controls.Add(this.StartButton);
@@ -156,7 +158,6 @@
             this.Background.Controls.Add(this.pictureBox5);
             this.Background.Controls.Add(this.pictureBox4);
             this.Background.Controls.Add(this.pictureBox3);
-            this.Background.Controls.Add(this.pictureBox2);
             this.Background.Controls.Add(this.pictureBox1);
             this.Background.Controls.Add(this.StatsBox);
             this.Background.Controls.Add(this.ExitButton);
@@ -1024,8 +1025,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BackgroundImage = global::WarGames.Properties.Resources.map2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.Background);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);

@@ -26,6 +26,8 @@ namespace WarGames
         private bool _IsOn;
         private bool _IsPause;
 
+        int drawLoop = 0;
+
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
         IntPtr pdv, [In] ref uint pcFonts);
@@ -139,29 +141,35 @@ namespace WarGames
                 ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.96, 0.98),
                 ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
             }
-            else if (curveStart.X > curveEnd.X && curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
+            else if (curveStart.X >= 1028 && curveStart.X <= 1105 && curveEnd.X >= 1028 && curveEnd.X <= 1105)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.96, 0.98),
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.85, 0.91));
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
+            }
+            else if (curveStart.X > curveEnd.X && curveStart.X >= 1226 && curveStart.X <= 1291 && curveEnd.X >= 1226 && curveEnd.X <= 1291)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.0, 1.01),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
             }
             else if (curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.03, 1.05),
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.0, 1.02),
                 ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.75, 0.81));
             }
             else if (curveStart.X == 223 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2),
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.1, 0.2));
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.3, 0.5));
             }
             else if (curveStart.X == 223 && curveEnd.X >= 654 && curveEnd.X <= 721)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2),
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.3, 0.5));
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.5, 0.7));
             }
             else
             {
@@ -188,13 +196,18 @@ namespace WarGames
                 curveStart = attackPoint;
                 curveEnd = defendPoint;
                 CreateCurve(curveStart, curveEnd);
-                
-            float x = defendingCountry.x - 20;
-            float y = defendingCountry.y - 20;
+
+                float x = defendingCountry.x - 20;
+                float y = defendingCountry.y - 20;
 
                 //changed size on the map as this from image is calling the actuall image
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
+                    if (drawLoop >= 5)
+                    {
+                        g.Clear(Color.Transparent);
+                        drawLoop = 0;
+                    }
                     g.SmoothingMode = SmoothingMode.AntiAlias;
                     Pen pen = new Pen(Color.Red, 2);
                     g.DrawCurve(pen, curvePointList.ToArray());
@@ -203,6 +216,7 @@ namespace WarGames
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
                     Explosion.Play();
                     Background.Refresh();
+                    drawLoop++;
                 }
             }
             else
@@ -212,12 +226,23 @@ namespace WarGames
                 var winnerCountry = warRoom.countriesAtWar;
  
                 ExplosionPictureBox.Hide();
+                warRoom.countriesAtWar.Clear();
                 backgroundMusicPlayer.PlayLooping();
                 //winnerLabel.Show();
                 //winnerLabel.Text = "WINNER:" + winnerCountry.ToString();
                 IsOn = !IsOn;
 
-                MessageBox.Show("Winner: " + warRoom.countriesAtWar[0].CountryName);
+                EndCredits endPage = new EndCredits();
+                if (endPage.ShowDialog(this) == DialogResult.OK)
+                {
+                    backgroundMusicPlayer.PlayLooping();
+                }
+                else
+                {
+                    EnduranceListBox.DataSource = null;
+                    Close();
+                }
+                //endPage.Dispose();
             }
         }
 
@@ -277,6 +302,8 @@ namespace WarGames
                 }
                 IsPause = IsPause;
             }
+            Graphics.FromImage(Background.BackgroundImage).Clear(Color.Transparent);
+            Background.Refresh();
             warRoom.countriesAtWar.Sort();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
@@ -378,7 +405,14 @@ namespace WarGames
         {
             AttackMethod();
             warRoom.countriesAtWar.Sort();
-            ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+            if (EnduranceListBox.DataSource == null)
+            {
+                return;
+            }
+            else
+            {
+                ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+            }          
         }
     }
 }
