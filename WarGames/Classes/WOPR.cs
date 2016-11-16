@@ -30,47 +30,38 @@ namespace WarGames
             countriesAtWar.Add(new Land("Sweden", 13, 2, 10, 721, 114));
             countriesAtWar.Add(new Land("North Korea", 14, 6, 1, 1226, 223));
         }
-        public dynamic RandomCountryOne()
+        public dynamic RandomCountries()
         {
-            Countries randomCountryOne;
+            Countries randomCountryOne, randomCountryTwo;
             randomCountryOne = countriesAtWar[rnd.Next(countriesAtWar.Count)];
-
-            dynamic temp = new System.Dynamic.ExpandoObject();
-            temp.x = randomCountryOne.XCoord;
-            temp.y = randomCountryOne.YCoord;
-            temp.str = randomCountryOne.Strength;
-            return temp;
-        }
-
-        public dynamic RandomCountryTwo()
-        {
-            var DefCountry = decreaseDurStr();
-            dynamic temp = new System.Dynamic.ExpandoObject();
-            temp.x = DefCountry.XCoord;
-            temp.y = DefCountry.YCoord;
-            temp.rep = DefCountry.Repotation;
-            return temp;
-        }
-
-        private Countries decreaseDurStr()
-        {
-            Countries randomCountryTwo;
-            var checkStr = RandomCountryOne();
             randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+            do
+            {
+                if (countriesAtWar.Count <= 1)
+                {
+                    break;
+                }
+                randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+            } while (randomCountryOne == randomCountryTwo);
+
 
             int i = 1;
             while (i == 1)
             {
-                randomCountryTwo.Durability -= (checkStr.str);
+                randomCountryTwo.Durability -= randomCountryOne.Strength;
                 if (randomCountryTwo.Durability <= 0)
                 {
-                    countriesAtWar.Remove(randomCountryTwo);
+                countriesAtWar.Remove(randomCountryTwo);
                 }
                 i--;
-            }  
-            Countries DefCountry = randomCountryTwo;
+            }
 
-            return DefCountry;
+            dynamic temp = new System.Dynamic.ExpandoObject();
+            temp.x1 = randomCountryOne.XCoord;
+            temp.y1 = randomCountryOne.YCoord;
+            temp.x2 = randomCountryTwo.XCoord;
+            temp.y2 = randomCountryTwo.YCoord;
+            return temp;
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.ExitGameBtn = new System.Windows.Forms.Button();
             this.PlayAgainButton = new System.Windows.Forms.Button();
+            this.winningCountryLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ExitGameBtn
@@ -70,6 +71,18 @@
             this.PlayAgainButton.Text = "Play Again";
             this.PlayAgainButton.UseVisualStyleBackColor = false;
             // 
+            // winningCountryLabel
+            // 
+            this.winningCountryLabel.AutoSize = true;
+            this.winningCountryLabel.BackColor = System.Drawing.Color.Transparent;
+            this.winningCountryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winningCountryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.winningCountryLabel.Location = new System.Drawing.Point(584, 316);
+            this.winningCountryLabel.Name = "winningCountryLabel";
+            this.winningCountryLabel.Size = new System.Drawing.Size(0, 91);
+            this.winningCountryLabel.TabIndex = 5;
+            this.winningCountryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // EndCredits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -77,6 +90,7 @@
             this.BackgroundImage = global::WarGames.Properties.Resources.aftermath_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 900);
+            this.Controls.Add(this.winningCountryLabel);
             this.Controls.Add(this.PlayAgainButton);
             this.Controls.Add(this.ExitGameBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -85,11 +99,13 @@
             this.Text = "EndCredits";
             this.Load += new System.EventHandler(this.EndCredits_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button ExitGameBtn;
         private System.Windows.Forms.Button PlayAgainButton;
+        private System.Windows.Forms.Label winningCountryLabel;
     }
 }

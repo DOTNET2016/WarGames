@@ -15,6 +15,7 @@ namespace WarGames
 {
     public partial class EndCredits : Form
     {
+        WOPR warRoom = new WOPR();
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
         IntPtr pdv, [In] ref uint pcFonts);
@@ -22,6 +23,8 @@ namespace WarGames
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font myFont;
+
+        private string winCountry;
 
         public EndCredits()
         {
@@ -38,15 +41,15 @@ namespace WarGames
             myFont = new Font(fonts.Families[0], 25.0F);
         }
 
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void EndCredits_Load(object sender, EventArgs e)
         {
             PlayAgainButton.Font = myFont;
             ExitGameBtn.Font = myFont;
+        }
+        public void GetWinCountry(string winningCountry)
+        {
+            winCountry = winningCountry;
+            winningCountryLabel.Text = "Winner: " + winCountry;
         }
     }
 }

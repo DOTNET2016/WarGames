@@ -183,22 +183,17 @@ namespace WarGames
         {
             if (warRoom.countriesAtWar.Count > 1)
             {
-                var attackingCountry = warRoom.RandomCountryOne();
-                var defendingCountry = warRoom.RandomCountryTwo();
+                var countryWars = warRoom.RandomCountries();
 
-                if (attackingCountry.x == defendingCountry.x || attackingCountry.y == defendingCountry.y)
-                {
-                    attackingCountry = warRoom.RandomCountryOne();
-                }
-                PointF attackPoint = new PointF(attackingCountry.x, attackingCountry.y);
-                PointF defendPoint = new PointF(defendingCountry.x, defendingCountry.y);
+                PointF attackPoint = new PointF(countryWars.x1, countryWars.y1);
+                PointF defendPoint = new PointF(countryWars.x2, countryWars.y2);
 
                 curveStart = attackPoint;
                 curveEnd = defendPoint;
                 CreateCurve(curveStart, curveEnd);
 
-                float x = defendingCountry.x - 20;
-                float y = defendingCountry.y - 20;
+                float x = countryWars.x2 - 20;
+                float y = countryWars.y2 - 20;
 
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
@@ -220,27 +215,29 @@ namespace WarGames
             }
             else
             {
-                Invalidate();
                 warTimer.Stop();
- 
+                
                 ExplosionPictureBox.Hide();
-                warRoom.countriesAtWar.Clear();
-                backgroundMusicPlayer.PlayLooping();
-          
-                IsOn = !IsOn;
 
                 EndCredits endPage = new EndCredits();
+                endPage.GetWinCountry(warRoom.countriesAtWar[0].CountryName);
+                
                 if (endPage.ShowDialog(this) == DialogResult.OK)
                 {
                     backgroundMusicPlayer.PlayLooping();
                     Graphics.FromImage(Background.BackgroundImage).Clear(Color.Transparent);
                     Background.Refresh();
+                    PauseButton.Enabled = false;
+                    CustomizeGameBtn.Enabled = true;
+                    warRoom.countriesAtWar.Clear();
+
+                    IsOn = !IsOn;
                 }
                 else
                 {
                     EnduranceListBox.DataSource = null;
                     Close();
-                }               
+                }
             }
         }
 
