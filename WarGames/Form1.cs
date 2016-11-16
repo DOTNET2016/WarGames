@@ -37,7 +37,7 @@ namespace WarGames
         Font myFont;
         private List<PointF> curvePointList;
         private PointF curveStart;
-        private PointF curveEnd;   
+        private PointF curveEnd;
 
         /// <Countries_Coordinates>
         /// USA = X: 223 Y:239
@@ -90,6 +90,12 @@ namespace WarGames
             CustomizeGameBtn.Font = myFont;
         }
 
+        public static float GetRandomNumber(double minimum, double maximum)
+        {
+            Random random = new Random();
+            return Convert.ToSingle(random.NextDouble() * (maximum - minimum) + minimum);
+        }
+
         public void CreateCurve(PointF curveStart, PointF curveEnd)
         {
             curvePointList = new List<PointF>();
@@ -103,42 +109,71 @@ namespace WarGames
 
         private PointF CreateMidPoint(PointF controlPoint1, PointF controlPoint2)
         {
+            if (curveEnd.X == 223 && curveStart.X >= 1006 && curveStart.X <= 1291)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.2, 0.3));
+            }
+            if (curveEnd.X == 223 && curveStart.X >= 654 && curveStart.X <= 721)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.4, 0.6));
+            }
             if (curveStart.X > curveEnd.X && curveStart.X >= 654 && curveStart.X <= 721 && curveEnd.X >= 654 && curveEnd.X <= 721)
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) * 0.98f,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.96f);
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.97, 0.99),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.91, 0.97));
             }
             else if (curveStart.X >= 654 && curveStart.X <= 721 && curveEnd.X >= 654 && curveEnd.X <= 721)
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) * 1.015f,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.95f);
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.01, 1.03),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.90, 0.96));
             }
-
+            else if (curveStart.X > curveEnd.X && curveStart.X >= 1028 && curveStart.X <= 1105 && curveEnd.X >= 1028 && curveEnd.X <= 1105)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.96, 0.98),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
+            }
+            else if (curveStart.X >= 1028 && curveStart.X <= 1105 && curveEnd.X >= 1028 && curveEnd.X <= 1105)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.96, 0.98),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
+            }
             else if (curveStart.X > curveEnd.X && curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) * 0.97f,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.9f);
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.96, 0.98),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.85, 0.91));
             }
             else if (curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) * 1.04f,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.8f);
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.03, 1.05),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.75, 0.81));
             }
             else if (curveStart.X == 223 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2),
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.6f);
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.1, 0.2));
+            }
+            else if (curveStart.X == 223 && curveEnd.X >= 654 && curveEnd.X <= 721)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.3, 0.5));
             }
             else
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) ,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.7f);
+                ((controlPoint1.X + controlPoint2.X) / 2),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.65, 0.71));
             }
         }
 
