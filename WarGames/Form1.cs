@@ -134,7 +134,7 @@ namespace WarGames
                 curveStart = attackPoint;
                 curveEnd = defendPoint;
                 CreateCurve(curveStart, curveEnd);
-
+                
             float x = defendingCountry.x - 20;
             float y = defendingCountry.y - 20;
 
@@ -151,6 +151,8 @@ namespace WarGames
             else
             {
                 warTimer.Stop();
+                ExplosionPictureBox.Hide();
+                backgroundMusicPlayer.PlayLooping();
                 IsOn = !IsOn;
             }
         }
@@ -308,16 +310,6 @@ namespace WarGames
         }
         #endregion
        
-        //Find the coordinates of each country through a textbox on the main form. We can delete this method after we have the coordinates
-        private void Background_MouseClick(object sender, MouseEventArgs e)
-        {
-            MouseClick += new MouseEventHandler(Background_MouseClick);
-            int myX = e.X;
-            int myY = e.Y;
-
-            textBox1.Text = "X: " + e.X + "" + "\n" + "Y: " + e.Y;
-        }
-
         private void warTimer_Tick(object sender, EventArgs e)
         {
             AttackMethod();
