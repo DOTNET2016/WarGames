@@ -24,6 +24,7 @@ namespace WarGames
         private List<Point> Points = new List<Point>();
 
         SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.menusoundtrack);
+        SoundPlayer Explosion = new SoundPlayer(Properties.Resources.ExplosionSound);
 
         private bool _IsOn;
         private bool _IsPause;
@@ -172,6 +173,7 @@ namespace WarGames
                     ExplosionPictureBox.Hide();
                     ExplosionPictureBox.Show();
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
+                    Explosion.Play();
                     Background.Refresh();
                 }
             }
