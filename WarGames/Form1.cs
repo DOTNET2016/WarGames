@@ -200,7 +200,6 @@ namespace WarGames
                 float x = defendingCountry.x - 20;
                 float y = defendingCountry.y - 20;
 
-                //changed size on the map as this from image is calling the actuall image
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
                     if (drawLoop >= 5)
@@ -223,13 +222,11 @@ namespace WarGames
             {
                 Invalidate();
                 warTimer.Stop();
-                var winnerCountry = warRoom.countriesAtWar;
  
                 ExplosionPictureBox.Hide();
                 warRoom.countriesAtWar.Clear();
                 backgroundMusicPlayer.PlayLooping();
-                //winnerLabel.Show();
-                //winnerLabel.Text = "WINNER:" + winnerCountry.ToString();
+          
                 IsOn = !IsOn;
 
                 EndCredits endPage = new EndCredits();
@@ -252,14 +249,12 @@ namespace WarGames
             IsPause = !IsPause;
             if (IsPause)
             {
-                //TODO pause the war
                 warTimer.Stop();
                 ExplosionPictureBox.Hide();
                 backgroundMusicPlayer.PlayLooping();
             }
             if (!IsPause)
             {
-                //TODO unpause the war
                 warTimer.Start();
                 backgroundMusicPlayer.Stop();
             }
@@ -267,7 +262,6 @@ namespace WarGames
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            //"Start" text turns to Stop while the game is running
             IsOn = !IsOn;
             if (IsOn)
             {

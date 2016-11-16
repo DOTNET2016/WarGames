@@ -33,20 +33,13 @@ namespace WarGames
         public dynamic RandomCountryOne()
         {
             Countries randomCountryOne;
-
             randomCountryOne = countriesAtWar[rnd.Next(countriesAtWar.Count)];
-            //if (randomCountryOne.Durability == 0)
-            //{
-            //    countriesAtWar.Remove(randomCountryOne);
-            //    randomCountryOne = null;
-            //}
-            //randomCountryOne = countriesAtWar[rnd.Next(countriesAtWar.Count)];
+
             dynamic temp = new System.Dynamic.ExpandoObject();
             temp.x = randomCountryOne.XCoord;
             temp.y = randomCountryOne.YCoord;
             temp.str = randomCountryOne.Strength;
             return temp;
-            //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
         }
 
         public dynamic RandomCountryTwo()
@@ -57,7 +50,6 @@ namespace WarGames
             temp.y = DefCountry.YCoord;
             temp.rep = DefCountry.Repotation;
             return temp;
-            //do some stuff here to get countries to attrack echo other randomly, we can try make it more advance later
         }
 
         private Countries decreaseDurStr()
@@ -69,14 +61,6 @@ namespace WarGames
             int i = 1;
             while (i == 1)
             {
-                //if (randomCountryTwo.Durability <= 0)
-                //{
-                //    do
-                //    {
-                //        //dont let the endurance hit 0 on all countries, or it will be stuck in a endless loop :P
-                //        randomCountryTwo = countriesAtWar[rnd.Next(countriesAtWar.Count)];
-                //    } while (i == 0 || randomCountryTwo.Durability <= 0);
-                //}
                 randomCountryTwo.Durability -= (checkStr.str);
                 if (randomCountryTwo.Durability <= 0)
                 {

@@ -15,6 +15,7 @@ namespace WarGames
         private int _rep;
         private float _xCoord;
         private float _yCoord;
+
         public string CountryName
         {
             get
@@ -51,7 +52,6 @@ namespace WarGames
                 _strength = value;
             }
         }
-
         public int Durability
         {
             get
@@ -76,7 +76,6 @@ namespace WarGames
                 _xCoord = value;
             }
         }
-
         public float YCoord
         {
             get
