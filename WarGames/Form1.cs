@@ -22,8 +22,10 @@ namespace WarGames
     {
         WOPR warRoom = new WOPR();
         private List<Point> Points = new List<Point>();
+        CustomSettingsScreen css = new CustomSettingsScreen();
 
         SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.menusoundtrack);
+        SoundPlayer Explosion = new SoundPlayer(Properties.Resources.ExplosionSound);
 
         private bool _IsOn;
         private bool _IsPause;
@@ -207,6 +209,7 @@ namespace WarGames
                     ExplosionPictureBox.Hide();
                     ExplosionPictureBox.Show();
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
+                    Explosion.Play();
                     Background.Refresh();
                 }
             }
@@ -282,7 +285,7 @@ namespace WarGames
         //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
-            CustomSettingsScreen css = new CustomSettingsScreen();
+            
             if (css.ShowDialog(this) == DialogResult.OK)
             {
                 USADurLabel.Text = "Durability: " + css.USADurability.ToString();
