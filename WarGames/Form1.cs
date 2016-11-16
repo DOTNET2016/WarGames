@@ -26,6 +26,8 @@ namespace WarGames
         private bool _IsOn;
         private bool _IsPause;
 
+        int drawLoop = 0;
+
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
         IntPtr pdv, [In] ref uint pcFonts);
@@ -139,10 +141,16 @@ namespace WarGames
                 ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.96, 0.98),
                 ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
             }
-            else if (curveStart.X > curveEnd.X && curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
+            else if (curveStart.X >= 1028 && curveStart.X <= 1105 && curveEnd.X >= 1028 && curveEnd.X <= 1105)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(0.96, 0.98),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
+            }
+            else if (curveStart.X > curveEnd.X && curveStart.X >= 1226 && curveStart.X <= 1291 && curveEnd.X >= 1226 && curveEnd.X <= 1291)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.0, 1.01),
                 ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.85, 0.91));
             }
             else if (curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
@@ -195,6 +203,12 @@ namespace WarGames
                 //changed size on the map as this from image is calling the actuall image
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
+                    if (drawLoop >= 5)
+                    {
+                        g.Clear(Color.Transparent);
+                        Background.Refresh();
+                        drawLoop = 0;
+                    }
                     g.SmoothingMode = SmoothingMode.AntiAlias;
                     Pen pen = new Pen(Color.Red, 2);
                     g.DrawCurve(pen, curvePointList.ToArray());
@@ -203,6 +217,7 @@ namespace WarGames
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
                     Explosion.Play();
                     Background.Refresh();
+                    drawLoop++;
                 }
             }
             else
@@ -270,6 +285,8 @@ namespace WarGames
                 }
                 IsPause = IsPause;
             }
+            Graphics.FromImage(Background.BackgroundImage).Clear(Color.Transparent);
+            Background.Refresh();
             warRoom.countriesAtWar.Sort();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
