@@ -148,9 +148,6 @@
     <None Include="Resources\TitleMusicMenuTheme.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menusoundtrack.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\map2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +164,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ExplosionSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gamesoundtrack.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

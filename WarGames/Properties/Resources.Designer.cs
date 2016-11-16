@@ -140,6 +140,15 @@ namespace WarGames.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Gamesoundtrack {
+            get {
+                return ResourceManager.GetStream("Gamesoundtrack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap germany_flag {
@@ -192,9 +201,9 @@ namespace WarGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream menusoundtrack {
+        internal static System.IO.UnmanagedMemoryStream MenuMusic {
             get {
-                return ResourceManager.GetStream("menusoundtrack", resourceCulture);
+                return ResourceManager.GetStream("MenuMusic", resourceCulture);
             }
         }
         

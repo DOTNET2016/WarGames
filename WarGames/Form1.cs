@@ -1,30 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 using System.Drawing.Text;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
-using System.Reflection;
-using System.Windows.Input;
 using System.Media;
-using System.Drawing.Imaging;
 
 namespace WarGames
 {
     public partial class Form1 : Form
     {
         WOPR warRoom = new WOPR();
-        private List<Point> Points = new List<Point>();
         CustomSettingsScreen css = new CustomSettingsScreen();
 
-        SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.menusoundtrack);
+        private List<Point> Points = new List<Point>();
+        private List<PointF> curvePointList;
+        private PointF curveStart;
+        private PointF curveEnd;
+
+        SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.MenuMusic);
+        SoundPlayer GameRunningMusic = new SoundPlayer(Properties.Resources.Gamesoundtrack);
         SoundPlayer Explosion = new SoundPlayer(Properties.Resources.ExplosionSound);
 
         private bool _IsOn;
@@ -36,10 +32,7 @@ namespace WarGames
 
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
-        Font myFont;
-        private List<PointF> curvePointList;
-        private PointF curveStart;
-        private PointF curveEnd;   
+        Font myFont; 
 
         /// <Countries_Coordinates>
         /// USA = X: 223 Y:239
@@ -55,8 +48,7 @@ namespace WarGames
         /// </summary>
 
         public Form1()
-        {
-            //Application.Run(new IntroMenu());       
+        {    
             InitializeComponent();
             EnduranceListBox.DataSource = warRoom.countriesAtWar;
 
@@ -182,6 +174,7 @@ namespace WarGames
             {
                 warTimer.Stop();
                 ExplosionPictureBox.Hide();
+                GameRunningMusic.Stop();
                 backgroundMusicPlayer.PlayLooping();
                 IsOn = !IsOn;
             }

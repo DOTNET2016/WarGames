@@ -34,7 +34,6 @@
             this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
             this.ExplosionPictureBox = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.CustomizeGameBtn = new System.Windows.Forms.Button();
@@ -146,7 +145,6 @@
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Background.Controls.Add(this.ExplosionPictureBox);
-            this.Background.Controls.Add(this.textBox1);
             this.Background.Controls.Add(this.PauseButton);
             this.Background.Controls.Add(this.StartButton);
             this.Background.Controls.Add(this.CustomizeGameBtn);
@@ -180,15 +178,6 @@
             this.ExplosionPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ExplosionPictureBox.TabIndex = 42;
             this.ExplosionPictureBox.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(5, 490);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 22);
-            this.textBox1.TabIndex = 41;
-            this.textBox1.Text = "Countries positions";
             // 
             // PauseButton
             // 
@@ -1045,7 +1034,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
-            this.Background.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -1157,7 +1145,6 @@
         private System.Windows.Forms.Label RussiaDurLabel;
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Button PauseButton;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer warTimer;
         private System.Windows.Forms.PictureBox ExplosionPictureBox;
     }
