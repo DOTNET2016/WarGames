@@ -103,17 +103,42 @@ namespace WarGames
 
         private PointF CreateMidPoint(PointF controlPoint1, PointF controlPoint2)
         {
-            if (curveStart.Y - curveEnd.Y >= 200 || curveEnd.Y - curveStart.Y >= 200)
+            if (curveStart.X > curveEnd.X && curveStart.X >= 654 && curveStart.X <= 721 && curveEnd.X >= 654 && curveEnd.X <= 721)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * 0.98f,
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.96f);
+            }
+            else if (curveStart.X >= 654 && curveStart.X <= 721 && curveEnd.X >= 654 && curveEnd.X <= 721)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * 1.015f,
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.95f);
+            }
+
+            else if (curveStart.X > curveEnd.X && curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2) * 0.97f,
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.9f);
+            }
+            else if (curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) * 1.04f,
-                ((controlPoint1.Y + controlPoint2.Y) / 2));
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.8f);
+            }
+            else if (curveStart.X == 223 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
+            {
+                return new PointF(
+                ((controlPoint1.X + controlPoint2.X) / 2),
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.6f);
             }
             else
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) ,
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.8f);
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * 0.7f);
             }
         }
 
@@ -141,8 +166,10 @@ namespace WarGames
                 //changed size on the map as this from image is calling the actuall image
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
+                    g.SmoothingMode = SmoothingMode.AntiAlias;
                     Pen pen = new Pen(Color.Red, 2);
                     g.DrawCurve(pen, curvePointList.ToArray());
+                    ExplosionPictureBox.Hide();
                     ExplosionPictureBox.Show();
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
                     Background.Refresh();
@@ -185,7 +212,6 @@ namespace WarGames
                 if (warRoom.countriesAtWar.Count == 0)
                 {
                     warRoom.CountryList();
-                    warRoom.SortDurability();
                     PauseButton.Enabled = true;
                     CustomizeGameBtn.Enabled = false;
                 }
@@ -202,6 +228,7 @@ namespace WarGames
             {
                 //stops the war, when it says Stop also works as and reset the list
                 warRoom.countriesAtWar.Clear();
+                ExplosionPictureBox.Hide();
                 PauseButton.Enabled = false;
                 CustomizeGameBtn.Enabled = true;
                 warTimer.Stop();
@@ -213,7 +240,7 @@ namespace WarGames
                 }
                 IsPause = IsPause;
             }
-            warRoom.SortDurability();
+            warRoom.countriesAtWar.Sort();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
 
@@ -313,7 +340,7 @@ namespace WarGames
         private void warTimer_Tick(object sender, EventArgs e)
         {
             AttackMethod();
-            warRoom.SortDurability();
+            warRoom.countriesAtWar.Sort();
             ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
         }
     }

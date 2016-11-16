@@ -87,10 +87,5 @@ namespace WarGames
 
             return DefCountry;
         }
-
-        public void SortDurability()
-        {
-            countriesAtWar.Sort();
-        }
     }
 }
