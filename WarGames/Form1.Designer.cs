@@ -136,7 +136,7 @@
             // 
             // warTimer
             // 
-            this.warTimer.Interval = 2000;
+            this.warTimer.Interval = 500;
             this.warTimer.Tick += new System.EventHandler(this.warTimer_Tick);
             // 
             // Background

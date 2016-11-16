@@ -188,9 +188,9 @@ namespace WarGames
                 curveStart = attackPoint;
                 curveEnd = defendPoint;
                 CreateCurve(curveStart, curveEnd);
-                
-            float x = defendingCountry.x - 20;
-            float y = defendingCountry.y - 20;
+
+                float x = defendingCountry.x - 20;
+                float y = defendingCountry.y - 20;
 
                 //changed size on the map as this from image is calling the actuall image
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
@@ -209,8 +209,21 @@ namespace WarGames
             {
                 warTimer.Stop();
                 ExplosionPictureBox.Hide();
+                warRoom.countriesAtWar.Clear();
                 backgroundMusicPlayer.PlayLooping();
                 IsOn = !IsOn;
+
+                EndCredits endPage = new EndCredits();
+                if (endPage.ShowDialog(this) == DialogResult.OK)
+                {
+                    backgroundMusicPlayer.PlayLooping();
+                }
+                else
+                {
+                    EnduranceListBox.DataSource = null;
+                    Close();
+                }
+                //endPage.Dispose();
             }
         }
 
@@ -371,7 +384,14 @@ namespace WarGames
         {
             AttackMethod();
             warRoom.countriesAtWar.Sort();
-            ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+            if (EnduranceListBox.DataSource == null)
+            {
+                return;
+            }
+            else
+            {
+                ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+            }          
         }
     }
 }
