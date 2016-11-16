@@ -37,19 +37,18 @@ namespace WarGames
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
             Marshal.FreeCoTaskMem(fontPtr);
 
-            myFont = new Font(fonts.Families[0], 40.0F);
+            myFont = new Font(fonts.Families[0], 25.0F);
         }
-
-        //public static void ShowEndCreditPage()
-        //{
-            
-        //    endCreditsPage.ShowDialog();
-
-        //}
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void EndCredits_Load(object sender, EventArgs e)
+        {
+            PlayAgainButton.Font = myFont;
+            ExitGameBtn.Font = myFont;
         }
     }
 }
