@@ -166,8 +166,10 @@ namespace WarGames
                 //changed size on the map as this from image is calling the actuall image
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
+                    g.SmoothingMode = SmoothingMode.AntiAlias;
                     Pen pen = new Pen(Color.Red, 2);
                     g.DrawCurve(pen, curvePointList.ToArray());
+                    ExplosionPictureBox.Hide();
                     ExplosionPictureBox.Show();
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
                     Background.Refresh();
