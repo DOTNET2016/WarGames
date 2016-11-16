@@ -15,7 +15,30 @@ namespace WarGames
         private int _rep;
         private float _xCoord;
         private float _yCoord;
+        public string CountryName
+        {
+            get
+            {
+                return _countryName;
+            }
 
+            set
+            {
+                _countryName = value;
+            }
+        }
+        public int Repotation
+        {
+            get
+            {
+                return _rep;
+            }
+
+            set
+            {
+                _rep = value;
+            }
+        }
         public int Strength
         {
             get

@@ -151,25 +151,25 @@ namespace WarGames
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.0, 1.01),
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.85, 0.91));
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.95, 0.98));
             }
             else if (curveStart.X >= 1006 && curveStart.X <= 1291 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
-                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.03, 1.05),
+                ((controlPoint1.X + controlPoint2.X) / 2) * GetRandomNumber(1.0, 1.02),
                 ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.75, 0.81));
             }
             else if (curveStart.X == 223 && curveEnd.X >= 1006 && curveEnd.X <= 1291)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2),
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.1, 0.2));
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.3, 0.5));
             }
             else if (curveStart.X == 223 && curveEnd.X >= 654 && curveEnd.X <= 721)
             {
                 return new PointF(
                 ((controlPoint1.X + controlPoint2.X) / 2),
-                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.3, 0.5));
+                ((controlPoint1.Y + controlPoint2.Y) / 2) * GetRandomNumber(0.5, 0.7));
             }
             else
             {
@@ -206,7 +206,6 @@ namespace WarGames
                     if (drawLoop >= 5)
                     {
                         g.Clear(Color.Transparent);
-                        Background.Refresh();
                         drawLoop = 0;
                     }
                     g.SmoothingMode = SmoothingMode.AntiAlias;
@@ -222,10 +221,15 @@ namespace WarGames
             }
             else
             {
+                Invalidate();
                 warTimer.Stop();
+                var winnerCountry = warRoom.countriesAtWar;
+ 
                 ExplosionPictureBox.Hide();
                 warRoom.countriesAtWar.Clear();
                 backgroundMusicPlayer.PlayLooping();
+                //winnerLabel.Show();
+                //winnerLabel.Text = "WINNER:" + winnerCountry.ToString();
                 IsOn = !IsOn;
 
                 EndCredits endPage = new EndCredits();
