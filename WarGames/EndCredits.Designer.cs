@@ -44,7 +44,7 @@
             this.ExitGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.ExitGameBtn.Location = new System.Drawing.Point(853, 651);
+            this.ExitGameBtn.Location = new System.Drawing.Point(984, 651);
             this.ExitGameBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExitGameBtn.Name = "ExitGameBtn";
             this.ExitGameBtn.Size = new System.Drawing.Size(237, 84);
@@ -63,7 +63,7 @@
             this.PlayAgainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayAgainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayAgainButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.PlayAgainButton.Location = new System.Drawing.Point(493, 651);
+            this.PlayAgainButton.Location = new System.Drawing.Point(427, 651);
             this.PlayAgainButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlayAgainButton.Name = "PlayAgainButton";
             this.PlayAgainButton.Size = new System.Drawing.Size(237, 84);
@@ -77,7 +77,7 @@
             this.winningCountryLabel.BackColor = System.Drawing.Color.Transparent;
             this.winningCountryLabel.Font = new System.Drawing.Font("Showcard Gothic", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.winningCountryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.winningCountryLabel.Location = new System.Drawing.Point(191, 166);
+            this.winningCountryLabel.Location = new System.Drawing.Point(178, 80);
             this.winningCountryLabel.Name = "winningCountryLabel";
             this.winningCountryLabel.Size = new System.Drawing.Size(0, 186);
             this.winningCountryLabel.TabIndex = 5;
@@ -87,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WarGames.Properties.Resources.aftermath_1;
+            this.BackgroundImage = global::WarGames.Properties.Resources.EndscreenWallpaper3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.winningCountryLabel);
