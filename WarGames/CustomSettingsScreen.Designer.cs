@@ -1776,7 +1776,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1707, 886);
+            this.ClientSize = new System.Drawing.Size(1707, 900);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.KeyGroupBox);
             this.Controls.Add(this.CountdownClock);

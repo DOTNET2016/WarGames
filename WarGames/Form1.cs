@@ -12,21 +12,20 @@ namespace WarGames
     public partial class Form1 : Form
     {
         WOPR warRoom = new WOPR();
-        CustomSettingsScreen css = new CustomSettingsScreen();
 
         private List<Point> Points = new List<Point>();
         private List<PointF> curvePointList;
         private PointF curveStart;
         private PointF curveEnd;
 
-        SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.MenuMusic);
-        SoundPlayer GameRunningMusic = new SoundPlayer(Properties.Resources.Gamesoundtrack);
-        SoundPlayer Explosion = new SoundPlayer(Properties.Resources.ExplosionSound);
+        //SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.MenuMusic);
+        //SoundPlayer GameRunningMusic = new SoundPlayer(Properties.Resources.Gamesoundtrack);
+        //SoundPlayer Explosion = new SoundPlayer(Properties.Resources.ExplosionSound);
 
         private bool _IsOn;
         private bool _IsPause;
 
-        int drawLoop = 0;
+        private int drawLoop = 0;
 
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
@@ -34,7 +33,7 @@ namespace WarGames
 
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
-        Font myFont; 
+        private Font myFont; 
 
         /// <Countries_Coordinates>
         /// USA = X: 223 Y:239
@@ -72,7 +71,8 @@ namespace WarGames
             IntroMenu im = new IntroMenu();
             if (im.ShowDialog(this) == DialogResult.OK)
             {
-                backgroundMusicPlayer.PlayLooping();
+                MediaPlayer.IntroMusic.Stop();
+                MediaPlayer.BackgroundMusic.PlayLooping();
             }
             else
             {
@@ -84,8 +84,9 @@ namespace WarGames
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
-
         }
+
+
 
         public static float GetRandomNumber(float minimum, float maximum)
         {
@@ -209,10 +210,10 @@ namespace WarGames
                     ExplosionPictureBox.Hide();
                     ExplosionPictureBox.Show();
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
-                    Explosion.Play();
                     Background.Refresh();
                     drawLoop++;
                 }
+                MediaPlayer.ExplosionSound();
             }
             else
             {
@@ -225,7 +226,6 @@ namespace WarGames
                 
                 if (endPage.ShowDialog(this) == DialogResult.OK)
                 {
-                    backgroundMusicPlayer.PlayLooping();
                     Graphics.FromImage(Background.BackgroundImage).Clear(Color.Transparent);
                     Background.Refresh();
                     PauseButton.Enabled = false;
@@ -249,12 +249,10 @@ namespace WarGames
             {
                 warTimer.Stop();
                 ExplosionPictureBox.Hide();
-                backgroundMusicPlayer.PlayLooping();
             }
             if (!IsPause)
             {
                 warTimer.Start();
-                backgroundMusicPlayer.Stop();
             }
         }
 
@@ -277,7 +275,6 @@ namespace WarGames
                     CustomizeGameBtn.Enabled = false;
                 }
                 warTimer.Start();
-                backgroundMusicPlayer.Stop();
             }
             if (!IsOn)
             {
@@ -288,7 +285,6 @@ namespace WarGames
                 CustomizeGameBtn.Enabled = true;
                 warTimer.Stop();
                 ExplosionPictureBox.Hide();
-                backgroundMusicPlayer.PlayLooping();
                 if (IsPause)
                 {
                     IsPause = !IsPause;
@@ -304,7 +300,8 @@ namespace WarGames
         //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
-            
+            CustomSettingsScreen css = new CustomSettingsScreen();
+
             if (css.ShowDialog(this) == DialogResult.OK)
             {
                 USADurLabel.Text = "Durability: " + css.USADurability.ToString();

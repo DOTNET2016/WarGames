@@ -51,7 +51,6 @@
             this.PlayGameBtn.TabIndex = 1;
             this.PlayGameBtn.Text = "YES";
             this.PlayGameBtn.UseVisualStyleBackColor = false;
-            this.PlayGameBtn.Click += new System.EventHandler(this.PlayGameBtn_Click);
             // 
             // ExitGameBtn
             // 
@@ -71,7 +70,6 @@
             this.ExitGameBtn.TabIndex = 2;
             this.ExitGameBtn.Text = "NO";
             this.ExitGameBtn.UseVisualStyleBackColor = false;
-            this.ExitGameBtn.Click += new System.EventHandler(this.ExitGameBtn_Click);
             // 
             // IntroMenu
             // 

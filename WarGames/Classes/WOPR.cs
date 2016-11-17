@@ -50,8 +50,9 @@ namespace WarGames
                 randomCountryTwo.Durability -= randomCountryOne.Strength;
                 if (randomCountryTwo.Durability <= 0)
                 {
-                countriesAtWar.Remove(randomCountryTwo);
-                defeatedCountries.Add(randomCountryTwo);
+                    randomCountryTwo.Durability = 0;
+                    countriesAtWar.Remove(randomCountryTwo);
+                    defeatedCountries.Add(randomCountryTwo);
                 }
                 i--;
             }

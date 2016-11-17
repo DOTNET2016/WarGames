@@ -33,6 +33,8 @@
             this.PressStart = new System.Windows.Forms.Button();
             this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
+            this.ClearLinesBox = new System.Windows.Forms.GroupBox();
+            this.ClearLinesCheckBox = new System.Windows.Forms.CheckBox();
             this.GameSpeedBox = new System.Windows.Forms.GroupBox();
             this.FastSpeedRadioButton = new System.Windows.Forms.RadioButton();
             this.StandardSpeedRadioButton = new System.Windows.Forms.RadioButton();
@@ -105,9 +107,8 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
-            this.ClearLinesBox = new System.Windows.Forms.GroupBox();
-            this.ClearLinesCheckBox = new System.Windows.Forms.CheckBox();
             this.Background.SuspendLayout();
+            this.ClearLinesBox.SuspendLayout();
             this.GameSpeedBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).BeginInit();
@@ -132,7 +133,6 @@
             this.RussiaGroupBox.SuspendLayout();
             this.USAgroupBox.SuspendLayout();
             this.EnduranceBox.SuspendLayout();
-            this.ClearLinesBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // PressStart
@@ -178,6 +178,28 @@
             this.Background.Name = "Background";
             this.Background.Size = new System.Drawing.Size(1600, 900);
             this.Background.TabIndex = 1;
+            // 
+            // ClearLinesBox
+            // 
+            this.ClearLinesBox.Controls.Add(this.ClearLinesCheckBox);
+            this.ClearLinesBox.ForeColor = System.Drawing.Color.White;
+            this.ClearLinesBox.Location = new System.Drawing.Point(-1, 431);
+            this.ClearLinesBox.Name = "ClearLinesBox";
+            this.ClearLinesBox.Size = new System.Drawing.Size(204, 54);
+            this.ClearLinesBox.TabIndex = 48;
+            this.ClearLinesBox.TabStop = false;
+            this.ClearLinesBox.Text = "Clear Lines";
+            // 
+            // ClearLinesCheckBox
+            // 
+            this.ClearLinesCheckBox.AutoSize = true;
+            this.ClearLinesCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ClearLinesCheckBox.Location = new System.Drawing.Point(14, 22);
+            this.ClearLinesCheckBox.Name = "ClearLinesCheckBox";
+            this.ClearLinesCheckBox.Size = new System.Drawing.Size(142, 21);
+            this.ClearLinesCheckBox.TabIndex = 0;
+            this.ClearLinesCheckBox.Text = "Clear Missile Path";
+            this.ClearLinesCheckBox.UseVisualStyleBackColor = true;
             // 
             // GameSpeedBox
             // 
@@ -1083,28 +1105,6 @@
             this.EnduranceListBox.Size = new System.Drawing.Size(196, 250);
             this.EnduranceListBox.TabIndex = 0;
             // 
-            // ClearLinesBox
-            // 
-            this.ClearLinesBox.Controls.Add(this.ClearLinesCheckBox);
-            this.ClearLinesBox.ForeColor = System.Drawing.Color.White;
-            this.ClearLinesBox.Location = new System.Drawing.Point(-1, 431);
-            this.ClearLinesBox.Name = "ClearLinesBox";
-            this.ClearLinesBox.Size = new System.Drawing.Size(204, 54);
-            this.ClearLinesBox.TabIndex = 48;
-            this.ClearLinesBox.TabStop = false;
-            this.ClearLinesBox.Text = "Clear Lines";
-            // 
-            // ClearLinesCheckBox
-            // 
-            this.ClearLinesCheckBox.AutoSize = true;
-            this.ClearLinesCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClearLinesCheckBox.Location = new System.Drawing.Point(14, 22);
-            this.ClearLinesCheckBox.Name = "ClearLinesCheckBox";
-            this.ClearLinesCheckBox.Size = new System.Drawing.Size(142, 21);
-            this.ClearLinesCheckBox.TabIndex = 0;
-            this.ClearLinesCheckBox.Text = "Clear Missile Path";
-            this.ClearLinesCheckBox.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1123,6 +1123,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
+            this.ClearLinesBox.ResumeLayout(false);
+            this.ClearLinesBox.PerformLayout();
             this.GameSpeedBox.ResumeLayout(false);
             this.GameSpeedBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).EndInit();
@@ -1159,8 +1161,6 @@
             this.USAgroupBox.ResumeLayout(false);
             this.USAgroupBox.PerformLayout();
             this.EnduranceBox.ResumeLayout(false);
-            this.ClearLinesBox.ResumeLayout(false);
-            this.ClearLinesBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
