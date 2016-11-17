@@ -12,7 +12,6 @@ namespace WarGames
     public partial class Form1 : Form
     {
         WOPR warRoom = new WOPR();
-        CustomSettingsScreen css = new CustomSettingsScreen();
 
         private List<Point> Points = new List<Point>();
         private List<PointF> curvePointList;
@@ -301,7 +300,8 @@ namespace WarGames
         //gets the stats from the "customize" section and updates all country stat labels and add the stats to a list
         private void CustomizeGameBtn_Click(object sender, EventArgs e)
         {
-            
+            CustomSettingsScreen css = new CustomSettingsScreen();
+
             if (css.ShowDialog(this) == DialogResult.OK)
             {
                 USADurLabel.Text = "Durability: " + css.USADurability.ToString();
