@@ -585,7 +585,7 @@
             this.SwedenStrengthLabel.Name = "SwedenStrengthLabel";
             this.SwedenStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.SwedenStrengthLabel.TabIndex = 27;
-            this.SwedenStrengthLabel.Text = "Strength: 4";
+            this.SwedenStrengthLabel.Text = "Strength: 6";
             // 
             // SwedenDurLabel
             // 

@@ -374,7 +374,7 @@ namespace WarGames
             set
             {
                 _IsOn = value;
-                StartButton.Text = _IsOn ? "Stop" : "Start";
+                StartButton.Text = _IsOn ? "Reset" : "Start";
             }
         }
         public bool IsPause

@@ -9,8 +9,6 @@ namespace WarGames
         public List<Countries> countriesAtWar = new List<Countries>();
         public List<Countries> defeatedCountries = new List<Countries>();
 
-        Countries randomCountryOne, randomCountryTwo;
-
         //War Operation Plan Responce
         public WOPR()
         {

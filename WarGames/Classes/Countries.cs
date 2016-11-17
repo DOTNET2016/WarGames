@@ -101,7 +101,7 @@ namespace WarGames
 
         public override string ToString()
         {
-            return _countryName + ": " + Durability + " str" + Strength;
+            return _countryName + ": " + Durability;
         }
 
         public int CompareTo(Countries other)
