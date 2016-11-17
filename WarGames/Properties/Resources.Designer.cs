@@ -101,11 +101,12 @@ namespace WarGames.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream ExplosionSound {
+        internal static byte[] ExplosionSound1 {
             get {
-                return ResourceManager.GetStream("ExplosionSound", resourceCulture);
+                object obj = ResourceManager.GetObject("ExplosionSound1", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

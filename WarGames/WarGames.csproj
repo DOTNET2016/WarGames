@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classes\Countries.cs" />
     <Compile Include="Classes\Land.cs" />
+    <Compile Include="Classes\MediaPlayer.cs" />
     <Compile Include="CustomSettingsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,9 +173,6 @@
     <None Include="Resources\army men shooting1.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ExplosionSound.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\MenuMusic.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -187,7 +185,18 @@
     <None Include="Resources\fuck you game over1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fallout.png" />
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplosionSound.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
