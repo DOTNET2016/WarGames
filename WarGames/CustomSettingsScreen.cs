@@ -554,7 +554,7 @@ namespace WarGames
         private void CustomSettingsScreen_Load(object sender, EventArgs e)
         {
             BigRedButton.Font = myFont;
-            GoBack.Font = myFont;
+            GoBackButton.Font = myFont;
         }
 
         private void BigRedButton_Click(object sender, EventArgs e)
