@@ -345,7 +345,7 @@
             this.NorthKorea_Rep.Location = new System.Drawing.Point(99, 154);
             this.NorthKorea_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NorthKorea_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -380,7 +380,7 @@
             this.NorthKorea_Strength.Location = new System.Drawing.Point(99, 98);
             this.NorthKorea_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NorthKorea_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -393,7 +393,7 @@
             this.NorthKorea_Strength.Size = new System.Drawing.Size(53, 22);
             this.NorthKorea_Strength.TabIndex = 7;
             this.NorthKorea_Strength.Value = new decimal(new int[] {
-            2,
+            3,
             0,
             0,
             0});
@@ -428,7 +428,7 @@
             this.NorthKorea_Durability.Size = new System.Drawing.Size(53, 22);
             this.NorthKorea_Durability.TabIndex = 5;
             this.NorthKorea_Durability.Value = new decimal(new int[] {
-            3,
+            10,
             0,
             0,
             0});
@@ -479,7 +479,7 @@
             this.Sweden_Rep.Location = new System.Drawing.Point(99, 154);
             this.Sweden_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sweden_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -492,7 +492,7 @@
             this.Sweden_Rep.Size = new System.Drawing.Size(53, 22);
             this.Sweden_Rep.TabIndex = 9;
             this.Sweden_Rep.Value = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -514,7 +514,7 @@
             this.Sweden_Strength.Location = new System.Drawing.Point(97, 96);
             this.Sweden_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sweden_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -527,7 +527,7 @@
             this.Sweden_Strength.Size = new System.Drawing.Size(53, 22);
             this.Sweden_Strength.TabIndex = 7;
             this.Sweden_Strength.Value = new decimal(new int[] {
-            2,
+            6,
             0,
             0,
             0});
@@ -613,7 +613,7 @@
             this.Japan_Rep.Location = new System.Drawing.Point(97, 154);
             this.Japan_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Japan_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -626,7 +626,7 @@
             this.Japan_Rep.Size = new System.Drawing.Size(53, 22);
             this.Japan_Rep.TabIndex = 9;
             this.Japan_Rep.Value = new decimal(new int[] {
-            7,
+            3,
             0,
             0,
             0});
@@ -648,7 +648,7 @@
             this.Japan_Strength.Location = new System.Drawing.Point(97, 98);
             this.Japan_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Japan_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -661,7 +661,7 @@
             this.Japan_Strength.Size = new System.Drawing.Size(53, 22);
             this.Japan_Strength.TabIndex = 7;
             this.Japan_Strength.Value = new decimal(new int[] {
-            3,
+            4,
             0,
             0,
             0});
@@ -747,7 +747,7 @@
             this.Germany_Rep.Location = new System.Drawing.Point(99, 154);
             this.Germany_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Germany_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -760,7 +760,7 @@
             this.Germany_Rep.Size = new System.Drawing.Size(53, 22);
             this.Germany_Rep.TabIndex = 9;
             this.Germany_Rep.Value = new decimal(new int[] {
-            8,
+            4,
             0,
             0,
             0});
@@ -782,7 +782,7 @@
             this.Germany_Strength.Location = new System.Drawing.Point(97, 97);
             this.Germany_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Germany_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -795,7 +795,7 @@
             this.Germany_Strength.Size = new System.Drawing.Size(53, 22);
             this.Germany_Strength.TabIndex = 7;
             this.Germany_Strength.Value = new decimal(new int[] {
-            4,
+            7,
             0,
             0,
             0});
@@ -881,7 +881,7 @@
             this.India_Rep.Location = new System.Drawing.Point(93, 154);
             this.India_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.India_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -894,7 +894,7 @@
             this.India_Rep.Size = new System.Drawing.Size(53, 22);
             this.India_Rep.TabIndex = 9;
             this.India_Rep.Value = new decimal(new int[] {
-            7,
+            3,
             0,
             0,
             0});
@@ -916,7 +916,7 @@
             this.India_Strength.Location = new System.Drawing.Point(93, 96);
             this.India_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.India_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -929,7 +929,7 @@
             this.India_Strength.Size = new System.Drawing.Size(53, 22);
             this.India_Strength.TabIndex = 7;
             this.India_Strength.Value = new decimal(new int[] {
-            4,
+            5,
             0,
             0,
             0});
@@ -1015,7 +1015,7 @@
             this.France_Rep.Location = new System.Drawing.Point(97, 154);
             this.France_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.France_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -1028,7 +1028,7 @@
             this.France_Rep.Size = new System.Drawing.Size(53, 22);
             this.France_Rep.TabIndex = 9;
             this.France_Rep.Value = new decimal(new int[] {
-            7,
+            4,
             0,
             0,
             0});
@@ -1050,7 +1050,7 @@
             this.France_Strength.Location = new System.Drawing.Point(97, 95);
             this.France_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.France_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -1063,7 +1063,7 @@
             this.France_Strength.Size = new System.Drawing.Size(53, 22);
             this.France_Strength.TabIndex = 7;
             this.France_Strength.Value = new decimal(new int[] {
-            3,
+            5,
             0,
             0,
             0});
@@ -1149,7 +1149,7 @@
             this.China_Rep.Location = new System.Drawing.Point(97, 154);
             this.China_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.China_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -1162,7 +1162,7 @@
             this.China_Rep.Size = new System.Drawing.Size(53, 22);
             this.China_Rep.TabIndex = 8;
             this.China_Rep.Value = new decimal(new int[] {
-            5,
+            2,
             0,
             0,
             0});
@@ -1184,7 +1184,7 @@
             this.China_Strength.Location = new System.Drawing.Point(97, 94);
             this.China_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.China_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -1197,7 +1197,7 @@
             this.China_Strength.Size = new System.Drawing.Size(53, 22);
             this.China_Strength.TabIndex = 6;
             this.China_Strength.Value = new decimal(new int[] {
-            5,
+            6,
             0,
             0,
             0});
@@ -1283,7 +1283,7 @@
             this.UK_Rep.Location = new System.Drawing.Point(97, 154);
             this.UK_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UK_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -1296,7 +1296,7 @@
             this.UK_Rep.Size = new System.Drawing.Size(53, 22);
             this.UK_Rep.TabIndex = 7;
             this.UK_Rep.Value = new decimal(new int[] {
-            7,
+            3,
             0,
             0,
             0});
@@ -1318,7 +1318,7 @@
             this.UK_Strength.Location = new System.Drawing.Point(97, 94);
             this.UK_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UK_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -1331,7 +1331,7 @@
             this.UK_Strength.Size = new System.Drawing.Size(53, 22);
             this.UK_Strength.TabIndex = 5;
             this.UK_Strength.Value = new decimal(new int[] {
-            3,
+            6,
             0,
             0,
             0});
@@ -1417,7 +1417,7 @@
             this.Russia_Rep.Location = new System.Drawing.Point(97, 154);
             this.Russia_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Russia_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -1430,7 +1430,7 @@
             this.Russia_Rep.Size = new System.Drawing.Size(53, 22);
             this.Russia_Rep.TabIndex = 6;
             this.Russia_Rep.Value = new decimal(new int[] {
-            4,
+            1,
             0,
             0,
             0});
@@ -1452,7 +1452,7 @@
             this.Russia_Strength.Location = new System.Drawing.Point(97, 96);
             this.Russia_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Russia_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -1465,7 +1465,7 @@
             this.Russia_Strength.Size = new System.Drawing.Size(53, 22);
             this.Russia_Strength.TabIndex = 4;
             this.Russia_Strength.Value = new decimal(new int[] {
-            5,
+            8,
             0,
             0,
             0});
@@ -1562,7 +1562,7 @@
             this.USA_Rep.Location = new System.Drawing.Point(99, 154);
             this.USA_Rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.USA_Rep.Maximum = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -1573,9 +1573,9 @@
             0});
             this.USA_Rep.Name = "USA_Rep";
             this.USA_Rep.Size = new System.Drawing.Size(53, 22);
-            this.USA_Rep.TabIndex = 4;
+            this.USA_Rep.TabIndex = 3;
             this.USA_Rep.Value = new decimal(new int[] {
-            4,
+            2,
             0,
             0,
             0});
@@ -1597,7 +1597,7 @@
             this.USA_Strength.Location = new System.Drawing.Point(99, 96);
             this.USA_Strength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.USA_Strength.Maximum = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -1610,7 +1610,7 @@
             this.USA_Strength.Size = new System.Drawing.Size(53, 22);
             this.USA_Strength.TabIndex = 2;
             this.USA_Strength.Value = new decimal(new int[] {
-            5,
+            8,
             0,
             0,
             0});
@@ -1727,9 +1727,9 @@
             this.RepKEYlabel.Location = new System.Drawing.Point(15, 137);
             this.RepKEYlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RepKEYlabel.Name = "RepKEYlabel";
-            this.RepKEYlabel.Size = new System.Drawing.Size(188, 24);
+            this.RepKEYlabel.Size = new System.Drawing.Size(178, 24);
             this.RepKEYlabel.TabIndex = 2;
-            this.RepKEYlabel.Text = "Rep = Min: 1 Max: 10";
+            this.RepKEYlabel.Text = "Rep = Min: 1 Max: 5";
             // 
             // StrengthKEYlabel
             // 
@@ -1737,9 +1737,9 @@
             this.StrengthKEYlabel.Location = new System.Drawing.Point(15, 92);
             this.StrengthKEYlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StrengthKEYlabel.Name = "StrengthKEYlabel";
-            this.StrengthKEYlabel.Size = new System.Drawing.Size(213, 24);
+            this.StrengthKEYlabel.Size = new System.Drawing.Size(223, 24);
             this.StrengthKEYlabel.TabIndex = 1;
-            this.StrengthKEYlabel.Text = "Strength = Min: 1 Max: 5";
+            this.StrengthKEYlabel.Text = "Strength = Min: 1 Max: 10";
             // 
             // DurabilityKEYlabel
             // 

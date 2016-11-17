@@ -407,7 +407,7 @@
             this.IndiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.IndiaPictureBox.Image = global::WarGames.Properties.Resources.india_flag;
+            this.IndiaPictureBox.Image = global::WarGames.Properties.Resources.india_flag2;
             this.IndiaPictureBox.Location = new System.Drawing.Point(995, 721);
             this.IndiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.IndiaPictureBox.Name = "IndiaPictureBox";
@@ -542,7 +542,7 @@
             this.NKStrengthLabel.Name = "NKStrengthLabel";
             this.NKStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.NKStrengthLabel.TabIndex = 27;
-            this.NKStrengthLabel.Text = "Strength: 2";
+            this.NKStrengthLabel.Text = "Strength: 3";
             // 
             // NKDurLabel
             // 
@@ -552,7 +552,7 @@
             this.NKDurLabel.Name = "NKDurLabel";
             this.NKDurLabel.Size = new System.Drawing.Size(95, 17);
             this.NKDurLabel.TabIndex = 26;
-            this.NKDurLabel.Text = "Durability:  14";
+            this.NKDurLabel.Text = "Durability:  10";
             // 
             // SwedenGroupBox
             // 
@@ -573,9 +573,9 @@
             this.SwedenRepLabel.Location = new System.Drawing.Point(6, 72);
             this.SwedenRepLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SwedenRepLabel.Name = "SwedenRepLabel";
-            this.SwedenRepLabel.Size = new System.Drawing.Size(101, 17);
+            this.SwedenRepLabel.Size = new System.Drawing.Size(93, 17);
             this.SwedenRepLabel.TabIndex = 28;
-            this.SwedenRepLabel.Text = "Reputation: 10";
+            this.SwedenRepLabel.Text = "Reputation: 5";
             // 
             // SwedenStrengthLabel
             // 
@@ -585,7 +585,7 @@
             this.SwedenStrengthLabel.Name = "SwedenStrengthLabel";
             this.SwedenStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.SwedenStrengthLabel.TabIndex = 27;
-            this.SwedenStrengthLabel.Text = "Strength: 2";
+            this.SwedenStrengthLabel.Text = "Strength: 4";
             // 
             // SwedenDurLabel
             // 
@@ -618,7 +618,7 @@
             this.JapanRepLabel.Name = "JapanRepLabel";
             this.JapanRepLabel.Size = new System.Drawing.Size(93, 17);
             this.JapanRepLabel.TabIndex = 28;
-            this.JapanRepLabel.Text = "Reputation: 7";
+            this.JapanRepLabel.Text = "Reputation: 3";
             // 
             // JapanStrengthLabel
             // 
@@ -628,7 +628,7 @@
             this.JapanStrengthLabel.Name = "JapanStrengthLabel";
             this.JapanStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.JapanStrengthLabel.TabIndex = 27;
-            this.JapanStrengthLabel.Text = "Strength: 3";
+            this.JapanStrengthLabel.Text = "Strength: 4";
             // 
             // JapanDurLabel
             // 
@@ -661,7 +661,7 @@
             this.UkRepLabel.Name = "UkRepLabel";
             this.UkRepLabel.Size = new System.Drawing.Size(93, 17);
             this.UkRepLabel.TabIndex = 28;
-            this.UkRepLabel.Text = "Reputation: 7";
+            this.UkRepLabel.Text = "Reputation: 3";
             // 
             // UkStrengthLabel
             // 
@@ -671,7 +671,7 @@
             this.UkStrengthLabel.Name = "UkStrengthLabel";
             this.UkStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.UkStrengthLabel.TabIndex = 27;
-            this.UkStrengthLabel.Text = "Strength: 3";
+            this.UkStrengthLabel.Text = "Strength: 6";
             // 
             // UkDurLabel
             // 
@@ -704,7 +704,7 @@
             this.GermanyRepLabel.Name = "GermanyRepLabel";
             this.GermanyRepLabel.Size = new System.Drawing.Size(93, 17);
             this.GermanyRepLabel.TabIndex = 28;
-            this.GermanyRepLabel.Text = "Reputation: 8";
+            this.GermanyRepLabel.Text = "Reputation: 4";
             // 
             // GermanyStrengthLabel
             // 
@@ -714,7 +714,7 @@
             this.GermanyStrengthLabel.Name = "GermanyStrengthLabel";
             this.GermanyStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.GermanyStrengthLabel.TabIndex = 27;
-            this.GermanyStrengthLabel.Text = "Strength: 4";
+            this.GermanyStrengthLabel.Text = "Strength: 7";
             // 
             // GermanyDurLabel
             // 
@@ -747,7 +747,7 @@
             this.IndiaRepLabel.Name = "IndiaRepLabel";
             this.IndiaRepLabel.Size = new System.Drawing.Size(93, 17);
             this.IndiaRepLabel.TabIndex = 28;
-            this.IndiaRepLabel.Text = "Reputation: 7";
+            this.IndiaRepLabel.Text = "Reputation: 3";
             // 
             // IndiaStrengthLabel
             // 
@@ -757,7 +757,7 @@
             this.IndiaStrengthLabel.Name = "IndiaStrengthLabel";
             this.IndiaStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.IndiaStrengthLabel.TabIndex = 27;
-            this.IndiaStrengthLabel.Text = "Strength: 4";
+            this.IndiaStrengthLabel.Text = "Strength: 5";
             // 
             // IndiaDurLabel
             // 
@@ -790,7 +790,7 @@
             this.FranceRepLabel.Name = "FranceRepLabel";
             this.FranceRepLabel.Size = new System.Drawing.Size(93, 17);
             this.FranceRepLabel.TabIndex = 28;
-            this.FranceRepLabel.Text = "Reputation: 7";
+            this.FranceRepLabel.Text = "Reputation: 4";
             // 
             // FranceStrengthLabel
             // 
@@ -800,7 +800,7 @@
             this.FranceStrengthLabel.Name = "FranceStrengthLabel";
             this.FranceStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.FranceStrengthLabel.TabIndex = 27;
-            this.FranceStrengthLabel.Text = "Strength: 3";
+            this.FranceStrengthLabel.Text = "Strength: 5";
             // 
             // FranceDurLabel
             // 
@@ -833,7 +833,7 @@
             this.ChinaRepLabel.Name = "ChinaRepLabel";
             this.ChinaRepLabel.Size = new System.Drawing.Size(93, 17);
             this.ChinaRepLabel.TabIndex = 28;
-            this.ChinaRepLabel.Text = "Reputation: 5";
+            this.ChinaRepLabel.Text = "Reputation: 2";
             // 
             // ChinaStrengthLabel
             // 
@@ -843,7 +843,7 @@
             this.ChinaStrengthLabel.Name = "ChinaStrengthLabel";
             this.ChinaStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.ChinaStrengthLabel.TabIndex = 27;
-            this.ChinaStrengthLabel.Text = "Strength: 5";
+            this.ChinaStrengthLabel.Text = "Strength: 6";
             // 
             // ChinaDurLabel
             // 
@@ -876,7 +876,7 @@
             this.RussiaRepLabel.Name = "RussiaRepLabel";
             this.RussiaRepLabel.Size = new System.Drawing.Size(93, 17);
             this.RussiaRepLabel.TabIndex = 25;
-            this.RussiaRepLabel.Text = "Reputation: 4";
+            this.RussiaRepLabel.Text = "Reputation: 1";
             // 
             // RussiaStrengthLabel
             // 
@@ -886,7 +886,7 @@
             this.RussiaStrengthLabel.Name = "RussiaStrengthLabel";
             this.RussiaStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.RussiaStrengthLabel.TabIndex = 24;
-            this.RussiaStrengthLabel.Text = "Strength: 5";
+            this.RussiaStrengthLabel.Text = "Strength: 8";
             // 
             // RussiaDurLabel
             // 
@@ -930,7 +930,7 @@
             this.USARepLabel.Name = "USARepLabel";
             this.USARepLabel.Size = new System.Drawing.Size(93, 17);
             this.USARepLabel.TabIndex = 22;
-            this.USARepLabel.Text = "Reputation: 4";
+            this.USARepLabel.Text = "Reputation: 2";
             // 
             // USAStrengthLabel
             // 
@@ -940,7 +940,7 @@
             this.USAStrengthLabel.Name = "USAStrengthLabel";
             this.USAStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.USAStrengthLabel.TabIndex = 21;
-            this.USAStrengthLabel.Text = "Strength: 5";
+            this.USAStrengthLabel.Text = "Strength: 8";
             // 
             // USADurLabel
             // 

@@ -75,13 +75,12 @@
             // 
             // winningCountryLabel
             // 
-            this.winningCountryLabel.AutoSize = true;
             this.winningCountryLabel.BackColor = System.Drawing.Color.Transparent;
             this.winningCountryLabel.Font = new System.Drawing.Font("Showcard Gothic", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winningCountryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.winningCountryLabel.Location = new System.Drawing.Point(178, 80);
+            this.winningCountryLabel.ForeColor = System.Drawing.Color.Black;
+            this.winningCountryLabel.Location = new System.Drawing.Point(12, 75);
             this.winningCountryLabel.Name = "winningCountryLabel";
-            this.winningCountryLabel.Size = new System.Drawing.Size(0, 186);
+            this.winningCountryLabel.Size = new System.Drawing.Size(1550, 186);
             this.winningCountryLabel.TabIndex = 5;
             this.winningCountryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -114,7 +113,6 @@
             this.Load += new System.EventHandler(this.EndCredits_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ThumbsUpPictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
