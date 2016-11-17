@@ -37,16 +37,16 @@
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.CustomizeGameBtn = new System.Windows.Forms.Button();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.NKPictureBox = new System.Windows.Forms.PictureBox();
+            this.SwedenPictureBox = new System.Windows.Forms.PictureBox();
+            this.JapanPictureBox = new System.Windows.Forms.PictureBox();
+            this.GermanyPictureBox = new System.Windows.Forms.PictureBox();
+            this.IndiaPictureBox = new System.Windows.Forms.PictureBox();
+            this.FrancePictureBox = new System.Windows.Forms.PictureBox();
+            this.ChinaPictureBox = new System.Windows.Forms.PictureBox();
+            this.RussiaPictureBox = new System.Windows.Forms.PictureBox();
+            this.UsaPictureBox = new System.Windows.Forms.PictureBox();
+            this.UkPictureBox = new System.Windows.Forms.PictureBox();
             this.StatsBox = new System.Windows.Forms.GroupBox();
             this.NKgroupBox = new System.Windows.Forms.GroupBox();
             this.NKRepLabel = new System.Windows.Forms.Label();
@@ -103,16 +103,16 @@
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
             this.Background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JapanPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GermanyPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IndiaPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FrancePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChinaPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RussiaPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UkPictureBox)).BeginInit();
             this.StatsBox.SuspendLayout();
             this.NKgroupBox.SuspendLayout();
             this.SwedenGroupBox.SuspendLayout();
@@ -145,20 +145,20 @@
             this.Background.BackColor = System.Drawing.Color.Transparent;
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Background.Controls.Add(this.pictureBox2);
+            this.Background.Controls.Add(this.UsaPictureBox);
             this.Background.Controls.Add(this.ExplosionPictureBox);
             this.Background.Controls.Add(this.PauseButton);
             this.Background.Controls.Add(this.StartButton);
             this.Background.Controls.Add(this.CustomizeGameBtn);
-            this.Background.Controls.Add(this.pictureBox10);
-            this.Background.Controls.Add(this.pictureBox9);
-            this.Background.Controls.Add(this.pictureBox8);
-            this.Background.Controls.Add(this.pictureBox7);
-            this.Background.Controls.Add(this.pictureBox6);
-            this.Background.Controls.Add(this.pictureBox5);
-            this.Background.Controls.Add(this.pictureBox4);
-            this.Background.Controls.Add(this.pictureBox3);
-            this.Background.Controls.Add(this.pictureBox1);
+            this.Background.Controls.Add(this.NKPictureBox);
+            this.Background.Controls.Add(this.SwedenPictureBox);
+            this.Background.Controls.Add(this.JapanPictureBox);
+            this.Background.Controls.Add(this.GermanyPictureBox);
+            this.Background.Controls.Add(this.IndiaPictureBox);
+            this.Background.Controls.Add(this.FrancePictureBox);
+            this.Background.Controls.Add(this.ChinaPictureBox);
+            this.Background.Controls.Add(this.RussiaPictureBox);
+            this.Background.Controls.Add(this.UkPictureBox);
             this.Background.Controls.Add(this.StatsBox);
             this.Background.Controls.Add(this.ExitButton);
             this.Background.Controls.Add(this.EnduranceBox);
@@ -249,148 +249,148 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.NKPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox10.Image = global::WarGames.Properties.Resources.north_korea_flag;
-            this.pictureBox10.Location = new System.Drawing.Point(1496, 721);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(84, 49);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 38;
-            this.pictureBox10.TabStop = false;
+            this.NKPictureBox.Image = global::WarGames.Properties.Resources.north_korea_flag;
+            this.NKPictureBox.Location = new System.Drawing.Point(1496, 721);
+            this.NKPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NKPictureBox.Name = "pictureBox10";
+            this.NKPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.NKPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NKPictureBox.TabIndex = 38;
+            this.NKPictureBox.TabStop = false;
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.SwedenPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox9.Image = global::WarGames.Properties.Resources.sweden_flag;
-            this.pictureBox9.Location = new System.Drawing.Point(1369, 721);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(84, 49);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 36;
-            this.pictureBox9.TabStop = false;
+            this.SwedenPictureBox.Image = global::WarGames.Properties.Resources.sweden_flag;
+            this.SwedenPictureBox.Location = new System.Drawing.Point(1369, 721);
+            this.SwedenPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SwedenPictureBox.Name = "pictureBox9";
+            this.SwedenPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.SwedenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SwedenPictureBox.TabIndex = 36;
+            this.SwedenPictureBox.TabStop = false;
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.JapanPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox8.Image = global::WarGames.Properties.Resources.japan_flag;
-            this.pictureBox8.Location = new System.Drawing.Point(1242, 721);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(84, 49);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 34;
-            this.pictureBox8.TabStop = false;
+            this.JapanPictureBox.Image = global::WarGames.Properties.Resources.japan_flag;
+            this.JapanPictureBox.Location = new System.Drawing.Point(1242, 721);
+            this.JapanPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.JapanPictureBox.Name = "pictureBox8";
+            this.JapanPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.JapanPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.JapanPictureBox.TabIndex = 34;
+            this.JapanPictureBox.TabStop = false;
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.GermanyPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Image = global::WarGames.Properties.Resources.germany_flag;
-            this.pictureBox7.Location = new System.Drawing.Point(1121, 721);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(83, 48);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 32;
-            this.pictureBox7.TabStop = false;
+            this.GermanyPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GermanyPictureBox.Image = global::WarGames.Properties.Resources.germany_flag;
+            this.GermanyPictureBox.Location = new System.Drawing.Point(1121, 721);
+            this.GermanyPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.GermanyPictureBox.Name = "pictureBox7";
+            this.GermanyPictureBox.Size = new System.Drawing.Size(83, 48);
+            this.GermanyPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GermanyPictureBox.TabIndex = 32;
+            this.GermanyPictureBox.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.IndiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox6.Image = global::WarGames.Properties.Resources.india_flag;
-            this.pictureBox6.Location = new System.Drawing.Point(995, 721);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(84, 49);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 30;
-            this.pictureBox6.TabStop = false;
+            this.IndiaPictureBox.Image = global::WarGames.Properties.Resources.india_flag;
+            this.IndiaPictureBox.Location = new System.Drawing.Point(995, 721);
+            this.IndiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.IndiaPictureBox.Name = "pictureBox6";
+            this.IndiaPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.IndiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IndiaPictureBox.TabIndex = 30;
+            this.IndiaPictureBox.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.FrancePictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.Image = global::WarGames.Properties.Resources.france_flagv2;
-            this.pictureBox5.Location = new System.Drawing.Point(870, 721);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(84, 49);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 28;
-            this.pictureBox5.TabStop = false;
+            this.FrancePictureBox.Image = global::WarGames.Properties.Resources.france_flagv2;
+            this.FrancePictureBox.Location = new System.Drawing.Point(870, 721);
+            this.FrancePictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.FrancePictureBox.Name = "pictureBox5";
+            this.FrancePictureBox.Size = new System.Drawing.Size(84, 49);
+            this.FrancePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FrancePictureBox.TabIndex = 28;
+            this.FrancePictureBox.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ChinaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = global::WarGames.Properties.Resources.China_flag;
-            this.pictureBox4.Location = new System.Drawing.Point(744, 721);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(84, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 26;
-            this.pictureBox4.TabStop = false;
+            this.ChinaPictureBox.Image = global::WarGames.Properties.Resources.China_flag;
+            this.ChinaPictureBox.Location = new System.Drawing.Point(744, 721);
+            this.ChinaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ChinaPictureBox.Name = "pictureBox4";
+            this.ChinaPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.ChinaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ChinaPictureBox.TabIndex = 26;
+            this.ChinaPictureBox.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RussiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = global::WarGames.Properties.Resources.russia_flag;
-            this.pictureBox3.Location = new System.Drawing.Point(492, 721);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(83, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
+            this.RussiaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RussiaPictureBox.Image = global::WarGames.Properties.Resources.russia_flag;
+            this.RussiaPictureBox.Location = new System.Drawing.Point(492, 721);
+            this.RussiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.RussiaPictureBox.Name = "pictureBox3";
+            this.RussiaPictureBox.Size = new System.Drawing.Size(83, 48);
+            this.RussiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RussiaPictureBox.TabIndex = 24;
+            this.RussiaPictureBox.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.UsaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.pictureBox2.Location = new System.Drawing.Point(366, 721);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(83, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
+            this.UsaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UsaPictureBox.Image = global::WarGames.Properties.Resources.usa_flag;
+            this.UsaPictureBox.Location = new System.Drawing.Point(366, 721);
+            this.UsaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UsaPictureBox.Name = "pictureBox2";
+            this.UsaPictureBox.Size = new System.Drawing.Size(83, 48);
+            this.UsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UsaPictureBox.TabIndex = 22;
+            this.UsaPictureBox.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.UkPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::WarGames.Properties.Resources.uk_flag;
-            this.pictureBox1.Location = new System.Drawing.Point(616, 721);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
+            this.UkPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.UkPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.UkPictureBox.Image = global::WarGames.Properties.Resources.uk_flag;
+            this.UkPictureBox.Location = new System.Drawing.Point(616, 721);
+            this.UkPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UkPictureBox.Name = "pictureBox1";
+            this.UkPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.UkPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UkPictureBox.TabIndex = 20;
+            this.UkPictureBox.TabStop = false;
             // 
             // StatsBox
             // 
@@ -1039,16 +1039,16 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JapanPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GermanyPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IndiaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FrancePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChinaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RussiaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UkPictureBox)).EndInit();
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
             this.NKgroupBox.ResumeLayout(false);
@@ -1096,16 +1096,16 @@
         private System.Windows.Forms.Label ChinaLabel;
         private System.Windows.Forms.Label UKLabel;
         private System.Windows.Forms.Label RussiaLabel;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox NKPictureBox;
+        private System.Windows.Forms.PictureBox SwedenPictureBox;
+        private System.Windows.Forms.PictureBox JapanPictureBox;
+        private System.Windows.Forms.PictureBox GermanyPictureBox;
+        private System.Windows.Forms.PictureBox IndiaPictureBox;
+        private System.Windows.Forms.PictureBox FrancePictureBox;
+        private System.Windows.Forms.PictureBox ChinaPictureBox;
+        private System.Windows.Forms.PictureBox RussiaPictureBox;
+        private System.Windows.Forms.PictureBox UsaPictureBox;
+        private System.Windows.Forms.PictureBox UkPictureBox;
         private System.Windows.Forms.GroupBox USAgroupBox;
         private System.Windows.Forms.Label USADurLabel;
         private System.Windows.Forms.Button CustomizeGameBtn;
