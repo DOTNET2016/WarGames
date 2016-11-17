@@ -182,9 +182,9 @@ namespace WarGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap india_flag {
+        internal static System.Drawing.Bitmap india_flag2 {
             get {
-                object obj = ResourceManager.GetObject("india-flag", resourceCulture);
+                object obj = ResourceManager.GetObject("india_flag2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

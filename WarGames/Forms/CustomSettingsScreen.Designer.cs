@@ -867,7 +867,7 @@
             // India2PictureBox
             // 
             this.India2PictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.India2PictureBox.Image = global::WarGames.Properties.Resources.india_flag;
+            this.India2PictureBox.Image = global::WarGames.Properties.Resources.india_flag2;
             this.India2PictureBox.Location = new System.Drawing.Point(27, 198);
             this.India2PictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.India2PictureBox.Name = "India2PictureBox";
