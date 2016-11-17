@@ -16,7 +16,6 @@ namespace WarGames
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font myFont;
-
         private string winCountry;
 
         public EndCredits()
@@ -39,6 +38,7 @@ namespace WarGames
             PlayAgainButton.Font = myFont;
             ExitGameBtn.Font = myFont;
         }
+
         public void GetWinCountry(string winningCountry)
         {
             winCountry = winningCountry;
