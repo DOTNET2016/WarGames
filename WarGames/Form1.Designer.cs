@@ -33,7 +33,11 @@
             this.PressStart = new System.Windows.Forms.Button();
             this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GameSpeedBox = new System.Windows.Forms.GroupBox();
+            this.FastSpeedRadioButton = new System.Windows.Forms.RadioButton();
+            this.StandardSpeedRadioButton = new System.Windows.Forms.RadioButton();
+            this.SlowSpeedRadioButton = new System.Windows.Forms.RadioButton();
+            this.UsaPictureBox = new System.Windows.Forms.PictureBox();
             this.ExplosionPictureBox = new System.Windows.Forms.PictureBox();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
@@ -46,7 +50,6 @@
             this.FrancePictureBox = new System.Windows.Forms.PictureBox();
             this.ChinaPictureBox = new System.Windows.Forms.PictureBox();
             this.RussiaPictureBox = new System.Windows.Forms.PictureBox();
-            this.UsaPictureBox = new System.Windows.Forms.PictureBox();
             this.UkPictureBox = new System.Windows.Forms.PictureBox();
             this.StatsBox = new System.Windows.Forms.GroupBox();
             this.NKgroupBox = new System.Windows.Forms.GroupBox();
@@ -102,11 +105,11 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
-            this.SlowSpeedRadioButton = new System.Windows.Forms.RadioButton();
-            this.StandardSpeedRadioButton = new System.Windows.Forms.RadioButton();
-            this.FastSpeedRadioButton = new System.Windows.Forms.RadioButton();
+            this.ClearLinesBox = new System.Windows.Forms.GroupBox();
+            this.ClearLinesCheckBox = new System.Windows.Forms.CheckBox();
             this.Background.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.GameSpeedBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).BeginInit();
@@ -116,7 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.FrancePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChinaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RussiaPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UkPictureBox)).BeginInit();
             this.StatsBox.SuspendLayout();
             this.NKgroupBox.SuspendLayout();
@@ -130,6 +132,7 @@
             this.RussiaGroupBox.SuspendLayout();
             this.USAgroupBox.SuspendLayout();
             this.EnduranceBox.SuspendLayout();
+            this.ClearLinesBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // PressStart
@@ -150,7 +153,8 @@
             this.Background.BackColor = System.Drawing.Color.Transparent;
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Background.Controls.Add(this.groupBox1);
+            this.Background.Controls.Add(this.ClearLinesBox);
+            this.Background.Controls.Add(this.GameSpeedBox);
             this.Background.Controls.Add(this.UsaPictureBox);
             this.Background.Controls.Add(this.ExplosionPictureBox);
             this.Background.Controls.Add(this.PauseButton);
@@ -175,18 +179,71 @@
             this.Background.Size = new System.Drawing.Size(1600, 900);
             this.Background.TabIndex = 1;
             // 
-            // groupBox1
+            // GameSpeedBox
             // 
-            this.groupBox1.Controls.Add(this.FastSpeedRadioButton);
-            this.groupBox1.Controls.Add(this.StandardSpeedRadioButton);
-            this.groupBox1.Controls.Add(this.SlowSpeedRadioButton);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(-1, 491);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(205, 117);
-            this.groupBox1.TabIndex = 47;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Game Speed";
+            this.GameSpeedBox.Controls.Add(this.FastSpeedRadioButton);
+            this.GameSpeedBox.Controls.Add(this.StandardSpeedRadioButton);
+            this.GameSpeedBox.Controls.Add(this.SlowSpeedRadioButton);
+            this.GameSpeedBox.ForeColor = System.Drawing.Color.White;
+            this.GameSpeedBox.Location = new System.Drawing.Point(-1, 491);
+            this.GameSpeedBox.Name = "GameSpeedBox";
+            this.GameSpeedBox.Size = new System.Drawing.Size(205, 117);
+            this.GameSpeedBox.TabIndex = 47;
+            this.GameSpeedBox.TabStop = false;
+            this.GameSpeedBox.Text = "Game Speed";
+            // 
+            // FastSpeedRadioButton
+            // 
+            this.FastSpeedRadioButton.AutoSize = true;
+            this.FastSpeedRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FastSpeedRadioButton.Location = new System.Drawing.Point(14, 77);
+            this.FastSpeedRadioButton.Name = "FastSpeedRadioButton";
+            this.FastSpeedRadioButton.Size = new System.Drawing.Size(56, 21);
+            this.FastSpeedRadioButton.TabIndex = 2;
+            this.FastSpeedRadioButton.Text = "Fast";
+            this.FastSpeedRadioButton.UseVisualStyleBackColor = true;
+            this.FastSpeedRadioButton.CheckedChanged += new System.EventHandler(this.FastSpeedRadioButton_CheckedChanged);
+            // 
+            // StandardSpeedRadioButton
+            // 
+            this.StandardSpeedRadioButton.AutoSize = true;
+            this.StandardSpeedRadioButton.Checked = true;
+            this.StandardSpeedRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StandardSpeedRadioButton.Location = new System.Drawing.Point(14, 49);
+            this.StandardSpeedRadioButton.Name = "StandardSpeedRadioButton";
+            this.StandardSpeedRadioButton.Size = new System.Drawing.Size(87, 21);
+            this.StandardSpeedRadioButton.TabIndex = 1;
+            this.StandardSpeedRadioButton.TabStop = true;
+            this.StandardSpeedRadioButton.Text = "Standard";
+            this.StandardSpeedRadioButton.UseVisualStyleBackColor = true;
+            this.StandardSpeedRadioButton.CheckedChanged += new System.EventHandler(this.StandardSpeedRadioButton_CheckedChanged);
+            // 
+            // SlowSpeedRadioButton
+            // 
+            this.SlowSpeedRadioButton.AutoSize = true;
+            this.SlowSpeedRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SlowSpeedRadioButton.Location = new System.Drawing.Point(14, 22);
+            this.SlowSpeedRadioButton.Name = "SlowSpeedRadioButton";
+            this.SlowSpeedRadioButton.Size = new System.Drawing.Size(58, 21);
+            this.SlowSpeedRadioButton.TabIndex = 0;
+            this.SlowSpeedRadioButton.Text = "Slow";
+            this.SlowSpeedRadioButton.UseVisualStyleBackColor = true;
+            this.SlowSpeedRadioButton.CheckedChanged += new System.EventHandler(this.SlowSpeedRadioButton_CheckedChanged);
+            // 
+            // UsaPictureBox
+            // 
+            this.UsaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UsaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UsaPictureBox.Image = global::WarGames.Properties.Resources.usa_flag;
+            this.UsaPictureBox.Location = new System.Drawing.Point(366, 721);
+            this.UsaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UsaPictureBox.Name = "UsaPictureBox";
+            this.UsaPictureBox.Size = new System.Drawing.Size(83, 48);
+            this.UsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UsaPictureBox.TabIndex = 22;
+            this.UsaPictureBox.TabStop = false;
             // 
             // ExplosionPictureBox
             // 
@@ -266,7 +323,7 @@
             this.CustomizeGameBtn.UseVisualStyleBackColor = false;
             this.CustomizeGameBtn.Click += new System.EventHandler(this.CustomizeGameBtn_Click);
             // 
-            // pictureBox10
+            // NKPictureBox
             // 
             this.NKPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -274,13 +331,13 @@
             this.NKPictureBox.Image = global::WarGames.Properties.Resources.north_korea_flag;
             this.NKPictureBox.Location = new System.Drawing.Point(1496, 721);
             this.NKPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.NKPictureBox.Name = "pictureBox10";
+            this.NKPictureBox.Name = "NKPictureBox";
             this.NKPictureBox.Size = new System.Drawing.Size(84, 49);
             this.NKPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.NKPictureBox.TabIndex = 38;
             this.NKPictureBox.TabStop = false;
             // 
-            // pictureBox9
+            // SwedenPictureBox
             // 
             this.SwedenPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -288,13 +345,13 @@
             this.SwedenPictureBox.Image = global::WarGames.Properties.Resources.sweden_flag;
             this.SwedenPictureBox.Location = new System.Drawing.Point(1369, 721);
             this.SwedenPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SwedenPictureBox.Name = "pictureBox9";
+            this.SwedenPictureBox.Name = "SwedenPictureBox";
             this.SwedenPictureBox.Size = new System.Drawing.Size(84, 49);
             this.SwedenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SwedenPictureBox.TabIndex = 36;
             this.SwedenPictureBox.TabStop = false;
             // 
-            // pictureBox8
+            // JapanPictureBox
             // 
             this.JapanPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -302,13 +359,13 @@
             this.JapanPictureBox.Image = global::WarGames.Properties.Resources.japan_flag;
             this.JapanPictureBox.Location = new System.Drawing.Point(1242, 721);
             this.JapanPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.JapanPictureBox.Name = "pictureBox8";
+            this.JapanPictureBox.Name = "JapanPictureBox";
             this.JapanPictureBox.Size = new System.Drawing.Size(84, 49);
             this.JapanPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.JapanPictureBox.TabIndex = 34;
             this.JapanPictureBox.TabStop = false;
             // 
-            // pictureBox7
+            // GermanyPictureBox
             // 
             this.GermanyPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -317,13 +374,13 @@
             this.GermanyPictureBox.Image = global::WarGames.Properties.Resources.germany_flag;
             this.GermanyPictureBox.Location = new System.Drawing.Point(1121, 721);
             this.GermanyPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.GermanyPictureBox.Name = "pictureBox7";
+            this.GermanyPictureBox.Name = "GermanyPictureBox";
             this.GermanyPictureBox.Size = new System.Drawing.Size(83, 48);
             this.GermanyPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GermanyPictureBox.TabIndex = 32;
             this.GermanyPictureBox.TabStop = false;
             // 
-            // pictureBox6
+            // IndiaPictureBox
             // 
             this.IndiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -331,13 +388,13 @@
             this.IndiaPictureBox.Image = global::WarGames.Properties.Resources.india_flag;
             this.IndiaPictureBox.Location = new System.Drawing.Point(995, 721);
             this.IndiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.IndiaPictureBox.Name = "pictureBox6";
+            this.IndiaPictureBox.Name = "IndiaPictureBox";
             this.IndiaPictureBox.Size = new System.Drawing.Size(84, 49);
             this.IndiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.IndiaPictureBox.TabIndex = 30;
             this.IndiaPictureBox.TabStop = false;
             // 
-            // pictureBox5
+            // FrancePictureBox
             // 
             this.FrancePictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -345,13 +402,13 @@
             this.FrancePictureBox.Image = global::WarGames.Properties.Resources.france_flagv2;
             this.FrancePictureBox.Location = new System.Drawing.Point(870, 721);
             this.FrancePictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.FrancePictureBox.Name = "pictureBox5";
+            this.FrancePictureBox.Name = "FrancePictureBox";
             this.FrancePictureBox.Size = new System.Drawing.Size(84, 49);
             this.FrancePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FrancePictureBox.TabIndex = 28;
             this.FrancePictureBox.TabStop = false;
             // 
-            // pictureBox4
+            // ChinaPictureBox
             // 
             this.ChinaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -359,13 +416,13 @@
             this.ChinaPictureBox.Image = global::WarGames.Properties.Resources.China_flag;
             this.ChinaPictureBox.Location = new System.Drawing.Point(744, 721);
             this.ChinaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ChinaPictureBox.Name = "pictureBox4";
+            this.ChinaPictureBox.Name = "ChinaPictureBox";
             this.ChinaPictureBox.Size = new System.Drawing.Size(84, 49);
             this.ChinaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ChinaPictureBox.TabIndex = 26;
             this.ChinaPictureBox.TabStop = false;
             // 
-            // pictureBox3
+            // RussiaPictureBox
             // 
             this.RussiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -374,28 +431,13 @@
             this.RussiaPictureBox.Image = global::WarGames.Properties.Resources.russia_flag;
             this.RussiaPictureBox.Location = new System.Drawing.Point(492, 721);
             this.RussiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.RussiaPictureBox.Name = "pictureBox3";
+            this.RussiaPictureBox.Name = "RussiaPictureBox";
             this.RussiaPictureBox.Size = new System.Drawing.Size(83, 48);
             this.RussiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RussiaPictureBox.TabIndex = 24;
             this.RussiaPictureBox.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.UsaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UsaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UsaPictureBox.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.UsaPictureBox.Location = new System.Drawing.Point(366, 721);
-            this.UsaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UsaPictureBox.Name = "pictureBox2";
-            this.UsaPictureBox.Size = new System.Drawing.Size(83, 48);
-            this.UsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UsaPictureBox.TabIndex = 22;
-            this.UsaPictureBox.TabStop = false;
-            // 
-            // pictureBox1
+            // UkPictureBox
             // 
             this.UkPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -405,7 +447,7 @@
             this.UkPictureBox.Image = global::WarGames.Properties.Resources.uk_flag;
             this.UkPictureBox.Location = new System.Drawing.Point(616, 721);
             this.UkPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UkPictureBox.Name = "pictureBox1";
+            this.UkPictureBox.Name = "UkPictureBox";
             this.UkPictureBox.Size = new System.Drawing.Size(84, 49);
             this.UkPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UkPictureBox.TabIndex = 20;
@@ -992,6 +1034,7 @@
             // 
             this.ExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.ExitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.ExitButton.FlatAppearance.BorderSize = 2;
             this.ExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -1040,40 +1083,27 @@
             this.EnduranceListBox.Size = new System.Drawing.Size(196, 250);
             this.EnduranceListBox.TabIndex = 0;
             // 
-            // SlowSpeedRadioButton
+            // ClearLinesBox
             // 
-            this.SlowSpeedRadioButton.AutoSize = true;
-            this.SlowSpeedRadioButton.Location = new System.Drawing.Point(14, 22);
-            this.SlowSpeedRadioButton.Name = "SlowSpeedRadioButton";
-            this.SlowSpeedRadioButton.Size = new System.Drawing.Size(58, 21);
-            this.SlowSpeedRadioButton.TabIndex = 0;
-            this.SlowSpeedRadioButton.Text = "Slow";
-            this.SlowSpeedRadioButton.UseVisualStyleBackColor = true;
-            this.SlowSpeedRadioButton.CheckedChanged += new System.EventHandler(this.SlowSpeedRadioButton_CheckedChanged);
+            this.ClearLinesBox.Controls.Add(this.ClearLinesCheckBox);
+            this.ClearLinesBox.ForeColor = System.Drawing.Color.White;
+            this.ClearLinesBox.Location = new System.Drawing.Point(-1, 431);
+            this.ClearLinesBox.Name = "ClearLinesBox";
+            this.ClearLinesBox.Size = new System.Drawing.Size(204, 54);
+            this.ClearLinesBox.TabIndex = 48;
+            this.ClearLinesBox.TabStop = false;
+            this.ClearLinesBox.Text = "Clear Lines";
             // 
-            // StandardSpeedRadioButton
+            // ClearLinesCheckBox
             // 
-            this.StandardSpeedRadioButton.AutoSize = true;
-            this.StandardSpeedRadioButton.Checked = true;
-            this.StandardSpeedRadioButton.Location = new System.Drawing.Point(14, 49);
-            this.StandardSpeedRadioButton.Name = "StandardSpeedRadioButton";
-            this.StandardSpeedRadioButton.Size = new System.Drawing.Size(87, 21);
-            this.StandardSpeedRadioButton.TabIndex = 1;
-            this.StandardSpeedRadioButton.TabStop = true;
-            this.StandardSpeedRadioButton.Text = "Standard";
-            this.StandardSpeedRadioButton.UseVisualStyleBackColor = true;
-            this.StandardSpeedRadioButton.CheckedChanged += new System.EventHandler(this.StandardSpeedRadioButton_CheckedChanged);
-            // 
-            // FastSpeedRadioButton
-            // 
-            this.FastSpeedRadioButton.AutoSize = true;
-            this.FastSpeedRadioButton.Location = new System.Drawing.Point(14, 77);
-            this.FastSpeedRadioButton.Name = "FastSpeedRadioButton";
-            this.FastSpeedRadioButton.Size = new System.Drawing.Size(56, 21);
-            this.FastSpeedRadioButton.TabIndex = 2;
-            this.FastSpeedRadioButton.Text = "Fast";
-            this.FastSpeedRadioButton.UseVisualStyleBackColor = true;
-            this.FastSpeedRadioButton.CheckedChanged += new System.EventHandler(this.FastSpeedRadioButton_CheckedChanged);
+            this.ClearLinesCheckBox.AutoSize = true;
+            this.ClearLinesCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ClearLinesCheckBox.Location = new System.Drawing.Point(14, 22);
+            this.ClearLinesCheckBox.Name = "ClearLinesCheckBox";
+            this.ClearLinesCheckBox.Size = new System.Drawing.Size(142, 21);
+            this.ClearLinesCheckBox.TabIndex = 0;
+            this.ClearLinesCheckBox.Text = "Clear Missile Path";
+            this.ClearLinesCheckBox.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1093,8 +1123,9 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.GameSpeedBox.ResumeLayout(false);
+            this.GameSpeedBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).EndInit();
@@ -1104,7 +1135,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.FrancePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChinaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RussiaPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UkPictureBox)).EndInit();
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
@@ -1129,6 +1159,8 @@
             this.USAgroupBox.ResumeLayout(false);
             this.USAgroupBox.PerformLayout();
             this.EnduranceBox.ResumeLayout(false);
+            this.ClearLinesBox.ResumeLayout(false);
+            this.ClearLinesBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1208,10 +1240,12 @@
         private System.Windows.Forms.Button PauseButton;
         private System.Windows.Forms.Timer warTimer;
         private System.Windows.Forms.PictureBox ExplosionPictureBox;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GameSpeedBox;
         private System.Windows.Forms.RadioButton FastSpeedRadioButton;
         private System.Windows.Forms.RadioButton StandardSpeedRadioButton;
         private System.Windows.Forms.RadioButton SlowSpeedRadioButton;
+        private System.Windows.Forms.GroupBox ClearLinesBox;
+        private System.Windows.Forms.CheckBox ClearLinesCheckBox;
     }
 }
 

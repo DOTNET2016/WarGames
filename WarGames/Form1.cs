@@ -200,7 +200,7 @@ namespace WarGames
 
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
-                    if (drawLoop >= 5)
+                    if (ClearLinesCheckBox.Checked && drawLoop >= 1)
                     {
                         g.Clear(Color.Transparent);
                         drawLoop = 0;
