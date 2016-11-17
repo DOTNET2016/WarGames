@@ -49,43 +49,43 @@
     <Compile Include="Classes\Countries.cs" />
     <Compile Include="Classes\Land.cs" />
     <Compile Include="Classes\MediaPlayer.cs" />
-    <Compile Include="CustomSettingsScreen.cs">
+    <Compile Include="Forms\CustomSettingsScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomSettingsScreen.Designer.cs">
+    <Compile Include="Forms\CustomSettingsScreen.Designer.cs">
       <DependentUpon>CustomSettingsScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="EndCredits.cs">
+    <Compile Include="Forms\EndCredits.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EndCredits.Designer.cs">
+    <Compile Include="Forms\EndCredits.Designer.cs">
       <DependentUpon>EndCredits.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IntroMenu.cs">
+    <Compile Include="Forms\IntroMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IntroMenu.Designer.cs">
+    <Compile Include="Forms\IntroMenu.Designer.cs">
       <DependentUpon>IntroMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\WOPR.cs" />
-    <EmbeddedResource Include="CustomSettingsScreen.resx">
+    <EmbeddedResource Include="Forms\CustomSettingsScreen.resx">
       <DependentUpon>CustomSettingsScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EndCredits.resx">
+    <EmbeddedResource Include="Forms\EndCredits.resx">
       <DependentUpon>EndCredits.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IntroMenu.resx">
+    <EmbeddedResource Include="Forms\IntroMenu.resx">
       <DependentUpon>IntroMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -135,9 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\france flag.GIF" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\india-flag.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\germany flag.png" />

@@ -28,7 +28,7 @@ namespace WarGames
                 _countryName = value;
             }
         }
-        public int Repotation
+        public int Reputation
         {
             get
             {
