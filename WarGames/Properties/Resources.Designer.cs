@@ -103,9 +103,9 @@ namespace WarGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] ExplosionSound1 {
+        internal static byte[] ExplosionSound {
             get {
-                object obj = ResourceManager.GetObject("ExplosionSound1", resourceCulture);
+                object obj = ResourceManager.GetObject("ExplosionSound", resourceCulture);
                 return ((byte[])(obj));
             }
         }
