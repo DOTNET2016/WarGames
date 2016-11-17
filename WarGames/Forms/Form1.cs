@@ -18,10 +18,6 @@ namespace WarGames
         private PointF curveStart;
         private PointF curveEnd;
 
-        //SoundPlayer backgroundMusicPlayer = new SoundPlayer(Properties.Resources.MenuMusic);
-        //SoundPlayer GameRunningMusic = new SoundPlayer(Properties.Resources.Gamesoundtrack);
-        //SoundPlayer Explosion = new SoundPlayer(Properties.Resources.ExplosionSound);
-
         private bool _IsOn;
         private bool _IsPause;
 
@@ -32,27 +28,13 @@ namespace WarGames
         IntPtr pdv, [In] ref uint pcFonts);
 
         private PrivateFontCollection fonts = new PrivateFontCollection();
-
         private Font myFont; 
-
-        /// <Countries_Coordinates>
-        /// USA = X: 223 Y:239
-        /// Russia = X:1006 Y:121
-        /// UK = X:654 Y:156
-        /// China = X:1105 Y:255
-        /// France = X:667 Y:189
-        /// India = X:1028 Y:322
-        /// Germany = X:699 Y:164
-        /// Japan = X:1291 Y:240
-        /// Sweden = X:721 Y:114
-        /// North Korea = X:1226 Y:223
-        /// </summary>
 
         public Form1()
         {    
             InitializeComponent();
-            EnduranceListBox.DataSource = warRoom.countriesAtWar;
 
+            EnduranceListBox.DataSource = warRoom.countriesAtWar;
             ExplosionPictureBox.Hide();
 
             byte[] fontData = Properties.Resources.WarGames;
@@ -68,8 +50,8 @@ namespace WarGames
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            IntroMenu im = new IntroMenu();
-            if (im.ShowDialog(this) == DialogResult.OK)
+            IntroMenu introMenu = new IntroMenu();
+            if (introMenu.ShowDialog(this) == DialogResult.OK)
             {
                 MediaPlayer.IntroMusic.Stop();
                 MediaPlayer.BackgroundMusic.PlayLooping();
@@ -78,15 +60,13 @@ namespace WarGames
             {
                 Close();
             }
-            im.Close();
-            im.Dispose();
+            introMenu.Close();
+            introMenu.Dispose();
 
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
         }
-
-
 
         public static float GetRandomNumber(float minimum, float maximum)
         {
@@ -217,8 +197,7 @@ namespace WarGames
             }
             else
             {
-                warTimer.Stop();
-                
+                warTimer.Stop();               
                 ExplosionPictureBox.Hide();
 
                 EndCredits endPage = new EndCredits();
