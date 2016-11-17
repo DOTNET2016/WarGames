@@ -6,7 +6,6 @@ using System.Drawing.Text;
 using System.Media;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using WMPLib;
 
 namespace WarGames
 {
@@ -87,6 +86,8 @@ namespace WarGames
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
         }
+
+
 
         public static float GetRandomNumber(float minimum, float maximum)
         {
@@ -199,7 +200,7 @@ namespace WarGames
 
                 using (var g = Graphics.FromImage(Background.BackgroundImage))
                 {
-                    if (drawLoop >= 5)
+                    if (ClearLinesCheckBox.Checked && drawLoop >= 1)
                     {
                         g.Clear(Color.Transparent);
                         drawLoop = 0;
@@ -402,6 +403,21 @@ namespace WarGames
             {
                 ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
             }          
+        }
+
+        private void SlowSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            warTimer.Interval = 3000;
+        }
+
+        private void StandardSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            warTimer.Interval = 1400;
+        }
+
+        private void FastSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            warTimer.Interval = 500;
         }
     }
 }
