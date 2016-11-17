@@ -49,9 +49,9 @@ namespace WarGames
             int i = 1;
             while (i == 1)
             {
-                if (randomCountryOne.Strength <= 0)
+                if (randomCountryOne.Strength - randomCountryTwo.Reputation <= 0)
                 {
-                    
+                    break;
                 }
                 else
                     randomCountryTwo.Durability -= (randomCountryOne.Strength - randomCountryTwo.Reputation);
