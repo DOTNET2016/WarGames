@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Text;
-using System.Media;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -9,6 +8,7 @@ namespace WarGames
 {
     public partial class IntroMenu : Form
     {
+        MediaPlayer player = new MediaPlayer();
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
         IntPtr pdv, [In] ref uint pcFonts);
@@ -16,8 +16,6 @@ namespace WarGames
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font myFont;
-
-        SoundPlayer introMusic = new SoundPlayer(Properties.Resources.TitleMusicMenuTheme);
 
         public IntroMenu()
         {
@@ -38,17 +36,7 @@ namespace WarGames
         {
             PlayGameBtn.Font = myFont;
             ExitGameBtn.Font = myFont;
-            introMusic.PlayLooping();
-        }
-
-        private void PlayGameBtn_Click(object sender, EventArgs e)
-        {
-            introMusic.Stop();
-        }
-
-        private void ExitGameBtn_Click(object sender, EventArgs e)
-        {
-            introMusic.Stop();
+            MediaPlayer.IntroMusic.PlayLooping();
         }
     }
 }
