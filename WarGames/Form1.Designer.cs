@@ -228,7 +228,7 @@
             this.PauseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PauseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PauseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.PauseButton.Location = new System.Drawing.Point(211, 766);
+            this.PauseButton.Location = new System.Drawing.Point(211, 809);
             this.PauseButton.Margin = new System.Windows.Forms.Padding(2);
             this.PauseButton.Name = "PauseButton";
             this.PauseButton.Size = new System.Drawing.Size(115, 40);
@@ -250,7 +250,7 @@
             this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.StartButton.Location = new System.Drawing.Point(210, 721);
+            this.StartButton.Location = new System.Drawing.Point(210, 766);
             this.StartButton.Margin = new System.Windows.Forms.Padding(2);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(115, 40);
@@ -272,7 +272,7 @@
             this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.CustomizeGameBtn.Location = new System.Drawing.Point(211, 810);
+            this.CustomizeGameBtn.Location = new System.Drawing.Point(211, 853);
             this.CustomizeGameBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CustomizeGameBtn.Name = "CustomizeGameBtn";
             this.CustomizeGameBtn.Size = new System.Drawing.Size(115, 40);
@@ -448,6 +448,7 @@
             // 
             // NKgroupBox
             // 
+            this.NKgroupBox.BackColor = System.Drawing.Color.Black;
             this.NKgroupBox.Controls.Add(this.NKRepLabel);
             this.NKgroupBox.Controls.Add(this.NKStrengthLabel);
             this.NKgroupBox.Controls.Add(this.NKDurLabel);
@@ -477,7 +478,7 @@
             this.NKStrengthLabel.Name = "NKStrengthLabel";
             this.NKStrengthLabel.Size = new System.Drawing.Size(78, 17);
             this.NKStrengthLabel.TabIndex = 27;
-            this.NKStrengthLabel.Text = "Strength: 6";
+            this.NKStrengthLabel.Text = "Strength: 2";
             // 
             // NKDurLabel
             // 
@@ -1046,7 +1047,6 @@
             this.SlowSpeedRadioButton.Name = "SlowSpeedRadioButton";
             this.SlowSpeedRadioButton.Size = new System.Drawing.Size(58, 21);
             this.SlowSpeedRadioButton.TabIndex = 0;
-            this.SlowSpeedRadioButton.TabStop = true;
             this.SlowSpeedRadioButton.Text = "Slow";
             this.SlowSpeedRadioButton.UseVisualStyleBackColor = true;
             this.SlowSpeedRadioButton.CheckedChanged += new System.EventHandler(this.SlowSpeedRadioButton_CheckedChanged);
@@ -1054,6 +1054,7 @@
             // StandardSpeedRadioButton
             // 
             this.StandardSpeedRadioButton.AutoSize = true;
+            this.StandardSpeedRadioButton.Checked = true;
             this.StandardSpeedRadioButton.Location = new System.Drawing.Point(14, 49);
             this.StandardSpeedRadioButton.Name = "StandardSpeedRadioButton";
             this.StandardSpeedRadioButton.Size = new System.Drawing.Size(87, 21);
@@ -1070,7 +1071,6 @@
             this.FastSpeedRadioButton.Name = "FastSpeedRadioButton";
             this.FastSpeedRadioButton.Size = new System.Drawing.Size(56, 21);
             this.FastSpeedRadioButton.TabIndex = 2;
-            this.FastSpeedRadioButton.TabStop = true;
             this.FastSpeedRadioButton.Text = "Fast";
             this.FastSpeedRadioButton.UseVisualStyleBackColor = true;
             this.FastSpeedRadioButton.CheckedChanged += new System.EventHandler(this.FastSpeedRadioButton_CheckedChanged);
