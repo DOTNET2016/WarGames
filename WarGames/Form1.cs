@@ -87,8 +87,6 @@ namespace WarGames
 
         }
 
-
-
         public static float GetRandomNumber(float minimum, float maximum)
         {
             Random random = new Random();

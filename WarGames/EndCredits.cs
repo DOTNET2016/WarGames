@@ -16,7 +16,6 @@ namespace WarGames
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font myFont;
-        //Font myFont2;
         private string winCountry;
 
         public EndCredits()
@@ -32,15 +31,14 @@ namespace WarGames
             Marshal.FreeCoTaskMem(fontPtr);
 
             myFont = new Font(fonts.Families[0], 25.0F);
-            //myFont2 = new Font(fonts.Families[0], 125.0F);
         }
 
         private void EndCredits_Load(object sender, EventArgs e)
         {
             PlayAgainButton.Font = myFont;
             ExitGameBtn.Font = myFont;
-            //winningCountryLabel.Font = myFont2;
         }
+
         public void GetWinCountry(string winningCountry)
         {
             winCountry = winningCountry;
