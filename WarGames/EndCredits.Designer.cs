@@ -75,11 +75,11 @@
             // 
             this.winningCountryLabel.AutoSize = true;
             this.winningCountryLabel.BackColor = System.Drawing.Color.Transparent;
-            this.winningCountryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winningCountryLabel.Font = new System.Drawing.Font("Showcard Gothic", 90F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.winningCountryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.winningCountryLabel.Location = new System.Drawing.Point(584, 316);
+            this.winningCountryLabel.Location = new System.Drawing.Point(191, 166);
             this.winningCountryLabel.Name = "winningCountryLabel";
-            this.winningCountryLabel.Size = new System.Drawing.Size(0, 91);
+            this.winningCountryLabel.Size = new System.Drawing.Size(0, 186);
             this.winningCountryLabel.TabIndex = 5;
             this.winningCountryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

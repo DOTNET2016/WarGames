@@ -84,6 +84,7 @@ namespace WarGames
             StartButton.Font = myFont;
             PauseButton.Font = myFont;
             CustomizeGameBtn.Font = myFont;
+
         }
 
 
@@ -407,6 +408,21 @@ namespace WarGames
             {
                 ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
             }          
+        }
+
+        private void SlowSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            warTimer.Interval = 3000;
+        }
+
+        private void StandardSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            warTimer.Interval = 1400;
+        }
+
+        private void FastSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            warTimer.Interval = 500;
         }
     }
 }
