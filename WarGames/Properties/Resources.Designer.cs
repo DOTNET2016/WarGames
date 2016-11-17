@@ -112,6 +112,16 @@ namespace WarGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fallout {
+            get {
+                object obj = ResourceManager.GetObject("fallout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap france_flag {
             get {
                 object obj = ResourceManager.GetObject("france flag", resourceCulture);

@@ -31,6 +31,8 @@
             this.ExitGameBtn = new System.Windows.Forms.Button();
             this.PlayAgainButton = new System.Windows.Forms.Button();
             this.winningCountryLabel = new System.Windows.Forms.Label();
+            this.ThumbsUpPictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ThumbsUpPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ExitGameBtn
@@ -83,6 +85,17 @@
             this.winningCountryLabel.TabIndex = 5;
             this.winningCountryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ThumbsUpPictureBox
+            // 
+            this.ThumbsUpPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.ThumbsUpPictureBox.Image = global::WarGames.Properties.Resources.fallout;
+            this.ThumbsUpPictureBox.Location = new System.Drawing.Point(1226, 383);
+            this.ThumbsUpPictureBox.Name = "ThumbsUpPictureBox";
+            this.ThumbsUpPictureBox.Size = new System.Drawing.Size(290, 397);
+            this.ThumbsUpPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ThumbsUpPictureBox.TabIndex = 6;
+            this.ThumbsUpPictureBox.TabStop = false;
+            // 
             // EndCredits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -90,6 +103,7 @@
             this.BackgroundImage = global::WarGames.Properties.Resources.aftermath_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 900);
+            this.Controls.Add(this.ThumbsUpPictureBox);
             this.Controls.Add(this.winningCountryLabel);
             this.Controls.Add(this.PlayAgainButton);
             this.Controls.Add(this.ExitGameBtn);
@@ -98,6 +112,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EndCredits";
             this.Load += new System.EventHandler(this.EndCredits_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ThumbsUpPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,5 +122,6 @@
         private System.Windows.Forms.Button ExitGameBtn;
         private System.Windows.Forms.Button PlayAgainButton;
         private System.Windows.Forms.Label winningCountryLabel;
+        private System.Windows.Forms.PictureBox ThumbsUpPictureBox;
     }
 }
