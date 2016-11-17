@@ -34,7 +34,6 @@
             this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ExplosionPictureBox = new System.Windows.Forms.PictureBox();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
@@ -108,7 +107,6 @@
             this.FastSpeedRadioButton = new System.Windows.Forms.RadioButton();
             this.Background.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).BeginInit();
@@ -153,7 +151,6 @@
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Background.Controls.Add(this.groupBox1);
-            this.Background.Controls.Add(this.pictureBox2);
             this.Background.Controls.Add(this.UsaPictureBox);
             this.Background.Controls.Add(this.ExplosionPictureBox);
             this.Background.Controls.Add(this.PauseButton);
@@ -190,21 +187,6 @@
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Game Speed";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.pictureBox2.Location = new System.Drawing.Point(366, 721);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(83, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
             // 
             // ExplosionPictureBox
             // 
@@ -1113,7 +1095,6 @@
             this.Background.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).EndInit();
