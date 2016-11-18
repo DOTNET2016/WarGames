@@ -33,12 +33,16 @@
             this.PressStart = new System.Windows.Forms.Button();
             this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
-            this.ClearLinesBox = new System.Windows.Forms.GroupBox();
+            this.OptionButton = new System.Windows.Forms.Button();
+            this.gameOptionBox = new System.Windows.Forms.GroupBox();
+            this.resetOptionsButton = new System.Windows.Forms.Button();
+            this.optionBtnOk = new System.Windows.Forms.Button();
+            this.optionText1 = new System.Windows.Forms.Label();
             this.ClearLinesCheckBox = new System.Windows.Forms.CheckBox();
-            this.GameSpeedBox = new System.Windows.Forms.GroupBox();
-            this.FastSpeedRadioButton = new System.Windows.Forms.RadioButton();
-            this.StandardSpeedRadioButton = new System.Windows.Forms.RadioButton();
-            this.SlowSpeedRadioButton = new System.Windows.Forms.RadioButton();
+            this.optionText3 = new System.Windows.Forms.Label();
+            this.optionText4 = new System.Windows.Forms.Label();
+            this.optionText2 = new System.Windows.Forms.Label();
+            this.speedTrackBar = new System.Windows.Forms.TrackBar();
             this.UsaPictureBox = new System.Windows.Forms.PictureBox();
             this.ExplosionPictureBox = new System.Windows.Forms.PictureBox();
             this.PauseButton = new System.Windows.Forms.Button();
@@ -107,9 +111,10 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
+            this.hideStatsBox = new System.Windows.Forms.Button();
             this.Background.SuspendLayout();
-            this.ClearLinesBox.SuspendLayout();
-            this.GameSpeedBox.SuspendLayout();
+            this.gameOptionBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.speedTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).BeginInit();
@@ -153,22 +158,12 @@
             this.Background.BackColor = System.Drawing.Color.Transparent;
             this.Background.BackgroundImage = global::WarGames.Properties.Resources.map2;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Background.Controls.Add(this.ClearLinesBox);
-            this.Background.Controls.Add(this.GameSpeedBox);
-            this.Background.Controls.Add(this.UsaPictureBox);
+            this.Background.Controls.Add(this.OptionButton);
+            this.Background.Controls.Add(this.gameOptionBox);
             this.Background.Controls.Add(this.ExplosionPictureBox);
             this.Background.Controls.Add(this.PauseButton);
             this.Background.Controls.Add(this.StartButton);
             this.Background.Controls.Add(this.CustomizeGameBtn);
-            this.Background.Controls.Add(this.NKPictureBox);
-            this.Background.Controls.Add(this.SwedenPictureBox);
-            this.Background.Controls.Add(this.JapanPictureBox);
-            this.Background.Controls.Add(this.GermanyPictureBox);
-            this.Background.Controls.Add(this.IndiaPictureBox);
-            this.Background.Controls.Add(this.FrancePictureBox);
-            this.Background.Controls.Add(this.ChinaPictureBox);
-            this.Background.Controls.Add(this.RussiaPictureBox);
-            this.Background.Controls.Add(this.UkPictureBox);
             this.Background.Controls.Add(this.StatsBox);
             this.Background.Controls.Add(this.ExitButton);
             this.Background.Controls.Add(this.EnduranceBox);
@@ -179,78 +174,154 @@
             this.Background.Size = new System.Drawing.Size(1600, 900);
             this.Background.TabIndex = 1;
             // 
-            // ClearLinesBox
+            // OptionButton
             // 
-            this.ClearLinesBox.Controls.Add(this.ClearLinesCheckBox);
-            this.ClearLinesBox.ForeColor = System.Drawing.Color.White;
-            this.ClearLinesBox.Location = new System.Drawing.Point(-1, 431);
-            this.ClearLinesBox.Name = "ClearLinesBox";
-            this.ClearLinesBox.Size = new System.Drawing.Size(204, 54);
-            this.ClearLinesBox.TabIndex = 48;
-            this.ClearLinesBox.TabStop = false;
-            this.ClearLinesBox.Text = "Clear Lines";
+            this.OptionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OptionButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.OptionButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OptionButton.FlatAppearance.BorderSize = 2;
+            this.OptionButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.OptionButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.OptionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.OptionButton.Location = new System.Drawing.Point(211, 717);
+            this.OptionButton.Margin = new System.Windows.Forms.Padding(2);
+            this.OptionButton.Name = "OptionButton";
+            this.OptionButton.Size = new System.Drawing.Size(115, 40);
+            this.OptionButton.TabIndex = 48;
+            this.OptionButton.Text = "Options";
+            this.OptionButton.UseVisualStyleBackColor = false;
+            this.OptionButton.Click += new System.EventHandler(this.optionButton_Click);
+            // 
+            // gameOptionBox
+            // 
+            this.gameOptionBox.BackColor = System.Drawing.Color.Black;
+            this.gameOptionBox.Controls.Add(this.hideStatsBox);
+            this.gameOptionBox.Controls.Add(this.resetOptionsButton);
+            this.gameOptionBox.Controls.Add(this.optionBtnOk);
+            this.gameOptionBox.Controls.Add(this.optionText1);
+            this.gameOptionBox.Controls.Add(this.ClearLinesCheckBox);
+            this.gameOptionBox.Controls.Add(this.optionText3);
+            this.gameOptionBox.Controls.Add(this.optionText4);
+            this.gameOptionBox.Controls.Add(this.optionText2);
+            this.gameOptionBox.Controls.Add(this.speedTrackBar);
+            this.gameOptionBox.ForeColor = System.Drawing.Color.White;
+            this.gameOptionBox.Location = new System.Drawing.Point(211, 478);
+            this.gameOptionBox.Name = "gameOptionBox";
+            this.gameOptionBox.Size = new System.Drawing.Size(346, 238);
+            this.gameOptionBox.TabIndex = 47;
+            this.gameOptionBox.TabStop = false;
+            this.gameOptionBox.Text = "Game Options";
+            this.gameOptionBox.Visible = false;
+            // 
+            // resetOptionsButton
+            // 
+            this.resetOptionsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.resetOptionsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.resetOptionsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetOptionsButton.FlatAppearance.BorderSize = 2;
+            this.resetOptionsButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.resetOptionsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.resetOptionsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetOptionsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetOptionsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.resetOptionsButton.Location = new System.Drawing.Point(14, 189);
+            this.resetOptionsButton.Margin = new System.Windows.Forms.Padding(2);
+            this.resetOptionsButton.Name = "resetOptionsButton";
+            this.resetOptionsButton.Size = new System.Drawing.Size(70, 33);
+            this.resetOptionsButton.TabIndex = 54;
+            this.resetOptionsButton.Text = "Reset";
+            this.resetOptionsButton.UseVisualStyleBackColor = false;
+            this.resetOptionsButton.Click += new System.EventHandler(this.resetOptionsButton_Click);
+            // 
+            // optionBtnOk
+            // 
+            this.optionBtnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.optionBtnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.optionBtnOk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.optionBtnOk.FlatAppearance.BorderSize = 2;
+            this.optionBtnOk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.optionBtnOk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.optionBtnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.optionBtnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionBtnOk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.optionBtnOk.Location = new System.Drawing.Point(262, 189);
+            this.optionBtnOk.Margin = new System.Windows.Forms.Padding(2);
+            this.optionBtnOk.Name = "optionBtnOk";
+            this.optionBtnOk.Size = new System.Drawing.Size(73, 33);
+            this.optionBtnOk.TabIndex = 48;
+            this.optionBtnOk.Text = "OK";
+            this.optionBtnOk.UseVisualStyleBackColor = false;
+            this.optionBtnOk.Click += new System.EventHandler(this.optionBtnOk_Click);
+            // 
+            // optionText1
+            // 
+            this.optionText1.AutoSize = true;
+            this.optionText1.Location = new System.Drawing.Point(14, 34);
+            this.optionText1.Name = "optionText1";
+            this.optionText1.Size = new System.Drawing.Size(79, 17);
+            this.optionText1.TabIndex = 53;
+            this.optionText1.Text = "Clear Lines";
             // 
             // ClearLinesCheckBox
             // 
             this.ClearLinesCheckBox.AutoSize = true;
             this.ClearLinesCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClearLinesCheckBox.Location = new System.Drawing.Point(14, 22);
+            this.ClearLinesCheckBox.Location = new System.Drawing.Point(18, 57);
             this.ClearLinesCheckBox.Name = "ClearLinesCheckBox";
             this.ClearLinesCheckBox.Size = new System.Drawing.Size(142, 21);
             this.ClearLinesCheckBox.TabIndex = 0;
             this.ClearLinesCheckBox.Text = "Clear Missile Path";
             this.ClearLinesCheckBox.UseVisualStyleBackColor = true;
             // 
-            // GameSpeedBox
+            // optionText3
             // 
-            this.GameSpeedBox.Controls.Add(this.FastSpeedRadioButton);
-            this.GameSpeedBox.Controls.Add(this.StandardSpeedRadioButton);
-            this.GameSpeedBox.Controls.Add(this.SlowSpeedRadioButton);
-            this.GameSpeedBox.ForeColor = System.Drawing.Color.White;
-            this.GameSpeedBox.Location = new System.Drawing.Point(-1, 491);
-            this.GameSpeedBox.Name = "GameSpeedBox";
-            this.GameSpeedBox.Size = new System.Drawing.Size(205, 117);
-            this.GameSpeedBox.TabIndex = 47;
-            this.GameSpeedBox.TabStop = false;
-            this.GameSpeedBox.Text = "Game Speed";
+            this.optionText3.AutoSize = true;
+            this.optionText3.Location = new System.Drawing.Point(11, 150);
+            this.optionText3.Name = "optionText3";
+            this.optionText3.Size = new System.Drawing.Size(35, 17);
+            this.optionText3.TabIndex = 52;
+            this.optionText3.Text = "Fast";
             // 
-            // FastSpeedRadioButton
+            // optionText4
             // 
-            this.FastSpeedRadioButton.AutoSize = true;
-            this.FastSpeedRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FastSpeedRadioButton.Location = new System.Drawing.Point(14, 77);
-            this.FastSpeedRadioButton.Name = "FastSpeedRadioButton";
-            this.FastSpeedRadioButton.Size = new System.Drawing.Size(56, 21);
-            this.FastSpeedRadioButton.TabIndex = 2;
-            this.FastSpeedRadioButton.Text = "Fast";
-            this.FastSpeedRadioButton.UseVisualStyleBackColor = true;
-            this.FastSpeedRadioButton.CheckedChanged += new System.EventHandler(this.FastSpeedRadioButton_CheckedChanged);
+            this.optionText4.AutoSize = true;
+            this.optionText4.Location = new System.Drawing.Point(303, 150);
+            this.optionText4.Name = "optionText4";
+            this.optionText4.Size = new System.Drawing.Size(37, 17);
+            this.optionText4.TabIndex = 51;
+            this.optionText4.Text = "Slow";
             // 
-            // StandardSpeedRadioButton
+            // optionText2
             // 
-            this.StandardSpeedRadioButton.AutoSize = true;
-            this.StandardSpeedRadioButton.Checked = true;
-            this.StandardSpeedRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StandardSpeedRadioButton.Location = new System.Drawing.Point(14, 49);
-            this.StandardSpeedRadioButton.Name = "StandardSpeedRadioButton";
-            this.StandardSpeedRadioButton.Size = new System.Drawing.Size(87, 21);
-            this.StandardSpeedRadioButton.TabIndex = 1;
-            this.StandardSpeedRadioButton.TabStop = true;
-            this.StandardSpeedRadioButton.Text = "Standard";
-            this.StandardSpeedRadioButton.UseVisualStyleBackColor = true;
-            this.StandardSpeedRadioButton.CheckedChanged += new System.EventHandler(this.StandardSpeedRadioButton_CheckedChanged);
+            this.optionText2.AutoSize = true;
+            this.optionText2.Location = new System.Drawing.Point(14, 95);
+            this.optionText2.Name = "optionText2";
+            this.optionText2.Size = new System.Drawing.Size(91, 17);
+            this.optionText2.TabIndex = 50;
+            this.optionText2.Text = "Game Speed";
             // 
-            // SlowSpeedRadioButton
+            // speedTrackBar
             // 
-            this.SlowSpeedRadioButton.AutoSize = true;
-            this.SlowSpeedRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SlowSpeedRadioButton.Location = new System.Drawing.Point(14, 22);
-            this.SlowSpeedRadioButton.Name = "SlowSpeedRadioButton";
-            this.SlowSpeedRadioButton.Size = new System.Drawing.Size(58, 21);
-            this.SlowSpeedRadioButton.TabIndex = 0;
-            this.SlowSpeedRadioButton.Text = "Slow";
-            this.SlowSpeedRadioButton.UseVisualStyleBackColor = true;
-            this.SlowSpeedRadioButton.CheckedChanged += new System.EventHandler(this.SlowSpeedRadioButton_CheckedChanged);
+            this.speedTrackBar.BackColor = System.Drawing.Color.Black;
+            this.speedTrackBar.LargeChange = 400;
+            this.speedTrackBar.Location = new System.Drawing.Point(14, 116);
+            this.speedTrackBar.Maximum = 3000;
+            this.speedTrackBar.Minimum = 500;
+            this.speedTrackBar.Name = "speedTrackBar";
+            this.speedTrackBar.Size = new System.Drawing.Size(321, 56);
+            this.speedTrackBar.SmallChange = 200;
+            this.speedTrackBar.TabIndex = 49;
+            this.speedTrackBar.TickFrequency = 200;
+            this.speedTrackBar.Value = 1400;
+            this.speedTrackBar.Scroll += new System.EventHandler(this.speedTrackBar_Scroll);
             // 
             // UsaPictureBox
             // 
@@ -259,7 +330,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UsaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UsaPictureBox.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.UsaPictureBox.Location = new System.Drawing.Point(366, 721);
+            this.UsaPictureBox.Location = new System.Drawing.Point(23, 19);
             this.UsaPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.UsaPictureBox.Name = "UsaPictureBox";
             this.UsaPictureBox.Size = new System.Drawing.Size(83, 48);
@@ -277,6 +348,7 @@
             this.ExplosionPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ExplosionPictureBox.TabIndex = 42;
             this.ExplosionPictureBox.TabStop = false;
+            this.ExplosionPictureBox.Visible = false;
             // 
             // PauseButton
             // 
@@ -292,7 +364,7 @@
             this.PauseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PauseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PauseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.PauseButton.Location = new System.Drawing.Point(211, 809);
+            this.PauseButton.Location = new System.Drawing.Point(211, 804);
             this.PauseButton.Margin = new System.Windows.Forms.Padding(2);
             this.PauseButton.Name = "PauseButton";
             this.PauseButton.Size = new System.Drawing.Size(115, 40);
@@ -314,7 +386,7 @@
             this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.StartButton.Location = new System.Drawing.Point(210, 766);
+            this.StartButton.Location = new System.Drawing.Point(211, 761);
             this.StartButton.Margin = new System.Windows.Forms.Padding(2);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(115, 40);
@@ -336,7 +408,7 @@
             this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.CustomizeGameBtn.Location = new System.Drawing.Point(211, 853);
+            this.CustomizeGameBtn.Location = new System.Drawing.Point(211, 848);
             this.CustomizeGameBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CustomizeGameBtn.Name = "CustomizeGameBtn";
             this.CustomizeGameBtn.Size = new System.Drawing.Size(115, 40);
@@ -351,7 +423,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NKPictureBox.Image = global::WarGames.Properties.Resources.north_korea_flag;
-            this.NKPictureBox.Location = new System.Drawing.Point(1496, 721);
+            this.NKPictureBox.Location = new System.Drawing.Point(1153, 19);
             this.NKPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.NKPictureBox.Name = "NKPictureBox";
             this.NKPictureBox.Size = new System.Drawing.Size(84, 49);
@@ -365,7 +437,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwedenPictureBox.Image = global::WarGames.Properties.Resources.sweden_flag;
-            this.SwedenPictureBox.Location = new System.Drawing.Point(1369, 721);
+            this.SwedenPictureBox.Location = new System.Drawing.Point(1026, 19);
             this.SwedenPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.SwedenPictureBox.Name = "SwedenPictureBox";
             this.SwedenPictureBox.Size = new System.Drawing.Size(84, 49);
@@ -379,7 +451,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.JapanPictureBox.Image = global::WarGames.Properties.Resources.japan_flag;
-            this.JapanPictureBox.Location = new System.Drawing.Point(1242, 721);
+            this.JapanPictureBox.Location = new System.Drawing.Point(899, 19);
             this.JapanPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.JapanPictureBox.Name = "JapanPictureBox";
             this.JapanPictureBox.Size = new System.Drawing.Size(84, 49);
@@ -394,7 +466,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GermanyPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.GermanyPictureBox.Image = global::WarGames.Properties.Resources.germany_flag;
-            this.GermanyPictureBox.Location = new System.Drawing.Point(1121, 721);
+            this.GermanyPictureBox.Location = new System.Drawing.Point(778, 19);
             this.GermanyPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.GermanyPictureBox.Name = "GermanyPictureBox";
             this.GermanyPictureBox.Size = new System.Drawing.Size(83, 48);
@@ -408,7 +480,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.IndiaPictureBox.Image = global::WarGames.Properties.Resources.india_flag2;
-            this.IndiaPictureBox.Location = new System.Drawing.Point(995, 721);
+            this.IndiaPictureBox.Location = new System.Drawing.Point(652, 19);
             this.IndiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.IndiaPictureBox.Name = "IndiaPictureBox";
             this.IndiaPictureBox.Size = new System.Drawing.Size(84, 49);
@@ -422,7 +494,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FrancePictureBox.Image = global::WarGames.Properties.Resources.france_flagv2;
-            this.FrancePictureBox.Location = new System.Drawing.Point(870, 721);
+            this.FrancePictureBox.Location = new System.Drawing.Point(527, 19);
             this.FrancePictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.FrancePictureBox.Name = "FrancePictureBox";
             this.FrancePictureBox.Size = new System.Drawing.Size(84, 49);
@@ -436,7 +508,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ChinaPictureBox.Image = global::WarGames.Properties.Resources.China_flag;
-            this.ChinaPictureBox.Location = new System.Drawing.Point(744, 721);
+            this.ChinaPictureBox.Location = new System.Drawing.Point(401, 19);
             this.ChinaPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.ChinaPictureBox.Name = "ChinaPictureBox";
             this.ChinaPictureBox.Size = new System.Drawing.Size(84, 49);
@@ -451,7 +523,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RussiaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.RussiaPictureBox.Image = global::WarGames.Properties.Resources.russia_flag;
-            this.RussiaPictureBox.Location = new System.Drawing.Point(492, 721);
+            this.RussiaPictureBox.Location = new System.Drawing.Point(149, 19);
             this.RussiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.RussiaPictureBox.Name = "RussiaPictureBox";
             this.RussiaPictureBox.Size = new System.Drawing.Size(83, 48);
@@ -467,7 +539,7 @@
             this.UkPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.UkPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.UkPictureBox.Image = global::WarGames.Properties.Resources.uk_flag;
-            this.UkPictureBox.Location = new System.Drawing.Point(616, 721);
+            this.UkPictureBox.Location = new System.Drawing.Point(273, 19);
             this.UkPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.UkPictureBox.Name = "UkPictureBox";
             this.UkPictureBox.Size = new System.Drawing.Size(84, 49);
@@ -483,30 +555,40 @@
             this.StatsBox.BackColor = System.Drawing.SystemColors.WindowText;
             this.StatsBox.Controls.Add(this.NKgroupBox);
             this.StatsBox.Controls.Add(this.SwedenGroupBox);
+            this.StatsBox.Controls.Add(this.UsaPictureBox);
             this.StatsBox.Controls.Add(this.JapanGroupBox);
             this.StatsBox.Controls.Add(this.UKgroupBox);
             this.StatsBox.Controls.Add(this.GermanyGroupBox);
             this.StatsBox.Controls.Add(this.IndiaGroupBox);
             this.StatsBox.Controls.Add(this.FranceGroupBox);
+            this.StatsBox.Controls.Add(this.NKPictureBox);
             this.StatsBox.Controls.Add(this.ChinaGroupBox);
+            this.StatsBox.Controls.Add(this.SwedenPictureBox);
             this.StatsBox.Controls.Add(this.RussiaGroupBox);
             this.StatsBox.Controls.Add(this.NorthKoreaLabel);
+            this.StatsBox.Controls.Add(this.JapanPictureBox);
             this.StatsBox.Controls.Add(this.USAgroupBox);
+            this.StatsBox.Controls.Add(this.GermanyPictureBox);
             this.StatsBox.Controls.Add(this.SwedenLabel);
+            this.StatsBox.Controls.Add(this.IndiaPictureBox);
             this.StatsBox.Controls.Add(this.JapanLabel);
+            this.StatsBox.Controls.Add(this.FrancePictureBox);
             this.StatsBox.Controls.Add(this.GermanyLabel);
+            this.StatsBox.Controls.Add(this.ChinaPictureBox);
             this.StatsBox.Controls.Add(this.IndiaLabel);
+            this.StatsBox.Controls.Add(this.RussiaPictureBox);
+            this.StatsBox.Controls.Add(this.UkPictureBox);
             this.StatsBox.Controls.Add(this.FranceLabel);
             this.StatsBox.Controls.Add(this.ChinaLabel);
             this.StatsBox.Controls.Add(this.UKLabel);
             this.StatsBox.Controls.Add(this.RussiaLabel);
             this.StatsBox.Controls.Add(this.USALabel);
             this.StatsBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.StatsBox.Location = new System.Drawing.Point(340, 766);
+            this.StatsBox.Location = new System.Drawing.Point(337, 703);
             this.StatsBox.Margin = new System.Windows.Forms.Padding(2);
             this.StatsBox.Name = "StatsBox";
             this.StatsBox.Padding = new System.Windows.Forms.Padding(2);
-            this.StatsBox.Size = new System.Drawing.Size(1262, 140);
+            this.StatsBox.Size = new System.Drawing.Size(1262, 202);
             this.StatsBox.TabIndex = 4;
             this.StatsBox.TabStop = false;
             // 
@@ -516,7 +598,7 @@
             this.NKgroupBox.Controls.Add(this.NKRepLabel);
             this.NKgroupBox.Controls.Add(this.NKStrengthLabel);
             this.NKgroupBox.Controls.Add(this.NKDurLabel);
-            this.NKgroupBox.Location = new System.Drawing.Point(1139, 36);
+            this.NKgroupBox.Location = new System.Drawing.Point(1139, 98);
             this.NKgroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.NKgroupBox.Name = "NKgroupBox";
             this.NKgroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -559,7 +641,7 @@
             this.SwedenGroupBox.Controls.Add(this.SwedenRepLabel);
             this.SwedenGroupBox.Controls.Add(this.SwedenStrengthLabel);
             this.SwedenGroupBox.Controls.Add(this.SwedenDurLabel);
-            this.SwedenGroupBox.Location = new System.Drawing.Point(1014, 36);
+            this.SwedenGroupBox.Location = new System.Drawing.Point(1014, 98);
             this.SwedenGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.SwedenGroupBox.Name = "SwedenGroupBox";
             this.SwedenGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -602,7 +684,7 @@
             this.JapanGroupBox.Controls.Add(this.JapanRepLabel);
             this.JapanGroupBox.Controls.Add(this.JapanStrengthLabel);
             this.JapanGroupBox.Controls.Add(this.JapanDurLabel);
-            this.JapanGroupBox.Location = new System.Drawing.Point(888, 36);
+            this.JapanGroupBox.Location = new System.Drawing.Point(888, 98);
             this.JapanGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.JapanGroupBox.Name = "JapanGroupBox";
             this.JapanGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -645,7 +727,7 @@
             this.UKgroupBox.Controls.Add(this.UkRepLabel);
             this.UKgroupBox.Controls.Add(this.UkStrengthLabel);
             this.UKgroupBox.Controls.Add(this.UkDurLabel);
-            this.UKgroupBox.Location = new System.Drawing.Point(258, 36);
+            this.UKgroupBox.Location = new System.Drawing.Point(258, 98);
             this.UKgroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.UKgroupBox.Name = "UKgroupBox";
             this.UKgroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -688,7 +770,7 @@
             this.GermanyGroupBox.Controls.Add(this.GermanyRepLabel);
             this.GermanyGroupBox.Controls.Add(this.GermanyStrengthLabel);
             this.GermanyGroupBox.Controls.Add(this.GermanyDurLabel);
-            this.GermanyGroupBox.Location = new System.Drawing.Point(761, 36);
+            this.GermanyGroupBox.Location = new System.Drawing.Point(761, 98);
             this.GermanyGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.GermanyGroupBox.Name = "GermanyGroupBox";
             this.GermanyGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -731,7 +813,7 @@
             this.IndiaGroupBox.Controls.Add(this.IndiaRepLabel);
             this.IndiaGroupBox.Controls.Add(this.IndiaStrengthLabel);
             this.IndiaGroupBox.Controls.Add(this.IndiaDurLabel);
-            this.IndiaGroupBox.Location = new System.Drawing.Point(635, 36);
+            this.IndiaGroupBox.Location = new System.Drawing.Point(635, 98);
             this.IndiaGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.IndiaGroupBox.Name = "IndiaGroupBox";
             this.IndiaGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -774,7 +856,7 @@
             this.FranceGroupBox.Controls.Add(this.FranceRepLabel);
             this.FranceGroupBox.Controls.Add(this.FranceStrengthLabel);
             this.FranceGroupBox.Controls.Add(this.FranceDurLabel);
-            this.FranceGroupBox.Location = new System.Drawing.Point(509, 36);
+            this.FranceGroupBox.Location = new System.Drawing.Point(509, 98);
             this.FranceGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.FranceGroupBox.Name = "FranceGroupBox";
             this.FranceGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -817,7 +899,7 @@
             this.ChinaGroupBox.Controls.Add(this.ChinaRepLabel);
             this.ChinaGroupBox.Controls.Add(this.ChinaStrengthLabel);
             this.ChinaGroupBox.Controls.Add(this.ChinaDurLabel);
-            this.ChinaGroupBox.Location = new System.Drawing.Point(384, 36);
+            this.ChinaGroupBox.Location = new System.Drawing.Point(384, 98);
             this.ChinaGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.ChinaGroupBox.Name = "ChinaGroupBox";
             this.ChinaGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -860,7 +942,7 @@
             this.RussiaGroupBox.Controls.Add(this.RussiaRepLabel);
             this.RussiaGroupBox.Controls.Add(this.RussiaStrengthLabel);
             this.RussiaGroupBox.Controls.Add(this.RussiaDurLabel);
-            this.RussiaGroupBox.Location = new System.Drawing.Point(131, 36);
+            this.RussiaGroupBox.Location = new System.Drawing.Point(131, 98);
             this.RussiaGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.RussiaGroupBox.Name = "RussiaGroupBox";
             this.RussiaGroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -902,7 +984,7 @@
             // 
             this.NorthKoreaLabel.AutoSize = true;
             this.NorthKoreaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NorthKoreaLabel.Location = new System.Drawing.Point(1144, 14);
+            this.NorthKoreaLabel.Location = new System.Drawing.Point(1144, 74);
             this.NorthKoreaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NorthKoreaLabel.Name = "NorthKoreaLabel";
             this.NorthKoreaLabel.Size = new System.Drawing.Size(111, 24);
@@ -914,7 +996,7 @@
             this.USAgroupBox.Controls.Add(this.USARepLabel);
             this.USAgroupBox.Controls.Add(this.USAStrengthLabel);
             this.USAgroupBox.Controls.Add(this.USADurLabel);
-            this.USAgroupBox.Location = new System.Drawing.Point(5, 36);
+            this.USAgroupBox.Location = new System.Drawing.Point(5, 98);
             this.USAgroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.USAgroupBox.Name = "USAgroupBox";
             this.USAgroupBox.Padding = new System.Windows.Forms.Padding(2);
@@ -956,7 +1038,7 @@
             // 
             this.SwedenLabel.AutoSize = true;
             this.SwedenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwedenLabel.Location = new System.Drawing.Point(1038, 14);
+            this.SwedenLabel.Location = new System.Drawing.Point(1038, 74);
             this.SwedenLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SwedenLabel.Name = "SwedenLabel";
             this.SwedenLabel.Size = new System.Drawing.Size(80, 24);
@@ -967,7 +1049,7 @@
             // 
             this.JapanLabel.AutoSize = true;
             this.JapanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JapanLabel.Location = new System.Drawing.Point(912, 14);
+            this.JapanLabel.Location = new System.Drawing.Point(912, 74);
             this.JapanLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.JapanLabel.Name = "JapanLabel";
             this.JapanLabel.Size = new System.Drawing.Size(61, 24);
@@ -978,7 +1060,7 @@
             // 
             this.GermanyLabel.AutoSize = true;
             this.GermanyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GermanyLabel.Location = new System.Drawing.Point(778, 14);
+            this.GermanyLabel.Location = new System.Drawing.Point(778, 74);
             this.GermanyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GermanyLabel.Name = "GermanyLabel";
             this.GermanyLabel.Size = new System.Drawing.Size(87, 24);
@@ -989,7 +1071,7 @@
             // 
             this.IndiaLabel.AutoSize = true;
             this.IndiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IndiaLabel.Location = new System.Drawing.Point(668, 14);
+            this.IndiaLabel.Location = new System.Drawing.Point(668, 74);
             this.IndiaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IndiaLabel.Name = "IndiaLabel";
             this.IndiaLabel.Size = new System.Drawing.Size(50, 24);
@@ -1000,7 +1082,7 @@
             // 
             this.FranceLabel.AutoSize = true;
             this.FranceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FranceLabel.Location = new System.Drawing.Point(534, 14);
+            this.FranceLabel.Location = new System.Drawing.Point(534, 74);
             this.FranceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FranceLabel.Name = "FranceLabel";
             this.FranceLabel.Size = new System.Drawing.Size(70, 24);
@@ -1011,7 +1093,7 @@
             // 
             this.ChinaLabel.AutoSize = true;
             this.ChinaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChinaLabel.Location = new System.Drawing.Point(414, 14);
+            this.ChinaLabel.Location = new System.Drawing.Point(414, 74);
             this.ChinaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ChinaLabel.Name = "ChinaLabel";
             this.ChinaLabel.Size = new System.Drawing.Size(59, 24);
@@ -1022,7 +1104,7 @@
             // 
             this.UKLabel.AutoSize = true;
             this.UKLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UKLabel.Location = new System.Drawing.Point(298, 14);
+            this.UKLabel.Location = new System.Drawing.Point(298, 74);
             this.UKLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UKLabel.Name = "UKLabel";
             this.UKLabel.Size = new System.Drawing.Size(35, 24);
@@ -1033,7 +1115,7 @@
             // 
             this.RussiaLabel.AutoSize = true;
             this.RussiaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RussiaLabel.Location = new System.Drawing.Point(162, 14);
+            this.RussiaLabel.Location = new System.Drawing.Point(162, 74);
             this.RussiaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RussiaLabel.Name = "RussiaLabel";
             this.RussiaLabel.Size = new System.Drawing.Size(66, 24);
@@ -1045,7 +1127,7 @@
             this.USALabel.AutoSize = true;
             this.USALabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.USALabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.USALabel.Location = new System.Drawing.Point(42, 14);
+            this.USALabel.Location = new System.Drawing.Point(42, 74);
             this.USALabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.USALabel.Name = "USALabel";
             this.USALabel.Size = new System.Drawing.Size(48, 24);
@@ -1105,6 +1187,28 @@
             this.EnduranceListBox.Size = new System.Drawing.Size(196, 250);
             this.EnduranceListBox.TabIndex = 0;
             // 
+            // hideStatsBox
+            // 
+            this.hideStatsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hideStatsBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.hideStatsBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hideStatsBox.FlatAppearance.BorderSize = 2;
+            this.hideStatsBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.hideStatsBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.hideStatsBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hideStatsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hideStatsBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
+            this.hideStatsBox.Location = new System.Drawing.Point(205, 21);
+            this.hideStatsBox.Margin = new System.Windows.Forms.Padding(2);
+            this.hideStatsBox.Name = "hideStatsBox";
+            this.hideStatsBox.Size = new System.Drawing.Size(130, 40);
+            this.hideStatsBox.TabIndex = 49;
+            this.hideStatsBox.Text = "Hide Stats";
+            this.hideStatsBox.UseVisualStyleBackColor = false;
+            this.hideStatsBox.Click += new System.EventHandler(this.hideStatsBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1123,10 +1227,9 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
-            this.ClearLinesBox.ResumeLayout(false);
-            this.ClearLinesBox.PerformLayout();
-            this.GameSpeedBox.ResumeLayout(false);
-            this.GameSpeedBox.PerformLayout();
+            this.gameOptionBox.ResumeLayout(false);
+            this.gameOptionBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.speedTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).EndInit();
@@ -1240,12 +1343,17 @@
         private System.Windows.Forms.Button PauseButton;
         private System.Windows.Forms.Timer warTimer;
         private System.Windows.Forms.PictureBox ExplosionPictureBox;
-        private System.Windows.Forms.GroupBox GameSpeedBox;
-        private System.Windows.Forms.RadioButton FastSpeedRadioButton;
-        private System.Windows.Forms.RadioButton StandardSpeedRadioButton;
-        private System.Windows.Forms.RadioButton SlowSpeedRadioButton;
-        private System.Windows.Forms.GroupBox ClearLinesBox;
+        private System.Windows.Forms.GroupBox gameOptionBox;
         private System.Windows.Forms.CheckBox ClearLinesCheckBox;
+        private System.Windows.Forms.TrackBar speedTrackBar;
+        private System.Windows.Forms.Label optionText3;
+        private System.Windows.Forms.Label optionText4;
+        private System.Windows.Forms.Label optionText2;
+        private System.Windows.Forms.Label optionText1;
+        private System.Windows.Forms.Button OptionButton;
+        private System.Windows.Forms.Button optionBtnOk;
+        private System.Windows.Forms.Button resetOptionsButton;
+        private System.Windows.Forms.Button hideStatsBox;
     }
 }
 

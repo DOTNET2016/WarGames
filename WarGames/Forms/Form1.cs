@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Drawing.Text;
-using System.Media;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace WarGames
@@ -20,32 +17,15 @@ namespace WarGames
 
         private bool _IsOn;
         private bool _IsPause;
+        private bool _IsStats;
 
         private int drawLoop = 0;
-
-        [DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
-        IntPtr pdv, [In] ref uint pcFonts);
-
-        private PrivateFontCollection fonts = new PrivateFontCollection();
-        private Font myFont; 
 
         public Form1()
         {    
             InitializeComponent();
 
             EnduranceListBox.DataSource = warRoom.countriesAtWar;
-            ExplosionPictureBox.Hide();
-
-            byte[] fontData = Properties.Resources.WarGames;
-            IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
-            Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
-            uint dummy = 0;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.WarGames.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
-            Marshal.FreeCoTaskMem(fontPtr);
-
-            myFont = new Font(fonts.Families[0], 20.0F);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -63,9 +43,10 @@ namespace WarGames
             introMenu.Close();
             introMenu.Dispose();
 
-            StartButton.Font = myFont;
-            PauseButton.Font = myFont;
-            CustomizeGameBtn.Font = myFont;
+            OptionButton.Font = warRoom.myFont1;
+            StartButton.Font = warRoom.myFont1;
+            PauseButton.Font = warRoom.myFont1;
+            CustomizeGameBtn.Font = warRoom.myFont1;
         }
 
         public static float GetRandomNumber(float minimum, float maximum)
@@ -177,8 +158,8 @@ namespace WarGames
                 float x = countryWars.x2 - 20;
                 float y = countryWars.y2 - 20;
 
-                using (var g = Graphics.FromImage(Background.BackgroundImage))
-                {
+                var g = Graphics.FromImage(Background.BackgroundImage);
+                
                     if (ClearLinesCheckBox.Checked && drawLoop >= 1)
                     {
                         g.Clear(Color.Transparent);
@@ -192,7 +173,7 @@ namespace WarGames
                     ExplosionPictureBox.Location = new Point((int)x, (int)y);
                     Background.Refresh();
                     drawLoop++;
-                }
+                
                 MediaPlayer.ExplosionSound();
             }
             else
@@ -219,6 +200,11 @@ namespace WarGames
                     Close();
                 }
             }
+        }
+
+        private void optionButton_Click(object sender, EventArgs e)
+        {
+            gameOptionBox.Show();
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
@@ -342,6 +328,51 @@ namespace WarGames
             Close();
         }
 
+        private void warTimer_Tick(object sender, EventArgs e)
+        {
+            AttackMethod();
+            warRoom.countriesAtWar.Sort();
+            if (EnduranceListBox.DataSource == null)
+            {
+                return;
+            }
+            else
+            {
+                ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
+            }          
+        }
+
+        #region OptionWindow
+        private void speedTrackBar_Scroll(object sender, EventArgs e)
+        {
+            warTimer.Interval = speedTrackBar.Value;
+        }
+
+        private void optionBtnOk_Click(object sender, EventArgs e)
+        {
+            gameOptionBox.Hide();
+        }
+
+        private void resetOptionsButton_Click(object sender, EventArgs e)
+        {
+            speedTrackBar.Value = 1400;
+            ClearLinesCheckBox.Checked = false;
+        }
+
+        private void hideStatsBox_Click(object sender, EventArgs e)
+        {
+            IsStats = !IsStats;
+            if (IsStats)
+            {
+                StatsBox.Hide();
+            }
+            if (!IsStats)
+            {
+                StatsBox.Show();
+            }
+        }
+        #endregion
+
         #region ButtonTextChanger
         //Dont really need to touch these two bools
         public bool IsOn
@@ -368,35 +399,18 @@ namespace WarGames
                 PauseButton.Text = _IsPause ? "Unpause" : "Pause";
             }
         }
-        #endregion
-       
-        private void warTimer_Tick(object sender, EventArgs e)
+        public bool IsStats
         {
-            AttackMethod();
-            warRoom.countriesAtWar.Sort();
-            if (EnduranceListBox.DataSource == null)
+            get
             {
-                return;
+                return _IsStats;
             }
-            else
+            set
             {
-                ((CurrencyManager)EnduranceListBox.BindingContext[warRoom.countriesAtWar]).Refresh();
-            }          
+                _IsStats = value;
+                hideStatsBox.Text = _IsStats ? "Show Stats" : "Hide Stats";
+            }
         }
-
-        private void SlowSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            warTimer.Interval = 3000;
-        }
-
-        private void StandardSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            warTimer.Interval = 1400;
-        }
-
-        private void FastSpeedRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            warTimer.Interval = 500;
-        }
+        #endregion
     }
 }

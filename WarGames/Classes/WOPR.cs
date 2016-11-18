@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 
 namespace WarGames
 {
@@ -9,10 +12,29 @@ namespace WarGames
         public List<Countries> countriesAtWar = new List<Countries>();
         public List<Countries> defeatedCountries = new List<Countries>();
 
+        [DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
+        IntPtr pdv, [In] ref uint pcFonts);
+
+        private PrivateFontCollection fonts = new PrivateFontCollection();
+        public Font myFont1; //Font size 20
+        public Font myFont2; //Font size 25
+        public Font myFont3; //Font size 40
+
         //War Operation Plan Responce
         public WOPR()
         {
-            
+            byte[] fontData = Properties.Resources.WarGames;
+            IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
+            Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            uint dummy = 0;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.WarGames.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.WarGames.Length, IntPtr.Zero, ref dummy);
+            Marshal.FreeCoTaskMem(fontPtr);
+
+            myFont1 = new Font(fonts.Families[0], 20.0F);
+            myFont2 = new Font(fonts.Families[0], 20.0F);
+            myFont3 = new Font(fonts.Families[0], 40.0F);
         }
 
         public void CountryList()
@@ -44,7 +66,10 @@ namespace WarGames
                     break;
                 }
             } while (randomCountryOne == randomCountryTwo);
-            int i = 1;
+
+            int attackStr = randomCountryOne.Strength;
+
+            int i = 1;     
             while (i == 1)
             {
                 if (randomCountryOne.Strength - randomCountryTwo.Reputation <= 0)
@@ -52,7 +77,8 @@ namespace WarGames
                     break;
                 }
                 else
-                    randomCountryTwo.Durability -= (randomCountryOne.Strength - randomCountryTwo.Reputation);
+                    
+                    randomCountryTwo.Durability -= (attackStr - randomCountryTwo.Reputation);
                 if (randomCountryTwo.Durability <= 0)
                 {
                     randomCountryTwo.Durability = 0;
