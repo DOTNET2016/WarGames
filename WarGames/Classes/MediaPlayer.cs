@@ -1,4 +1,5 @@
 ﻿using System.Media;
+using System.Threading;
 using WMPLib;
 
 namespace WarGames
@@ -11,11 +12,14 @@ namespace WarGames
         public static void ExplosionSound()
         {
 
-            new System.Threading.Thread(() => {
+            Thread Sound;
+            Sound = new Thread(() =>
+            {
                 var c = new WindowsMediaPlayer();
                 c.URL = TempFile;
                 c.controls.play();
-            }).Start();
+            });
+            Sound.Start();
         }
     }
 }
