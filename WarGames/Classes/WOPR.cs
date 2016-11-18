@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Runtime.InteropServices;
 
 namespace WarGames
@@ -20,6 +21,8 @@ namespace WarGames
         public Font myFont1; //Font size 20
         public Font myFont2; //Font size 25
         public Font myFont3; //Font size 40
+
+
 
         //War Operation Plan Responce
         public WOPR()
@@ -94,6 +97,12 @@ namespace WarGames
             temp.x2 = randomCountryTwo.XCoord;
             temp.y2 = randomCountryTwo.YCoord;
             return temp;
+        }
+        public static string TempFile()
+        {
+            var strTempFile = Path.GetTempFileName();
+            File.WriteAllBytes(strTempFile, Properties.Resources.ExplosionSound);
+            return strTempFile;
         }
     }
 }

@@ -233,9 +233,9 @@
             this.resetOptionsButton.Location = new System.Drawing.Point(14, 189);
             this.resetOptionsButton.Margin = new System.Windows.Forms.Padding(2);
             this.resetOptionsButton.Name = "resetOptionsButton";
-            this.resetOptionsButton.Size = new System.Drawing.Size(70, 33);
+            this.resetOptionsButton.Size = new System.Drawing.Size(123, 33);
             this.resetOptionsButton.TabIndex = 54;
-            this.resetOptionsButton.Text = "Reset";
+            this.resetOptionsButton.Text = "Reset Options";
             this.resetOptionsButton.UseVisualStyleBackColor = false;
             this.resetOptionsButton.Click += new System.EventHandler(this.resetOptionsButton_Click);
             // 

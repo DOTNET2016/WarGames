@@ -160,19 +160,19 @@ namespace WarGames
 
                 var g = Graphics.FromImage(Background.BackgroundImage);
                 
-                    if (ClearLinesCheckBox.Checked && drawLoop >= 1)
-                    {
-                        g.Clear(Color.Transparent);
-                        drawLoop = 0;
-                    }
-                    g.SmoothingMode = SmoothingMode.AntiAlias;
-                    Pen pen = new Pen(Color.Red, 2);
-                    g.DrawCurve(pen, curvePointList.ToArray());
-                    ExplosionPictureBox.Hide();
-                    ExplosionPictureBox.Show();
-                    ExplosionPictureBox.Location = new Point((int)x, (int)y);
-                    Background.Refresh();
-                    drawLoop++;
+                if (ClearLinesCheckBox.Checked && drawLoop >= 1)
+                {
+                    g.Clear(Color.Transparent);
+                    drawLoop = 0;
+                }
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                Pen pen = new Pen(Color.Red, 2);
+                g.DrawCurve(pen, curvePointList.ToArray());
+                ExplosionPictureBox.Hide();
+                ExplosionPictureBox.Show();
+                ExplosionPictureBox.Location = new Point((int)x, (int)y);
+                Background.Refresh();
+                drawLoop++;
                 
                 MediaPlayer.ExplosionSound();
             }
@@ -356,7 +356,17 @@ namespace WarGames
         private void resetOptionsButton_Click(object sender, EventArgs e)
         {
             speedTrackBar.Value = 1400;
+            warTimer.Interval = 1400;
             ClearLinesCheckBox.Checked = false;
+            if (StatsBox.Visible)
+                StatsBox.Hide();
+            StatsBox.Show();
+            if (IsStats)
+            {
+                IsStats = !IsStats;
+            }
+            IsStats = IsStats;
+
         }
 
         private void hideStatsBox_Click(object sender, EventArgs e)
