@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace WarGames
 {
-    public partial class Form1 : Form
+    public partial class WarGames : Form
     {
         WOPR warRoom = new WOPR();
 
@@ -17,11 +18,10 @@ namespace WarGames
 
         private bool _IsOn;
         private bool _IsPause;
-        private bool _IsStats;
 
         private int drawLoop = 0;
 
-        public Form1()
+        public WarGames()
         {    
             InitializeComponent();
 
@@ -173,8 +173,9 @@ namespace WarGames
                 ExplosionPictureBox.Location = new Point((int)x, (int)y);
                 Background.Refresh();
                 drawLoop++;
-                
-                MediaPlayer.ExplosionSound();
+
+                Thread ES = new Thread(() => MediaPlayer.ExplosionSound());
+                ES.Start();
             }
             else
             {
@@ -343,6 +344,42 @@ namespace WarGames
         }
 
         #region OptionWindow
+        private void BgMusicCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (BgMusicCheckBox.Checked == true)
+            {
+                MediaPlayer.BackgroundMusic.Stop();
+            }
+            else
+            {
+                MediaPlayer.BackgroundMusic.PlayLooping();
+            }
+        }
+
+        private void HideStatsCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HideStatsCheckBox.Checked == true)
+            {
+                StatsBox.Hide();
+            }
+            else
+            {
+                StatsBox.Show();
+            }
+        }
+
+        private void HideEnduranceCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HideEnduranceCheckBox.Checked == true)
+            {
+                EnduranceBox.Hide();
+            }
+            else
+            {
+                EnduranceBox.Show();
+            }
+        }
+
         private void speedTrackBar_Scroll(object sender, EventArgs e)
         {
             warTimer.Interval = speedTrackBar.Value;
@@ -358,28 +395,6 @@ namespace WarGames
             speedTrackBar.Value = 1400;
             warTimer.Interval = 1400;
             ClearLinesCheckBox.Checked = false;
-            if (StatsBox.Visible)
-                StatsBox.Hide();
-            StatsBox.Show();
-            if (IsStats)
-            {
-                IsStats = !IsStats;
-            }
-            IsStats = IsStats;
-
-        }
-
-        private void hideStatsBox_Click(object sender, EventArgs e)
-        {
-            IsStats = !IsStats;
-            if (IsStats)
-            {
-                StatsBox.Hide();
-            }
-            if (!IsStats)
-            {
-                StatsBox.Show();
-            }
         }
         #endregion
 
@@ -409,18 +424,7 @@ namespace WarGames
                 PauseButton.Text = _IsPause ? "Unpause" : "Pause";
             }
         }
-        public bool IsStats
-        {
-            get
-            {
-                return _IsStats;
-            }
-            set
-            {
-                _IsStats = value;
-                hideStatsBox.Text = _IsStats ? "Show Stats" : "Hide Stats";
-            }
-        }
+
         #endregion
     }
 }

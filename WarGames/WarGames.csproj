@@ -61,11 +61,11 @@
     <Compile Include="Forms\EndCredits.Designer.cs">
       <DependentUpon>EndCredits.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\WarGames.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\WarGames.Designer.cs">
+      <DependentUpon>WarGames.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\IntroMenu.cs">
       <SubType>Form</SubType>
@@ -82,8 +82,8 @@
     <EmbeddedResource Include="Forms\EndCredits.resx">
       <DependentUpon>EndCredits.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\WarGames.resx">
+      <DependentUpon>WarGames.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IntroMenu.resx">
       <DependentUpon>IntroMenu.cs</DependentUpon>

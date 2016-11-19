@@ -1,6 +1,6 @@
 ﻿namespace WarGames
 {
-    partial class Form1
+    partial class WarGames
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WarGames));
             this.PressStart = new System.Windows.Forms.Button();
             this.warTimer = new System.Windows.Forms.Timer(this.components);
             this.Background = new System.Windows.Forms.Panel();
             this.OptionButton = new System.Windows.Forms.Button();
             this.gameOptionBox = new System.Windows.Forms.GroupBox();
+            this.HideEnduranceCheckBox = new System.Windows.Forms.CheckBox();
+            this.HideStatsCheckBox = new System.Windows.Forms.CheckBox();
+            this.BgMusicCheckBox = new System.Windows.Forms.CheckBox();
             this.resetOptionsButton = new System.Windows.Forms.Button();
             this.optionBtnOk = new System.Windows.Forms.Button();
-            this.optionText1 = new System.Windows.Forms.Label();
             this.ClearLinesCheckBox = new System.Windows.Forms.CheckBox();
             this.optionText3 = new System.Windows.Forms.Label();
             this.optionText4 = new System.Windows.Forms.Label();
             this.optionText2 = new System.Windows.Forms.Label();
             this.speedTrackBar = new System.Windows.Forms.TrackBar();
-            this.UsaPictureBox = new System.Windows.Forms.PictureBox();
             this.ExplosionPictureBox = new System.Windows.Forms.PictureBox();
             this.PauseButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.CustomizeGameBtn = new System.Windows.Forms.Button();
-            this.NKPictureBox = new System.Windows.Forms.PictureBox();
-            this.SwedenPictureBox = new System.Windows.Forms.PictureBox();
-            this.JapanPictureBox = new System.Windows.Forms.PictureBox();
-            this.GermanyPictureBox = new System.Windows.Forms.PictureBox();
-            this.IndiaPictureBox = new System.Windows.Forms.PictureBox();
-            this.FrancePictureBox = new System.Windows.Forms.PictureBox();
-            this.ChinaPictureBox = new System.Windows.Forms.PictureBox();
-            this.RussiaPictureBox = new System.Windows.Forms.PictureBox();
-            this.UkPictureBox = new System.Windows.Forms.PictureBox();
             this.StatsBox = new System.Windows.Forms.GroupBox();
             this.NKgroupBox = new System.Windows.Forms.GroupBox();
             this.NKRepLabel = new System.Windows.Forms.Label();
@@ -66,6 +58,7 @@
             this.SwedenRepLabel = new System.Windows.Forms.Label();
             this.SwedenStrengthLabel = new System.Windows.Forms.Label();
             this.SwedenDurLabel = new System.Windows.Forms.Label();
+            this.UsaPictureBox = new System.Windows.Forms.PictureBox();
             this.JapanGroupBox = new System.Windows.Forms.GroupBox();
             this.JapanRepLabel = new System.Windows.Forms.Label();
             this.JapanStrengthLabel = new System.Windows.Forms.Label();
@@ -86,23 +79,32 @@
             this.FranceRepLabel = new System.Windows.Forms.Label();
             this.FranceStrengthLabel = new System.Windows.Forms.Label();
             this.FranceDurLabel = new System.Windows.Forms.Label();
+            this.NKPictureBox = new System.Windows.Forms.PictureBox();
             this.ChinaGroupBox = new System.Windows.Forms.GroupBox();
             this.ChinaRepLabel = new System.Windows.Forms.Label();
             this.ChinaStrengthLabel = new System.Windows.Forms.Label();
             this.ChinaDurLabel = new System.Windows.Forms.Label();
+            this.SwedenPictureBox = new System.Windows.Forms.PictureBox();
             this.RussiaGroupBox = new System.Windows.Forms.GroupBox();
             this.RussiaRepLabel = new System.Windows.Forms.Label();
             this.RussiaStrengthLabel = new System.Windows.Forms.Label();
             this.RussiaDurLabel = new System.Windows.Forms.Label();
             this.NorthKoreaLabel = new System.Windows.Forms.Label();
+            this.JapanPictureBox = new System.Windows.Forms.PictureBox();
             this.USAgroupBox = new System.Windows.Forms.GroupBox();
             this.USARepLabel = new System.Windows.Forms.Label();
             this.USAStrengthLabel = new System.Windows.Forms.Label();
             this.USADurLabel = new System.Windows.Forms.Label();
+            this.GermanyPictureBox = new System.Windows.Forms.PictureBox();
             this.SwedenLabel = new System.Windows.Forms.Label();
+            this.IndiaPictureBox = new System.Windows.Forms.PictureBox();
             this.JapanLabel = new System.Windows.Forms.Label();
+            this.FrancePictureBox = new System.Windows.Forms.PictureBox();
             this.GermanyLabel = new System.Windows.Forms.Label();
+            this.ChinaPictureBox = new System.Windows.Forms.PictureBox();
             this.IndiaLabel = new System.Windows.Forms.Label();
+            this.RussiaPictureBox = new System.Windows.Forms.PictureBox();
+            this.UkPictureBox = new System.Windows.Forms.PictureBox();
             this.FranceLabel = new System.Windows.Forms.Label();
             this.ChinaLabel = new System.Windows.Forms.Label();
             this.UKLabel = new System.Windows.Forms.Label();
@@ -111,32 +113,31 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.EnduranceBox = new System.Windows.Forms.GroupBox();
             this.EnduranceListBox = new System.Windows.Forms.ListBox();
-            this.hideStatsBox = new System.Windows.Forms.Button();
             this.Background.SuspendLayout();
             this.gameOptionBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speedTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).BeginInit();
+            this.StatsBox.SuspendLayout();
+            this.NKgroupBox.SuspendLayout();
+            this.SwedenGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).BeginInit();
+            this.JapanGroupBox.SuspendLayout();
+            this.UKgroupBox.SuspendLayout();
+            this.GermanyGroupBox.SuspendLayout();
+            this.IndiaGroupBox.SuspendLayout();
+            this.FranceGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).BeginInit();
+            this.ChinaGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).BeginInit();
+            this.RussiaGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.JapanPictureBox)).BeginInit();
+            this.USAgroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GermanyPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IndiaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FrancePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChinaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RussiaPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UkPictureBox)).BeginInit();
-            this.StatsBox.SuspendLayout();
-            this.NKgroupBox.SuspendLayout();
-            this.SwedenGroupBox.SuspendLayout();
-            this.JapanGroupBox.SuspendLayout();
-            this.UKgroupBox.SuspendLayout();
-            this.GermanyGroupBox.SuspendLayout();
-            this.IndiaGroupBox.SuspendLayout();
-            this.FranceGroupBox.SuspendLayout();
-            this.ChinaGroupBox.SuspendLayout();
-            this.RussiaGroupBox.SuspendLayout();
-            this.USAgroupBox.SuspendLayout();
             this.EnduranceBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -187,7 +188,7 @@
             this.OptionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OptionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OptionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.OptionButton.Location = new System.Drawing.Point(211, 717);
+            this.OptionButton.Location = new System.Drawing.Point(1483, 294);
             this.OptionButton.Margin = new System.Windows.Forms.Padding(2);
             this.OptionButton.Name = "OptionButton";
             this.OptionButton.Size = new System.Drawing.Size(115, 40);
@@ -199,23 +200,58 @@
             // gameOptionBox
             // 
             this.gameOptionBox.BackColor = System.Drawing.Color.Black;
-            this.gameOptionBox.Controls.Add(this.hideStatsBox);
+            this.gameOptionBox.Controls.Add(this.HideEnduranceCheckBox);
+            this.gameOptionBox.Controls.Add(this.HideStatsCheckBox);
+            this.gameOptionBox.Controls.Add(this.BgMusicCheckBox);
             this.gameOptionBox.Controls.Add(this.resetOptionsButton);
             this.gameOptionBox.Controls.Add(this.optionBtnOk);
-            this.gameOptionBox.Controls.Add(this.optionText1);
             this.gameOptionBox.Controls.Add(this.ClearLinesCheckBox);
             this.gameOptionBox.Controls.Add(this.optionText3);
             this.gameOptionBox.Controls.Add(this.optionText4);
             this.gameOptionBox.Controls.Add(this.optionText2);
             this.gameOptionBox.Controls.Add(this.speedTrackBar);
             this.gameOptionBox.ForeColor = System.Drawing.Color.White;
-            this.gameOptionBox.Location = new System.Drawing.Point(211, 478);
+            this.gameOptionBox.Location = new System.Drawing.Point(1251, 329);
             this.gameOptionBox.Name = "gameOptionBox";
+            this.gameOptionBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gameOptionBox.Size = new System.Drawing.Size(346, 238);
             this.gameOptionBox.TabIndex = 47;
             this.gameOptionBox.TabStop = false;
             this.gameOptionBox.Text = "Game Options";
             this.gameOptionBox.Visible = false;
+            // 
+            // HideEnduranceCheckBox
+            // 
+            this.HideEnduranceCheckBox.AutoSize = true;
+            this.HideEnduranceCheckBox.Location = new System.Drawing.Point(172, 56);
+            this.HideEnduranceCheckBox.Name = "HideEnduranceCheckBox";
+            this.HideEnduranceCheckBox.Size = new System.Drawing.Size(132, 21);
+            this.HideEnduranceCheckBox.TabIndex = 57;
+            this.HideEnduranceCheckBox.Text = "Hide Endurance";
+            this.HideEnduranceCheckBox.UseVisualStyleBackColor = true;
+            this.HideEnduranceCheckBox.CheckedChanged += new System.EventHandler(this.HideEnduranceCheckBox_CheckedChanged);
+            // 
+            // HideStatsCheckBox
+            // 
+            this.HideStatsCheckBox.AutoSize = true;
+            this.HideStatsCheckBox.Location = new System.Drawing.Point(172, 29);
+            this.HideStatsCheckBox.Name = "HideStatsCheckBox";
+            this.HideStatsCheckBox.Size = new System.Drawing.Size(95, 21);
+            this.HideStatsCheckBox.TabIndex = 56;
+            this.HideStatsCheckBox.Text = "Hide Stats";
+            this.HideStatsCheckBox.UseVisualStyleBackColor = true;
+            this.HideStatsCheckBox.CheckedChanged += new System.EventHandler(this.HideStatsCheckBox_CheckedChanged);
+            // 
+            // BgMusicCheckBox
+            // 
+            this.BgMusicCheckBox.AutoSize = true;
+            this.BgMusicCheckBox.Location = new System.Drawing.Point(18, 55);
+            this.BgMusicCheckBox.Name = "BgMusicCheckBox";
+            this.BgMusicCheckBox.Size = new System.Drawing.Size(125, 21);
+            this.BgMusicCheckBox.TabIndex = 55;
+            this.BgMusicCheckBox.Text = "Mute BG Music";
+            this.BgMusicCheckBox.UseVisualStyleBackColor = true;
+            this.BgMusicCheckBox.CheckedChanged += new System.EventHandler(this.BgMusicCheckBox_CheckedChanged);
             // 
             // resetOptionsButton
             // 
@@ -261,20 +297,11 @@
             this.optionBtnOk.UseVisualStyleBackColor = false;
             this.optionBtnOk.Click += new System.EventHandler(this.optionBtnOk_Click);
             // 
-            // optionText1
-            // 
-            this.optionText1.AutoSize = true;
-            this.optionText1.Location = new System.Drawing.Point(14, 34);
-            this.optionText1.Name = "optionText1";
-            this.optionText1.Size = new System.Drawing.Size(79, 17);
-            this.optionText1.TabIndex = 53;
-            this.optionText1.Text = "Clear Lines";
-            // 
             // ClearLinesCheckBox
             // 
             this.ClearLinesCheckBox.AutoSize = true;
             this.ClearLinesCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClearLinesCheckBox.Location = new System.Drawing.Point(18, 57);
+            this.ClearLinesCheckBox.Location = new System.Drawing.Point(18, 29);
             this.ClearLinesCheckBox.Name = "ClearLinesCheckBox";
             this.ClearLinesCheckBox.Size = new System.Drawing.Size(142, 21);
             this.ClearLinesCheckBox.TabIndex = 0;
@@ -284,7 +311,7 @@
             // optionText3
             // 
             this.optionText3.AutoSize = true;
-            this.optionText3.Location = new System.Drawing.Point(11, 150);
+            this.optionText3.Location = new System.Drawing.Point(11, 155);
             this.optionText3.Name = "optionText3";
             this.optionText3.Size = new System.Drawing.Size(35, 17);
             this.optionText3.TabIndex = 52;
@@ -293,7 +320,7 @@
             // optionText4
             // 
             this.optionText4.AutoSize = true;
-            this.optionText4.Location = new System.Drawing.Point(303, 150);
+            this.optionText4.Location = new System.Drawing.Point(303, 155);
             this.optionText4.Name = "optionText4";
             this.optionText4.Size = new System.Drawing.Size(37, 17);
             this.optionText4.TabIndex = 51;
@@ -302,7 +329,7 @@
             // optionText2
             // 
             this.optionText2.AutoSize = true;
-            this.optionText2.Location = new System.Drawing.Point(14, 95);
+            this.optionText2.Location = new System.Drawing.Point(14, 96);
             this.optionText2.Name = "optionText2";
             this.optionText2.Size = new System.Drawing.Size(91, 17);
             this.optionText2.TabIndex = 50;
@@ -312,7 +339,7 @@
             // 
             this.speedTrackBar.BackColor = System.Drawing.Color.Black;
             this.speedTrackBar.LargeChange = 400;
-            this.speedTrackBar.Location = new System.Drawing.Point(14, 116);
+            this.speedTrackBar.Location = new System.Drawing.Point(14, 119);
             this.speedTrackBar.Maximum = 3000;
             this.speedTrackBar.Minimum = 500;
             this.speedTrackBar.Name = "speedTrackBar";
@@ -323,26 +350,11 @@
             this.speedTrackBar.Value = 1400;
             this.speedTrackBar.Scroll += new System.EventHandler(this.speedTrackBar_Scroll);
             // 
-            // UsaPictureBox
-            // 
-            this.UsaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UsaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UsaPictureBox.Image = global::WarGames.Properties.Resources.usa_flag;
-            this.UsaPictureBox.Location = new System.Drawing.Point(23, 19);
-            this.UsaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UsaPictureBox.Name = "UsaPictureBox";
-            this.UsaPictureBox.Size = new System.Drawing.Size(83, 48);
-            this.UsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UsaPictureBox.TabIndex = 22;
-            this.UsaPictureBox.TabStop = false;
-            // 
             // ExplosionPictureBox
             // 
             this.ExplosionPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.ExplosionPictureBox.Image = global::WarGames.Properties.Resources.explosion;
-            this.ExplosionPictureBox.Location = new System.Drawing.Point(39, 360);
+            this.ExplosionPictureBox.Location = new System.Drawing.Point(0, 0);
             this.ExplosionPictureBox.Name = "ExplosionPictureBox";
             this.ExplosionPictureBox.Size = new System.Drawing.Size(49, 48);
             this.ExplosionPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -364,7 +376,7 @@
             this.PauseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PauseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PauseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.PauseButton.Location = new System.Drawing.Point(211, 804);
+            this.PauseButton.Location = new System.Drawing.Point(1483, 206);
             this.PauseButton.Margin = new System.Windows.Forms.Padding(2);
             this.PauseButton.Name = "PauseButton";
             this.PauseButton.Size = new System.Drawing.Size(115, 40);
@@ -386,7 +398,7 @@
             this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.StartButton.Location = new System.Drawing.Point(211, 761);
+            this.StartButton.Location = new System.Drawing.Point(1483, 163);
             this.StartButton.Margin = new System.Windows.Forms.Padding(2);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(115, 40);
@@ -408,7 +420,7 @@
             this.CustomizeGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CustomizeGameBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomizeGameBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.CustomizeGameBtn.Location = new System.Drawing.Point(211, 848);
+            this.CustomizeGameBtn.Location = new System.Drawing.Point(1483, 250);
             this.CustomizeGameBtn.Margin = new System.Windows.Forms.Padding(2);
             this.CustomizeGameBtn.Name = "CustomizeGameBtn";
             this.CustomizeGameBtn.Size = new System.Drawing.Size(115, 40);
@@ -416,136 +428,6 @@
             this.CustomizeGameBtn.Text = "Custom";
             this.CustomizeGameBtn.UseVisualStyleBackColor = false;
             this.CustomizeGameBtn.Click += new System.EventHandler(this.CustomizeGameBtn_Click);
-            // 
-            // NKPictureBox
-            // 
-            this.NKPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.NKPictureBox.Image = global::WarGames.Properties.Resources.north_korea_flag;
-            this.NKPictureBox.Location = new System.Drawing.Point(1153, 19);
-            this.NKPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.NKPictureBox.Name = "NKPictureBox";
-            this.NKPictureBox.Size = new System.Drawing.Size(84, 49);
-            this.NKPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NKPictureBox.TabIndex = 38;
-            this.NKPictureBox.TabStop = false;
-            // 
-            // SwedenPictureBox
-            // 
-            this.SwedenPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SwedenPictureBox.Image = global::WarGames.Properties.Resources.sweden_flag;
-            this.SwedenPictureBox.Location = new System.Drawing.Point(1026, 19);
-            this.SwedenPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SwedenPictureBox.Name = "SwedenPictureBox";
-            this.SwedenPictureBox.Size = new System.Drawing.Size(84, 49);
-            this.SwedenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SwedenPictureBox.TabIndex = 36;
-            this.SwedenPictureBox.TabStop = false;
-            // 
-            // JapanPictureBox
-            // 
-            this.JapanPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.JapanPictureBox.Image = global::WarGames.Properties.Resources.japan_flag;
-            this.JapanPictureBox.Location = new System.Drawing.Point(899, 19);
-            this.JapanPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.JapanPictureBox.Name = "JapanPictureBox";
-            this.JapanPictureBox.Size = new System.Drawing.Size(84, 49);
-            this.JapanPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.JapanPictureBox.TabIndex = 34;
-            this.JapanPictureBox.TabStop = false;
-            // 
-            // GermanyPictureBox
-            // 
-            this.GermanyPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GermanyPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GermanyPictureBox.Image = global::WarGames.Properties.Resources.germany_flag;
-            this.GermanyPictureBox.Location = new System.Drawing.Point(778, 19);
-            this.GermanyPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.GermanyPictureBox.Name = "GermanyPictureBox";
-            this.GermanyPictureBox.Size = new System.Drawing.Size(83, 48);
-            this.GermanyPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.GermanyPictureBox.TabIndex = 32;
-            this.GermanyPictureBox.TabStop = false;
-            // 
-            // IndiaPictureBox
-            // 
-            this.IndiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.IndiaPictureBox.Image = global::WarGames.Properties.Resources.india_flag2;
-            this.IndiaPictureBox.Location = new System.Drawing.Point(652, 19);
-            this.IndiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.IndiaPictureBox.Name = "IndiaPictureBox";
-            this.IndiaPictureBox.Size = new System.Drawing.Size(84, 49);
-            this.IndiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.IndiaPictureBox.TabIndex = 30;
-            this.IndiaPictureBox.TabStop = false;
-            // 
-            // FrancePictureBox
-            // 
-            this.FrancePictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.FrancePictureBox.Image = global::WarGames.Properties.Resources.france_flagv2;
-            this.FrancePictureBox.Location = new System.Drawing.Point(527, 19);
-            this.FrancePictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.FrancePictureBox.Name = "FrancePictureBox";
-            this.FrancePictureBox.Size = new System.Drawing.Size(84, 49);
-            this.FrancePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.FrancePictureBox.TabIndex = 28;
-            this.FrancePictureBox.TabStop = false;
-            // 
-            // ChinaPictureBox
-            // 
-            this.ChinaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ChinaPictureBox.Image = global::WarGames.Properties.Resources.China_flag;
-            this.ChinaPictureBox.Location = new System.Drawing.Point(401, 19);
-            this.ChinaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ChinaPictureBox.Name = "ChinaPictureBox";
-            this.ChinaPictureBox.Size = new System.Drawing.Size(84, 49);
-            this.ChinaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ChinaPictureBox.TabIndex = 26;
-            this.ChinaPictureBox.TabStop = false;
-            // 
-            // RussiaPictureBox
-            // 
-            this.RussiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RussiaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RussiaPictureBox.Image = global::WarGames.Properties.Resources.russia_flag;
-            this.RussiaPictureBox.Location = new System.Drawing.Point(149, 19);
-            this.RussiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.RussiaPictureBox.Name = "RussiaPictureBox";
-            this.RussiaPictureBox.Size = new System.Drawing.Size(83, 48);
-            this.RussiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.RussiaPictureBox.TabIndex = 24;
-            this.RussiaPictureBox.TabStop = false;
-            // 
-            // UkPictureBox
-            // 
-            this.UkPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UkPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.UkPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.UkPictureBox.Image = global::WarGames.Properties.Resources.uk_flag;
-            this.UkPictureBox.Location = new System.Drawing.Point(273, 19);
-            this.UkPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.UkPictureBox.Name = "UkPictureBox";
-            this.UkPictureBox.Size = new System.Drawing.Size(84, 49);
-            this.UkPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UkPictureBox.TabIndex = 20;
-            this.UkPictureBox.TabStop = false;
             // 
             // StatsBox
             // 
@@ -678,6 +560,21 @@
             this.SwedenDurLabel.Size = new System.Drawing.Size(95, 17);
             this.SwedenDurLabel.TabIndex = 26;
             this.SwedenDurLabel.Text = "Durability:  13";
+            // 
+            // UsaPictureBox
+            // 
+            this.UsaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UsaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UsaPictureBox.Image = global::WarGames.Properties.Resources.usa_flag;
+            this.UsaPictureBox.Location = new System.Drawing.Point(23, 19);
+            this.UsaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UsaPictureBox.Name = "UsaPictureBox";
+            this.UsaPictureBox.Size = new System.Drawing.Size(83, 48);
+            this.UsaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UsaPictureBox.TabIndex = 22;
+            this.UsaPictureBox.TabStop = false;
             // 
             // JapanGroupBox
             // 
@@ -894,6 +791,20 @@
             this.FranceDurLabel.TabIndex = 26;
             this.FranceDurLabel.Text = "Durability: 15  ";
             // 
+            // NKPictureBox
+            // 
+            this.NKPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NKPictureBox.Image = global::WarGames.Properties.Resources.north_korea_flag;
+            this.NKPictureBox.Location = new System.Drawing.Point(1153, 19);
+            this.NKPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.NKPictureBox.Name = "NKPictureBox";
+            this.NKPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.NKPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NKPictureBox.TabIndex = 38;
+            this.NKPictureBox.TabStop = false;
+            // 
             // ChinaGroupBox
             // 
             this.ChinaGroupBox.Controls.Add(this.ChinaRepLabel);
@@ -936,6 +847,20 @@
             this.ChinaDurLabel.Size = new System.Drawing.Size(95, 17);
             this.ChinaDurLabel.TabIndex = 26;
             this.ChinaDurLabel.Text = "Durability:  20";
+            // 
+            // SwedenPictureBox
+            // 
+            this.SwedenPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwedenPictureBox.Image = global::WarGames.Properties.Resources.sweden_flag;
+            this.SwedenPictureBox.Location = new System.Drawing.Point(1026, 19);
+            this.SwedenPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SwedenPictureBox.Name = "SwedenPictureBox";
+            this.SwedenPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.SwedenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SwedenPictureBox.TabIndex = 36;
+            this.SwedenPictureBox.TabStop = false;
             // 
             // RussiaGroupBox
             // 
@@ -991,6 +916,20 @@
             this.NorthKoreaLabel.TabIndex = 19;
             this.NorthKoreaLabel.Text = "North Korea";
             // 
+            // JapanPictureBox
+            // 
+            this.JapanPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.JapanPictureBox.Image = global::WarGames.Properties.Resources.japan_flag;
+            this.JapanPictureBox.Location = new System.Drawing.Point(899, 19);
+            this.JapanPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.JapanPictureBox.Name = "JapanPictureBox";
+            this.JapanPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.JapanPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.JapanPictureBox.TabIndex = 34;
+            this.JapanPictureBox.TabStop = false;
+            // 
             // USAgroupBox
             // 
             this.USAgroupBox.Controls.Add(this.USARepLabel);
@@ -1034,6 +973,21 @@
             this.USADurLabel.TabIndex = 20;
             this.USADurLabel.Text = "Durability:  20";
             // 
+            // GermanyPictureBox
+            // 
+            this.GermanyPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GermanyPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GermanyPictureBox.Image = global::WarGames.Properties.Resources.germany_flag;
+            this.GermanyPictureBox.Location = new System.Drawing.Point(778, 19);
+            this.GermanyPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.GermanyPictureBox.Name = "GermanyPictureBox";
+            this.GermanyPictureBox.Size = new System.Drawing.Size(83, 48);
+            this.GermanyPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GermanyPictureBox.TabIndex = 32;
+            this.GermanyPictureBox.TabStop = false;
+            // 
             // SwedenLabel
             // 
             this.SwedenLabel.AutoSize = true;
@@ -1044,6 +998,20 @@
             this.SwedenLabel.Size = new System.Drawing.Size(80, 24);
             this.SwedenLabel.TabIndex = 18;
             this.SwedenLabel.Text = "Sweden";
+            // 
+            // IndiaPictureBox
+            // 
+            this.IndiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.IndiaPictureBox.Image = global::WarGames.Properties.Resources.india_flag2;
+            this.IndiaPictureBox.Location = new System.Drawing.Point(652, 19);
+            this.IndiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.IndiaPictureBox.Name = "IndiaPictureBox";
+            this.IndiaPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.IndiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IndiaPictureBox.TabIndex = 30;
+            this.IndiaPictureBox.TabStop = false;
             // 
             // JapanLabel
             // 
@@ -1056,6 +1024,20 @@
             this.JapanLabel.TabIndex = 17;
             this.JapanLabel.Text = "Japan";
             // 
+            // FrancePictureBox
+            // 
+            this.FrancePictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FrancePictureBox.Image = global::WarGames.Properties.Resources.france_flagv2;
+            this.FrancePictureBox.Location = new System.Drawing.Point(527, 19);
+            this.FrancePictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.FrancePictureBox.Name = "FrancePictureBox";
+            this.FrancePictureBox.Size = new System.Drawing.Size(84, 49);
+            this.FrancePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FrancePictureBox.TabIndex = 28;
+            this.FrancePictureBox.TabStop = false;
+            // 
             // GermanyLabel
             // 
             this.GermanyLabel.AutoSize = true;
@@ -1067,6 +1049,20 @@
             this.GermanyLabel.TabIndex = 16;
             this.GermanyLabel.Text = "Germany";
             // 
+            // ChinaPictureBox
+            // 
+            this.ChinaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChinaPictureBox.Image = global::WarGames.Properties.Resources.China_flag;
+            this.ChinaPictureBox.Location = new System.Drawing.Point(401, 19);
+            this.ChinaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ChinaPictureBox.Name = "ChinaPictureBox";
+            this.ChinaPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.ChinaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ChinaPictureBox.TabIndex = 26;
+            this.ChinaPictureBox.TabStop = false;
+            // 
             // IndiaLabel
             // 
             this.IndiaLabel.AutoSize = true;
@@ -1077,6 +1073,37 @@
             this.IndiaLabel.Size = new System.Drawing.Size(50, 24);
             this.IndiaLabel.TabIndex = 15;
             this.IndiaLabel.Text = "India";
+            // 
+            // RussiaPictureBox
+            // 
+            this.RussiaPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RussiaPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RussiaPictureBox.Image = global::WarGames.Properties.Resources.russia_flag;
+            this.RussiaPictureBox.Location = new System.Drawing.Point(149, 19);
+            this.RussiaPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.RussiaPictureBox.Name = "RussiaPictureBox";
+            this.RussiaPictureBox.Size = new System.Drawing.Size(83, 48);
+            this.RussiaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RussiaPictureBox.TabIndex = 24;
+            this.RussiaPictureBox.TabStop = false;
+            // 
+            // UkPictureBox
+            // 
+            this.UkPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UkPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.UkPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.UkPictureBox.Image = global::WarGames.Properties.Resources.uk_flag;
+            this.UkPictureBox.Location = new System.Drawing.Point(273, 19);
+            this.UkPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UkPictureBox.Name = "UkPictureBox";
+            this.UkPictureBox.Size = new System.Drawing.Size(84, 49);
+            this.UkPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UkPictureBox.TabIndex = 20;
+            this.UkPictureBox.TabStop = false;
             // 
             // FranceLabel
             // 
@@ -1144,12 +1171,11 @@
             this.ExitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.ExitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 75F, System.Drawing.FontStyle.Bold);
             this.ExitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.ExitButton.Location = new System.Drawing.Point(1530, -16);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(80, 80);
+            this.ExitButton.Size = new System.Drawing.Size(127, 131);
             this.ExitButton.TabIndex = 3;
             this.ExitButton.Text = "X";
             this.ExitButton.UseVisualStyleBackColor = false;
@@ -1163,7 +1189,7 @@
             this.EnduranceBox.BackColor = System.Drawing.Color.Transparent;
             this.EnduranceBox.Controls.Add(this.EnduranceListBox);
             this.EnduranceBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.EnduranceBox.Location = new System.Drawing.Point(-1, 615);
+            this.EnduranceBox.Location = new System.Drawing.Point(0, 615);
             this.EnduranceBox.Margin = new System.Windows.Forms.Padding(4);
             this.EnduranceBox.Name = "EnduranceBox";
             this.EnduranceBox.Padding = new System.Windows.Forms.Padding(4);
@@ -1184,32 +1210,10 @@
             this.EnduranceListBox.Margin = new System.Windows.Forms.Padding(4);
             this.EnduranceListBox.Name = "EnduranceListBox";
             this.EnduranceListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.EnduranceListBox.Size = new System.Drawing.Size(196, 250);
+            this.EnduranceListBox.Size = new System.Drawing.Size(191, 250);
             this.EnduranceListBox.TabIndex = 0;
             // 
-            // hideStatsBox
-            // 
-            this.hideStatsBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.hideStatsBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.hideStatsBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hideStatsBox.FlatAppearance.BorderSize = 2;
-            this.hideStatsBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.hideStatsBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.hideStatsBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hideStatsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hideStatsBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(156)))), ((int)(((byte)(184)))));
-            this.hideStatsBox.Location = new System.Drawing.Point(205, 21);
-            this.hideStatsBox.Margin = new System.Windows.Forms.Padding(2);
-            this.hideStatsBox.Name = "hideStatsBox";
-            this.hideStatsBox.Size = new System.Drawing.Size(130, 40);
-            this.hideStatsBox.TabIndex = 49;
-            this.hideStatsBox.Text = "Hide Stats";
-            this.hideStatsBox.UseVisualStyleBackColor = false;
-            this.hideStatsBox.Click += new System.EventHandler(this.hideStatsBox_Click);
-            // 
-            // Form1
+            // WarGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -1222,31 +1226,22 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "WarGames";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "WarGames";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Background.ResumeLayout(false);
             this.gameOptionBox.ResumeLayout(false);
             this.gameOptionBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speedTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExplosionPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.JapanPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GermanyPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IndiaPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FrancePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChinaPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RussiaPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UkPictureBox)).EndInit();
             this.StatsBox.ResumeLayout(false);
             this.StatsBox.PerformLayout();
             this.NKgroupBox.ResumeLayout(false);
             this.NKgroupBox.PerformLayout();
             this.SwedenGroupBox.ResumeLayout(false);
             this.SwedenGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsaPictureBox)).EndInit();
             this.JapanGroupBox.ResumeLayout(false);
             this.JapanGroupBox.PerformLayout();
             this.UKgroupBox.ResumeLayout(false);
@@ -1257,12 +1252,21 @@
             this.IndiaGroupBox.PerformLayout();
             this.FranceGroupBox.ResumeLayout(false);
             this.FranceGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NKPictureBox)).EndInit();
             this.ChinaGroupBox.ResumeLayout(false);
             this.ChinaGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SwedenPictureBox)).EndInit();
             this.RussiaGroupBox.ResumeLayout(false);
             this.RussiaGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.JapanPictureBox)).EndInit();
             this.USAgroupBox.ResumeLayout(false);
             this.USAgroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GermanyPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IndiaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FrancePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChinaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RussiaPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UkPictureBox)).EndInit();
             this.EnduranceBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1349,11 +1353,12 @@
         private System.Windows.Forms.Label optionText3;
         private System.Windows.Forms.Label optionText4;
         private System.Windows.Forms.Label optionText2;
-        private System.Windows.Forms.Label optionText1;
         private System.Windows.Forms.Button OptionButton;
         private System.Windows.Forms.Button optionBtnOk;
         private System.Windows.Forms.Button resetOptionsButton;
-        private System.Windows.Forms.Button hideStatsBox;
+        private System.Windows.Forms.CheckBox BgMusicCheckBox;
+        private System.Windows.Forms.CheckBox HideStatsCheckBox;
+        private System.Windows.Forms.CheckBox HideEnduranceCheckBox;
     }
 }
 
